@@ -1,0 +1,59 @@
+---
+import Header from '../components/Navigation/Header';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang='pl'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='description'
+      content='nikotyna w płynie, aromaty, dodatki, gliceryna, sole nikotynowe '
+    />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&display=swap'
+      rel='stylesheet'
+    />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+	  <Header client:only/>
+	  <slot />
+    <script src='https://kit.fontawesome.com/4619b49638.js'></script>
+  </body>
+</html>
+<style is:global>
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    /*fonts*/
+    --main-font: 'Noto Sans', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+    /* colors*/
+    --bg-white: hsl(0, 0%, 100%);
+    --bg-black: hsl(0, 0%, 0%);
+  }
+  html {
+    scroll-padding-top: 40px;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+</style>
