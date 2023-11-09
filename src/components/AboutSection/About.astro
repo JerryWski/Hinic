@@ -1,0 +1,89 @@
+---
+
+---
+
+<section class='about-section'>
+  <h2 class='about-header'>Poznaj HILIQ</h2>
+  <div class='about-wrapper'>
+    <div class='about-info'>
+      <p class='about-text'>
+        HILIQ może być Twoim numerem jeden jako dostawca online czystej
+        nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb
+        przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny klasy
+        USP, która może być wykorzystywana w wielu produktach takich jak plastry
+        nikotynowe, gumy do żucia oraz płyny przygotowane i używane specjalnie
+        do użytku w elektronicznych papierosach.
+      </p>
+      <p class='about-text'>
+        Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
+        dostosowane tak, aby zadowolić naszych Konsumentów. Jako dostawca chcemy
+        dać szansę naszym odbiorcom zarobić jeszcze więcej niż dotychczas dając
+        im bardziej konkurencyjne ceny.
+      </p>
+      <p class='about-text'>
+        HILIQ oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą
+        i odpowiednią cenę dla Twojego biznesu.
+      </p>
+      <a class="about-link" href='/'>Czytaj więcej</a>
+    </div>
+    <div class='about-image-container'>
+      <img src='../../src/assets/nicotine.png' alt='' />
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: 20px;
+    padding-top: 80px;
+    background-color: hsl(0, 0%, 100%);
+    color: var(--bg-black);
+  }
+  .about-wrapper {
+    display: block;
+  }
+  .about-image-container {
+    max-width: 100%;
+  }
+  .about-image-container img {
+    width: 100%;
+    display: block;
+  }
+  .about-header {
+    font-size: clamp(2.3rem, 3vw, 2.5rem);
+    font-family: var(--main-font);
+    margin-bottom: 30px;
+    font-family: var(--roboto-font);
+  }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text {
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    line-height: 24px;
+  }
+  .about-link {
+    color: var(--bg-white);
+    margin-top: 20px;
+    width: fit-content;
+    outline: none;
+    padding: 7px 25px;
+    background-color: var(--bg-black);
+    font-size: 1.4rem;
+  }
+  @media (min-width: 900px) {
+    .about-wrapper {
+      display: flex;
+    }
+    .about-link {
+      align-self: flex-end;
+      padding: 15px 40px;
+      font-size: 1.6rem;
+    }
+    .about-text {
+      margin-bottom: 25px;
+    }
+  }
+</style>
