@@ -71,6 +71,7 @@
   /* border: 1px solid var(--bg-black);
   padding: 3px 8px;
   border-radius: 7px; */
+  font-weight: 500;
   padding: 0 5px;
   font-size: 1.1rem;
 
@@ -91,12 +92,13 @@
 .link:hover:after,
 .link:focus {
   width: 100%;
+  opacity: .8;
 }
 .link-mobile {
-  color: var(--main-font);
+  color: var(--bg-black);
 }
 .link-mobile:hover {
-  color: var(--main-pink);
+  opacity: .8;;
 }
 .logo-link-mobile {
   display: none;

@@ -1,21 +1,73 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 ---
 
-
-<section class="hero-section">
-    <div>
-        <div>
-            Lewa Strona
-        </div>
+<section class='hero-section'>
+  <div class='hero-wrapper'>
+    <div class='hero-left'>
+      <h1 class='hero-header'>
+        <span class='header-span'>Nicotine and Liquid</span> Professional
+        Solutions
+      </h1>
     </div>
+    <div class='hero-right'></div>
+  </div>
 </section>
 
 <style>
+  .hero-section {
+    /* background-image: var(--bg-gradient); */
+    height: 400px;
+    padding-top: 114px;
+  }
+  .hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('../../assets//smoking-woman2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-left {
+    width: 70%;
+  }
+  .header-span {
+    text-transform: uppercase;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+  }
+  .hero-header {
+    font-family: var(--roboto-font);
+    font-size: clamp(1.4rem, 4vw, 6rem);
+    line-height: normal;
+    text-align: center;
+    background-image: linear-gradient(
+      to right,
+      #d12988,
+      #cd54a8,
+      #c774c2,
+      #c18fd6,
+      #bea8e3
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 330px;
+    /* color: var(--bg-white); */
+  }
+  @media (min-width: 900px) {
     .hero-section {
-        background-image: var(--bg-gradient);
-        height: 400px;
-        width: 100%;
-        background-repeat: no-repeat;
+      padding-top: 0;
     }
+    .hero-left {
+      width: 50%;
+    }
+    .header-span {
+      font-size: clamp(1.1rem, 3vw, 2rem);
+    }
+    .hero-right {
+      width: 50%;
+    }
+  }
 </style>
