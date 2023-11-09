@@ -26,8 +26,8 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-	  <Header client:only/>
-	  <slot />
+    <Header client:only />
+    <slot />
     <script src='https://kit.fontawesome.com/4619b49638.js'></script>
   </body>
 </html>
@@ -46,7 +46,12 @@ const { title } = Astro.props;
     --roboto-font: 'Roboto', sans-serif;
     /* colors*/
     --bg-white: hsl(0, 0%, 100%);
-    --bg-black: hsl(0, 0%, 0%);
+    --bg-black: hsl(0, 0%, 5%);
+    --bg-grey: hsl(0, 0%, 28%);
+    --bg-gradient: linear-gradient(271deg,
+      var(--bg-black) 0%,
+      var(--bg-grey) 100%
+    );
   }
   html {
     scroll-padding-top: 40px;
