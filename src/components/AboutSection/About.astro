@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import nicotine from '../../assets/nicotine.png'
 ---
 
 <section class='about-section'>
@@ -27,7 +28,7 @@
       <a class="about-link" href='/'>Czytaj więcej</a>
     </div>
     <div class='about-image-container'>
-      <img src='../../src/assets/nicotine.png' alt='' />
+      <Image src={nicotine} alt='nicotine-bottle' />
     </div>
   </div>
 </section>
@@ -44,10 +45,13 @@
   }
   .about-image-container {
     max-width: 100%;
+    height: fit-content;
   }
   .about-image-container img {
     width: 100%;
     display: block;
+    object-fit: cover;
+    height: auto;
   }
   .about-header {
     font-size: clamp(2.3rem, 3vw, 2.5rem);
@@ -67,15 +71,26 @@
   .about-link {
     color: var(--bg-white);
     margin-top: 20px;
+    margin-bottom: 5px;
     width: fit-content;
     outline: none;
     padding: 7px 25px;
     background-color: var(--bg-black);
     font-size: 1.4rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+  }
+  .about-link:hover {
+    background-color: var(--bg-white);
+    color: var(--bg-black);
+    outline: 1px solid var(--bg-black);
   }
   @media (min-width: 900px) {
     .about-wrapper {
       display: flex;
+    }
+    .about-info {
+      padding-right: 5px;
     }
     .about-link {
       align-self: flex-end;

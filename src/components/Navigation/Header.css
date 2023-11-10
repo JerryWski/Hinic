@@ -52,12 +52,11 @@
   margin-left: auto;
 }
 .contact-icon {
-  color: var(--main-pink);
+  color: var(--bg-black);
   padding: 2.5px;
 }
 .fa-solid {
   margin: 7px;
-  color: var(--base-orange);
 }
 .link,
 .link-mobile {
