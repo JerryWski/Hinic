@@ -1,0 +1,52 @@
+---
+
+---
+
+<section class='order-section'>
+  <div class='order-wrapper'>
+    <a href='' class='order-link'> Zamów teraz</a>
+  </div>
+</section>
+
+<style>
+  .order-section {
+    display: flex;
+    background-color: var(--base-grey);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* background-image: url('../assets/m_art.png'); */
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url('../../assets/bg-nicotine.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--base-grey);
+    height: 300px;
+    /* background-image: url('../../assets/bg-hands.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; */
+  }
+  .order-link {
+    font-size: clamp(1.3rem, 4vw, 7rem);
+    font-family: var(--second-font);
+    color: var(--bg-black);
+    font-weight: 700;
+    border: 2px solid var(--bg-white);
+    padding: 5px 45px;
+    transition: .3s all ease;
+  }
+  .order-link:hover {
+    opacity: .8;
+  }
+  @media (min-width: 900px) {
+    .order-header {
+      padding: 10px 75px;
+    }
+  }
+</style>
