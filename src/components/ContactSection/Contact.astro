@@ -1,0 +1,155 @@
+---
+import { Image } from "astro:assets";
+import logo from '../../assets/base-logo-hd.png'
+import woman from '../../assets/contact-img2.png';
+---
+
+<section class='contact-section' id='contact'>
+  <div class="contact-container">
+    <div class='wrapper'>
+      <h2 class='contact-header'>Kontakt</h2>
+      <div class='contact-icons'>
+        <a
+          href='mailto:office@hinic.eu'
+          class='icon-link'
+          aria-label='Link to email'
+        >
+          <i class='fa-solid fa-envelope fa-2x'></i>
+        </a>
+        <a href='tel:+48888433188' class='icon-link' aria-label='Link to phone'>
+          <i class='fa-solid fa-phone fa-2x'></i>
+        </a>
+      </div>
+    </div>
+    <div class='shortcuts'>
+      <h3 class='shortcuts-heading'>Na skróty:</h3>
+      <a class='shortcuts-links' href='/about'> O Nas</a>
+      <a class='shortcuts-links' href='/activities'> Produkty</a>
+      <a class='shortcuts-links' href='/blog'> Zamówienia</a>
+      <a href='/'>
+      </a>
+    </div>
+    <div class='contact-logo-container'>
+      <Image src={logo} alt='logo-icon' />
+    </div>
+    <!-- <div class="image-wrapper">
+      <Image class="contact-image" src={woman} alt="woman">
+    </div> -->
+  </div>
+  
+</section>
+
+<style>
+  .contact-section {
+    padding: 20px;
+    background-color: var(--bg-white);
+    color: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 30px;
+  }
+  .contact-header {
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-transform: uppercase;
+    color: var(--base-white);
+    font-family: var(--roboto-font);
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight:600;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .contact-text {
+    font-family: var(--font_3);
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--base-white);
+  }
+  .contact-icons {
+    margin-top: 30px;
+  }
+  .icon-link {
+    text-decoration: none;
+    color: var(--base-orange);
+    padding: 3px;
+    margin: 0 7px 0 7px;
+  }
+  .icon-link:hover {
+    color: var(--white);
+  }
+  .contact-logo__link {
+    margin-top: 30px;
+    width: 50%;
+  }
+  .contact-logo {
+    width: 100%;
+  }
+  .shortcuts {
+    margin-top: 30px;
+    display: flex;
+    font-family: var(--second-font);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .shortcuts-heading {
+    font-size: 1rem;
+    font-family: var(--font_3);
+    padding: 10px;
+  }
+  .shortcuts-links {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--base-grey);
+    font-family: var(--second-font);
+    transition: 0.3s all ease;
+  }
+  .shortcuts-links:hover {
+    color: var(--white);
+  }
+  .logo-header,
+  .span_hash {
+    font-family: var(--main-font);
+  }
+  .contact-logo-container {
+    margin: 30px auto 0px auto;
+    max-width: 270px;
+  }
+  .contact-logo-container img {
+    width: 100%;
+    object-fit: contain;
+  }
+.image-wrapper {
+  display: none;
+}
+
+@media (min-width:900px) {
+  .contact-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+  }
+  .image-wrapper {
+    display: block;
+    max-width: 70%;
+  }
+  .contact-image {
+    width: 100%;
+    object-fit: contain;
+  }
+  .contact-header {
+    margin-top: 0;
+  }
+}
+</style>

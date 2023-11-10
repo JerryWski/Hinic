@@ -4,6 +4,13 @@
 
 <section class='order-section'>
   <div class='order-wrapper'>
+    <p class='order-text'>
+      Hiliq jest niezawodnym dostawcą wysokiej jakości nikotyny. Z naszymi
+      partnerami, będącymi kluczowymi dostawcami w branży logistycznej
+      zapewniamy szybki, odpowiedzialny oraz wygodny transport do Waszych drzwi.
+      Posiadamy również zespół, który pomoże Ci śledzić, sprawdzać i koordynować
+      stan Twojej przesyłki.
+    </p>
     <a href='' class='order-link'> Zamów teraz</a>
   </div>
 </section>
@@ -26,27 +33,53 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--base-grey);
-    height: 300px;
+
     /* background-image: url('../../assets/bg-hands.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain; */
   }
-  .order-link {
-    font-size: clamp(1.3rem, 3vw, 4rem);
+  .order-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .order-text {
     font-family: var(--second-font);
-    color: var(--bg-black);
+    text-align: center;
+    background-color: var(--bg-black);
+    padding: 20px;
+    color: var(--bg-white);
+    font-weight: 500;
+    margin-top: 40px;
+    outline: 1px solid var(--bg-white);
+  }
+  .order-link {
+    font-size: clamp(1.3rem, 2vw, 3rem);
+    font-family: var(--second-font);
+    color: var(--bg-white);
     font-weight: 700;
-    border: 2px solid var(--bg-white);
-    padding: 5px 45px;
-    transition: .3s all ease;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-black);
+    outline: 1px solid var(--bg-white);
+    padding: 15px 45px;
+    transition: 0.3s all ease;
   }
   .order-link:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
   @media (min-width: 900px) {
     .order-header {
       padding: 10px 75px;
+    }
+    .order-text {
+        max-width: 900px;
+    }
+    .order-link {
+        width: fit-content;
     }
   }
 </style>
