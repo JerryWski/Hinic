@@ -94,23 +94,6 @@ import accessories from '../../assets/accessories1.png';
     line-height: 24px;
     text-align: center;
   }
-  .products-link {
-    color: var(--bg-white);
-    margin-top: 20px;
-    margin-bottom: 5px;
-    width: fit-content;
-    outline: none;
-    padding: 7px 25px;
-    background-color: var(--bg-black);
-    font-size: 1.4rem;
-    cursor: pointer;
-    transition: 0.3s all ease-in-out;
-  }
-  .products-link:hover {
-    background-color: var(--bg-white);
-    color: var(--bg-black);
-    outline: 1px solid var(--bg-black);
-  }
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +135,7 @@ import accessories from '../../assets/accessories1.png';
     margin-top: 40px;
     margin-bottom: 20px;
     align-self: center;
-    width: 250px;
+    width: 100%;
     outline: none;
     text-align: center;
     padding: 15px 35px;
@@ -165,5 +148,10 @@ import accessories from '../../assets/accessories1.png';
     background-color: transparent;
     color: var(--bg-white);
     outline: 1px solid var(--bg-white);
+  }
+  @media (min-width: 900px) {
+    .products-link {
+      width: 250px;
+    }
   }
 </style>
