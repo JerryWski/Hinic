@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import rounds from '../assets/rounds.png';
+import contact from '../assets/contact-img.png';
+import nicotine from '../assets/nicotine3.png';
+import labo from '../assets/labo-bottles.png';
+import logistic from '../assets/logistic.png';
+import logisitc2 from '../assets/logistic2.png';
 ---
 
 <Layout title='O nas'>
@@ -49,7 +54,7 @@ import rounds from '../assets/rounds.png';
             czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9%
             ,więc idealną do każdego rodzaju produktów.
           </p>
-          <img class='benefit-image' src='' alt='img' />
+          <Image class='benefit-image' src={nicotine} alt='nicotine-bottles' />
         </div>
         <div class='benefit title-two'>
           <h2 class='benefit-header'>Jakość produktu</h2>
@@ -61,7 +66,7 @@ import rounds from '../assets/rounds.png';
             tak aby zapewnić 100% satysfakcji Klientów zarówno w strefie smaku
             jak i bezpieczeństwa.
           </p>
-          <img class='benefit-image' src='' alt='img' />
+          <Image class='benefit-image' src={labo} alt='laboratory' />
         </div>
         <div class='benefit title-three'>
           <h2 class='benefit-header'>Doskonałość w logistyce</h2>
@@ -74,7 +79,7 @@ import rounds from '../assets/rounds.png';
             opłatami przesyłek międzynarodowych. Posiadamy również zespół, który
             pomoże Ci śledzić, sprawdzać i koordynować stan Twojej przesyłki.
           </p>
-          <img class='benefit-image' src='' alt='img' />
+          <Image class='benefit-image' src={logistic} alt='magazine' />
         </div>
         <div class='benefit title-four'>
           <h2 class='benefit-header'>Konkurencyjne ceny</h2>
@@ -85,7 +90,7 @@ import rounds from '../assets/rounds.png';
             nie proponuje takiej samej jakości produktów jaką my oferujemy w tak
             dobrych cenach.
           </p>
-          <img class='benefit-image' src='' alt='img' />
+          <Image class='benefit-image' src={logisitc2} alt='logistics' />
         </div>
         <div class='benefit title-five'>
           <h2 class='benefit-header'>Istotność serwisu</h2>
@@ -99,7 +104,7 @@ import rounds from '../assets/rounds.png';
             czekać na dostawę z całkowitym zaufaniem do naszych usług i
             możliwości.
           </p>
-          <img class='benefit-image' src='' alt='img' />
+          <Image class='benefit-image' src={contact} alt='contact-woman' />
         </div>
       </div>
     </div>
@@ -152,10 +157,10 @@ import rounds from '../assets/rounds.png';
     display: inline-block;
     width: 100%;
     background-color: var(--bg-black);
-    height: 2px;
+    height: 1px;
   }
   .benefits-wrapper {
-    margin-top: 100px;
+    margin-top: 40px;
   }
   .benefit {
     font-family: var(--main-font);
@@ -170,7 +175,12 @@ import rounds from '../assets/rounds.png';
     color: var(--bg-grey);
   }
   .benefit-image {
+    margin-top: 15px;
+    margin-bottom: 20px;
     display: block;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
   }
   .image {
     display: none;
@@ -200,6 +210,7 @@ import rounds from '../assets/rounds.png';
     .text {
       font-size: 1rem;
     }
+    
     .container {
       padding-inline: 40px;
       display: grid;
@@ -234,6 +245,9 @@ import rounds from '../assets/rounds.png';
     }
     .title-five {
       grid-area: title-five;
+    }
+    .benefits-wrapper {
+        margin-top: 110px;
     }
     .benefit {
         padding: 15px;
