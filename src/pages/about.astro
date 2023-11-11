@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import rounds from '../assets/rounds.png';
 ---
 
 <Layout title='O nas'>
@@ -34,8 +36,9 @@ import Layout from '../layouts/Layout.astro';
           konsumentom najbardziej naturalny i czysty płyn nikotynowy.
         </p>
       </div>
+      <span class='span-line'></span>
       <div class='benefits-wrapper container'>
-        <img class='image' src='' alt='obrazek' />
+        <Image class='image' src={rounds} alt='obrazek' />
         <div class='benefit title-one'>
           <h2 class='benefit-header'>Ogromny wybór</h2>
           <p class='benefit-text'>
@@ -46,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
             czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9%
             ,więc idealną do każdego rodzaju produktów.
           </p>
-          <img class="benefit-image" src="" alt="img">
+          <img class='benefit-image' src='' alt='img' />
         </div>
         <div class='benefit title-two'>
           <h2 class='benefit-header'>Jakość produktu</h2>
@@ -58,7 +61,7 @@ import Layout from '../layouts/Layout.astro';
             tak aby zapewnić 100% satysfakcji Klientów zarówno w strefie smaku
             jak i bezpieczeństwa.
           </p>
-          <img class="benefit-image" src="" alt="img">
+          <img class='benefit-image' src='' alt='img' />
         </div>
         <div class='benefit title-three'>
           <h2 class='benefit-header'>Doskonałość w logistyce</h2>
@@ -71,7 +74,7 @@ import Layout from '../layouts/Layout.astro';
             opłatami przesyłek międzynarodowych. Posiadamy również zespół, który
             pomoże Ci śledzić, sprawdzać i koordynować stan Twojej przesyłki.
           </p>
-          <img class="benefit-image" src="" alt="img">
+          <img class='benefit-image' src='' alt='img' />
         </div>
         <div class='benefit title-four'>
           <h2 class='benefit-header'>Konkurencyjne ceny</h2>
@@ -82,7 +85,7 @@ import Layout from '../layouts/Layout.astro';
             nie proponuje takiej samej jakości produktów jaką my oferujemy w tak
             dobrych cenach.
           </p>
-          <img class="benefit-image" src="" alt="img">
+          <img class='benefit-image' src='' alt='img' />
         </div>
         <div class='benefit title-five'>
           <h2 class='benefit-header'>Istotność serwisu</h2>
@@ -96,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
             czekać na dostawę z całkowitym zaufaniem do naszych usług i
             możliwości.
           </p>
-          <img class="benefit-image" src="" alt="img">
+          <img class='benefit-image' src='' alt='img' />
         </div>
       </div>
     </div>
@@ -144,15 +147,34 @@ import Layout from '../layouts/Layout.astro';
     letter-spacing: 1px;
     line-height: 32px;
   }
+  .span-line {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--bg-black);
+    height: 2px;
+  }
   .benefits-wrapper {
-    margin-top: 40px;
+    margin-top: 100px;
+  }
+  .benefit {
+    font-family: var(--main-font);
+  }
+  .benefit-header {
+    font-family: var(--main-font);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  .benefit-text {
+    font-size: .9rem;
+    color: var(--bg-grey);
   }
   .benefit-image {
     display: block;
   }
   .image {
-      display: none;
-    }
+    display: none;
+  }
 
   @media (min-width: 900px) {
     .about-section {
@@ -179,6 +201,7 @@ import Layout from '../layouts/Layout.astro';
       font-size: 1rem;
     }
     .container {
+      padding-inline: 40px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -190,7 +213,11 @@ import Layout from '../layouts/Layout.astro';
         '. title-five .';
     }
     .image {
-        display: block;
+      justify-self: center;
+      align-self: center;
+      display: block;
+      width: 100%;
+      object-fit: contain;
       grid-area: image;
     }
     .title-two {
@@ -208,8 +235,17 @@ import Layout from '../layouts/Layout.astro';
     .title-five {
       grid-area: title-five;
     }
+    .benefit {
+        padding: 15px;
+    }
     .benefit-image {
-    display: none;
-  }
+      display: none;
+    }
+    .benefit-header {
+      font-size: 1rem;
+    }
+    .benefit-text {
+      font-size: 0.7rem;
+    }
   }
 </style>
