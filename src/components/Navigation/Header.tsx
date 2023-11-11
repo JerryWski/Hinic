@@ -79,7 +79,7 @@ const Header: React.FC = () => {
             <a aria-label='Link to phone' className='link' href='tel:+48888433188'>
             +48 888 433 188
             </a>
-            <a className='link' href='/#about'>
+            <a className='link' href='/about'>
               O Nas
             </a>
             <a className='link' href='/prices'>
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
             <a className='link' href='/team'>
               Zamówienia
             </a>
-            <a className='link' href='/#gallery'>
+            <a className='link' href='#contact'>
               Kontakt
             </a>
           </div>
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/#about'
+              href='/about'
               onClick={handleMenuClick}
             >
               O Nas
