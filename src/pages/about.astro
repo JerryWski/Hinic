@@ -7,6 +7,9 @@ import nicotine from '../assets/nicotine3.png';
 import labo from '../assets/labo-bottles.png';
 import logistic from '../assets/logistic.png';
 import logisitc2 from '../assets/logistic2.png';
+import delivery from '../assets/car-icon.png';
+import research from '../assets/research-icon.png';
+import services from '../assets/services.png';
 ---
 
 <Layout title='O nas'>
@@ -108,6 +111,48 @@ import logisitc2 from '../assets/logistic2.png';
         </div>
       </div>
     </div>
+    <div class='advantages-wrapper'>
+      <h2 class='about-subheader'>Zalety</h2>
+
+      <div class='advantages'>
+        <div class='image-wrapper'>
+          <Image class='advantages-img' src={delivery} alt='delivery-car' />
+        </div>
+        <h2 class='advantages-header'>Doświadczenie w produkcji i logistyce</h2>
+        <p class='advantages-text'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          eum tempora corporis in ea, aliquam nostrum atque, consequatur
+          veritatis ex eaque quam asperiores facere repellendus. Maiores
+          expedita veniam laborum! Adipisci!
+        </p>
+      </div>
+
+      <div class='advantages'>
+        <div class='image-wrapper'>
+          <Image class='advantages-img' src={services} alt='people-icon' />
+        </div>
+        <h2 class='advantages-header'>Wydajność cen i usług</h2>
+        <p class='advantages-text'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          eum tempora corporis in ea, aliquam nostrum atque, consequatur
+          veritatis ex eaque quam asperiores facere repellendus. Maiores
+          expedita veniam laborum! Adipisci!
+        </p>
+      </div>
+
+      <div class='advantages'>
+        <div class='image-wrapper'>
+          <Image class='advantages-img' src={research} alt='research-icon' />
+        </div>
+        <h2 class='advantages-header'>Rozwój i badania</h2>
+        <p class='advantages-text'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          eum tempora corporis in ea, aliquam nostrum atque, consequatur
+          veritatis ex eaque quam asperiores facere repellendus. Maiores
+          expedita veniam laborum! Adipisci!
+        </p>
+      </div>
+    </div>
   </section>
 </Layout>
 
@@ -166,12 +211,11 @@ import logisitc2 from '../assets/logistic2.png';
     font-family: var(--main-font);
   }
   .benefit-header {
-    font-family: var(--main-font);
     margin-bottom: 10px;
     font-size: 1.4rem;
   }
   .benefit-text {
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: var(--bg-grey);
   }
   .benefit-image {
@@ -184,6 +228,45 @@ import logisitc2 from '../assets/logistic2.png';
   }
   .image {
     display: none;
+  }
+  .advantages-wrapper {
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: var(--main-font);
+  }
+  .advantages-img {
+    width: 100px;
+    object-fit: contain;
+  }
+  .advantages-wrapper .about-subheader {
+    color: var(--bg-white);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: clamp(3rem, 3vw, 3rem);
+  }
+  .advantages {
+    margin-block: 30px;
+  }
+  .image-wrapper {
+    width: fit-content;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-white);
+  }
+  .advantages-header {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  .advantages-text {
+    font-size: 0.9rem;
+    opacity: 0.8;
   }
 
   @media (min-width: 900px) {
@@ -210,7 +293,7 @@ import logisitc2 from '../assets/logistic2.png';
     .text {
       font-size: 1rem;
     }
-    
+
     .container {
       padding-inline: 40px;
       display: grid;
@@ -247,10 +330,10 @@ import logisitc2 from '../assets/logistic2.png';
       grid-area: title-five;
     }
     .benefits-wrapper {
-        margin-top: 110px;
+      margin-top: 110px;
     }
     .benefit {
-        padding: 15px;
+      padding: 15px;
     }
     .benefit-image {
       display: none;

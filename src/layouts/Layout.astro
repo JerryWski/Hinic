@@ -1,4 +1,5 @@
 ---
+import Contact from '../components/ContactSection/Contact.astro';
 import Header from '../components/Navigation/Header';
 
 interface Props {
@@ -28,6 +29,7 @@ const { title } = Astro.props;
   <body>
     <Header client:only />
     <slot />
+    <Contact />
     <script src='https://kit.fontawesome.com/4619b49638.js'></script>
   </body>
 </html>
