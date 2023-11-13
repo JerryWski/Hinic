@@ -69,7 +69,7 @@ import accessories from '../assets/accessories1.png';
     background-image: url('../assets/products-bg.png');
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     padding-left: 20px;
     background-position: center;
@@ -81,17 +81,17 @@ import accessories from '../assets/accessories1.png';
     background-image: linear-gradient(
       to right top,
       #01294d,
-      #3d3166,
-      #75316e,
-      #a82e63,
-      #cc3d48,
-      #c34337,
-      #b84a26,
-      #ac5016,
-      #893b19,
-      #652917,
-      #421911,
-      #220902
+      #473468,
+      #863870,
+      #bc4161,
+      #dc6043,
+      #dc6045,
+      #dc6046,
+      #dc6048,
+      #b84567,
+      #7f3f73,
+      #403965,
+      #0f2b44
     );
     padding: 80px 20px 80px 20px;
     display: flex;
@@ -111,8 +111,8 @@ import accessories from '../assets/accessories1.png';
     );
     text-shadow: 4px 4px 0px rgb(255, 255, 255);
     background-clip: text;
+    margin-top: 30px;
     -webkit-text-fill-color: transparent;
-    margin-top: -30px;
     color: var(--bg-white);
     font-size: clamp(4rem, 4vw, 6rem);
   }
@@ -150,6 +150,12 @@ import accessories from '../assets/accessories1.png';
   @media (min-width: 900px) {
     .products-section {
       padding-top: 0;
+    }
+    .products-welcome {
+        align-items: center;
+    }
+    .products-header {
+        padding-left: 120px;
     }
   }
 </style>
