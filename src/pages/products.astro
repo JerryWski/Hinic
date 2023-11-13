@@ -16,6 +16,11 @@ import accessories from '../assets/accessories1.png';
       </div>
 
       <div class='products-container'>
+        <h2 class='products-subheader'>Nasze produkty</h2>
+        <p class='products-text'>
+          Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące
+          zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.
+        </p>
         <div class='card'>
           <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
           <h3 class='card-title'>Nikotyna</h3>
@@ -55,6 +60,39 @@ import accessories from '../assets/accessories1.png';
             Dodatkowe składniki, takie jak barwniki, substancje słodzące czy
             chłodzące, używane w celu dostosowania smaku i wrażeń z palenia.
           </p>
+        </div>
+      </div>
+      <div class='warning-container'>
+        <h2>Uwaga</h2>
+        <div>
+          <div>
+            <img src='' alt='obrazek' />
+            <p>
+              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
+              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+            </p>
+          </div>
+          <div>
+            <img src='' alt='obrazek' />
+            <p>
+              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
+              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+            </p>
+          </div>
+          <div>
+            <img src='' alt='obrazek' />
+            <p>
+              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
+              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+            </p>
+          </div>
+          <div>
+            <img src='' alt='obrazek' />
+            <p>
+              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
+              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -101,6 +139,7 @@ import accessories from '../assets/accessories1.png';
     gap: 40px;
   }
   .products-header {
+    font-family: var(--roboto-font);
     background-image: linear-gradient(
       to right,
       #fab8dd,
@@ -115,6 +154,16 @@ import accessories from '../assets/accessories1.png';
     -webkit-text-fill-color: transparent;
     color: var(--bg-white);
     font-size: clamp(4rem, 4vw, 6rem);
+  }
+  .products-subheader {
+    font-size: clamp(2.3rem, 3vw, 3.5rem);
+    font-family: var(--main-font);
+    color: var(--bg-white);
+  }
+  .products-text {
+    font-family: var(--second-font);
+    text-align: center;
+    color: var(--bg-white);
   }
   .card {
     display: flex;
@@ -147,15 +196,30 @@ import accessories from '../assets/accessories1.png';
     max-width: 265px;
     height: 140px;
   }
+  .warning-container {
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+  }
   @media (min-width: 900px) {
     .products-section {
       padding-top: 0;
     }
+    .products-container {
+      gap: 100px;
+    }
     .products-welcome {
-        align-items: center;
+      align-items: center;
     }
     .products-header {
-        padding-left: 120px;
+      padding-left: 120px;
+    }
+    .products-text {
+      margin-top: 155px;
+    }
+  }
+  @media (max-width: 1800px) {
+    .products-text {
+      margin-top: 0px;
     }
   }
 </style>
