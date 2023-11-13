@@ -48,7 +48,9 @@ import Icon from 'astro-icon';
         <div class='benefit title-one'>
           <h2 class='benefit-header'>Ogromny wybór</h2>
           <div class='btn-wrapper'>
-            <button id='toggle' class='btn-accord'>Zobacz więcej</button>
+            <button id='toggle' aria-label='action-btn' class='btn-accord'
+              >Zobacz więcej</button
+            >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
           <div class='benefit-text wrapper-accord'>
@@ -66,7 +68,9 @@ import Icon from 'astro-icon';
         <div class='benefit title-two'>
           <h2 class='benefit-header'>Jakość produktu</h2>
           <div class='btn-wrapper'>
-            <button id='toggle' class='btn-accord'>Zobacz więcej</button>
+            <button id='toggle' aria-label='action-btn' class='btn-accord'
+              >Zobacz więcej</button
+            >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
           <div class='benefit-text wrapper-accord'>
@@ -84,7 +88,9 @@ import Icon from 'astro-icon';
         <div class='benefit title-three'>
           <h2 class='benefit-header'>Doskonałość w logistyce</h2>
           <div class='btn-wrapper'>
-            <button id='toggle' class='btn-accord'>Zobacz więcej</button>
+            <button id='toggle' aria-label='action-btn' class='btn-accord'
+              >Zobacz więcej</button
+            >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
           <div class='benefit-text wrapper-accord'>
@@ -104,7 +110,9 @@ import Icon from 'astro-icon';
         <div class='benefit title-four'>
           <h2 class='benefit-header'>Konkurencyjne ceny</h2>
           <div class='btn-wrapper'>
-            <button id='toggle' class='btn-accord'>Zobacz więcej</button>
+            <button id='toggle' aria-label='action-btn' class='btn-accord'
+              >Zobacz więcej</button
+            >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
           <div class='benefit-text wrapper-accord'>
@@ -121,7 +129,9 @@ import Icon from 'astro-icon';
         <div class='benefit title-five'>
           <h2 class='benefit-header'>Istotność serwisu</h2>
           <div class='btn-wrapper'>
-            <button id='toggle' class='btn-accord'>Zobacz więcej</button>
+            <button id='toggle' aria-label='action-btn' class='btn-accord'
+              >Zobacz więcej</button
+            >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
           <div class='benefit-text wrapper-accord'>
@@ -199,12 +209,20 @@ import Icon from 'astro-icon';
   .wrapper-accord > div {
     overflow: hidden;
   }
-  #arrow {
-    color: red;
+  .btn-accord {
+    cursor: pointer;
+    color: var(--bg-white);
+    border: none;
+    background: var(--bg-black);
+    padding: 10px 25px;
+    margin-bottom: 5px;
+  }
+  .arrow {
+    color: var(--bg-black);
     transform: rotateX(0deg);
     transition: 0.5s transform ease-out;
   }
-  #arrow.is-rotate {
+  .arrow.is-rotate {
     transform: rotateX(180deg);
   }
   .about-section {
@@ -273,7 +291,7 @@ import Icon from 'astro-icon';
     margin-bottom: 40px;
     display: block;
     width: 100%;
-    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+    box-shadow: 3px 10px 19px -5px rgba(0, 0, 0, 1);
     object-fit: contain;
     height: auto;
   }
@@ -285,15 +303,31 @@ import Icon from 'astro-icon';
     color: var(--bg-white);
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
+    /* background-image: linear-gradient(
+      to right top,
+      #000000,
+      #1b010e,
+      #26021c,
+      #2f022d,
+      #320243,
+      #31054d,
+      #2e0a57,
+      #271062,
+      #2b105e,
+      #2f115a,
+      #321157,
+      #341253
+    ); */
     font-family: var(--main-font);
   }
   .advantages-container {
     display: flex;
     flex-wrap: wrap;
+    
   }
   .advantages-wrapper .about-subheader {
     color: var(--bg-white);
@@ -310,6 +344,7 @@ import Icon from 'astro-icon';
     margin-bottom: 15px;
     padding: 10px;
     cursor: pointer;
+  
     /* border-radius: 50%;
     border: 2px solid var(--bg-white); */
     position: relative;
@@ -488,14 +523,19 @@ import Icon from 'astro-icon';
 <script>
   const accordions = document.querySelectorAll('.btn-accord');
 
-  accordions.forEach((accordion) => {
-    const benefit = accordion.closest('.benefit');
-    const wrapper = benefit?.querySelector('.wrapper-accord');
-    const arrow = benefit?.querySelector('.arrow');
+accordions.forEach((accordion) => {
+  const benefit = accordion.closest('.benefit');
+  const wrapper = benefit?.querySelector('.wrapper-accord');
+  const arrow = benefit?.querySelector('.arrow');
 
+  if (accordion instanceof HTMLButtonElement) {
     accordion.addEventListener('click', () => {
       wrapper?.classList.toggle('is-open');
       arrow?.classList.toggle('is-rotate');
+      accordion.style.backgroundColor = wrapper?.classList.contains('is-open') ? 'var(--bg-white)' : '';
+      accordion.style.color = wrapper?.classList.contains('is-open') ? 'var(--bg-black)' : '';
+      accordion.style.border = wrapper?.classList.contains('is-open') ? '1px solid var(--bg-black)' : '';
     });
-  });
+  }
+});
 </script>
