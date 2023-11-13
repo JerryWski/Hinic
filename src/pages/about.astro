@@ -49,7 +49,7 @@ import Icon from 'astro-icon';
           <h2 class='benefit-header'>Ogromny wybór</h2>
           <div class='btn-wrapper'>
             <button id='toggle' aria-label='action-btn' class='btn-accord'
-              >Zobacz więcej</button
+              >Rozwiń</button
             >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
@@ -69,7 +69,7 @@ import Icon from 'astro-icon';
           <h2 class='benefit-header'>Jakość produktu</h2>
           <div class='btn-wrapper'>
             <button id='toggle' aria-label='action-btn' class='btn-accord'
-              >Zobacz więcej</button
+              >Rozwiń</button
             >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
@@ -89,7 +89,7 @@ import Icon from 'astro-icon';
           <h2 class='benefit-header'>Doskonałość w logistyce</h2>
           <div class='btn-wrapper'>
             <button id='toggle' aria-label='action-btn' class='btn-accord'
-              >Zobacz więcej</button
+              >Rozwiń</button
             >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
@@ -111,7 +111,7 @@ import Icon from 'astro-icon';
           <h2 class='benefit-header'>Konkurencyjne ceny</h2>
           <div class='btn-wrapper'>
             <button id='toggle' aria-label='action-btn' class='btn-accord'
-              >Zobacz więcej</button
+              >Rozwiń</button
             >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
@@ -129,8 +129,8 @@ import Icon from 'astro-icon';
         <div class='benefit title-five'>
           <h2 class='benefit-header'>Istotność serwisu</h2>
           <div class='btn-wrapper'>
-            <button id='toggle' aria-label='action-btn' class='btn-accord'
-              >Zobacz więcej</button
+            <button id='toggle' aria-label='action-btn' class='btn-accord'>
+              Rozwiń</button
             >
             <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
           </div>
@@ -215,6 +215,7 @@ import Icon from 'astro-icon';
     border: none;
     background: var(--bg-black);
     padding: 10px 25px;
+    min-width:105px;
     margin-bottom: 5px;
   }
   .arrow {
@@ -279,8 +280,8 @@ import Icon from 'astro-icon';
     font-family: var(--main-font);
   }
   .benefit-header {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
   }
   .benefit-text {
     font-size: 0.9rem;
@@ -288,7 +289,7 @@ import Icon from 'astro-icon';
   }
   .benefit-image {
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     display: block;
     width: 100%;
     box-shadow: 3px 10px 19px -5px rgba(0, 0, 0, 1);
@@ -537,6 +538,7 @@ import Icon from 'astro-icon';
       accordion.addEventListener('click', () => {
         wrapper?.classList.toggle('is-open');
         arrow?.classList.toggle('is-rotate');
+        accordion.textContent = wrapper?.classList.contains('is-open') ? 'Schowaj' : 'Rozwiń'
         accordion.style.backgroundColor = wrapper?.classList.contains('is-open')
           ? 'var(--bg-white)'
           : '';
