@@ -327,7 +327,7 @@ import Icon from 'astro-icon';
   .advantages-container {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
   }
   .advantages-wrapper .about-subheader {
     color: var(--bg-white);
@@ -338,13 +338,18 @@ import Icon from 'astro-icon';
   .advantages {
     margin-block: 30px;
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .image-wrapper {
     width: 125px;
     margin-bottom: 15px;
     padding: 10px;
     cursor: pointer;
-  
+
     /* border-radius: 50%;
     border: 2px solid var(--bg-white); */
     position: relative;
@@ -523,19 +528,25 @@ import Icon from 'astro-icon';
 <script>
   const accordions = document.querySelectorAll('.btn-accord');
 
-accordions.forEach((accordion) => {
-  const benefit = accordion.closest('.benefit');
-  const wrapper = benefit?.querySelector('.wrapper-accord');
-  const arrow = benefit?.querySelector('.arrow');
+  accordions.forEach((accordion) => {
+    const benefit = accordion.closest('.benefit');
+    const wrapper = benefit?.querySelector('.wrapper-accord');
+    const arrow = benefit?.querySelector('.arrow');
 
-  if (accordion instanceof HTMLButtonElement) {
-    accordion.addEventListener('click', () => {
-      wrapper?.classList.toggle('is-open');
-      arrow?.classList.toggle('is-rotate');
-      accordion.style.backgroundColor = wrapper?.classList.contains('is-open') ? 'var(--bg-white)' : '';
-      accordion.style.color = wrapper?.classList.contains('is-open') ? 'var(--bg-black)' : '';
-      accordion.style.border = wrapper?.classList.contains('is-open') ? '1px solid var(--bg-black)' : '';
-    });
-  }
-});
+    if (accordion instanceof HTMLButtonElement) {
+      accordion.addEventListener('click', () => {
+        wrapper?.classList.toggle('is-open');
+        arrow?.classList.toggle('is-rotate');
+        accordion.style.backgroundColor = wrapper?.classList.contains('is-open')
+          ? 'var(--bg-white)'
+          : '';
+        accordion.style.color = wrapper?.classList.contains('is-open')
+          ? 'var(--bg-black)'
+          : '';
+        accordion.style.border = wrapper?.classList.contains('is-open')
+          ? '1px solid var(--bg-black)'
+          : '';
+      });
+    }
+  });
 </script>
