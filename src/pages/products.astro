@@ -1,5 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import nicotine from '../assets/nicotine2.png';
+import salt from '../assets/nicotine-salt.png';
+import pgvg from '../assets/pgvg.png';
+import aromas from '../assets/nicotine-aroma.jpg';
+import accessories from '../assets/accessories1.png';
 ---
 
 <Layout title='Nasze produkty nikotynowe'>
@@ -7,6 +13,49 @@ import Layout from '../layouts/Layout.astro';
     <section class='products-section'>
       <div class='products-welcome'>
         <h1 class='products-header'>Produkty</h1>
+      </div>
+
+      <div class='products-container'>
+        <div class='card'>
+          <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
+          <h3 class='card-title'>Nikotyna</h3>
+          <p class='card-text'>
+            Naturalnie pozyskiwany z roślin tytoń o doskonałym smaku, większejj
+            żywotności i dłuższym okresie utleniania.
+          </p>
+        </div>
+        <div class='card'>
+          <Image class='card-image' src={salt} alt='nicotine-salt' />
+          <h3 class='card-title'>Sól nikotynowa</h3>
+          <p class='card-text'>
+            To forma nikotyny, która występuje naturalnie w tytoniu, stosowana w
+            płynach do e-papierosów
+          </p>
+        </div>
+        <div class='card'>
+          <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
+          <h3 class='card-title'>PG i VG</h3>
+          <p class='card-text'>
+            PG (Propylenoglikol) i VG (Gliceryna roślinna) to dwie główne
+            substancje bazowe używane do produkcji e-płynów w e-papierosach
+          </p>
+        </div>
+        <div class='card'>
+          <Image class='card-image' src={aromas} alt='nicotine-bottles' />
+          <h3 class='card-title'>Aromaty</h3>
+          <p class='card-text'>
+            Substancje chemiczne dodawane do płynów do e-papierosów w celu
+            nadania im smaku itp
+          </p>
+        </div>
+        <div class='card'>
+          <Image class='card-image' src={accessories} alt='nicotine-bottle' />
+          <h3 class='card-title'>Dodatki</h3>
+          <p class='card-text'>
+            Dodatkowe składniki, takie jak barwniki, substancje słodzące czy
+            chłodzące, używane w celu dostosowania smaku i wrażeń z palenia.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -29,7 +78,27 @@ import Layout from '../layouts/Layout.astro';
     height: 300px;
   }
   .products-container {
-    padding: 20px;
+    background-image: linear-gradient(
+      to right top,
+      #01294d,
+      #3d3166,
+      #75316e,
+      #a82e63,
+      #cc3d48,
+      #c34337,
+      #b84a26,
+      #ac5016,
+      #893b19,
+      #652917,
+      #421911,
+      #220902
+    );
+    padding: 80px 20px 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
   .products-header {
     background-image: linear-gradient(
@@ -46,5 +115,41 @@ import Layout from '../layouts/Layout.astro';
     margin-top: -30px;
     color: var(--bg-white);
     font-size: clamp(4rem, 4vw, 6rem);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bg-white);
+    align-items: center;
+    color: var(--bg-black);
+    font-family: var(--second-font);
+    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+  }
+  .card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1);
+    /* box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1); */
+    transition: 0.3s transform ease;
+  }
+  .card-image:hover {
+    transform: scale(1.1);
+  }
+  .card-title {
+    font-size: 1.4rem;
+    margin: 25px;
+  }
+  .card-text {
+    text-align: center;
+    max-width: 265px;
+    height: 140px;
+  }
+  @media (min-width: 900px) {
+    .products-section {
+      padding-top: 0;
+    }
   }
 </style>
