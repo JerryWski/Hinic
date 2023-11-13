@@ -82,10 +82,10 @@ const Header: React.FC = () => {
             <a className='link' href='/about'>
               O Nas
             </a>
-            <a className='link' href='/prices'>
+            <a className='link' href='/products'>
               Produkty
             </a>
-            <a className='link' href='/team'>
+            <a className='link' href='/orders'>
               Zamówienia
             </a>
             <a className='link' href='#contact'>
@@ -136,7 +136,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/prices'
+              href='/products'
               onClick={handleMenuClick}
             >
               Produkty
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/team'
+              href='/orders'
               onClick={handleMenuClick}
             >
               Zamówienia

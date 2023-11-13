@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Nasze produkty nikotynowe'>
+  <main>
+    <section class='products-section'>
+      <div class='products-welcome'>
+        <h1 class='products-header'>Produkty</h1>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .products-section {
+    padding-top: 114px;
+  }
+  .products-welcome {
+    background-image: url('../assets/products-bg.png');
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+  .products-container {
+    padding: 20px;
+  }
+  .products-header {
+    background-image: linear-gradient(
+      to right,
+      #fab8dd,
+      #eeeaed,
+      #c774c2,
+      rgb(255, 255, 255),
+      #f0bf38
+    );
+    text-shadow: 4px 4px 0px rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -30px;
+    color: var(--bg-white);
+    font-size: clamp(4rem, 4vw, 6rem);
+  }
+</style>
