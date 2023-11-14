@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         {/* check if we are on mobile or not */}
             <a className='logo-link-mobile' href='/'>
               <div className='logo-wrapper-mobile'>
-                <img src='../../src/assets/base-logo.png' alt='logo-icon' />
+                <img src='../../assets/base-logo.png' alt='logo-icon' />
               </div>
             </a>
         {matches && (
