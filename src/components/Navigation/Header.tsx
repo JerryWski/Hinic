@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       <nav className='nav-container'>
         <a className='logo-link-desktop' href='/'>
           <div className='logo-wrapper-mobile'>
-            <img src='../../src/assets/base-logo.png' alt='logo-icon' />
+            <img src='./base-logo.png' alt='logo-icon' />
           </div>
         </a>
 
