@@ -6,6 +6,10 @@ import salt from '../assets/nicotine-salt.png';
 import pgvg from '../assets/pgvg.png';
 import aromas from '../assets/nicotine-aroma.jpg';
 import accessories from '../assets/accessories1.png';
+import fire from '../assets/warn-fire.png';
+import wicon from '../assets/warn-icon.png';
+import worker from '../assets/warn-office.png';
+import toxic from '../assets/warn-toxic.png';
 ---
 
 <Layout title='Nasze produkty nikotynowe'>
@@ -62,37 +66,60 @@ import accessories from '../assets/accessories1.png';
           </p>
         </div>
       </div>
+
       <div class='warning-container'>
-        <h2>Uwaga</h2>
-        <div>
-          <div>
-            <img src='' alt='obrazek' />
-            <p>
+        <h2 class='warning-header'>Uwaga!</h2>
+        <div class='warning-wrapper'>
+          <div class='warning-card'>
+            <Image class='warning-img' src={fire} alt='warn-fire' />
+            <p class='warning-text'>
               Wrażliwy: Chronić przed bezpośrednim działaniem promieni
               słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
             </p>
           </div>
-          <div>
-            <img src='' alt='obrazek' />
-            <p>
-              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
-              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+          <div class='warning-card'>
+            <Image class='warning-img' src={wicon} alt='warn-icon' />
+            <p class='warning-text'>
+              Łatwopalny: trzymać z dala od intensywnych źródeł ciepła.
             </p>
           </div>
-          <div>
-            <img src='' alt='obrazek' />
-            <p>
-              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
-              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+          <div class='warning-card'>
+            <Image class='warning-img' src={worker} alt='worker-icon' />
+            <p class='warning-text'>
+              Tylko do użytku dla osób dorosłych. Trzymać z dala od dzieci,
+              zwierząt domowych oraz osób niezrównoważonych.
             </p>
           </div>
-          <div>
-            <img src='' alt='obrazek' />
-            <p>
-              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
-              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+          <div class='warning-card'>
+            <Image class='warning-img' src={toxic} alt='toxic-bottle' />
+            <p class='warning-text'>
+              Toksyczne: Nie pij i nie pozwól na bezpośredni kontakt z
+              roztworem.
             </p>
           </div>
+        </div>
+        <span class='warning-line'></span>
+        <div class='warning-footer'>
+          <p class='warning-text'>
+            <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać
+            na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt
+            domowych oraz osób niezrównoważonych. Po kontakcie ze skórą
+            niezwłocznie skontaktować się z lekarzem.
+          </p>
+          <p class='warning-text'>
+            <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie
+            powinny stosować osoby: mające choroby serca; wysokie ciśnienie
+            krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol
+            propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać
+            stosowanie i niezwłocznie skonsultować się z lekarzem w razie
+            występowania jakichkolwiek objawów nadużycia nikotyny takich jak
+            nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.
+          </p>
+          <p class='warning-text'>
+            <span
+              >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -119,7 +146,6 @@ import accessories from '../assets/accessories1.png';
     );
   }
   .products-welcome {
-
     background-image: url('../assets/products-bg.png');
     display: flex;
     justify-content: flex-start;
@@ -179,7 +205,7 @@ import accessories from '../assets/accessories1.png';
   .products-text {
     font-family: var(--main-font);
     text-align: center;
-    font-size: clamp(1.4rem,2vw, 3rem);
+    font-size: clamp(1.4rem, 2vw, 3rem);
     color: var(--bg-white);
     font-weight: 300;
     max-width: 1400px;
@@ -203,7 +229,6 @@ import accessories from '../assets/accessories1.png';
     width: 100%;
     height: 100%;
     object-fit: contain;
-    
   }
   .card:hover {
     transform: scale(1.1);
@@ -220,6 +245,60 @@ import accessories from '../assets/accessories1.png';
   .warning-container {
     background-color: var(--bg-black);
     color: var(--bg-white);
+    padding: 20px 20px 60px 20px;
+  }
+  .warning-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    font-family: var(--main-font);
+    margin-bottom: 30px;
+  }
+  .warning-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: start;
+    gap: 40px 10px;
+    margin-bottom: 70px;
+    font-family: var(--roboto-font);
+  }
+  .warning-card {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .warning-image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+  .warning-text {
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .warning-footer {
+    margin-top: 30px;
+    font-family: var(--second-font);
+  }
+  .warning-footer .warning-text {
+    margin-bottom: 20px;
+  }
+  .warning-text span {
+    font-weight: 900;
+  }
+  .warning-line {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    background-color: var(--bg-white);
+    height: 1px;
   }
   @media (min-width: 900px) {
     .products-section {
@@ -238,6 +317,8 @@ import accessories from '../assets/accessories1.png';
     .products-text {
       margin-top: 30px;
       margin-bottom: 0px;
+    }
+    .warning-header {
     }
   }
   @media (max-width: 1800px) {
