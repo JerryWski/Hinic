@@ -70,7 +70,7 @@ const Header: React.FC = () => {
         </div>
         <a className='logo-link-mobile' href='/'>
           <div className='logo-wrapper'>
-            <img src='../../src/assets/base-logo.png' alt='logo-icon' />
+            <img src='/base-logo.png' alt='logo-icon' />
           </div>
         </a>
         {matches && (
