@@ -44,6 +44,7 @@
   max-width: 130px;
 }
 .logo-wrapper-mobile img {
+  display: block;
   width: 100%;
   object-fit: cover;
 }
@@ -164,8 +165,9 @@
   .logo-wrapper {
     max-width: 150px;
   }
-  .logo-wrapper-mobile img {
+  .logo-wrapper img {
     width: 100%;
+    display: block;
   }
    .nav-links a:first-child {
     /* outline: 1px solid black; */
