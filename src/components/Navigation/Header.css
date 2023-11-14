@@ -39,11 +39,11 @@
   z-index: 9;
 }
 
-.logo-wrapper {
+.logo-wrapper-mobile {
   margin: 5px 0 0px 15px;
   max-width: 130px;
 }
-.logo-wrapper img {
+.logo-wrapper-mobile img {
   width: 100%;
   object-fit: cover;
 }
@@ -161,7 +161,7 @@
   .logo-link-mobile {
     display: block;
   }
-  .logo-wrapper-mobile {
+  .logo-wrapper {
     max-width: 150px;
   }
   .logo-wrapper-mobile img {

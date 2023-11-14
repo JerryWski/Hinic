@@ -47,8 +47,8 @@ const Header: React.FC = () => {
     <header>
       <nav className='nav-container'>
         <a className='logo-link-desktop' href='/'>
-          <div className='logo-wrapper'>
-            <img src='../../assets/base-logo.png' alt='logo-icon' />
+          <div className='logo-wrapper-mobile'>
+            <img src='../../src/assets/base-logo.png' alt='logo-icon' />
           </div>
         </a>
 
@@ -68,16 +68,19 @@ const Header: React.FC = () => {
             <i className='fa-solid fa-phone'></i>
           </a>
         </div>
-        {/* check if we are on mobile or not */}
-            <a className='logo-link-mobile' href='/'>
-              <div className='logo-wrapper-mobile'>
-                <img src='../../assets/base-logo.png' alt='logo-icon' />
-              </div>
-            </a>
+        <a className='logo-link-mobile' href='/'>
+          <div className='logo-wrapper'>
+            <img src='../../src/assets/base-logo.png' alt='logo-icon' />
+          </div>
+        </a>
         {matches && (
           <div className='nav-links'>
-            <a aria-label='Link to phone' className='link' href='tel:+48888433188'>
-            +48 888 433 188
+            <a
+              aria-label='Link to phone'
+              className='link'
+              href='tel:+48888433188'
+            >
+              +48 888 433 188
             </a>
             <a className='link' href='/about'>
               O Nas
