@@ -15,7 +15,7 @@ import toxic from '../assets/warn-toxic.png';
 <Layout title='Nasze produkty nikotynowe'>
   <main>
     <section class='products-section'>
-      <div class='products-welcome'>
+      <div class='products-welcome products-welcome-small'>
         <h1 class='products-header'>Produkty</h1>
       </div>
 
@@ -146,7 +146,7 @@ import toxic from '../assets/warn-toxic.png';
     );
   }
   .products-welcome {
-    background-image: url('../assets/products-bg.png');
+    background-image: url('../assets/products-bg-small.webp');
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -308,8 +308,12 @@ import toxic from '../assets/warn-toxic.png';
       gap: 100px;
       padding-top: 100px;
     }
-    .products-welcome {
+    .products-welcome{
       align-items: center;
+      ;
+    }
+    .products-welcome-small {
+      background-image: url('../assets/products-bg.webp')
     }
     .products-header {
       padding-left: 120px;
