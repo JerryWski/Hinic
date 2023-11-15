@@ -8,6 +8,29 @@ import Layout from '../layouts/Layout.astro';
       <div class='order-welcome order-welcome-small'>
         <h1 class='order-header'>Złóż Zamówienie</h1>
       </div>
+      <div class='order-details-container'>
+        <div class='order-details'>
+          <h2 class="order-subheader">Stale podnosimy jakość naszej obsługi</h2>
+          <h3 class="order-subheader-two">
+            Niemniej jednak na ten moment jedyną możliwą metodą płatności jest
+            przelew na konto bankowe
+          </h3>
+          <p class="order-text">Prosimy o dokonanie przelewu na poniższe dane:</p>
+          <p class="order-text">Numer konta bankowego: <span>XXXX XXXX XXXX XXXX XXXX XXXX</span></p>
+          <p class="order-text">Nazwa odbiorcy: <span>Hiliq sp z o.o.</span></p>
+          <p class="order-text">Adres: <span>ul. Leśna 12, 11-400, Wrocław</span></p>
+          <p class="order-text">
+            Tytuł przelewu: <span>"Nazwa produktów Twoich produktów"</span>
+          </p>
+        </div>
+        <div class='order-image-wrapper'>
+          <img
+            class='order-image'
+            src='../../src/assets/bg-nicotine-blur.png'
+            alt='ordering'
+          />
+        </div>
+      </div>
     </section>
   </main>
 </Layout>
@@ -28,12 +51,76 @@ import Layout from '../layouts/Layout.astro';
     background-repeat: no-repeat;
     height: 300px;
   }
+  .order-header {
+    font-family: var(--roboto-font);
+    margin-top: 50px;
+    background-image: var(--bg-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    font-size: clamp(2.5rem, 4vw, 6rem);
+  }
+  .order-details-container {
+    margin-top: 60px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    
+  }
+  .order-details {
+    margin-top: 20px;
+    font-family: var(--main-font);
+  }
+  .order-subheader {
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    padding: 15px 20px;
+    color: var(--bg-white);
+    text-transform: uppercase;
+    box-shadow: 3px 5px 9px -5px rgb(73, 71, 71);
+    background-color: var(--bg-black);
+    margin-bottom: 20px;
+  }
+  .order-subheader-two {
+    font-size: 1rem;
+    font-family: var(--main-font);
+    font-style: italic;
+    color: var(--bg-black);
+    margin-bottom: 15px;
+  }
+  .order-text {
+    opacity: .9;
+
+  }
+  .order-text span {
+    font-weight: 900;
+  }
+  .order-image-wrapper {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .order-image {
+    display: block;
+    width: 100%;
+  }
   @media (min-width: 900px) {
     .order-section {
-        padding-top: 0;
+      padding-top: 0;
     }
     .order-welcome-small {
-        background-image: url('../assets/order-bg.webp');
+      background-image: url('../assets/order-bg.webp');
+      align-items: center;
+    }
+    .order-header {
+      padding-left: 120px;
+    }
+    .order-details-container {
+        margin-top: 0px;
+    }
+    .order-details {
+        margin-left: 120px;
+        margin-top: 80px;
     }
   }
 </style>
