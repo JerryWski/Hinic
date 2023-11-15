@@ -10,18 +10,30 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class='order-details-container'>
         <div class='order-details'>
-          <h2 class="order-subheader">Stale podnosimy jakość naszej obsługi</h2>
-          <h3 class="order-subheader-two">
+          <h2 class='order-subheader'>
+            Stale podnosimy jakość świadczonych przez nas usług
+          </h2>
+          <h3 class='order-subheader-two'>
             Niemniej jednak na ten moment jedyną możliwą metodą płatności jest
             przelew na konto bankowe
           </h3>
-          <p class="order-text">Prosimy o dokonanie przelewu na poniższe dane:</p>
-          <p class="order-text">Numer konta bankowego: <span>XXXX XXXX XXXX XXXX XXXX XXXX</span></p>
-          <p class="order-text">Nazwa odbiorcy: <span>Hiliq sp z o.o.</span></p>
-          <p class="order-text">Adres: <span>ul. Leśna 12, 11-400, Wrocław</span></p>
-          <p class="order-text">
-            Tytuł przelewu: <span>"Nazwa produktów Twoich produktów"</span>
-          </p>
+          <table>
+            <tr>
+              <span class='table-header'
+                >Prosimy o dokonanie przelewu na poniższe konto:</span
+              >
+              <tr></tr>
+              <td>
+                <p>Numer konta bankowego: XXXX XXXX XXXX XXXX XXXX XXXX</p>
+                <p>Nazwa firmy: Hiliq sp z o.o.</p>
+                <p>Adres: ul. Leśna 12, 11-400, Wrocław</p>
+                <p>
+                  W tytule prosimy wpisać nazwę zamówionych produktów i swoje
+                  dane adresowe
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
         <div class='order-image-wrapper'>
           <img
@@ -66,7 +78,6 @@ import Layout from '../layouts/Layout.astro';
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
-    
   }
   .order-details {
     margin-top: 20px;
@@ -78,23 +89,41 @@ import Layout from '../layouts/Layout.astro';
     color: var(--bg-white);
     text-transform: uppercase;
     box-shadow: 3px 5px 9px -5px rgb(73, 71, 71);
-    background-color: var(--bg-black);
+    background-image: linear-gradient(
+      to right top,
+      #01294d,
+      #473468,
+      #863870,
+      #bc4161,
+      #dc6043,
+      #dc6045,
+      #dc6046,
+      #dc6048,
+      #b84567,
+      #7f3f73,
+      #403965,
+      #0f2b44
+    );
     margin-bottom: 20px;
   }
   .order-subheader-two {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     font-family: var(--main-font);
-    font-style: italic;
+    font-weight: 700;
     color: var(--bg-black);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
-  .order-text {
-    opacity: .9;
+  .table-header {
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+  td p {
+    color: var(--bg-black);
+    font-weight: 700;
+    font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+  }
 
-  }
-  .order-text span {
-    font-weight: 900;
-  }
   .order-image-wrapper {
     height: 100%;
     width: 100%;
@@ -116,11 +145,11 @@ import Layout from '../layouts/Layout.astro';
       padding-left: 120px;
     }
     .order-details-container {
-        margin-top: 0px;
+      margin-top: 0px;
     }
     .order-details {
-        margin-left: 120px;
-        margin-top: 80px;
+      margin-left: 120px;
+      margin-top: 80px;
     }
   }
 </style>
