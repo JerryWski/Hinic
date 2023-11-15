@@ -221,11 +221,11 @@ import Icon from 'astro-icon';
   }
   .arrow {
     color: var(--bg-black);
-    transform: rotateX(0deg);
+    transform: rotate(-90deg);
     transition: 0.5s transform ease-out;
   }
   .arrow.is-rotate {
-    transform: rotateX(180deg);
+    transform: rotate(0deg);
   }
   .about-section {
     padding-top: 114px;
@@ -259,6 +259,7 @@ import Icon from 'astro-icon';
     font-size: clamp(2rem, 3vw, 3rem);
   }
   .text {
+    text-indent: 15px;
     margin-block: 20px;
     font-family: var(--second-font);
   }
@@ -287,6 +288,8 @@ import Icon from 'astro-icon';
   }
   .benefit-text {
     font-size: 0.9rem;
+    font-size: ;
+    line-height: 24px;
     color: var(--bg-grey);
   }
   .benefit-image {
