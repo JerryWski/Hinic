@@ -5,9 +5,35 @@ import Layout from '../layouts/Layout.astro';
 <Layout title='Zamów nasze produkty'>
   <main>
     <section class='order-section'>
-      <div class='about-welcome'>
-        <h1 class='about-header'>Złóż Zamówienie</h1>
+      <div class='order-welcome order-welcome-small'>
+        <h1 class='order-header'>Złóż Zamówienie</h1>
       </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  .order-section {
+    padding-top: 114px;
+  }
+  .order-welcome {
+    background-image: url('../assets/order-bg-small.webp');
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+  @media (min-width: 900px) {
+    .order-section {
+        padding-top: 0;
+    }
+    .order-welcome-small {
+        background-image: url('../assets/order-bg.webp');
+    }
+  }
+</style>
