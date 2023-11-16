@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       <nav className='nav-container'>
         <a className='logo-link-desktop' href='/'>
           <div className='logo-wrapper-mobile'>
-            <img src='/base-logo.png' alt='logo-icon' />
+            <img className='logo' src='/base-logo.png' alt='logo-icon' />
           </div>
         </a>
 
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
           <a
             className='contact-icon'
             href='tel:+48888433188'
-            aria-label='Link to phone'
+            aria-label='phone-link'
           >
             <i className='fa-solid fa-phone'></i>
           </a>

@@ -43,10 +43,11 @@
   margin: 5px 0 0px 15px;
   max-width: 130px;
 }
-.logo-wrapper-mobile img {
+.logo {
   display: block;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 .contact-wrapper {
   display: flex;
@@ -165,8 +166,9 @@
   .logo-wrapper {
     max-width: 150px;
   }
-  .logo-wrapper img {
+  .logo {
     width: 100%;
+    height: 100%;
     display: block;
   }
    .nav-links a:first-child {
