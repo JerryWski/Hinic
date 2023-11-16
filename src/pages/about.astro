@@ -48,6 +48,7 @@ import Icon from 'astro-icon';
           <Image class='image' src={rounds} alt='obrazek' />
           <div class='benefit title-one'>
             <h2 class='benefit-header'>Ogromny wybór</h2>
+            <Image class='benefit-image' src={nicotine} alt='nicotine-bottles' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -56,18 +57,21 @@ import Icon from 'astro-icon';
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Hiliq jest zawsze zgodna ze strategią, iż innowacyjne podejście
-                generuje zgodną z oczekiwaniem Konsumenta jakość produktu. Teraz,
-                gdy już mamy opanowane do perfekcji ekstrakcje nikotyny jesteśmy
-                dumni z produkcji i możliwości zaoferowania szerokiego wyboru
-                czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9%
-                ,więc idealną do każdego rodzaju produktów.
+                <p>
+                  Hiliq jest zawsze zgodna ze strategią, iż innowacyjne podejście
+                  generuje zgodną z oczekiwaniem Konsumenta jakość produktu. Teraz,
+                  gdy już mamy opanowane do perfekcji ekstrakcje nikotyny jesteśmy
+                  dumni z produkcji i możliwości zaoferowania szerokiego wyboru
+                  czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9%
+                  ,więc idealną do każdego rodzaju produktów.
+                </p>
               </div>
             </div>
-            <Image class='benefit-image' src={nicotine} alt='nicotine-bottles' />
+            
           </div>
           <div class='benefit title-two'>
             <h2 class='benefit-header'>Jakość produktu</h2>
+            <Image class='benefit-image' src={labo} alt='laboratory' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -84,10 +88,11 @@ import Icon from 'astro-icon';
                 jak i bezpieczeństwa.
               </div>
             </div>
-            <Image class='benefit-image' src={labo} alt='laboratory' />
+            
           </div>
           <div class='benefit title-three'>
             <h2 class='benefit-header'>Doskonałość w logistyce</h2>
+            <Image class='benefit-image' src={logistic} alt='magazine' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -106,10 +111,11 @@ import Icon from 'astro-icon';
                 koordynować stan Twojej przesyłki.
               </div>
             </div>
-            <Image class='benefit-image' src={logistic} alt='magazine' />
+            
           </div>
           <div class='benefit title-four'>
             <h2 class='benefit-header'>Konkurencyjne ceny</h2>
+            <Image class='benefit-image' src={logisitc2} alt='logistics' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -125,10 +131,11 @@ import Icon from 'astro-icon';
                 tak dobrych cenach.
               </div>
             </div>
-            <Image class='benefit-image' src={logisitc2} alt='logistics' />
+           
           </div>
           <div class='benefit title-five'>
             <h2 class='benefit-header'>Istotność serwisu</h2>
+            <Image class='benefit-image' src={contact} alt='contact-woman' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'>
                 Rozwiń</button
@@ -147,7 +154,7 @@ import Icon from 'astro-icon';
                 naszych usług i możliwości.
               </div>
             </div>
-            <Image class='benefit-image' src={contact} alt='contact-woman' />
+            
           </div>
         </div>
       </div>
@@ -251,6 +258,7 @@ import Icon from 'astro-icon';
   .about-header {
     margin-top: 30px;
     color: var(--bg-white);
+    font-family: var(--roboto-font);
     font-size: clamp(4rem, 4vw, 6rem);
   }
   .about-subheader {
@@ -261,6 +269,7 @@ import Icon from 'astro-icon';
   .text {
     text-indent: 15px;
     margin-block: 20px;
+    text-align: justify;
     font-family: var(--second-font);
   }
   .text::first-letter {
@@ -283,18 +292,21 @@ import Icon from 'astro-icon';
     font-family: var(--main-font);
   }
   .benefit-header {
+    margin-top: 80px;
     margin-bottom: 15px;
     font-size: 1.8rem;
   }
   .benefit-text {
     font-size: 0.9rem;
     font-size: ;
+    text-align: justify;
     line-height: 24px;
     color: var(--bg-grey);
   }
+  
   .benefit-image {
     margin-top: 15px;
-    margin-bottom: 80px;
+    margin-bottom: 15px;
     display: block;
     width: 100%;
     box-shadow: 3px 10px 19px -5px rgba(0, 0, 0, 1);
