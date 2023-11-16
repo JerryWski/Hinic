@@ -19,6 +19,7 @@
 }
 .nav-links :last-child {
   font-weight: 500;
+  box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
   border: none;
 }
 
@@ -180,6 +181,9 @@
     background-image: var(--bg-gradient);
     color: var(--bg-white);
     border-radius: 20px;
+  }
+  .nav-links a:last-child::after {
+    width: 0;
   }
   
   .contact-wrapper {
