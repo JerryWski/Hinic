@@ -1,24 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import nicotine from '../assets/bg-nicotine-blur.png'
+import Icon from 'astro-icon';
+import nicotine from '../assets/bg-nicotine-blur.png';
 ---
 
 <Layout title='Zamów nasze produkty'>
   <main>
     <section class='order-section'>
       <div class='order-welcome order-welcome-small'>
-        <h1 class='order-header'>Złóż Zamówienie</h1>
+        <div class="centered-headers">
+          <Icon class="cart" name="shopping-cart" width="100" />
+          <h1 class='order-header'>Zamów nasze produkty</h1>
+        </div>
       </div>
       <div class='order-details-container'>
+        <!-- <div class='order-image-wrapper'>
+          <Image
+            class='order-image'
+            src={nicotine}
+            alt='nicotines-bottles'
+          />
+        </div> -->
         <div class='order-details'>
           <h2 class='order-subheader'>
-            Stale podnosimy jakość świadczonych przez nas usług
+            W celu złożenia zamówienia zadzwoń lub wykonaj przelew na poniższe
+            dane
           </h2>
-          <h3 class='order-subheader-two'>
+          <!-- <h3 class='order-subheader-two'>
             Niemniej jednak na ten moment jedyną możliwą metodą płatności jest
             przelew na konto bankowe
-          </h3>
+          </h3> -->
           <table>
             <tr>
               <span class='table-header'
@@ -36,14 +48,7 @@ import nicotine from '../assets/bg-nicotine-blur.png'
               </td>
             </tr>
           </table>
-          <h3 class="order-contact">W razie pytań zapraszamy do kontaktu</h3>
-        </div>
-        <div class='order-image-wrapper'>
-          <Image
-            class='order-image'
-            src={nicotine}
-            alt='nicotines-bottles'
-          />
+          <h3 class='order-contact'>W razie pytań zapraszamy do kontaktu</h3>
         </div>
       </div>
     </section>
@@ -51,15 +56,25 @@ import nicotine from '../assets/bg-nicotine-blur.png'
 </Layout>
 
 <style>
+  .centered-headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .order-section {
     padding-top: 114px;
+  }
+  .cart {
+    align-self: flex-start;
+    width: 50px;
   }
   .order-welcome {
     background-image: url('../assets/order-bg-small.webp');
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 20px;
     background-position: center;
     background-size: cover;
@@ -68,33 +83,38 @@ import nicotine from '../assets/bg-nicotine-blur.png'
   }
   .order-header {
     font-family: var(--roboto-font);
-    margin-top: 50px;
-    background-image: var(--bg-gradient);
+    /* padding-left: 30px; */
+    /* background-image: var(--bg-gradient);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-    font-size: clamp(2.5rem, 4vw, 6rem);
+    -webkit-text-fill-color: transparent; */
+    font-size: clamp(2.4rem, 4vw, 6rem);
   }
   .order-details-container {
-    margin-top: 60px;
     padding: 20px;
+    padding-top: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
+    background-color: var(--bg-black);
   }
   .order-details {
     margin-top: 20px;
+    margin-bottom: 60px;
+    color: var(--bg-white);
+
     font-family: var(--main-font);
   }
   .order-subheader {
     font-size: clamp(1.5rem, 2vw, 3.5rem);
-    padding: 15px 20px;
+    padding: 10px 0px;
     color: var(--bg-white);
+    max-width: 1200px;
     border-radius: 7px;
+   
     text-transform: uppercase;
-    box-shadow: 3px 5px 9px -5px rgb(73, 71, 71);
-    background-image: linear-gradient(
+    /* box-shadow: 3px 5px 9px -5px rgb(73, 71, 71); */
+    /* background-image: linear-gradient(
       to right top,
       #01294d,
       #473468,
@@ -108,14 +128,14 @@ import nicotine from '../assets/bg-nicotine-blur.png'
       #7f3f73,
       #403965,
       #0f2b44
-    );
+    ); */
     margin-bottom: 20px;
   }
   .order-subheader-two {
     font-size: clamp(1.2rem, 1.2vw, 1.6rem);
     font-family: var(--main-font);
     font-weight: 700;
-    color: var(--bg-black);
+    /* color: var(--bg-black); */
     margin-bottom: 25px;
   }
   .table-header {
@@ -124,14 +144,14 @@ import nicotine from '../assets/bg-nicotine-blur.png'
     text-decoration: underline;
   }
   td p {
-    color: var(--bg-black);
-    font-weight: 700;
+    /* color: var(--bg-black); */
+    font-weight: 300;
     font-size: clamp(1.1rem, 1.3vw, 1.5rem);
   }
-.order-contact {
-  margin-top: 20px;
-  font-family: var(--roboto-font);
-}
+  .order-contact {
+    margin-top: 20px;
+    font-family: var(--roboto-font);
+  }
   .order-image-wrapper {
     width: 100%;
     object-fit: contain;
@@ -146,12 +166,17 @@ import nicotine from '../assets/bg-nicotine-blur.png'
     .order-section {
       padding-top: 0;
     }
+    .cart {
+    width: 100px;
+    align-self: center;
+  }
     .order-welcome-small {
       background-image: url('../assets/order-bg.webp');
       align-items: center;
+      justify-content: flex-start;
     }
     .order-header {
-      padding-left: 120px;
+      padding-left: 60px;
     }
     .order-details-container {
       margin-top: 0px;
