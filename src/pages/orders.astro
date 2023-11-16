@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import nicotine from '../assets/bg-nicotine-blur.png'
 ---
 
 <Layout title='Zamów nasze produkty'>
@@ -36,10 +38,10 @@ import Layout from '../layouts/Layout.astro';
           </table>
         </div>
         <div class='order-image-wrapper'>
-          <img
+          <Image
             class='order-image'
-            src='../../src/assets/bg-nicotine-blur.png'
-            alt='ordering'
+            src={nicotine}
+            alt='nicotines-bottles'
           />
         </div>
       </div>
