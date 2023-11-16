@@ -9,12 +9,12 @@ import nicotine from '../assets/bg-nicotine-blur.png';
   <main>
     <section class='order-section'>
       <div class='order-welcome order-welcome-small'>
-        <div class="centered-headers">
-          <Icon class="cart" name="shopping-cart" width="100" />
+        <div class='centered-headers'>
+          <Icon class='cart' name='shopping-cart' width='100' />
           <h1 class='order-header'>Zamów nasze produkty</h1>
         </div>
       </div>
-      <div class='order-details-container'>
+      <div class='order-details-container order-details-container-big'>
         <!-- <div class='order-image-wrapper'>
           <Image
             class='order-image'
@@ -49,8 +49,10 @@ import nicotine from '../assets/bg-nicotine-blur.png';
             </tr>
           </table>
           <h3 class='order-contact'>W razie pytań zapraszamy do kontaktu</h3>
-          <h4 class="order-contact-subheader">Nasze biuro jest czynne od pn - pt</h4>
-          <h4 class="order-contact-subheader">W godzinach od 08:00 do 16:00</h4>
+          <h4 class='order-contact-subheader'>
+            Nasze biuro jest czynne od pn - pt
+          </h4>
+          <h4 class='order-contact-subheader'>W godzinach od 08:00 do 16:00</h4>
         </div>
       </div>
     </section>
@@ -93,44 +95,33 @@ import nicotine from '../assets/bg-nicotine-blur.png';
     -webkit-text-fill-color: transparent; */
     font-size: clamp(2.4rem, 4vw, 6rem);
   }
-  .order-details-container {
+  .order-details-container-big {
+    background-image: none;
+    background-repeat: no-repeat;
     padding: 20px;
     padding-top: 60px;
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
     background-color: var(--bg-black);
+  }
+  .order-details-container::after {
+    background-image: none;
   }
   .order-details {
     margin-top: 20px;
     margin-bottom: 60px;
     color: var(--bg-white);
     font-family: var(--second-font);
+    z-index: 100;
   }
   .order-subheader {
     font-size: clamp(1.5rem, 2vw, 3.5rem);
     padding: 10px 0px;
     color: var(--bg-yellow);
     max-width: 1200px;
-    border-radius: 7px;
-   
     text-transform: uppercase;
-    /* box-shadow: 3px 5px 9px -5px rgb(73, 71, 71); */
-    /* background-image: linear-gradient(
-      to right top,
-      #01294d,
-      #473468,
-      #863870,
-      #bc4161,
-      #dc6043,
-      #dc6045,
-      #dc6046,
-      #dc6048,
-      #b84567,
-      #7f3f73,
-      #403965,
-      #0f2b44
-    ); */
     margin-bottom: 20px;
   }
   .order-subheader-two {
@@ -175,9 +166,9 @@ import nicotine from '../assets/bg-nicotine-blur.png';
       padding-top: 0;
     }
     .cart {
-    width: 100px;
-    align-self: center;
-  }
+      width: 100px;
+      align-self: center;
+    }
     .order-welcome-small {
       background-image: url('../assets/order-bg.webp');
       align-items: center;
@@ -187,7 +178,18 @@ import nicotine from '../assets/bg-nicotine-blur.png';
       padding-left: 60px;
     }
     .order-details-container {
+      background-image: url('../assets/bg-test.png');
       margin-top: 0px;
+    }
+    .order-details-container::after {
+      content: '';
+      background-image: url('../assets/liq-bottle.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -410px;
+      right: 0px;
+      width: 250px;
+      height: 100%;
     }
     .order-details {
       margin-left: 120px;
