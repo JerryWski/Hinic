@@ -1,14 +1,20 @@
 ---
 import { Image } from 'astro:assets';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import LanguagePickier from '../LanguagePicker';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class='hero-section'>
   <div class='hero-wrapper'>
     <div class='hero-left'>
       <h1 class='hero-header'>
-        <span class='header-span'>Professional Solutions for</span> Nicotine and
+        <span class='header-span'>{t('hero.header')}</span> Nicotine and
         Liquid
       </h1>
+     
     </div>
     <div class='hero-right'></div>
   </div>

@@ -2,6 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useMediaQuery } from '../../utils/useMediaQuery';
 import { motion } from 'framer-motion';
+import LanguagePickier from '../LanguagePicker.tsx';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+
+declare const Astro: any;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -75,18 +82,18 @@ const Header: React.FC = () => {
         </a>
         {matches && (
           <div className='nav-links'>
-            
-            <a className='link' href='/about'>
-              O Nas
+            <LanguagePickier />
+            <a className='link' href={translatePath('/about/')}>
+            {t('nav.about')}
             </a>
-            <a className='link' href='/products'>
-              Produkty
+            <a className='link' href={translatePath('/products/')}>
+            {t('nav.products')}
             </a>
-            <a className='link' href='/orders'>
-              Zamówienia
+            <a className='link' href={translatePath('/orders/')}>
+            {t('nav.orders')}
             </a>
-            <a className='link' href='#contact'>
-              Kontakt
+            <a className='link' href='/#contact'>
+            {t('nav.contact')}
             </a>
           </div>
         )}
