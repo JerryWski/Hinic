@@ -217,12 +217,14 @@ changeLanguage("en");
   .products-text {
     font-family: var(--main-font);
     text-align: center;
-    font-size: clamp(1.4rem, 2vw, 3rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.7rem);
     color: var(--bg-white);
+    padding: 25px 30px;
+    backdrop-filter: blur(28px);
+    background-color: rgb(255, 255, 255, 0.2);
     font-weight: 300;
     max-width: 1400px;
     margin-bottom: 50px;
-    font-style: italic;
   }
   .card {
     display: flex;
@@ -320,11 +322,11 @@ changeLanguage("en");
       gap: 100px;
       padding-top: 100px;
     }
-    .products-welcome{
+    .products-welcome {
       align-items: center;
     }
     .products-welcome-small {
-      background-image: url('/src/assets/products-bg-test.webp')
+      background-image: url('/src/assets/products-bg-test.webp');
     }
     .products-header {
       padding-left: 120px;
