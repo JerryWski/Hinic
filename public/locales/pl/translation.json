@@ -1,0 +1,20 @@
+{
+    "head": {
+        "desc" : "nikotyna w płynie, aromaty, dodatki, gliceryna, sole nikotynowe",
+        "title": "Witaj na stronie o środkach nikotynowych"
+    },
+    "navbar": {
+        "about" : "O mnie",
+        "products": "Produkty",
+        "orders" : "Zamówienia",
+        "contact" : "Kontakt"
+    },
+    "hero" : {
+        "header" : "<0>Profesjonalne rozwiązania dla</0> Nikotyny w płynie"
+    },
+    "about": {
+        "title" : "O Nas",
+        "header": "O Nas"
+    }
+
+}

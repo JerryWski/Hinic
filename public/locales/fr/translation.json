@@ -1,0 +1,19 @@
+{
+    "head": {
+        "desc" : "nicotine liquide, arômes, additifs, glycérine, sels de nicotine",
+        "title": "Bienvenue sur le site de Nicotine Remedies"
+    },
+    "navbar": {
+        "about" : "A propos",
+        "products": "productiaaa",
+        "orders" : "zamowiaaa",
+        "contact" : "kontaktaaa"
+    },
+    "hero" : {
+        "header" : "<0>uaa profesroa sds lqiuida ąąąąą"
+    },
+    "about": {
+        "title" : "À propos de nous",
+        "header": "À propos de nous"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "head": {
+        "desc" : "liquid nicotine, flavours, additives, glycerine, nicotine salts",
+        "title": "Welcome to the Nicotine Remedies website"
+    },
+    "navbar": {
+        "about" : "About",
+        "products": "Products",
+        "orders" : "Orders",
+        "contact" : "Contact"
+    },
+    "hero" : {
+        "header" : "<0>Professional Solutions for</0> Nicotine and Liquid"
+    },
+    "about": {
+        "title" : "About Us",
+        "header": "About Us"
+    }
+
+}

@@ -1,6 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Icon from 'astro-icon';
+import { changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Icon from "astro-icon";
+
+changeLanguage("fr");
 ---
 
 <Layout title='Zamów nasze produkty'>
@@ -72,7 +75,7 @@ import Icon from 'astro-icon';
     width: 70px;
   }
   .order-welcome {
-    background-image: url('../assets/order-bg-small.webp');
+    background-image: url('/src/assets/order-bg-small.webp');
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -168,7 +171,7 @@ import Icon from 'astro-icon';
       align-self: center;
     }
     .order-welcome-small {
-      background-image: url('../assets/order-bg.webp');
+      background-image: url('/src/assets/order-bg.webp');
       align-items: center;
       justify-content: flex-start;
     }
@@ -176,12 +179,12 @@ import Icon from 'astro-icon';
       padding-left: 60px;
     }
     .order-details-container {
-      background-image: url('../assets/bg-test.png');
+      background-image: url('/src/assets/bg-test.png');
       margin-top: 0px;
     }
     .order-details-container::after {
       content: '';
-      background-image: url('../assets/liq-bottle.png');
+      background-image: url('/src/assets/liq-bottle.png');
       background-repeat: no-repeat;
       position: absolute;
       bottom: -410px;

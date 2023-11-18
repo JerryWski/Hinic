@@ -1,13 +1,17 @@
 ---
-import { Image } from 'astro:assets';
+import { Trans } from "astro-i18next/components";
 ---
+
+
 
 <section class='hero-section'>
   <div class='hero-wrapper'>
     <div class='hero-left'>
       <h1 class='hero-header'>
-        <span class='header-span'>Professional Solutions for</span> Nicotine and
-        Liquid
+        <Trans i18nKey="hero.header">
+          <span class='header-span'>Professional Solutions for</span> Nicotine
+          and Liquid
+        </Trans>
       </h1>
     </div>
     <div class='hero-right'></div>
@@ -37,7 +41,7 @@ import { Image } from 'astro:assets';
   .header-span {
     font-size: clamp(1.6rem, 3vw, 2rem);
   }
-  
+
   .hero-header {
     font-family: var(--roboto-font);
     font-size: clamp(3rem, 4vw, 6rem);

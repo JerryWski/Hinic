@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useMediaQuery } from '../../utils/useMediaQuery';
 import { motion } from 'framer-motion';
+import { LanguageSelector } from 'astro-i18next/components';
+
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,7 +18,6 @@ const Header: React.FC = () => {
     setMenuClicked(true);
   };
 
-  // overflow hidden check is toggle is true
   useEffect(() => {
     if (toggle) {
       document.body.style.overflow = 'hidden';
@@ -75,14 +76,18 @@ const Header: React.FC = () => {
         </a>
         {matches && (
           <div className='nav-links'>
-            
-            <a className='link' href='/about'>
+            <LanguageSelector
+              showFlag={true}
+              languageMapping={{ en: 'Anglais' }}
+              class='my-select-class'
+            />
+            <a className='link' href='/o_nas'>
               O Nas
             </a>
-            <a className='link' href='/products'>
+            <a className='link' href='/produkty'>
               Produkty
             </a>
-            <a className='link' href='/orders'>
+            <a className='link' href='/zamowienia'>
               Zamówienia
             </a>
             <a className='link' href='#contact'>
@@ -125,7 +130,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/about'
+              href='/o_nas'
               onClick={handleMenuClick}
             >
               O Nas
@@ -133,7 +138,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/products'
+              href='/produkty'
               onClick={handleMenuClick}
             >
               Produkty
@@ -141,7 +146,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/orders'
+              href='/zamowienia'
               onClick={handleMenuClick}
             >
               Zamówienia
@@ -149,7 +154,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='/blog'
+              href='/#contact'
               onClick={handleMenuClick}
             >
               Kontakt
