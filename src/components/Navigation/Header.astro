@@ -122,6 +122,13 @@ import Hamburger from './Hamburger.astro';
     transform: translateY(-150%);
     transition: transform 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
   }
+  .nav-links-mobile a:last-child {
+    padding: 5px 10px;
+      background-color: transparent;
+      background-image: var(--bg-gradient);
+      color: var(--bg-white);
+      border-radius: 20px;
+  }
   .active {
     transform: translateY(0);
   }
@@ -147,14 +154,11 @@ import Hamburger from './Hamburger.astro';
     outline: none;
     color: var(--bg-black);
     min-width: 110px;
-    /* border: 1px solid var(--bg-black);
-  padding: 3px 8px;
-  border-radius: 7px; */
     font-weight: 500;
     padding: 0 5px;
     font-size: 1.1rem;
     position: relative;
-    transition: 0.3s all ease;
+    transition: 0.1s all ease;
   }
   .link:after,
   .link-mobile:after {
