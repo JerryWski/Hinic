@@ -2,6 +2,7 @@
 import i18next, { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
 import { LanguageSelector } from 'astro-i18next/components';
+import Hamburger from './Hamburger.astro';
 ---
 
 <header>
@@ -44,18 +45,25 @@ import { LanguageSelector } from 'astro-i18next/components';
       <a class='link' href={localizePath('/zamowienia')}>
         {t('navbar.orders')}
       </a>
-      <a class='link' href='#contact'> Kontakt</a>
+      <a class='link' href={localizePath('/kontakt')}>{t('navbar.contact')}</a>
     </div>
-    <div class='hamburger'>
+    <!-- <div class='hamburger'>
       <span class='burger-line'></span>
       <span class='burger-line'></span>
       <span class='burger-line'></span>
-    </div>
+    </div> -->
+    <Hamburger />
     <div class='nav-links-mobile'>
-      <a> O Nas</a>
-      <a class='link-mobile' href='/produkty'> Produkty</a>
-      <a class='link-mobile' href='/zamowienia'> Zamówienia</a>
-      <a class='link-mobile' href='/#contact'> Kontakt</a>
+      <a class='link-mobile' href={localizePath('/o_nas')}
+        >{t('navbar.about')}</a
+      >
+      <a class='link-mobile' href={localizePath('/produkty')}>
+        {t('navbar.products')}</a
+      >
+      <a class='link-mobile' href={localizePath('/zamowienia')}>
+        {t('navbar.orders')}</a
+      >
+      <a class='link-mobile' href='/#contact'> {t('navbar.contact')}</a>
     </div>
   </nav>
 </header>
@@ -103,13 +111,19 @@ import { LanguageSelector } from 'astro-i18next/components';
     left: 0;
     width: 100%;
     height: 75vh;
-    display: none;
+    display: flex;
     background: var(--bg-white);
     justify-content: center;
     align-items: center;
+    font-family: var(--main-font);
     gap: 50px;
     flex-direction: column;
     z-index: 9;
+    transform: translateY(-150%);
+    transition: transform 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  .active {
+    transform: translateY(0);
   }
 
   .contact-wrapper {
@@ -235,6 +249,7 @@ import { LanguageSelector } from 'astro-i18next/components';
   @media (min-width: 900px) {
     nav {
       display: flex;
+      position: static;
       justify-content: space-between;
       align-items: center;
       padding-left: 100px;
@@ -262,6 +277,9 @@ import { LanguageSelector } from 'astro-i18next/components';
       gap: 35px;
       align-items: center;
     }
+    .nav-links-mobile {
+      display: none;
+    }
     .nav-links a:last-child {
       /* outline: 1px solid black; */
       padding: 5px 10px;
@@ -282,3 +300,27 @@ import { LanguageSelector } from 'astro-i18next/components';
     }
   }
 </style>
+
+<script>
+  const hamburgerBtn = document.querySelector('.hamburger');
+  const navList = document.querySelector('.nav-links-mobile');
+  const navLinks = document.querySelectorAll('.link-mobile');
+  console.log(hamburgerBtn);
+
+  const toggleHamburger = () => {
+    hamburgerBtn.classList.toggle('is-active');
+    navList.classList.toggle('active');
+    document.body.classList.toggle('sticky-body');
+  };
+
+  const removeSticky = () => {
+    document.body.classList.remove('sticky-body');
+    navList.classList.remove('active');
+    hamburgerBtn.classList.remove('is-active');
+  };
+
+  hamburgerBtn.addEventListener('click', toggleHamburger);
+  navLinks.forEach((links) => {
+    links.addEventListener('click', removeSticky);
+  });
+</script>
