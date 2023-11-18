@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import nicotine from '../../assets/nicotine.png'
+import i18next, { t } from 'i18next';
+import { localizePath } from 'astro-i18next';
 ---
 
 <section class='about-section'>
@@ -15,17 +17,17 @@ import nicotine from '../../assets/nicotine.png'
         nikotynowe, gumy do żucia oraz płyny przygotowane i używane specjalnie
         do użytku w elektronicznych papierosach.
       </p>
-      <p class='about-text'>
+      <!-- <p class='about-text'>
         Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
         dostosowane tak, aby zadowolić naszych Konsumentów. Jako dostawca chcemy
         dać szansę naszym odbiorcom zarobić jeszcze więcej niż dotychczas dając
         im bardziej konkurencyjne ceny.
-      </p>
+      </p> -->
       <p class='about-text'>
         HILIQ oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą
         i odpowiednią cenę dla Twojego biznesu.
       </p>
-      <a class="about-link" href='/about'>Czytaj więcej</a>
+      <a class="about-link" href={localizePath('/o_nas')}>{t('navbar.about')}</a>
     </div>
     <div class='about-image-container'>
       <Image src={nicotine} alt='nicotine-bottle' />
@@ -68,14 +70,16 @@ import nicotine from '../../assets/nicotine.png'
     margin-bottom: 10px;
     font-size: clamp(1rem, 1vw, 1.5rem);
     font-family: var(--second-font);
+    text-align: justify;
     line-height: 24px;
   }
   .about-link {
     color: var(--bg-white);
     margin-top: 20px;
     margin-bottom: 5px;
-    width: fit-content;
+    width: 180px;
     outline: none;
+    text-align: center;
     padding: 7px 25px;
     font-family: var(--second-font);
     background-color: var(--bg-black);

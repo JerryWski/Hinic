@@ -4,7 +4,7 @@
         "title": "Welcome to the Nicotine Remedies website"
     },
     "navbar": {
-        "about" : "About",
+        "about" : "About Us",
         "products": "Products",
         "orders" : "Orders",
         "contact" : "Contact"
@@ -15,6 +15,12 @@
     "about": {
         "title" : "About Us",
         "header": "About Us"
+    },
+    "products": {
+        "title" : "",
+        "header" : "",
+        "link" : "Check"
     }
+
 
 }

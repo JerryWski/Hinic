@@ -4,7 +4,7 @@
         "title": "Witaj na stronie o środkach nikotynowych"
     },
     "navbar": {
-        "about" : "O mnie",
+        "about" : "O Nas",
         "products": "Produkty",
         "orders" : "Zamówienia",
         "contact" : "Kontakt"
@@ -15,6 +15,11 @@
     "about": {
         "title" : "O Nas",
         "header": "O Nas"
+    },
+    "products": {
+        "title" : "",
+        "header" : "",
+        "link" : "Sprawdź"
     }
-
 }
+

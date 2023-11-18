@@ -15,5 +15,10 @@
     "about": {
         "title" : "À propos de nous",
         "header": "À propos de nous"
+    },
+    "products": {
+        "title" : "",
+        "header" : "",
+        "link" : "Vérifier"
     }
 }

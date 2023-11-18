@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo from '../../assets/base-logo-hd.png'
-
-
+import { t } from 'i18next';
+import { localizePath } from 'astro-i18next';
 ---
 
 <section class='contact-section' id='contact'>
@@ -25,9 +25,9 @@ import logo from '../../assets/base-logo-hd.png'
     </div>
     <div class='shortcuts'>
       <h3 class='shortcuts-heading'>Na skróty:</h3>
-      <a class='shortcuts-links' href='/about'> O Nas</a>
-      <a class='shortcuts-links' href='/products'> Produkty</a>
-      <a class='shortcuts-links' href='/orders'> Zamówienia</a>
+      <a class='shortcuts-links' href={localizePath('/o_nas')}>{t('navbar.about')}</a>
+      <a class='shortcuts-links' href={localizePath('/produkty')}>{t('navbar.products')}</a>
+      <a class='shortcuts-links' href={localizePath('/zamowienia')}>{t('navbar.orders')}</a>
       <a href='/'>
       </a>
     </div>
