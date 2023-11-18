@@ -69,6 +69,7 @@ const Header: React.FC = () => {
             <i className='fa-solid fa-phone'></i>
           </a>
         </div>
+
         <a className='logo-link-mobile' href='/'>
           <div className='logo-wrapper'>
             <img src='/base-logo.png' alt='logo-icon' />
@@ -76,11 +77,7 @@ const Header: React.FC = () => {
         </a>
         {matches && (
           <div className='nav-links'>
-            <LanguageSelector
-              showFlag={true}
-              languageMapping={{ en: 'Anglais' }}
-              class='my-select-class'
-            />
+          
             <a className='link' href='/o_nas'>
               O Nas
             </a>

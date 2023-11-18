@@ -1,33 +1,284 @@
 ---
 import i18next, { t } from 'i18next';
-import { localizePath } from "astro-i18next";
-import { LanguageSelector } from "astro-i18next/components";
-
+import { localizePath } from 'astro-i18next';
+import { LanguageSelector } from 'astro-i18next/components';
 ---
 
-<div class='nav-links'>
- 
-  <a class='link' href={localizePath("/o_nas")}>
-    {t('navbar.about')}
-  </a>
-  <a class='link' href={localizePath("/produkty")}>
-    {t('navbar.products')}
-  </a>
-  <a class='link' href={localizePath("/zamowienia")}>
-    {t('navbar.orders')}
-  </a>
-  <a class='link' href='#contact'> Kontakt</a>
-  <LanguageSelector
-  showFlag={true}
-  languageMapping={{ en: "Anglais" }}
-  class="my-select-class"
-/>
-</div>
+<header>
+  <nav class="'nav-container'">
+    <a class='logo-link-desktop' href='/'>
+      <div class='logo-wrapper-desktop'>
+        <img class='logo' src='/base-logo.png' alt='logo-icon' />
+      </div>
+    </a>
+
+    <a class='logo-link-mobile' href='/'>
+      <div class='logo-wrapper-mobile'>
+        <img src='/base-logo.png' alt='logo-icon' />
+      </div>
+    </a>
+    <div class='contact-wrapper'>
+      <a
+        class='contact-icon'
+        href='mailto:office@hinic.eu'
+        aria-label='Link to email'
+      >
+        <i class='fa-solid fa-envelope'></i>
+      </a>
+      <a class='contact-icon' href='tel:+48888433188' aria-label='phone-link'>
+        <i class='fa-solid fa-phone'></i>
+      </a>
+    </div>
+    <LanguageSelector
+      showFlag={false}
+      languageMapping={{ en: 'EN', fr: 'FR', pl: 'PL' }}
+      class='my-select-class'
+    />
+    <div class='nav-links'>
+      <a class='link' href={localizePath('/o_nas')}>
+        {t('navbar.about')}
+      </a>
+      <a class='link' href={localizePath('/produkty')}>
+        {t('navbar.products')}
+      </a>
+      <a class='link' href={localizePath('/zamowienia')}>
+        {t('navbar.orders')}
+      </a>
+      <a class='link' href='#contact'> Kontakt</a>
+    </div>
+    <div class='hamburger'>
+      <span class='burger-line'></span>
+      <span class='burger-line'></span>
+      <span class='burger-line'></span>
+    </div>
+    <div class='nav-links-mobile'>
+      <a> O Nas</a>
+      <a class='link-mobile' href='/produkty'> Produkty</a>
+      <a class='link-mobile' href='/zamowienia'> Zamówienia</a>
+      <a class='link-mobile' href='/#contact'> Kontakt</a>
+    </div>
+  </nav>
+</header>
 
 <style>
-  .nav-links {
-    padding-left: 150px;
+  nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    min-height: 114px;
+    padding: 10px;
+    z-index: 1000;
+    background-color: var(--bg-white);
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    min-height: 114px;
+    padding: 10px;
+    z-index: 1000;
+    background-color: var(--bg-white);
+    /* backdrop-filter: blur(18px);
+  background-color: rgb(255, 255, 255, .6); */
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links :last-child {
+    font-weight: 500;
+    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+    border: none;
+  }
+  .nav-links-mobile {
+    position: fixed;
+    top: 114px;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    display: none;
+    background: var(--bg-white);
+    justify-content: center;
+    align-items: center;
     gap: 50px;
+    flex-direction: column;
+    z-index: 9;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    margin-left: auto;
+  }
+  .contact-icon {
+    color: var(--bg-black);
+    padding: 2.5px;
+  }
+  .fa-solid {
+    margin: 7px;
+  }
+  .link,
+  .link-mobile {
+    font-family: var(--main-font);
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: var(--bg-black);
+    min-width: 110px;
+    /* border: 1px solid var(--bg-black);
+  padding: 3px 8px;
+  border-radius: 7px; */
+    font-weight: 500;
+    padding: 0 5px;
+    font-size: 1.1rem;
+    position: relative;
+    transition: 0.3s all ease;
+  }
+  .link:after,
+  .link-mobile:after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    background-color: var(--bg-black);
+    height: 3px;
+    left: 0;
+    bottom: -7px;
+    transition: 0.2s all ease;
+  }
+  .link:hover:after,
+  .link:focus {
+    width: 100%;
+    opacity: 0.8;
+  }
+  .link:hover {
+    opacity: 0.8;
+  }
+  .link-mobile {
+    color: var(--bg-black);
+  }
+  .link-mobile:hover {
+    opacity: 0.8;
+  }
+  .logo-link-desktop {
+    display: none;
+  }
+  .logo-link-mobile {
+    display: block;
+    max-width: 150px;
+    padding: 10px;
+  }
+  .logo-link-mobile img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 7px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+  }
+  .burger-line {
+    background-color: var(--bg-black);
+  }
+  .burger-line:nth-child(1) {
+    width: 34px;
+    height: 2px;
+    display: block;
+  }
+  .burger-line:nth-child(2) {
+    width: 32px;
+    height: 2px;
+    display: block;
+  }
+  .burger-line:nth-child(3) {
+    width: 30px;
+    height: 2px;
+    display: block;
+  }
+  .my-select-class {
+    border: none;
+    padding: 3px;
+    border-radius: 7px;
+    font-weight: 300;
+    color: var(--bg-black);
+    font-family: var(--main-font);
+  }
+  @media (max-width: 315px) {
+    .nav-container {
+      justify-content: center;
+    }
+    .hamburger {
+      padding: 0;
+    }
+  }
+  @media (max-width: 1300px) {
+    .nav-links {
+      gap: 20px;
+    }
+    .link,
+    .link-mobile {
+      font-size: 0.9rem;
+    }
+  }
+  @media (min-width: 900px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 80px;
+    }
+
+    .logo-link-desktop {
+      display: block;
+      max-width: 150px;
+      padding: 10px;
+    }
+    .logo-link-mobile {
+      display: none;
+    }
+    .logo-wrapper {
+      max-width: 150px;
+    }
+    .logo {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+    }
+    .nav-links a:last-child {
+      /* outline: 1px solid black; */
+      padding: 5px 10px;
+      background-color: transparent;
+      background-image: var(--bg-gradient);
+      color: var(--bg-white);
+      border-radius: 20px;
+    }
+    .nav-links a:last-child::after {
+      width: 0;
+    }
+    .hamburger {
+      display: none;
+    }
+    .contact-wrapper {
+      margin-left: 20px;
+      display: none;
+    }
   }
 </style>
