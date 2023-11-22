@@ -6,7 +6,7 @@ import { localizePath } from 'astro-i18next';
 ---
 
 <section class='about-section'>
-  <h2 class='about-header'>Poznaj HILIQ</h2>
+  <h2 class='about-header'>Poznaj HILIQ - dostawcę nikotyny numer jeden!</h2>
   <div class='about-wrapper'>
     <div class='about-info'>
       <p class='about-text'>
@@ -58,9 +58,11 @@ import { localizePath } from 'astro-i18next';
   }
   .about-header {
     font-size: clamp(2.3rem, 3vw, 3.5rem);
-    font-family: var(--main-font);
-    margin-bottom: 30px;
     font-family: var(--roboto-font);
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: var(--font-blue);
+    /* font-family: var(--roboto-font); */
   }
   .about-info {
     display: flex;
@@ -69,7 +71,8 @@ import { localizePath } from 'astro-i18next';
   .about-text {
     margin-bottom: 10px;
     font-size: clamp(1rem, 1vw, 1.5rem);
-    font-family: var(--second-font);
+    font-family: var(--roboto-font);
+    color: var(--logo-blue);
     text-align: justify;
     line-height: 24px;
   }
@@ -80,19 +83,22 @@ import { localizePath } from 'astro-i18next';
     width: 200px;
     outline: none;
     text-align: center;
-    padding: 7px 25px;
-    font-family: var(--second-font);
-    background-color: var(--bg-black);
+    padding: 13px 25px;
+    font-family: var(--roboto-font);
+    background-color: var(--font-blue);
     font-size: 1.4rem;
     cursor: pointer;
     transition: .3s all ease-in-out;
   }
   .about-link:hover {
     background-color: var(--bg-white);
-    color: var(--bg-black);
-    outline: 1px solid var(--bg-black);
+    color: var(--font-blue);
+    outline: 1px solid var(--font-blue);
   }
   @media (min-width: 900px) {
+    .about-section {
+      padding-left: 100px;
+    }
     .about-wrapper {
       display: flex;
     }
@@ -101,9 +107,12 @@ import { localizePath } from 'astro-i18next';
     }
     .about-link {
       align-self: flex-end;
-      box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+      box-shadow: 3px 6px 5px -5px rgb(42, 44, 83);
       padding: 15px 40px;
       font-size: 1.6rem;
+    }
+    .about-header {
+      margin-top: 80px;
     }
     .about-text {
       margin-bottom: 25px;
