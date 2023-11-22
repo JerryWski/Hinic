@@ -1,14 +1,12 @@
 ---
-import { Trans } from "astro-i18next/components";
+import { Trans } from 'astro-i18next/components';
 ---
-
-
 
 <section class='hero-section'>
   <div class='hero-wrapper'>
     <div class='hero-left'>
       <h1 class='hero-header'>
-        <Trans i18nKey="hero.header">
+        <Trans i18nKey='hero.header'>
           <span class='header-span'>Professional Solutions for</span> Nicotine
           and Liquid
         </Trans>
@@ -19,6 +17,7 @@ import { Trans } from "astro-i18next/components";
 </section>
 
 <style>
+
   .hero-section {
     height: 550px;
     padding-top: 114px;
@@ -30,8 +29,11 @@ import { Trans } from "astro-i18next/components";
     align-items: center;
     height: 100%;
     padding-left: 20px;
-    background-image: url('../../assets//smoking-woman2.png');
-    background-position: center;
+    position: relative;
+    background-color: var(--overlay-blue);
+    background-image: url('/research-hero.webp');
+    background-position: 80% 0;
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -39,31 +41,36 @@ import { Trans } from "astro-i18next/components";
     width: 70%;
   }
   .header-span {
+    text-transform: none;
     font-size: clamp(1.6rem, 3vw, 2rem);
   }
 
   .hero-header {
+    text-transform: uppercase;
     font-family: var(--second-font);
-    font-size: clamp(2rem, 4vw, 6rem);
+    font-size: clamp(2.4rem, 4vw, 6rem);
     line-height: normal;
     text-align: center;
-    background-image: linear-gradient(
-      to right,
-      #d12988,
-      #cd54a8,
-      #c774c2,
-      #c18fd6,
-      #bea8e3
+    /* background-image: linear-gradient(
+      to left bottom,
+      #031b4e,
+      #162b61,
+      #263c76,
+      #354e8a,
+      #44619f
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 330px;
-    /* color: var(--bg-white); */
+    background-size: 100%; */
+    color: white;
   }
   @media (min-width: 900px) {
     .hero-section {
       padding-top: 0;
+    }
+    .hero-wrapper {
+      background-position: center;
     }
     .hero-left {
       width: 50%;
