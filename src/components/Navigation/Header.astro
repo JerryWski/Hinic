@@ -102,7 +102,7 @@ import Hamburger from './Hamburger.astro';
   }
   .nav-links :last-child {
     font-weight: 500;
-    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+    box-shadow: 3px 2px 9px -5px rgba(0, 0, 0, 1);
     border: none;
   }
   .nav-links-mobile {
@@ -123,9 +123,8 @@ import Hamburger from './Hamburger.astro';
     transition: transform 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
   }
   .nav-links-mobile a:last-child {
-    padding: 5px 10px;
-    background-color: transparent;
-    background-image: var(--bg-gradient);
+    padding: 10px 10px;
+    background-color: var(--font-blue);
     color: var(--bg-white);
     border-radius: 20px;
   }
@@ -138,7 +137,7 @@ import Hamburger from './Hamburger.astro';
     margin-left: auto;
   }
   .contact-icon {
-    color: var(--bg-black);
+    color: var(--font-blue);
     padding: 2.5px;
   }
   .fa-solid {
@@ -152,7 +151,7 @@ import Hamburger from './Hamburger.astro';
     text-decoration: none;
     border: none;
     outline: none;
-    color: var(--bg-black);
+    color: var(--font-blue);
     min-width: 110px;
     font-weight: 500;
     padding: 0 5px;
@@ -165,7 +164,7 @@ import Hamburger from './Hamburger.astro';
     position: absolute;
     content: '';
     width: 0%;
-    background-color: var(--bg-black);
+    background-color: var(--font-blue);
     height: 3px;
     left: 0;
     bottom: -7px;
@@ -233,7 +232,7 @@ import Hamburger from './Hamburger.astro';
     cursor: pointer;
     background: transparent;
     font-weight: 300;
-    color: var(--bg-black);
+    color: var(--font-blue);
     font-family: var(--main-font);
     margin-left: auto;
   }
@@ -289,12 +288,14 @@ import Hamburger from './Hamburger.astro';
       display: none;
     }
     .nav-links a:last-child {
-      /* outline: 1px solid black; */
-      padding: 5px 10px;
-      background-color: transparent;
-      background-image: var(--bg-gradient);
+      padding: 10px 10px;
+      background-color: var(--font-blue);
       color: var(--bg-white);
       border-radius: 20px;
+      transition: .2s all ease;
+    }
+    .nav-links a:last-child:hover {
+      background-color: var(--logo-blue);
     }
     .nav-links a:last-child::after {
       width: 0;
