@@ -133,19 +133,21 @@ import data from '../../data/productsPreview.json';
 
   .indicator {
     background: transparent;
-    border: 0.15em solid var(--bg-white);
+    border: 0.15em solid var(--logo-blue);
     border-radius: 50%;
     padding: 7px;
-    height: var(--size-fluid-1);
     cursor: pointer;
   }
 
   .indicator.active {
-    background: var(--bg-white);
+    background: var(--logo-blue);
   }
   @media (min-width: 900px) {
     .review-btn {
       padding: 7rem;
+    }
+    .reviews-container {
+      display: none;
     }
   }
 </style>

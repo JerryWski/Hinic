@@ -2,11 +2,13 @@
 import i18next, { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
 import Cards from './Cards.astro';
+import CardsSlider from './CardsSlider.astro';
 
 
 ---
 
 <section class='products-section'>
+  <div class='bg-overlay'></div>
   <h2 class='products-header'>Nasza Oferta</h2>
   <div class='products-wrapper'>
     <div class='products-info'>
@@ -16,7 +18,7 @@ import Cards from './Cards.astro';
       </p>
       <div class='card-container'>
         <Cards />
-
+        <CardsSlider />
         <a class='products-link' href={localizePath('/produkty')}
           >{t('products.link')}</a
         >
@@ -25,17 +27,28 @@ import Cards from './Cards.astro';
   </div>
 </section>
 <style>
- 
-
   .products-section {
     padding: 20px;
     padding-top: 80px;
-    /* background: rgb(192, 213, 240); */
+    background-color: #f4f8ff;
     display: flex;
+    z-index: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--font-blue);
+    position: relative;
+  }
+  .bg-overlay {
+    background-image: url('/bg-squares.jpg');
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .products-wrapper {
     max-width: 1300px;
@@ -67,31 +80,36 @@ import Cards from './Cards.astro';
     margin-top: 40px;
     gap: 40px;
   }
-  
+
   .products-link {
-    font-family: var(--second-font);
-    color: var(--bg-black);
+    font-family: var(--roboto-font);
+    color: var(--bg-white);
+    text-transform: uppercase;
     margin-top: 60px;
     margin-bottom: 20px;
     align-self: center;
-    width: 200px;
+    width: fit-content;
     outline: none;
     text-align: center;
     padding: 15px 35px;
-    background-color: var(--bg-white);
+    box-shadow: 3px 6px 5px -5px rgb(42,44,83);
+    background-color: var(--font-blue);
     font-size: 1.4rem;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
   }
   .products-link:hover {
     background-color: transparent;
-    color: var(--bg-white);
-    outline: 1px solid var(--bg-white);
+    color: var(--font-blue);
+    outline: 1px solid var(--font-blue);
   }
   @media (min-width: 900px) {
     .products-link {
-      width: 250px;
+      min-width: 500px;
+    }
+    .products-text {
+      max-width: 800px;
+      margin: 0 auto;
     }
   }
 </style>
-
