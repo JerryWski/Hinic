@@ -1,12 +1,12 @@
 [
   {
     "name": "Nikotyna",
-    "image": "../../src/assets/nicotine2.png",
+    "image": "/src/assets/nicotine2.png",
     "active": true
   },
   {
     "name": "Sól nikotynowa",
-    "image": "../../src/assets/nicotine-salt.png"
+    "image": "../src/assets/nicotine-salt.png"
   },
   {
     "name": "PG i VG",
