@@ -1,17 +1,13 @@
 ---
-import { Image } from 'astro:assets';
-import nicotine from '../../assets/nicotine2.png';
-import salt from '../../assets/nicotine-salt.png';
-import pgvg from '../../assets/pgvg.png';
-import aromas from '../../assets/aroma2.png';
-import accessories from '../../assets/accessories1.png';
-import cbd from '../../assets/cbd-oils.png'
 import i18next, { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
+import Cards from './Cards.astro';
+
+
 ---
 
 <section class='products-section'>
-  <h2 class='products-header'>Nasze Produkty</h2>
+  <h2 class='products-header'>Nasza Oferta</h2>
   <div class='products-wrapper'>
     <div class='products-info'>
       <p class='products-text'>
@@ -19,70 +15,27 @@ import { localizePath } from 'astro-i18next';
         zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.
       </p>
       <div class='card-container'>
-        <div class='card'>
-          <h3 class='card-title'>Nikotyna</h3>
-          <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
-          <!-- <p class='card-text'>
-            Naturalnie pozyskiwany z roślin tytoń o doskonałym smaku, większejj
-            żywotności i dłuższym okresie utleniania.
-          </p> -->
-        </div>
-        <div class='card'>
-          <h3 class='card-title'>Sól nikotynowa</h3>
-          <Image class='card-image' src={salt} alt='nicotine-salt' />
-          <!-- <p class='card-text'>
-            To forma nikotyny, która występuje naturalnie w tytoniu, stosowana w
-            płynach do e-papierosów
-          </p> -->
-        </div>
-        <div class='card'>
-          <h3 class='card-title'>PG i VG</h3>
-          <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
-          <!-- <p class='card-text'>
-            PG (Propylenoglikol) i VG (Gliceryna roślinna) to dwie główne
-            substancje bazowe używane do produkcji e-płynów w e-papierosach
-          </p> -->
-        </div>
-        <div class='card'>
-          <h3 class='card-title'>Aromaty</h3>
-          <Image class='card-image' src={aromas} alt='nicotine-bottles' />
-          <!-- <p class='card-text'>
-            Substancje chemiczne dodawane do płynów do e-papierosów w celu
-            nadania im smaku itp
-          </p> -->
-        </div>
-        <div class='card'>
-          <h3 class='card-title'>Dodatki</h3>
-          <Image class='card-image' src={accessories} alt='nicotine-bottle' />
-          <!-- <p class='card-text'>
-            Dodatkowe składniki, takie jak barwniki, substancje słodzące czy
-            chłodzące, używane w celu dostosowania smaku i wrażeń z palenia.
-          </p> -->
-        </div>
-        <div class='card'>
-          <h3 class='card-title'>Oleje CBD</h3>
-          <Image class='card-image' src={cbd} alt='nicotine-bottle' />
-          <!-- <p class='card-text'>
-            Dodatkowe składniki, takie jak barwniki, substancje słodzące czy
-            chłodzące, używane w celu dostosowania smaku i wrażeń z palenia.
-          </p> -->
-        </div>
+        <Cards />
+
+        <a class='products-link' href={localizePath('/produkty')}
+          >{t('products.link')}</a
+        >
       </div>
-      <a class='products-link' href={localizePath('/produkty')}>{t('products.link')}</a>
     </div>
   </div>
 </section>
-
 <style>
+ 
+
   .products-section {
     padding: 20px;
     padding-top: 80px;
-    background: var(--bg-black);
+    /* background: rgb(192, 213, 240); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--bg-white);
+    color: var(--font-blue);
   }
   .products-wrapper {
     max-width: 1300px;
@@ -100,6 +53,7 @@ import { localizePath } from 'astro-i18next';
   }
   .products-text {
     margin-bottom: 10px;
+    opacity: 0.7;
     font-family: var(--second-font);
     font-size: clamp(1rem, 1vw, 1.5rem);
     line-height: 24px;
@@ -113,41 +67,14 @@ import { localizePath } from 'astro-i18next';
     margin-top: 40px;
     gap: 40px;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--second-font);
-  }
-  .card-image {
-    display: block;
-    width: 100%;
-    height: 265px;
-    object-fit: contain;
-    transform: scale(1);
-    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
-    transition: 0.3s transform ease;
-  }
-  .card-image:hover {
-    transform: scale(1.04);
-  }
-  .card-title {
-    font-size: 1.4rem;
-    margin: 15px;
-  }
-  .card-text {
-    text-align: center;
-    max-width: 265px;
-    height: 100px;
-  }
+  
   .products-link {
     font-family: var(--second-font);
     color: var(--bg-black);
     margin-top: 60px;
     margin-bottom: 20px;
     align-self: center;
-    width: 100%;
+    width: 200px;
     outline: none;
     text-align: center;
     padding: 15px 35px;
@@ -167,3 +94,4 @@ import { localizePath } from 'astro-i18next';
     }
   }
 </style>
+

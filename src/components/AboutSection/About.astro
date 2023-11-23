@@ -6,6 +6,7 @@ import { localizePath } from 'astro-i18next';
 ---
 
 <section class='about-section'>
+  <p class="about-minititle">Mamy Doświadczenie - Stawiamy na rozwój</p>
   <h2 class='about-header'>Poznaj HILIQ - dostawcę nikotyny numer jeden!</h2>
   <div class='about-wrapper'>
     <div class='about-info'>
@@ -56,7 +57,14 @@ import { localizePath } from 'astro-i18next';
     object-fit: cover;
     height: auto;
   }
+  .about-minititle{
+    opacity: .6;
+    color: var(--font-blue);
+    text-transform: uppercase;
+    font-family: var(--roboto-font);
+  }
   .about-header {
+    margin-top: 10px;
     font-size: clamp(2.3rem, 3vw, 3.5rem);
     font-family: var(--roboto-font);
     margin-bottom: 30px;
@@ -111,7 +119,7 @@ import { localizePath } from 'astro-i18next';
       padding: 15px 40px;
       font-size: 1.6rem;
     }
-    .about-header {
+    .about-minititle {
       margin-top: 80px;
     }
     .about-text {
