@@ -41,8 +41,8 @@ import { localizePath } from 'astro-i18next';
 <style>
   .contact-section {
     padding: 20px;
-    background-color: var(--bg-white);
-    color: var(--bg-black);
+    background-color: var(--light-blue);
+    color: var(--logo-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,12 +78,13 @@ import { localizePath } from 'astro-i18next';
   }
   .icon-link {
     text-decoration: none;
-    color: var(--base-orange);
     padding: 3px;
+    color: var(--logo-blue);
     margin: 0 7px 0 7px;
+    transition: .2s all ease-in;
   }
   .icon-link:hover {
-    color: var(--white);
+    color: var(--font-blue);
   }
   .contact-logo__link {
     margin-top: 30px;
@@ -95,25 +96,25 @@ import { localizePath } from 'astro-i18next';
   .shortcuts {
     margin-top: 30px;
     display: flex;
-    font-family: var(--second-font);
+    font-family: var(--main-font);
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .shortcuts-heading {
     font-size: 1rem;
-    font-family: var(--font_3);
+
     padding: 10px;
   }
   .shortcuts-links {
     text-decoration: none;
     margin: 10px;
-    color: var(--base-grey);
-    font-family: var(--second-font);
+    color: var(--logo-blue);
+    font-family: var(--main-font);
     transition: 0.3s all ease;
   }
   .shortcuts-links:hover {
-    color: var(--white);
+    color: var(--font-blue);
   }
   .logo-header,
   .span_hash {

@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import order from '../../assets/order-list.webp';
+import order from '../../assets/order-list2.webp';
 ---
 
 <section class='order-section'>
@@ -22,9 +22,10 @@ import order from '../../assets/order-list.webp';
       bardziej konkurencyjne ceny. Dzięki naszemu przyjaznemu i profesjonalnemu
       zespołowi, który będzie pracował razem z Tobą, Hiliq Poland oferuje Ci
       jakość z której będziesz bardzo zadowolony.
+      <Image class='order-image-cart' src={order} alt='order-cart' />
     </p>
     <div class='bottom-wrapper'>
-      <Image class='order-image-cart' src={order} alt='order-cart' />
+      
       <a href='/orders' class='order-link'> Zamów nasze produkty</a>
     </div>
   </div>
@@ -80,8 +81,10 @@ import order from '../../assets/order-list.webp';
       display: block;
       max-width: 100%;
       object-fit: contain;
-      align-self: flex-start;
-      height: 100px;
+      align-self: center;
+      margin: 0 auto;
+      margin-top: 20px;
+      
     }
     .order-text {
       font-family: var(--roboto-font);
@@ -122,7 +125,7 @@ import order from '../../assets/order-list.webp';
       margin-top: 50px;
       margin-bottom: 50px;
       display: flex;
-      gap: 50px;
+      gap: 20px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -144,6 +147,7 @@ import order from '../../assets/order-list.webp';
       .bottom-wrapper  {
         margin-top: 100px;
         margin-bottom: 100px;
+        gap: 50px;
       }
     }
   </style>
