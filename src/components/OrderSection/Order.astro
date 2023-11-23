@@ -1,15 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import order from '../../assets/order.png';
-import map from '../../assets/logistic-map.webp';
+import order from '../../assets/order-list.webp';
 ---
 
 <section class='order-section'>
   <div class="bg-overlay"></div>
   <h2 class='order-heading'>Doskonałość we Współpracy i Logistyce</h2>
-  <!-- <div class='image-wrapper'>
-    <Image class='order-image-map' src={map} alt='map' />
-  </div> -->
   <div class='order-wrapper'>
     <p class='order-text'>
       Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
@@ -48,7 +44,7 @@ import map from '../../assets/logistic-map.webp';
       position: absolute;
       height: 100%;
       width: 100%;
-      background-image: url('../../assets/logistic-map.webp');
+      background-image: url('/logistic-map.webp');
       background-size: cover;
       background-size: contain;
       opacity: .2;
@@ -115,26 +111,39 @@ import map from '../../assets/logistic-map.webp';
       color: var(--font-blue);
       outline: 1px solid var(--font-blue);
     }
+    .order-image-cart {
+      transform: translateY(0px);
+      transition: .3s all ease;
+    }
+    .order-image-cart:hover {
+      transform: translateY(-10px);
+    }
     .bottom-wrapper {
-      margin-top: 100px;
+      margin-top: 50px;
+      margin-bottom: 50px;
       display: flex;
-      gap: 30px;
+      gap: 50px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction:;
-      z-index: 100;
     }
     @media (min-width: 900px) {
       .order-wrapper {
       }
       .order-heading {
       }
+      .bg-overlay {
+        background-position: center;
+      }
       .order-text {
         max-width: 900px;
       }
       .order-link {
         width: fit-content;
+      }
+      .bottom-wrapper  {
+        margin-top: 100px;
+        margin-bottom: 100px;
       }
     }
   </style>
