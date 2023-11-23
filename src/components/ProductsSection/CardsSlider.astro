@@ -14,7 +14,7 @@ import data from '../../data/productsPreview.json';
   <div class='reviews'>
     {
       data.slice(data.length - 1).map((review) => (
-        <div class='review grid-sm'>
+        <div class='review'>
           <p class='review-name'>{review.name}</p>
           <img src={review.image} alt={review.name} class='review-avatar' />
         </div>
@@ -22,7 +22,7 @@ import data from '../../data/productsPreview.json';
     }
     {
       data.map((review) => (
-        <div class='review grid-sm'>
+        <div class='review'>
           <p class='review-name'>{review.name}</p>
           <img src={review.image} alt={review.name} class='review-avatar' />
         </div>
@@ -30,7 +30,7 @@ import data from '../../data/productsPreview.json';
     }
     {
       data.slice(0, 1).map((review) => (
-        <div class='review grid-sm'>
+        <div class='review'>
           <p class='review-name'>{review.name}</p>
           <img src={review.image} alt={review.name} class='review-avatar' />
           <p class='review-name text-gradient h3'>{review.name}</p>
