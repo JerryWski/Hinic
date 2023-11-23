@@ -159,7 +159,7 @@ import data from '../../data/productsPreview.json';
 </style>
 
 <script>
-    const reviewsSlider = document.querySelector('.reviews');
+    const reviewsSlider = document.querySelector('.reviews') as HTMLElement;
     const reviewBtns = document.querySelectorAll('.review-btn');
     const reviews = [...document.querySelectorAll('.review')];
     const indicators = [...document.querySelectorAll('.indicator')];
@@ -184,21 +184,23 @@ import data from '../../data/productsPreview.json';
       showActiveIndicator();
     };
   
-    function handleReviewBtnClick(e) {
+    function handleReviewBtnClick(e: Event) {
       if (isMoving) {
         return;
       }
       isMoving = true;
-      e.currentTarget.id === 'next' ? currentIndex++ : currentIndex--;
+      const target = e.currentTarget as HTMLButtonElement;
+      target.id === 'next' ? currentIndex++ : currentIndex--;
       moveSlider();
     }
   
-    function handleIndicatorClick(e) {
-      if (isMoving || indicators.indexOf(e.target) + 1 === currentIndex) {
+    function handleIndicatorClick(e: Event) {
+      const target = e.target as HTMLElement;
+      if (isMoving || indicators.indexOf(target) + 1 === currentIndex) {
         return;
       }
       isMoving = true;
-      currentIndex = indicators.indexOf(e.target) + 1;
+      currentIndex = indicators.indexOf(target) + 1;
       moveSlider();
     }
   
