@@ -2,7 +2,7 @@
   {
    
     "name": "Nikotyna",
-    "image": "/nicotine2.png",
+    "image": "/nicotine.webp",
     "active": true
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "PG i VG",
-    "image": "/pgvg.png"
+    "image": "/pgvg.webp"
   },
   {
     "name": "Aromaty",
