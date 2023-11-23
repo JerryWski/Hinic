@@ -1,85 +1,141 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 import order from '../../assets/order.png';
+import map from '../../assets/logistic-map.webp';
 ---
 
 <section class='order-section'>
-  <div>
-
-    <Image class='order-image' src={order} alt="order-cart">
-  </div>
+  <div class="bg-overlay"></div>
+  <h2 class='order-heading'>Doskonałość we Współpracy i Logistyce</h2>
+  <!-- <div class='image-wrapper'>
+    <Image class='order-image-map' src={map} alt='map' />
+  </div> -->
   <div class='order-wrapper'>
     <p class='order-text'>
-      Hiliq jest niezawodnym dostawcą wysokiej jakości nikotyny. Z naszymi
-      partnerami, będącymi kluczowymi dostawcami w branży logistycznej
-      zapewniamy szybki, odpowiedzialny oraz wygodny transport do Waszych drzwi.
-      Posiadamy również zespół, który pomoże Ci śledzić, sprawdzać i koordynować
-      stan Twojej przesyłki.
+      Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
+      dostosowane tak, aby zadowolić naszych Konsumentów. Jako dostawca chcemy
+      dać szansę naszym odbiorcom zarobić jeszcze więcej niż dotychczas dając im
+      bardziej konkurencyjne ceny. Dzięki naszemu przyjaznemu i profesjonalnemu
+      zespołowi, który będzie pracował razem z Tobą, Hiliq Poland oferuje Ci
+      jakość z której będziesz bardzo zadowolony.
     </p>
-    <a href='/orders' class='order-link'> Zamów nasze produkty</a>
+    <p class='order-text'>
+      Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
+      dostosowane tak, aby zadowolić naszych Konsumentów. Jako dostawca chcemy
+      dać szansę naszym odbiorcom zarobić jeszcze więcej niż dotychczas dając im
+      bardziej konkurencyjne ceny. Dzięki naszemu przyjaznemu i profesjonalnemu
+      zespołowi, który będzie pracował razem z Tobą, Hiliq Poland oferuje Ci
+      jakość z której będziesz bardzo zadowolony.
+    </p>
+    <div class='bottom-wrapper'>
+      <Image class='order-image-cart' src={order} alt='order-cart' />
+      <a href='/orders' class='order-link'> Zamów nasze produkty</a>
+    </div>
   </div>
-</section>
 
-<style>
-  .order-section {
-    display: flex;
-    background-color: var(--base-grey);
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: var(--base-grey);
-    height: 600px;
-  }
-  .order-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  .order-image {
-    display: block;
-    max-width: 100%;
-    object-fit: contain;
-    align-self: flex-start;
-    height: 100px;
-  }
-  .order-text {
-    font-family: var(--second-font);
-    text-align: left;
-    background-color: var(--bg-white);
-    padding: 20px;
-    line-height: normal;
-    color: var(--bg-black);
-    font-weight: 500;
-    margin-top: 20px;
-    outline: 1px solid var(--bg-white);
-  }
-  .order-link {
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    font-family: var(--second-font);
-    color: var(--bg-black);
-    font-weight: 700;
-    width: 100%;
-    text-align: center;
-    background-color: var(--bg-white);
-    padding: 15px 45px;
-    transition: 0.3s all ease;
-  }
-  .order-link:hover {
-    background: var(--bg-black);
-    color: var(--bg-white);
-  }
-  @media (min-width: 900px) {
-    .order-header {
-      padding: 10px 75px;
+  <style>
+    .order-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: var(--base-grey);
+      position: relative;
+      gap: 50px;
+    }
+    .bg-overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url('../../assets/logistic-map.webp');
+      background-size: cover;
+      background-size: contain;
+      opacity: .2;
+      z-index: -1;
+      background-repeat: no-repeat;
+    }
+    .order-heading {
+      text-align: center;
+      display: block;
+      font-family: var(--roboto-font);
+      font-size: clamp(2.3rem, 3vw, 3.5rem);
+      color: var(--font-blue);
+      margin-top: 100px;
+    }
+    .order-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-wrapper {
+      margin-top: -50px;
+    }
+    .order-image-map {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 120px;
+      object-fit: contain;
+      opacity: 0.3;
+    }
+    .order-image-cart {
+      display: block;
+      max-width: 100%;
+      object-fit: contain;
+      align-self: flex-start;
+      height: 100px;
     }
     .order-text {
-        max-width: 900px;
+      font-family: var(--roboto-font);
+      text-align: left;
+      background-color: var(--light-blue);
+      padding: 20px;
+      line-height: normal;
+      color: var(--logo-blue);
+      border-radius: 7px;
+      font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+      outline: 1px solid var(--bg-white);
     }
     .order-link {
-        width: fit-content;
+      font-size: clamp(1rem, 1.5vw, 2rem);
+      font-family: var(--second-font);
+      color: var(--bg-white);
+      font-weight: 700;
+      width: 100%;
+      border: none;
+      text-align: center;
+      background-color: var(--font-blue);
+      padding: 15px 45px;
+      transition: 0.3s all ease;
     }
-  }
-</style>
+    .order-link:hover {
+      background: var(--bg-white);
+      color: var(--font-blue);
+      outline: 1px solid var(--font-blue);
+    }
+    .bottom-wrapper {
+      margin-top: 100px;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction:;
+      z-index: 100;
+    }
+    @media (min-width: 900px) {
+      .order-wrapper {
+      }
+      .order-heading {
+      }
+      .order-text {
+        max-width: 900px;
+      }
+      .order-link {
+        width: fit-content;
+      }
+    }
+  </style>
+</section>
