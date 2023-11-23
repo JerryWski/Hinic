@@ -1,15 +1,28 @@
 [
   {
+   
     "name": "Nikotyna",
     "image": "/nicotine2.png",
     "active": true
   },
   {
     "name": "Sól nikotynowa",
-    "image": "/nicotine-salt.png"
+    "image": "/salt.webp"
   },
   {
     "name": "PG i VG",
     "image": "/pgvg.png"
+  },
+  {
+    "name": "Aromaty",
+    "image": "/aroma.webp"
+  },
+  {
+    "name": "Dodatki",
+    "image": "/accessories.webp"
+  },
+  {
+    "name": "Oleje CBD",
+    "image": "/cbd-oils.webp"
   }
 ]
