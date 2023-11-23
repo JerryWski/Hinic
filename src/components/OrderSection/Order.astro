@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import order from '../../assets/order-list2.webp';
+import i18next, { t } from 'i18next';
+import { localizePath } from 'astro-i18next';
 ---
 
 <section class='order-section'>
@@ -26,7 +28,7 @@ import order from '../../assets/order-list2.webp';
     </p>
     <div class='bottom-wrapper'>
       
-      <a href='/orders' class='order-link'> Zamów nasze produkty</a>
+      <a href='/zamowienia' class='order-link'> Zamów nasze produkty</a>
     </div>
   </div>
 
