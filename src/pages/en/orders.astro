@@ -111,7 +111,7 @@ changeLanguage("en");
   .order-details {
     margin-top: 0px;
     margin-bottom: 60px;
-    max-width: 280px;
+    max-width: 270px;
     color: var(--logo-blue);
     font-family: var(--second-font);
     z-index: 100;
@@ -138,14 +138,16 @@ changeLanguage("en");
     /* color: var(--bg-black); */
     font-weight: 300;
     font-family: var(--main-font);
-    font-size: clamp(1.1rem, 1.3vw, 1.2rem);
+    font-size: clamp(.9rem, 1.3vw, 1.2rem);
   }
   .order-contact {
     margin-top: 20px;
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
     color: var(--font-blue);
     font-family: var(--second-font);
   }
   .order-contact-subheader {
+    font-size: clamp(.8rem, 1.3vw, 1.2rem);
     margin-top: 5px;
     letter-spacing: 1px;
   }
@@ -180,9 +182,13 @@ changeLanguage("en");
       flex-direction: row;
       padding: 60px;
     }
-    .order-details-container {
-      margin-right: -30px;
+    .order-image-container {
       margin-top: 0;
+    }
+    .order-details-container {
+      margin-left: -40px;
+      margin-top: 0;
+      order: 2;
     }
     .order-details {
       max-width: 600px;
