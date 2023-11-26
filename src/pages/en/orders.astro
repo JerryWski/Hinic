@@ -2,6 +2,8 @@
 import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import Icon from "astro-icon";
+import { Image } from "astro:assets";
+import order from "../../assets/order-contact.webp";
 
 changeLanguage("en");
 ---
@@ -15,34 +17,39 @@ changeLanguage("en");
           <h1 class='order-header'>Zamów nasze produkty</h1>
         </div>
       </div>
-      <div class='order-details-container order-details-container-big'>
-        <div class='order-details'>
-          <h2 class='order-subheader'>
-            W celu złożenia zamówienia zadzwoń lub wykonaj przelew na poniższe
-            dane
-          </h2>
-          <table>
-            <tr>
-              <span class='table-header'
-                >Prosimy o dokonanie przelewu na poniższe konto:</span
-              >
-              <tr></tr>
-              <td>
-                <p>Numer konta bankowego: XXXX XXXX XXXX XXXX XXXX XXXX</p>
-                <p>Nazwa firmy: Hiliq sp z o.o.</p>
-                <p>Adres: ul. Leśna 12, 11-400, Wrocław</p>
-                <p>
-                  W tytule prosimy wpisać nazwę zamówionych produktów i swoje
-                  dane adresowe
-                </p>
-              </td>
-            </tr>
-          </table>
-          <h3 class='order-contact'>W razie pytań zapraszamy do kontaktu</h3>
-          <h4 class='order-contact-subheader'>
-            Nasze biuro jest czynne od pn - pt
-          </h4>
-          <h4 class='order-contact-subheader'>W godzinach od 08:00 do 16:00</h4>
+      <div class="order-wrapper">
+        <div class='order-details-container'>
+          <div class='order-details'>
+            <h2 class='order-subheader'>
+              W celu złożenia zamówienia zadzwoń lub wykonaj przelew na poniższe
+              dane
+            </h2>
+            <table>
+              <tr>
+                <span class='table-header'
+                  >Prosimy o dokonanie przelewu na poniższe konto:</span
+                >
+                <tr></tr>
+                <td>
+                  <p>Numer konta bankowego: XXXX XXXX XXXX XXXX XXXX XXXX</p>
+                  <p>Nazwa firmy: Hiliq sp z o.o.</p>
+                  <p>Adres: ul. Leśna 12, 11-400, Wrocław</p>
+                  <p>
+                    W tytule prosimy wpisać nazwę zamówionych produktów i swoje
+                    dane adresowe
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <h3 class='order-contact'>W razie pytań zapraszamy do kontaktu</h3>
+            <h4 class='order-contact-subheader'>
+              Nasze biuro jest czynne od pn - pt
+            </h4>
+            <h4 class='order-contact-subheader'>W godzinach od 08:00 do 16:00</h4>
+          </div>
+        </div>
+        <div class="order-image-container">
+          <Image class='order-image' src={order} alt="order-contact-woman">
         </div>
       </div>
     </section>
@@ -73,56 +80,57 @@ changeLanguage("en");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 400px;
   }
   .order-header {
+    color: var(--font-blue);
     font-family: var(--roboto-font);
     font-weight: 900;
-    /* padding-left: 30px; */
-    /* background-image: var(--bg-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     font-size: clamp(2.4rem, 4vw, 6rem);
   }
-  .order-details-container-big {
-    background-image: none;
-    background-repeat: no-repeat;
+  .order-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-white);
+  }
+
+  .order-details-container {
+    margin-top: 100px;
+    max-width: 95%;
     padding: 20px;
-    padding-top: 60px;
     display: grid;
     position: relative;
+    z-index: 1;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    justify-items: center;
-    background-color: var(--bg-black);
-  }
-  .order-details-container::after {
-    background-image: none;
+    justify-items: flex-start;
+    background-color: var(--bg-white);
   }
   .order-details {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 60px;
-    color: var(--bg-white);
+    max-width: 280px;
+    color: var(--logo-blue);
     font-family: var(--second-font);
     z-index: 100;
   }
   .order-subheader {
-    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    font-size: clamp(1.2rem, 2vw, 2.1rem);
     padding: 10px 0px;
-    color: var(--bg-yellow);
-    max-width: 1200px;
-    text-transform: uppercase;
+    color: var(--font-blue);
     margin-bottom: 20px;
   }
   .order-subheader-two {
-    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    font-size: clamp(1rem, 1.2vw, 1.6rem);
     font-family: var(--second-font);
     font-weight: 700;
     /* color: var(--bg-black); */
     margin-bottom: 25px;
   }
   .table-header {
-    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
     opacity: 0.9;
     text-decoration: underline;
   }
@@ -130,23 +138,24 @@ changeLanguage("en");
     /* color: var(--bg-black); */
     font-weight: 300;
     font-family: var(--main-font);
-    font-size: clamp(1.1rem, 1.3vw, 1.5rem);
+    font-size: clamp(1.1rem, 1.3vw, 1.2rem);
   }
   .order-contact {
     margin-top: 20px;
-    color: var(--bg-yellow);
+    color: var(--font-blue);
     font-family: var(--second-font);
   }
   .order-contact-subheader {
     margin-top: 5px;
     letter-spacing: 1px;
   }
-  .order-image-wrapper {
-    width: 100%;
+  .order-image-container {
+    padding: 20px;
+   margin-top: -80px;
+    max-width: 100%;
     object-fit: contain;
   }
   .order-image {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -167,22 +176,16 @@ changeLanguage("en");
     .order-header {
       padding-left: 60px;
     }
-    .order-details-container {
-      background-image: url('/src/assets/bg-test.png');
-      margin-top: 0px;
+    .order-wrapper {
+      flex-direction: row;
+      padding: 60px;
     }
-    .order-details-container::after {
-      content: '';
-      background-image: url('/src/assets/liq-bottle.png');
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: -410px;
-      right: 0px;
-      width: 250px;
-      height: 100%;
+    .order-details-container {
+      margin-right: -30px;
+      margin-top: 0;
     }
     .order-details {
-      margin-left: 120px;
+      max-width: 600px;
       margin-top: 80px;
     }
   }
