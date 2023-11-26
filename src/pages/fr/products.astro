@@ -19,12 +19,14 @@ changeLanguage("fr");
 <Layout title='Nasze produkty nikotynowe'>
   <main>
     <section class='products-section'>
+      
       <div class='products-welcome products-welcome-small'>
         <h1 class='products-header'>Produkty</h1>
       </div>
 
       <div class='products-container'>
-        <div>
+        <div class='bg-overlay'></div>
+        <div class="texts-wrapper">
           <p class='products-text'>
             Ponad 300 zadowolonych klientów w całej Polsce
           </p>
@@ -151,6 +153,18 @@ changeLanguage("fr");
   .products-section {
     padding-top: 114px;
   }
+  .bg-overlay {
+    background-image: url('/bg-dots.webp');
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.1;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .products-welcome {
     background-image: url('/products-bg-sm.webp');
     display: flex;
@@ -166,6 +180,7 @@ changeLanguage("fr");
   .products-container {
     padding: 80px 20px 80px 20px;
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -183,6 +198,7 @@ changeLanguage("fr");
     font-family: var(--main-font);
     color: var(--bg-white);
   }
+ 
   .products-text {
     font-family: var(--second-font);
     text-align: center;
@@ -196,7 +212,7 @@ changeLanguage("fr");
     animation: show 2s both;
   }
   .products-text:first-of-type {
-    animation-delay: .5s;
+    animation-delay: 0.5s;
     font-weight: 500;
     font-size: clamp(1.4rem, 1.7vw, 1.9rem);
   }
