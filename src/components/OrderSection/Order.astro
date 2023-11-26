@@ -6,7 +6,7 @@ import { localizePath } from 'astro-i18next';
 ---
 
 <section class='order-section'>
-  <div class="bg-overlay"></div>
+  <div class='bg-overlay'></div>
   <h2 class='order-heading'>Doskonałość we Współpracy i Logistyce</h2>
   <div class='order-wrapper'>
     <p class='order-text'>
@@ -18,16 +18,13 @@ import { localizePath } from 'astro-i18next';
       jakość z której będziesz bardzo zadowolony.
     </p>
     <p class='order-text'>
-      Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
-      dostosowane tak, aby zadowolić naszych Konsumentów. Jako dostawca chcemy
-      dać szansę naszym odbiorcom zarobić jeszcze więcej niż dotychczas dając im
-      bardziej konkurencyjne ceny. Dzięki naszemu przyjaznemu i profesjonalnemu
-      zespołowi, który będzie pracował razem z Tobą, Hiliq Poland oferuje Ci
-      jakość z której będziesz bardzo zadowolony.
+      Zespól Hiliq Poland dąży do tego, żeby nasi Klienci byli częścią każdego
+      naszego działania. Od zamówienia produktu aż do jego dostarczenia
+      monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z
+      całkowitym zaufaniem do naszych usług i możliwości.
       <Image class='order-image-cart' src={order} alt='order-cart' />
     </p>
     <div class='bottom-wrapper'>
-      
       <a href='/zamowienia' class='order-link'> Zamów nasze produkty</a>
     </div>
   </div>
@@ -50,7 +47,7 @@ import { localizePath } from 'astro-i18next';
       background-image: url('/logistic-map.webp');
       background-size: cover;
       background-size: contain;
-      opacity: .2;
+      opacity: 0.2;
       z-index: -1;
       background-repeat: no-repeat;
     }
@@ -86,7 +83,6 @@ import { localizePath } from 'astro-i18next';
       align-self: center;
       margin: 0 auto;
       margin-top: 20px;
-      
     }
     .order-text {
       font-family: var(--roboto-font);
@@ -118,7 +114,7 @@ import { localizePath } from 'astro-i18next';
     }
     .order-image-cart {
       transform: translateY(0px);
-      transition: .3s all ease;
+      transition: 0.3s all ease;
     }
     .order-image-cart:hover {
       transform: translateY(-10px);
@@ -146,7 +142,7 @@ import { localizePath } from 'astro-i18next';
       .order-link {
         width: fit-content;
       }
-      .bottom-wrapper  {
+      .bottom-wrapper {
         margin-top: 100px;
         margin-bottom: 100px;
         gap: 50px;
