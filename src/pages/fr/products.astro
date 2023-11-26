@@ -24,10 +24,19 @@ changeLanguage("fr");
       </div>
 
       <div class='products-container'>
-        <p class='products-text'>
-          Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące
-          zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.
-        </p>
+        <div>
+          <p class='products-text'>
+            Ponad 300 zadowolonych klientów w całej Polsce
+          </p>
+          <p class='products-text'>
+            Innowacyjne podejście generuje zgodną z oczekiwaniem Konsumenta
+            jakość produktu.
+          </p>
+          <p class='products-text'>
+            Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące
+            zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.
+          </p>
+        </div>
         <div class='card'>
           <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
           <h2 class='card-title'>Nikotyna</h2>
@@ -141,24 +150,9 @@ changeLanguage("fr");
 <style>
   .products-section {
     padding-top: 114px;
-    background-image: linear-gradient(
-      to right top,
-      #01294d,
-      #473468,
-      #863870,
-      #bc4161,
-      #dc6043,
-      #dc6045,
-      #dc6046,
-      #dc6048,
-      #b84567,
-      #7f3f73,
-      #403965,
-      #0f2b44
-    );
   }
   .products-welcome {
-    background-image: url('/src/assets/products-bg-small.webp');
+    background-image: url('/products-bg-sm.webp');
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -170,21 +164,6 @@ changeLanguage("fr");
     height: 300px;
   }
   .products-container {
-    background-image: linear-gradient(
-      to right top,
-      #01294d,
-      #473468,
-      #863870,
-      #bc4161,
-      #dc6043,
-      #dc6045,
-      #dc6046,
-      #dc6048,
-      #b84567,
-      #7f3f73,
-      #403965,
-      #0f2b44
-    );
     padding: 80px 20px 80px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -194,21 +173,9 @@ changeLanguage("fr");
   }
   .products-header {
     font-family: var(--roboto-font);
-    /* background-image: linear-gradient(
-      to right,
-      #fab8dd,
-      #eeeaed,
-      #c774c2,
-      rgb(255, 255, 255),
-      #f0bf38
-    ); */
-    /* text-shadow: 4px 4px 0px rgb(255, 255, 255);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     margin-top: 30px;
     align-self: center;
-    color: var(--bg-white);
+    color: var(--font-blue);
     font-size: clamp(4rem, 4vw, 6rem);
   }
   .products-subheader {
@@ -220,13 +187,26 @@ changeLanguage("fr");
     font-family: var(--second-font);
     text-align: center;
     font-size: clamp(1.2rem, 1.5vw, 1.7rem);
-    color: var(--bg-white);
+    color: var(--font-blue);
     padding: 25px 30px;
-    backdrop-filter: blur(28px);
-    background-color: rgb(255, 255, 255, 0.2);
     font-weight: 300;
     max-width: 1400px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: show 2s both;
+  }
+  .products-text:first-of-type {
+    animation-delay: .5s;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 1.7vw, 1.9rem);
+  }
+  .products-text:nth-of-type(2) {
+    opacity: 0;
+    animation-delay: 1s;
+  }
+  .products-text:nth-of-type(3) {
+    opacity: 0;
+    animation-delay: 1.5s;
   }
   .card {
     display: flex;
@@ -259,7 +239,7 @@ changeLanguage("fr");
     height: 140px;
   }
   .warning-container {
-    background-color: var(--bg-black);
+    background-image: var(--bg-gradient);
     color: var(--bg-white);
     padding: 20px 20px 60px 20px;
   }
@@ -325,10 +305,11 @@ changeLanguage("fr");
       padding-top: 100px;
     }
     .products-welcome {
+      height: 400px;
       align-items: center;
     }
     .products-welcome-small {
-      background-image: url('/src/assets/products-bg-test.webp');
+      background-image: url('/products-bg.webp');
     }
     .products-header {
       padding-left: 120px;
@@ -343,6 +324,14 @@ changeLanguage("fr");
   @media (max-width: 1800px) {
     .products-text {
       margin-top: 0px;
+    }
+  }
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 </style>

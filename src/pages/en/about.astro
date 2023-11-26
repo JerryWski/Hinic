@@ -1,9 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import rounds from "../../assets/rounds2.png";
+import rounds from "../../assets/rounds2.webp";
 import contact from "../../assets/contact-img.png";
-import nicotine from "../../assets/nicotine3.png";
+import tabacco from "../../assets/tobacco-plants.webp";
 import labo from "../../assets/labo-bottles.png";
 import logistic from "../../assets/logistic.png";
 import logisitc2 from "../../assets/logistic2.png";
@@ -13,11 +13,11 @@ import i18next, { t, changeLanguage } from "i18next";
 changeLanguage("en");
 ---
 
-<Layout title={t("about.title")}>
+<Layout title={t('about.title')}>
   <main class='about-section'>
     <section>
       <div class='about-welcome'>
-        <h1 class='about-header'>{t("about.header")}</h1>
+        <h1 class='about-header'>{t('about.header')}</h1>
       </div>
       <div class='about-container'>
         <div class='about-text'>
@@ -25,52 +25,59 @@ changeLanguage("en");
           <p class='text'>
             Hiliq może być Twoim numerem jeden jako dostawca online czystej
             nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb
-            przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny klasy
-            USP, która może być wykorzystywana w wielu produktach takich jak
-            plastry nikotynowe, gumy do żucia oraz płyny przygotowane i używane
-            specjalnie do użytku w elektronicznych papierosach.
+            przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny
+            klasy USP, która może być wykorzystywana w wielu produktach takich
+            jak plastry nikotynowe, gumy do żucia oraz płyny przygotowane i
+            używane specjalnie do użytku w elektronicznych papierosach.
           </p>
           <p class='text'>
-            Wykorzystujemy swoje doświadczenie nie tylko do produkcji najwyższej
-            klasy produktów końcowych, ale również skupia swój rozwój na
-            prowadzeniu badań, które są stale obecne w naszych działaniach tak
-            istotnych do wprowadzania nowych produktów na rynek zgodnie
-            zapotrzebowaniem naszych Klientów.
+            Teraz, gdy już mamy opanowane do perfekcji ekstrakcje nikotyny
+            jesteśmy dumni z produkcji i możliwości zaoferowania szerokiego
+            wyboru czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do
+            99.9% ,więc idealną do każdego rodzaju produktów. Wykorzystujemy
+            swoje doświadczenie nie tylko do produkcji najwyższej klasy
+            produktów końcowych, ale również skupia swój rozwój na prowadzeniu
+            badań, które są stale obecne w naszych działaniach tak istotnych do
+            wprowadzania nowych produktów na rynek zgodnie zapotrzebowaniem
+            naszych Klientów.
           </p>
           <p class='text'>
             Posiadamy doświadczenie w procesach produkcji, dlatego też nasze
             produkty osiągają najwyższe standardy, jak również procedury
-            bezpieczeństwa są zawsze przestrzegane. Nasza dociekliwość koncentruje
-            się wokół wydobycia najlepszych składników z liści tytoniu i poddaniu
-            ich szeregowi ekstrakcji oraz oczyszczania tak, aby dostarczyć naszym
-            konsumentom najbardziej naturalny i czysty płyn nikotynowy.
+            bezpieczeństwa są zawsze przestrzegane. Nasza dociekliwość
+            koncentruje się wokół wydobycia najlepszych składników z liści
+            tytoniu i poddaniu ich szeregowi ekstrakcji oraz oczyszczania tak,
+            aby dostarczyć naszym konsumentom najbardziej naturalny i czysty
+            płyn nikotynowy.
           </p>
         </div>
         <span class='span-line'></span>
         <div class='benefits-wrapper container'>
-          <Image class='image' src={rounds} alt='obrazek' />
+          <Image class='image' src={rounds} alt='rounds' />
           <div class='benefit title-one'>
             <h2 class='benefit-header'>Ogromny wybór</h2>
-            <Image class='benefit-image' src={nicotine} alt='nicotine-bottles' />
+            <Image class='benefit-image' src={tabacco} alt='tobacco-plants' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
               >
-              <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
                 <p>
-                  Hiliq jest zawsze zgodna ze strategią, iż innowacyjne podejście
-                  generuje zgodną z oczekiwaniem Konsumenta jakość produktu. Teraz,
-                  gdy już mamy opanowane do perfekcji ekstrakcje nikotyny jesteśmy
-                  dumni z produkcji i możliwości zaoferowania szerokiego wyboru
-                  czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9%
-                  ,więc idealną do każdego rodzaju produktów.
+                  Hiliq jest zawsze zgodna ze strategią, iż innowacyjne
+                  podejście generuje zgodną z oczekiwaniem Konsumenta jakość
+                  produktu. Teraz, gdy już mamy opanowane do perfekcji
+                  ekstrakcje nikotyny jesteśmy dumni z produkcji i możliwości
+                  zaoferowania szerokiego wyboru czystości nikotyny. Oferujemy
+                  nikotynę w czystości 99.5% do 99.9% ,więc idealną do każdego
+                  rodzaju produktów.
                 </p>
               </div>
             </div>
-            
           </div>
           <div class='benefit title-two'>
             <h2 class='benefit-header'>Jakość produktu</h2>
@@ -79,19 +86,20 @@ changeLanguage("en");
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
               >
-              <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Hiliq oferuje tylko najwyższą jakość produktów nikotynowych. Nasze
-                płyny, ekstraktowane z najwyższej jakości roślin tytoniowych są
-                starannie produkowane w zakładach sprawdzonych przez FDA oraz
-                zgodnie z wytycznymi cGMP (current Good Manufacturing Practices),
-                tak aby zapewnić 100% satysfakcji Klientów zarówno w strefie smaku
-                jak i bezpieczeństwa.
+                Hiliq oferuje tylko najwyższą jakość produktów nikotynowych.
+                Nasze płyny, ekstraktowane z najwyższej jakości roślin
+                tytoniowych są starannie produkowane w zakładach sprawdzonych
+                przez FDA oraz zgodnie z wytycznymi cGMP (current Good
+                Manufacturing Practices), tak aby zapewnić 100% satysfakcji
+                Klientów zarówno w strefie smaku jak i bezpieczeństwa.
               </div>
             </div>
-            
           </div>
           <div class='benefit title-three'>
             <h2 class='benefit-header'>Doskonałość w logistyce</h2>
@@ -100,21 +108,22 @@ changeLanguage("en");
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
               >
-              <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
                 Dostarczamy nasze produkty w każde miejsce na świecie według
                 zapotrzebowania naszych Konsumentów. Dotox jest niezawodnym
-                dostawcą wysokiej jakości nikotyny. Z naszymi partnerami, będącymi
-                kluczowymi dostawcami w branży logistycznej zapewniamy szybki,
-                odpowiedzialny oraz wygodny transport do Waszych drzwi z
+                dostawcą wysokiej jakości nikotyny. Z naszymi partnerami,
+                będącymi kluczowymi dostawcami w branży logistycznej zapewniamy
+                szybki, odpowiedzialny oraz wygodny transport do Waszych drzwi z
                 najniższymi dostępnymi opłatami przesyłek międzynarodowych.
                 Posiadamy również zespół, który pomoże Ci śledzić, sprawdzać i
                 koordynować stan Twojej przesyłki.
               </div>
             </div>
-            
           </div>
           <div class='benefit title-four'>
             <h2 class='benefit-header'>Konkurencyjne ceny</h2>
@@ -123,18 +132,19 @@ changeLanguage("en");
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
               >
-              <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
                 Hiliq oferuje wyłącznie najczystszą nikotynę, równocześnie dając
                 uczciwą i odpowiednią cenę dla Twojego biznesu. Cenimy naszych
-                Klientów oraz zawsze wspieramy ich działalność. Nikt z konkurentów
-                nie proponuje takiej samej jakości produktów jaką my oferujemy w
-                tak dobrych cenach.
+                Klientów oraz zawsze wspieramy ich działalność. Nikt z
+                konkurentów nie proponuje takiej samej jakości produktów jaką my
+                oferujemy w tak dobrych cenach.
               </div>
             </div>
-           
           </div>
           <div class='benefit title-five'>
             <h2 class='benefit-header'>Istotność serwisu</h2>
@@ -143,24 +153,26 @@ changeLanguage("en");
               <button id='toggle' aria-label='action-btn' class='btn-accord'>
                 Rozwiń</button
               >
-              <span><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span>
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Hiliq rozumie, iż skuteczna obsługa klienta może stanowić ogromną
-                wartość biznesową. Zawsze jest naszym celem, aby trzymać się
-                zasad, zapewniających wydajność oraz spełnianie wszystkie
+                Hiliq rozumie, iż skuteczna obsługa klienta może stanowić
+                ogromną wartość biznesową. Zawsze jest naszym celem, aby trzymać
+                się zasad, zapewniających wydajność oraz spełnianie wszystkie
                 oczekiwań Konsumentów. Zespól Dotox dąży do tego, żeby nasi
                 Klienci byli częścią każdego naszego działania. Od zamówienia
                 produktu aż do jego dostarczenia monitorujemy cały proces, więc
-                będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem do
-                naszych usług i możliwości.
+                będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem
+                do naszych usług i możliwości.
               </div>
             </div>
-            
           </div>
         </div>
       </div>
+
       <div class='advantages-wrapper'>
         <h2 class='about-subheader'>Zalety</h2>
         <div class='advantages-container'>
@@ -172,10 +184,10 @@ changeLanguage("en");
               Doświadczenie w produkcji i logistyce
             </h2>
             <p class='advantages-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-              eum tempora corporis in ea, aliquam nostrum atque, consequatur
-              veritatis ex eaque quam asperiores facere repellendus. Maiores
-              expedita veniam laborum! Adipisci!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
+              consequatur veritatis ex eaque quam asperiores facere repellendus.
+              Maiores expedita veniam laborum! Adipisci!
             </p>
           </div>
           <div class='advantages'>
@@ -184,10 +196,10 @@ changeLanguage("en");
             </div>
             <h2 class='advantages-header'>Wydajność cen i usług</h2>
             <p class='advantages-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-              eum tempora corporis in ea, aliquam nostrum atque, consequatur
-              veritatis ex eaque quam asperiores facere repellendus. Maiores
-              expedita veniam laborum! Adipisci!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
+              consequatur veritatis ex eaque quam asperiores facere repellendus.
+              Maiores expedita veniam laborum! Adipisci!
             </p>
           </div>
           <div class='advantages'>
@@ -196,10 +208,10 @@ changeLanguage("en");
             </div>
             <h2 class='advantages-header'>Rozwój i badania</h2>
             <p class='advantages-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-              eum tempora corporis in ea, aliquam nostrum atque, consequatur
-              veritatis ex eaque quam asperiores facere repellendus. Maiores
-              expedita veniam laborum! Adipisci!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
+              consequatur veritatis ex eaque quam asperiores facere repellendus.
+              Maiores expedita veniam laborum! Adipisci!
             </p>
           </div>
         </div>
@@ -220,17 +232,22 @@ changeLanguage("en");
   .wrapper-accord > div {
     overflow: hidden;
   }
+  .btn-wrapper {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   .btn-accord {
     cursor: pointer;
     color: var(--bg-white);
     border: none;
-    background: var(--bg-black);
+    background: var(--font-blue);
     padding: 10px 25px;
-    min-width:105px;
-    margin-bottom: 5px;
+    min-width: 105px;
   }
   .arrow {
-    color: var(--bg-black);
+    color: var(--font-blue);
     transform: rotate(-90deg);
     transition: 0.5s transform ease-out;
   }
@@ -243,7 +260,7 @@ changeLanguage("en");
     color: var(--bg-black);
   }
   .about-welcome {
-    background-image: url('/src/assets/smoking-man.png');
+    background-image: url('/lab-man.webp');
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -261,12 +278,14 @@ changeLanguage("en");
   .about-header {
     margin-top: 30px;
     color: var(--bg-white);
+    text-shadow: 5px -1px 0px rgba(3, 27, 78, 1);
     align-self: center;
     font-family: var(--roboto-font);
-    font-size: clamp(4rem, 4vw, 6rem);
+    font-size: clamp(4rem, 6vw, 6rem);
   }
   .about-subheader {
     margin-top: 30px;
+    color: var(--font-blue);
     font-family: var(--main-font);
     font-size: clamp(2rem, 3vw, 3rem);
   }
@@ -274,6 +293,7 @@ changeLanguage("en");
     text-indent: 15px;
     margin-block: 20px;
     text-align: justify;
+    color: var(--logo-blue);
     font-family: var(--second-font);
   }
   .text::first-letter {
@@ -287,7 +307,7 @@ changeLanguage("en");
     display: inline-block;
     width: 100%;
     margin-top: 40px;
-    background-color: var(--bg-black);
+    background-color: var(--logo-blue);
     height: 1px;
   }
   .benefits-wrapper {
@@ -297,18 +317,19 @@ changeLanguage("en");
     font-family: var(--main-font);
   }
   .benefit-header {
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 80px;
+    color: var(--blue);
+    margin-bottom: 5px;
     font-size: 1.8rem;
   }
   .benefit-text {
     font-size: 0.9rem;
-    font-size: ;
+    margin-top: 10px;
     text-align: justify;
     line-height: 24px;
-    color: var(--bg-grey);
+    color: var(--logo-blue);
   }
-  
+
   .benefit-image {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -322,7 +343,15 @@ changeLanguage("en");
     display: none;
   }
   .advantages-wrapper {
-    background-color: var(--bg-black);
+    background-color: var(--font-blue);
+    background-image: linear-gradient(
+      to bottom,
+      #031b4e,
+      #021946,
+      #02173e,
+      #031536,
+      #05122e
+    );
     color: var(--bg-white);
     display: flex;
     justify-content: center;
@@ -372,7 +401,7 @@ changeLanguage("en");
     left: 0;
     width: 100%;
     height: 100%;
-   
+
     border: 2px solid var(--bg-white);
     box-sizing: border-box;
     z-index: 1;
@@ -423,7 +452,6 @@ changeLanguage("en");
     font-size: 0.9rem;
     opacity: 0.8;
   }
-  
 
   @media (min-width: 900px) {
     .about-section {
@@ -431,9 +459,10 @@ changeLanguage("en");
     }
     .about-welcome {
       background-size: cover;
+      background-position-y: -300px;
       justify-content: flex-start;
       align-items: center;
-      height: 300px;
+      height: 400px;
     }
     .about-header {
       padding-left: 120px;
@@ -450,8 +479,9 @@ changeLanguage("en");
       font-size: 1rem;
     }
 
-    .container {
+    .benefits-wrapper.container {
       padding-inline: 40px;
+      margin-top: 130px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -506,6 +536,7 @@ changeLanguage("en");
     }
     .benefit-header {
       font-size: 1rem;
+      margin-top: 0px;
     }
     .benefit-text {
       font-size: 0.7rem;
@@ -543,7 +574,9 @@ changeLanguage("en");
       accordion.addEventListener('click', () => {
         wrapper?.classList.toggle('is-open');
         arrow?.classList.toggle('is-rotate');
-        accordion.textContent = wrapper?.classList.contains('is-open') ? 'Schowaj' : 'Rozwiń'
+        accordion.textContent = wrapper?.classList.contains('is-open')
+          ? 'Schowaj'
+          : 'Rozwiń';
         accordion.style.backgroundColor = wrapper?.classList.contains('is-open')
           ? 'var(--bg-white)'
           : '';

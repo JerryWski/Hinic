@@ -1,16 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import rounds from '../assets/rounds2.webp';
-import contact from '../assets/contact-img.png';
-import tabacco from '../assets/tobacco-plants.webp';
-import labo from '../assets/labo-bottles.png';
-import logistic from '../assets/logistic.png';
-import logisitc2 from '../assets/logistic2.png';
-import Icon from 'astro-icon';
-import i18next, { t, changeLanguage } from 'i18next';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import rounds from "../assets/rounds2.webp";
+import contact from "../assets/contact-img.png";
+import tabacco from "../assets/tobacco-plants.webp";
+import labo from "../assets/labo-bottles.png";
+import logistic from "../assets/logistic.png";
+import logisitc2 from "../assets/logistic2.png";
+import Icon from "astro-icon";
+import i18next, { t, changeLanguage } from "i18next";
 
-changeLanguage('pl');
+changeLanguage("pl");
 ---
 
 <Layout title={t('about.title')}>
@@ -56,11 +56,7 @@ changeLanguage('pl');
           <Image class='image' src={rounds} alt='rounds' />
           <div class='benefit title-one'>
             <h2 class='benefit-header'>Ogromny wybór</h2>
-            <Image
-              class='benefit-image'
-              src={tabacco}
-              alt='tobacco-plants'
-            />
+            <Image class='benefit-image' src={tabacco} alt='tobacco-plants' />
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -236,17 +232,22 @@ changeLanguage('pl');
   .wrapper-accord > div {
     overflow: hidden;
   }
+  .btn-wrapper {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   .btn-accord {
     cursor: pointer;
     color: var(--bg-white);
     border: none;
-    background: var(--bg-black);
+    background: var(--font-blue);
     padding: 10px 25px;
     min-width: 105px;
-    margin-bottom: 5px;
   }
   .arrow {
-    color: var(--bg-black);
+    color: var(--font-blue);
     transform: rotate(-90deg);
     transition: 0.5s transform ease-out;
   }
@@ -306,7 +307,7 @@ changeLanguage('pl');
     display: inline-block;
     width: 100%;
     margin-top: 40px;
-    background-color: var(--font-blue);
+    background-color: var(--logo-blue);
     height: 1px;
   }
   .benefits-wrapper {
@@ -318,12 +319,12 @@ changeLanguage('pl');
   .benefit-header {
     margin-top: 80px;
     color: var(--blue);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 1.8rem;
   }
   .benefit-text {
     font-size: 0.9rem;
-    font-size:;
+    margin-top: 10px;
     text-align: justify;
     line-height: 24px;
     color: var(--logo-blue);
@@ -342,7 +343,15 @@ changeLanguage('pl');
     display: none;
   }
   .advantages-wrapper {
-    background-color: var(--bg-black);
+    background-color: var(--font-blue);
+    background-image: linear-gradient(
+      to bottom,
+      #031b4e,
+      #021946,
+      #02173e,
+      #031536,
+      #05122e
+    );
     color: var(--bg-white);
     display: flex;
     justify-content: center;
@@ -453,7 +462,7 @@ changeLanguage('pl');
       background-position-y: -300px;
       justify-content: flex-start;
       align-items: center;
-      height: 300px;
+      height: 400px;
     }
     .about-header {
       padding-left: 120px;
