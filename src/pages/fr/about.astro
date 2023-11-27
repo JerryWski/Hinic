@@ -1,12 +1,13 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
+import MyCustomImageCard from "../../components/MyCustomImageCard.astro";
 import rounds from "../../assets/rounds2.webp";
-import contact from "../../assets/contact-img.png";
-import tabacco from "../../assets/tobacco-plants.webp";
-import labo from "../../assets/labo-bottles.png";
-import logistic from "../../assets/logistic.png";
-import logisitc2 from "../../assets/logistic2.png";
+// import contact from '../../assets/contact-img.png';
+// import tabacco from '../../assets/tobacco-plants.webp';
+// import labo from '../../assets/labo-bottles.png';
+// import logistic from '../../assets/logistic.png';
+// import logisitc2 from '../../assets/logistic2.png';
 import Icon from "astro-icon";
 import i18next, { t, changeLanguage } from "i18next";
 
@@ -53,10 +54,18 @@ changeLanguage("fr");
         </div>
         <span class='span-line'></span>
         <div class='benefits-wrapper container'>
+          <!-- <MyCustomImageCard
+          imagePath='/src/assets/rounds2.webp'
+          altText="rounds with different images" /> -->
+
           <Image class='image' src={rounds} alt='rounds' />
           <div class='benefit title-one'>
             <h2 class='benefit-header'>Ogromny wybór</h2>
-            <Image class='benefit-image' src={tabacco} alt='tobacco-plants' />
+            <MyCustomImageCard
+              imagePath='/src/assets/tobacco-plants.webp'
+              altText='tobacco plants'
+            />
+            <!-- <Image class='benefit-image' src={tabacco} alt='tobacco-plants' /> -->
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -81,7 +90,11 @@ changeLanguage("fr");
           </div>
           <div class='benefit title-two'>
             <h2 class='benefit-header'>Jakość produktu</h2>
-            <Image class='benefit-image' src={labo} alt='laboratory' />
+            <MyCustomImageCard
+              imagePath='/src/assets/labo-bottles.png'
+              altText='laboratory bottles'
+            />
+            <!-- <Image class='benefit-image' src={labo} alt='laboratory' /> -->
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -103,7 +116,11 @@ changeLanguage("fr");
           </div>
           <div class='benefit title-three'>
             <h2 class='benefit-header'>Doskonałość w logistyce</h2>
-            <Image class='benefit-image' src={logistic} alt='magazine' />
+            <MyCustomImageCard
+              imagePath='/src/assets/logistic.png'
+              altText='logistic magazine'
+            />
+            <!-- <Image class='benefit-image' src={logistic} alt='magazine' /> -->
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -127,7 +144,11 @@ changeLanguage("fr");
           </div>
           <div class='benefit title-four'>
             <h2 class='benefit-header'>Konkurencyjne ceny</h2>
-            <Image class='benefit-image' src={logisitc2} alt='logistics' />
+            <MyCustomImageCard
+              imagePath='/src/assets/logistic2.png'
+              altText='woman and man in magazine'
+            />
+            <!-- <Image class='benefit-image' src={logisitc2} alt='logistics' /> -->
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'
                 >Rozwiń</button
@@ -148,7 +169,11 @@ changeLanguage("fr");
           </div>
           <div class='benefit title-five'>
             <h2 class='benefit-header'>Istotność serwisu</h2>
-            <Image class='benefit-image' src={contact} alt='contact-woman' />
+            <MyCustomImageCard
+              imagePath='/src/assets/contact-img.png'
+              altText='woman talking by phone'
+            />
+            <!-- <Image class='benefit-image' src={contact} alt='contact-woman' /> -->
             <div class='btn-wrapper'>
               <button id='toggle' aria-label='action-btn' class='btn-accord'>
                 Rozwiń</button
@@ -330,7 +355,7 @@ changeLanguage("fr");
     color: var(--logo-blue);
   }
 
-  .benefit-image {
+  /* .benefit-image {
     margin-top: 15px;
     margin-bottom: 15px;
     display: block;
@@ -338,7 +363,7 @@ changeLanguage("fr");
     box-shadow: 3px 10px 19px -5px rgba(0, 0, 0, 1);
     object-fit: contain;
     height: auto;
-  }
+  } */
   .image {
     display: none;
   }
@@ -531,9 +556,9 @@ changeLanguage("fr");
       padding: 15px;
       padding-top: 0;
     }
-    .benefit-image {
+    /* .benefit-image {
       display: none;
-    }
+    } */
     .benefit-header {
       font-size: 1rem;
       margin-top: 0px;
