@@ -1,5 +1,7 @@
 ---
 import { t } from 'i18next';
+import { Image } from 'astro:assets';
+import logo from '../../assets/base-logo.png'
 import { localizePath } from 'astro-i18next';
 import { LanguageSelector } from 'astro-i18next/components';
 import Hamburger from './Hamburger.astro';
@@ -15,7 +17,7 @@ import Hamburger from './Hamburger.astro';
 
     <a class='logo-link-mobile' href='/'>
       <div class='logo-wrapper-mobile'>
-        <img src='/base-logo.png' alt='logo-icon' />
+        <Image src={logo} alt='logo-icon' />
       </div>
     </a>
     <div class='contact-wrapper'>
@@ -34,6 +36,7 @@ import Hamburger from './Hamburger.astro';
       showFlag={false}
       languageMapping={{ en: 'EN', fr: 'FR', pl: 'PL' }}
       class='my-select-class'
+      aria-label='language switcher'
     />
     <div class='nav-links'>
       <a class='link' href={localizePath('/o_nas')}>
@@ -45,7 +48,7 @@ import Hamburger from './Hamburger.astro';
       <a class='link' href={localizePath('/zamowienia')}>
         {t('navbar.orders')}
       </a>
-      <a class='link' href={localizePath('/kontakt')}>{t('navbar.contact')}</a>
+      <a class='link' href=#contact>{t('navbar.contact')}</a>
     </div>
     <!-- <div class='hamburger'>
       <span class='burger-line'></span>
@@ -63,7 +66,7 @@ import Hamburger from './Hamburger.astro';
       <a class='link-mobile' href={localizePath('/zamowienia')}>
         {t('navbar.orders')}</a
       >
-      <a class='link-mobile' href='/#contact'> {t('navbar.contact')}</a>
+      <a class='link-mobile' href=#contact> {t('navbar.contact')}</a>
     </div>
   </nav>
 </header>
