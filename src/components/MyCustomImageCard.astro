@@ -11,3 +11,20 @@ const images = import.meta.glob('/src/assets/*.{webp,png}')
 ---
 
  <Image class='benefit-image' src={images[imagePath]()} alt={altText} />
+
+ <style>
+    .benefit-image {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    box-shadow: 3px 10px 19px -5px rgba(0, 0, 0, 1);
+    object-fit: contain;
+    height: auto;
+  }
+  @media(min-width: 900px) {
+    .benefit-image {
+      display: none;
+    }
+  }
+ </style>
