@@ -67,7 +67,7 @@ changeLanguage("pl");
             />
             <!-- <Image class='benefit-image' src={tabacco} alt='tobacco-plants' /> -->
             <div class='btn-wrapper'>
-              <button aria-label='rozwin' class='btn-accord'
+              <button aria-label='button toggle' class='button-accord'
                 >Rozwiń</button
               >
               <span
@@ -96,7 +96,7 @@ changeLanguage("pl");
             />
             <!-- <Image class='benefit-image' src={labo} alt='laboratory' /> -->
             <div class='btn-wrapper'>
-              <button aria-label='rozwin' class='btn-accord'
+              <button aria-label='button toggle' class='buttonn-accord'
                 >Rozwiń</button
               >
               <span
@@ -122,7 +122,7 @@ changeLanguage("pl");
             />
             <!-- <Image class='benefit-image' src={logistic} alt='magazine' /> -->
             <div class='btn-wrapper'>
-              <button aria-label='rozwin' class='btn-accord'
+              <button aria-label='button toggle' class='button-accord'
                 >Rozwiń</button
               >
               <span
@@ -150,7 +150,7 @@ changeLanguage("pl");
             />
             <!-- <Image class='benefit-image' src={logisitc2} alt='logistics' /> -->
             <div class='btn-wrapper'>
-              <button aria-label='rozwin' class='btn-accord'
+              <button aria-label='button toggle' class='button-accord'
                 >Rozwiń</button
               >
               <span
@@ -175,7 +175,7 @@ changeLanguage("pl");
             />
             <!-- <Image class='benefit-image' src={contact} alt='contact-woman' /> -->
             <div class='btn-wrapper'>
-              <button aria-label='rozwin' class='btn-accord'>
+              <button aria-label='button toggle' class='button-accord'>
                 Rozwiń</button
               >
               <span
@@ -263,7 +263,7 @@ changeLanguage("pl");
     align-items: center;
     gap: 10px;
   }
-  .btn-accord {
+  .buttonn-accord {
     cursor: pointer;
     color: var(--bg-white);
     border: none;
@@ -354,16 +354,6 @@ changeLanguage("pl");
     line-height: 24px;
     color: var(--logo-blue);
   }
-
-  /* .benefit-image {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: block;
-    width: 100%;
-    box-shadow: 3px 10px 19px -5px rgba(0, 0, 0, 1);
-    object-fit: contain;
-    height: auto;
-  } */
   .image {
     display: none;
   }
@@ -588,7 +578,7 @@ changeLanguage("pl");
 </style>
 
 <script>
-  const accordions = document.querySelectorAll('.btn-accord');
+  const accordions = document.querySelectorAll('.button-accord');
 
   accordions.forEach((accordion) => {
     const benefit = accordion.closest('.benefit');
