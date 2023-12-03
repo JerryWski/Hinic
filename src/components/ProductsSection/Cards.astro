@@ -10,70 +10,18 @@ import data from '../../data/productsPreview.json';
 ---
 
 <div class='cards-content'>
-
-{
-  data.map((item) => (
-    <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>{item.name}</h3>
+  {
+    data.map((item) => (
+      <div class='card'>
+        <div class='content'>
+          <div class='gradient'>
+            <h3 class='card-title'>{item.name}</h3>
+          </div>
+          <img class='card-image' src={item.image} alt={item.name} />
+        </div>
       </div>
-      <img class='card-image' src={item.image} alt={item.name} />
-    </div>
-  </div>
-  ))
-}
-
-
-  <!-- <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>Nikotyna</h3>
-      </div>
-      <Image class='card-image' src={nicotine} alt='nicotine' />
-    </div>
-  </div>
-
-  <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>Sól Nikotynowa</h3>
-      </div>
-      <Image class='card-image' src={salt} alt='nicotine-salt' />
-    </div>
-  </div>
-  <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>PG&VG</h3>
-      </div>
-      <Image class='card-image' src={pgvg} alt='nicotine-bottles' />
-    </div>
-  </div>
-  <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>Aromaty</h3>
-      </div>
-      <Image class='card-image' src={aromas} alt='nicotine-bottles' />
-    </div>
-  </div>
-  <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>Dodatki</h3>
-      </div>
-      <Image class='card-image' src={accessories} alt='accessories' />
-    </div>
-  </div>
-  <div class='card'>
-    <div class='content'>
-      <div class='gradient'>
-        <h3 class='card-title'>Oleje CBD</h3>
-      </div>
-      <Image class='card-image' src={cbd} alt='cbd' />
-    </div>
-  </div> -->
+    ))
+  }
 </div>
 
 <style>
@@ -101,12 +49,7 @@ import data from '../../data/productsPreview.json';
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: linear-gradient(
-      to top,
-      #000000,
-      #00000018,
-      #ffffff00
-    );
+    background-image: linear-gradient(to top, #000000, #00000018, #ffffff00);
     position: absolute;
     inset: 0;
     transition: 0.3s all ease;
