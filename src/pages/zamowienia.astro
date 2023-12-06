@@ -1,198 +1,251 @@
 ---
-import { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Icon from "astro-icon";
-import { Image } from "astro:assets";
-import order from "../assets/order-contact.webp";
+import { changeLanguage } from 'i18next';
+import Layout from '../layouts/Layout.astro';
+import Icon from 'astro-icon';
+import { Image } from 'astro:assets';
+import order from '../assets/order-contact.webp';
 
-changeLanguage("pl");
+changeLanguage('pl');
 ---
 
-<Layout title='Zamów nasze produkty'>
+<Layout title='Kontakt z Nami'>
   <main>
     <section class='order-section'>
       <div class='order-welcome order-welcome-small'>
         <div class='centered-headers'>
-          <Icon class='cart' name='shopping-cart' width='100' />
-          <h1 class='order-header'>Zamów nasze produkty</h1>
+          <Icon class='cart' name='contact-icon' width='80px' />
+          <h1 class='order-header'>Kontakt z Nami</h1>
         </div>
       </div>
-      <div class="order-wrapper">
+      <div class='order-wrapper'>
         <div class='order-details-container'>
           <div class='order-details'>
             <h2 class='order-subheader'>
-              W celu złożenia zamówienia zadzwoń lub wykonaj przelew na poniższe
-              dane
+              Masz pytanie lub chcesz zamówić nasz produkt?
             </h2>
-            <table>
-              <tr>
-                <span class='table-header'
-                  >Prosimy o dokonanie przelewu na poniższe konto:</span
-                >
-                <tr></tr>
-                <td>
-                  <p>Numer konta bankowego: XXXX XXXX XXXX XXXX XXXX XXXX</p>
-                  <p>Nazwa firmy: Hiliq sp z o.o.</p>
-                  <p>Adres: ul. Leśna 12, 11-400, Wrocław</p>
-                  <p>
-                    W tytule prosimy wpisać nazwę zamówionych produktów i swoje
-                    dane adresowe
-                  </p>
-                </td>
-              </tr>
-            </table>
-            <h3 class='order-contact'>W razie pytań zapraszamy do kontaktu</h3>
-            <h4 class='order-contact-subheader'>
+            <h3 class='order-contact-subheader'>
               Nasze biuro jest czynne od pn - pt
-            </h4>
-            <h4 class='order-contact-subheader'>W godzinach od 08:00 do 16:00</h4>
+            </h3>
+            <h3 class='order-contact-subheader'>
+              W godzinach od 08:00 do 16:00
+            </h3>
+          </div>
+          <div class='contact-container'>
+            <div class='country-wrapper'>
+              flaga
+              <p>Polska</p>
+              <div>
+                <a href='tel:+48887545887'><span></span> +48 888 888 887</a>
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              flaga
+              <p>England</p>
+              <div>
+                <a href='tel:+48887545887'><span>ikona</span> +48 888 888 887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              flaga
+              <p>Deutch</p>
+              <div>
+                <a href='tel:+48887545887'><span>ikona</span> +48 888 888 887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              flaga
+              <p>France</p>
+              <div>
+                <a href='tel:+48887545887'><span>ikona</span> +48 888 888 887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              flaga
+              <p>Span</p>
+              <div>
+                <a href='tel:+48887545887'><span>ikona</span> +48 888 888 887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <div class="order-image-container">
-          <Image class='order-image' src={order} alt="order-contact-woman">
+        <div class='order-image-container'>
+          <Image class='order-image' src={order} alt='order-contact-woman' />
         </div>
       </div>
     </section>
   </main>
-</Layout>
 
-<style>
-  .centered-headers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .order-section {
-    padding-top: 114px;
-  }
-  .cart {
-    align-self: flex-start;
-    width: 70px;
-  }
-  .order-welcome {
-    background-image: url('/order-bg-small.webp');
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-  }
-  .order-header {
-    color: var(--font-blue);
-    font-family: var(--roboto-font);
-    font-weight: 700;
-    font-size: clamp(2.4rem, 4vw, 6rem);
-  }
-  .order-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--bg-white);
-  }
-
-  .order-details-container {
-    margin-top: 100px;
-    max-width: 95%;
-    padding: 20px;
-    display: grid;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    justify-items: flex-start;
-    background-color: var(--bg-white);
-  }
-  .order-details {
-    margin-top: 0px;
-    margin-bottom: 60px;
-    max-width: 270px;
-    color: var(--logo-blue);
-    font-family: var(--second-font);
-    z-index: 100;
-  }
-  .order-subheader {
-    font-size: clamp(1.2rem, 2vw, 2.1rem);
-    padding: 10px 0px;
-    color: var(--font-blue);
-    margin-bottom: 20px;
-  }
-  .order-subheader-two {
-    font-size: clamp(1rem, 1.2vw, 1.6rem);
-    font-family: var(--second-font);
-    font-weight: 700;
-    /* color: var(--bg-black); */
-    margin-bottom: 25px;
-  }
-  .table-header {
-    font-size: clamp(1rem, 1.2vw, 1.4rem);
-    opacity: 0.9;
-    text-decoration: underline;
-  }
-  td p {
-    /* color: var(--bg-black); */
-    font-weight: 300;
-    font-family: var(--main-font);
-    font-size: clamp(.9rem, 1.3vw, 1.2rem);
-  }
-  .order-contact {
-    margin-top: 20px;
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
-    color: var(--font-blue);
-    font-family: var(--second-font);
-  }
-  .order-contact-subheader {
-    font-size: clamp(.8rem, 1.3vw, 1.2rem);
-    margin-top: 5px;
-    letter-spacing: 1px;
-  }
-  .order-image-container {
-    padding: 20px;
-   margin-top: -80px;
-    max-width: 100%;
-    object-fit: contain;
-  }
-  .order-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  @media (min-width: 900px) {
+  <style>
+    .centered-headers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .order-section {
-      padding-top: 0;
+      padding-top: 114px;
     }
     .cart {
-      width: 100px;
       align-self: center;
     }
-    .order-welcome-small {
-      background-image: url('/order-bg2.webp');
+    .order-welcome {
+      background-image: linear-gradient(
+          hsla(0, 0%, 100%, 0.3),
+          hsla(0, 0%, 100%, 0.3)
+        ),
+        url('/contact-bg-sm.webp');
+      display: flex;
+      width: 100%;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
+      padding-left: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
     }
     .order-header {
-      padding-left: 60px;
+      color: var(--font-blue);
+      font-family: var(--roboto-font);
+      font-weight: 700;
+      font-size: clamp(2.8rem, 4vw, 6rem);
     }
     .order-wrapper {
-      flex-direction: row;
-      padding: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--bg-white);
     }
-    .order-image-container {
-      margin-top: 0;
-    }
+
     .order-details-container {
-      margin-left: -40px;
-      margin-top: 0;
-      order: 2;
+      margin-top: 100px;
+      max-width: 95%;
+      padding: 20px;
+      
+      position: relative;
+      z-index: 1;
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+      justify-items: flex-start;
+      background-color: var(--bg-white);
     }
     .order-details {
-      max-width: 600px;
-      margin-top: 80px;
+      margin-top: 0px;
+      margin-bottom: 60px;
+      color: var(--logo-blue);
+      font-family: var(--second-font);
+      z-index: 100;
     }
-  }
-</style>
+    .order-subheader {
+      font-size: clamp(2.2rem, 2vw, 2.1rem);
+      padding: 10px 0px;
+      color: var(--font-blue);
+      margin-bottom: 20px;
+    }
+    .order-subheader-two {
+      font-size: clamp(1rem, 1.2vw, 1.6rem);
+      font-family: var(--second-font);
+      font-weight: 700;
+      /* color: var(--bg-black); */
+      margin-bottom: 25px;
+    }
+    .order-contact {
+      margin-top: 20px;
+      font-size: clamp(1.2rem, 1.3vw, 1.2rem);
+      color: var(--font-blue);
+      font-family: var(--second-font);
+    }
+    .order-contact-subheader {
+      font-size: clamp(1rem, 1.3vw, 1.2rem);
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+    .contact-container {
+      display: grid;
+      gap: 12px 12px;
+    }
+
+    .order-image-container {
+      padding: 20px;
+      margin-top: -80px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    .order-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    @media (min-width: 900px) {
+      .order-section {
+        padding-top: 0;
+      }
+      .order-welcome-small {
+        background-image: linear-gradient(
+            hsla(0, 0%, 100%, 0.2),
+            hsla(0, 0%, 100%, 0.2)
+          ),
+          url('/contact-bg.webp');
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .order-header {
+        padding-left: 60px;
+      }
+      .order-wrapper {
+        flex-direction: row;
+        padding: 60px;
+      }
+      .order-image-container {
+        margin-top: 0;
+      }
+      .order-details-container {
+        margin-left: -40px;
+        margin-top: 0;
+        order: 2;
+      }
+      .order-details {
+        max-width: 600px;
+        margin-top: 80px;
+      }
+      .contact-container {
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+  </style>
+</Layout>
