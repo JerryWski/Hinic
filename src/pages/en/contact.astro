@@ -1,0 +1,280 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Icon from "astro-icon";
+import { Image } from "astro:assets";
+import order from "../../assets/order-contact.webp";
+
+changeLanguage("en");
+---
+
+<Layout title='Kontakt z Nami'>
+  <main>
+    <section class='order-section'>
+      <div class='order-welcome order-welcome-small'>
+        <div class='centered-headers'>
+          <!-- <Icon class='cart' name='contact-icon' width='80px' /> -->
+          <h1 class='order-header'>Kontakt z Nami</h1>
+        </div>
+      </div>
+      <div class='order-wrapper'>
+        <div class='order-details-container'>
+          <div class='order-details'>
+            <h2 class='order-subheader'>
+              Masz pytanie lub chcesz zamówić nasz produkt?
+            </h2>
+            <h3 class='order-contact-subheader'>
+              Nasze biuro jest czynne od pn - pt
+            </h3>
+            <h3 class='order-contact-subheader'>
+              W godzinach od 08:00 do 16:00
+            </h3>
+          </div>
+          <div class='contact-container'>
+            <div class='country-wrapper'>
+              <Icon class='flag' name='pl-flag' width='25px' />
+              <p>Polska</p>
+              <div>
+                <a href='tel:+48887545887'
+                  ><span><i class='fa-solid fa-phone'></i></span> +48 888 888
+                  887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              <Icon class='flag' name='gb-flag' width='25px' />
+              <p>England</p>
+              <div>
+                <a href='tel:+44887545887'
+                  ><span><i class='fa-solid fa-phone'></i></span> +44 888 888
+                  887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              <Icon class='flag' name='de-flag' width='25px' />
+              <p>Deutschland</p>
+              <div>
+                <a href='tel:+49887545887'
+                  ><span><i class='fa-solid fa-phone'></i></span> +49 888 888
+                  887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              <Icon class='flag' name='fr-flag' width='25px' />
+              <p>La France</p>
+              <div>
+                <a href='tel:+33887545887'
+                  ><span><i class='fa-solid fa-phone'></i></span> +33 888 888
+                  887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+            <div class='country-wrapper'>
+              <Icon class='flag' name='es-flag' width='25px' />
+              <p>España</p>
+              <div>
+                <a href='tel:+34887545887'
+                  ><span><i class='fa-solid fa-phone'></i></span> +34 888 888
+                  887</a
+                >
+              </div>
+              <div>
+                <a href='mailto: office@hinic.eu'
+                  ><span><i class='fa-solid fa-envelope'></i></span>
+                   office@hinic.eu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='order-image-container'>
+          <Image class='order-image' src={order} alt='order-contact-woman' />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .centered-headers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .order-section {
+      padding-top: 114px;
+    }
+    .cart {
+      align-self: center;
+    }
+    .flag {
+      padding: 2px;
+      border-radius: 50%;
+    }
+    .order-welcome {
+      /* background-image: linear-gradient(
+          hsla(0, 0%, 100%, 0.5),
+          hsla(0, 0%, 100%, 0.5)
+        ),
+        url('/contact-bg-sm.webp'); */
+      background-image: url('/contact-bg2-sm.webp');
+      background-color: var(--overlay-blue);
+      background-blend-mode: multiply;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px;
+    }
+    .order-header {
+      color: var(--bg-white);
+      font-family: var(--roboto-font);
+      font-weight: 700;
+      font-size: clamp(2.8rem, 4vw, 6rem);
+    }
+    .order-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--bg-white);
+    }
+
+    .order-details-container {
+      margin-top: 100px;
+      max-width: 95%;
+      padding: 40px 20px 40px 20px;
+      position: relative;
+      background-color: var(--overlay-blue);
+      z-index: 1;
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+      justify-items: flex-start;
+    }
+    .order-details {
+      margin-top: 0px;
+      margin-bottom: 60px;
+      color: var(--logo-blue);
+      font-family: var(--second-font);
+      z-index: 100;
+    }
+    .order-subheader {
+      font-size: clamp(2.2rem, 2vw, 2.1rem);
+      padding: 10px 0px;
+      color: var(--font-blue);
+      margin-bottom: 20px;
+    }
+    .order-subheader-two {
+      font-size: clamp(1rem, 1.2vw, 1.6rem);
+      font-family: var(--second-font);
+      font-weight: 700;
+      /* color: var(--bg-black); */
+      margin-bottom: 25px;
+    }
+    .order-contact {
+      margin-top: 20px;
+      font-size: clamp(1.2rem, 1.3vw, 1.2rem);
+      color: var(--font-blue);
+      font-family: var(--second-font);
+    }
+    .order-contact-subheader {
+      font-size: clamp(1rem, 1.3vw, 1.2rem);
+      margin-top: 5px;
+      letter-spacing: 1px;
+      color: #4a4a62;
+    }
+    .contact-container {
+      display: grid;
+      gap: 50px 30px;
+      grid-auto-rows: 1fr;
+      font-family: var(--second-font);
+      color: var(--font-blue);
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .country-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+    .country-wrapper a {
+      color: #4a4a62;
+    }
+
+    .order-image-container {
+      padding: 20px;
+      margin-top: -80px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    .order-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    @media (min-width: 900px) {
+      .order-section {
+        padding-top: 0;
+      }
+      .order-welcome-small {
+        /* background-image: linear-gradient(
+            hsla(0, 0%, 100%, 0.2),
+            hsla(0, 0%, 100%, 0.2)
+          ),
+          url('/contact-bg.webp'); */
+          background-image: url('/contact-bg2.webp');
+        align-items: center;
+        background-position: center -200px;
+        height: 400px;
+        justify-content: flex-start;
+      }
+      .order-header {
+        padding-left: 60px;
+      }
+      .order-wrapper {
+        flex-direction: row;
+        padding: 60px;
+      }
+      .order-image-container {
+        margin-top: 0;
+      }
+      .order-details-container {
+        margin-left: -40px;
+        margin-top: 0;
+        order: 2;
+      }
+      .order-details {
+        max-width: 600px;
+      }
+    }
+  </style>
+</Layout>

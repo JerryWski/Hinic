@@ -45,16 +45,11 @@ import Hamburger from './Hamburger.astro';
       <a class='link' href={localizePath('/produkty')}>
         {t('navbar.products')}
       </a>
-      <a class='link' href={localizePath('/zamowienia')}>
-        {t('navbar.orders')}
+      <a class='link' href={localizePath('/kontakt')}>
+        {t('navbar.contact')}
       </a>
-      <a class='link' href=#contact>{t('navbar.contact')}</a>
+      <!-- <a class='link' href=#contact>{t('navbar.contact')}</a> -->
     </div>
-    <!-- <div class='hamburger'>
-      <span class='burger-line'></span>
-      <span class='burger-line'></span>
-      <span class='burger-line'></span>
-    </div> -->
     <Hamburger />
     <div class='nav-links-mobile'>
       <a class='link-mobile' href={localizePath('/o_nas')}
@@ -63,10 +58,10 @@ import Hamburger from './Hamburger.astro';
       <a class='link-mobile' href={localizePath('/produkty')}>
         {t('navbar.products')}</a
       >
-      <a class='link-mobile' href={localizePath('/zamowienia')}>
-        {t('navbar.orders')}</a
+      <a class='link-mobile' href={localizePath('/kontakt')}>
+        {t('navbar.contact')}</a
       >
-      <a class='link-mobile' href=#contact> {t('navbar.contact')}</a>
+      <!-- <a class='link-mobile' href=#contact> {t('navbar.contact')}</a> -->
     </div>
   </nav>
 </header>

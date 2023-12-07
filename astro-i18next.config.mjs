@@ -6,12 +6,12 @@ export default {
       en: {
         o_nas: "about",
         produkty: "products",
-        zamowienia: "orders"
+        kontakt: "contact"
       },
       fr: {
         o_nas: "about",
         produkty: "products",
-        zamowienia: "orders"
+        kontakt: "contact"
       }
     }
   };

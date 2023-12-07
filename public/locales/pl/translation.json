@@ -6,7 +6,6 @@
     "navbar": {
         "about" : "O Nas",
         "products": "Produkty",
-        "orders" : "Zamówienia",
         "contact" : "Kontakt"
     },
     "hero" : {
