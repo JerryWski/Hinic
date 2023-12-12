@@ -13,7 +13,11 @@
     },
     "about": {
         "title" : "Über uns",
-        "header": "Über uns"
+        "header": "Über uns",
+        "heading" : "Lernen Sie HINIC kennen - die Nummer eins unter den Nikotinlieferanten!",
+        "minititle": "Wir haben Erfahrung - Wir konzentrieren uns auf Entwicklung",
+        "text-one" : "HINIC kann Ihr erster Online-Lieferant für reines Nikotin sein. Unser Produkt ist auf den wachsenden Bedarf von Unternehmern zugeschnitten, die hochwertiges Premium-Nikotin in USP-Qualität benötigen, das in einer Reihe von Produkten wie Nikotinpflastern, Kaugummi und Flüssigkeiten verwendet werden kann, die speziell für die Verwendung in elektronischen Zigaretten hergestellt und verwendet werden.",
+        "text-two" : "HINIC bietet nur das reinste Nikotin zu einem fairen und angemessenen Preis für Ihr Geschäft."
     },
     "products": {
         "title" : "",

@@ -6,21 +6,15 @@ import { localizePath } from 'astro-i18next';
 ---
 
 <section class='about-section'>
-  <p class="about-minititle">Mamy Doświadczenie - Stawiamy na rozwój</p>
-  <h2 class='about-header'>Poznaj HINIC - dostawcę nikotyny numer jeden!</h2>
+  <p class="about-minititle">{t('about.minititle')}</p>
+  <h2 class='about-header'>{t('about.heading')}</h2>
   <div class='about-wrapper'>
     <div class='about-info'>
       <p class='about-text'>
-        HINIC może być Twoim numerem jeden jako dostawca online czystej
-        nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb
-        przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny klasy
-        USP, która może być wykorzystywana w wielu produktach takich jak plastry
-        nikotynowe, gumy do żucia oraz płyny przygotowane i używane specjalnie
-        do użytku w elektronicznych papierosach.
+        {t('about.text-one')}
       </p>
       <p class='about-text'>
-        HINIC oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą
-        i odpowiednią cenę dla Twojego biznesu.
+        {t('about.text-two')}
       </p>
       <a class="about-link" href={localizePath('/o_nas')}>{t('navbar.about')}</a>
     </div>

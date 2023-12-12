@@ -13,7 +13,11 @@
     },
     "about": {
         "title" : "Quiénes somos",
-        "header": "Quiénes somos"
+        "header": "Quiénes somos",
+        "heading" : "Conozca a HINIC - el proveedor de nicotina número uno!",
+        "minititle": "Tenemos experiencia - Nos centramos en el desarrollo",
+        "text-one" : "HINIC puede ser su proveedor online número uno de nicotina pura. Nuestro producto está hecho a medida para satisfacer las crecientes necesidades de los empresarios que necesitan nicotina Premium de grado USP de alta calidad que se puede utilizar en una amplia gama de productos como parches de nicotina, chicles y líquidos preparados y utilizados específicamente para su uso en cigarrillos electrónicos.",
+        "text-two" : "HINIC ofrece sólo la nicotina más pura, a un precio justo y adecuado para su negocio."
     },
     "products": {
         "title" : "",

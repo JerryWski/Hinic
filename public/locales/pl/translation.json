@@ -13,12 +13,17 @@
     },
     "about": {
         "title" : "O Nas",
-        "header": "O Nas"
+        "header": "O Nas",
+        "heading" : "Poznaj HINIC - dostawcę nikotyny numer jeden!",
+        "minititle": "Mamy Doświadczenie - Stawiamy na rozwój",
+        "text-one" : "HINIC może być Twoim numerem jeden jako dostawca online czystej nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny klasy USP, która może być wykorzystywana w wielu produktach takich jak plastry nikotynowe, gumy do żucia oraz płyny przygotowane i używane specjalnie do użytku w elektronicznych papierosach.",
+        "text-two" : "HINIC oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą i odpowiednią cenę dla Twojego biznesu."
     },
     "products": {
         "title" : "",
         "header" : "",
         "link" : "Sprawdź naszą Ofertę"
+       
     }
 }
 

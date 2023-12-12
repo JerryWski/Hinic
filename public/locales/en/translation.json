@@ -13,7 +13,11 @@
     },
     "about": {
         "title" : "About Us",
-        "header": "About Us"
+        "header": "About Us",
+        "heading" : "Meet HINIC - the number one nicotine supplier!",
+        "minititle": "We have experience - We focus on development",
+        "text-one" : "HINIC can be your number one online supplier of pure nicotine. Our product is tailored to meet the growing needs of entrepreneurs in need of high quality USP-grade Premium Nicotine that can be used in a range of products such as nicotine patches, chewing gum and liquids prepared and used specifically for use in electronic cigarettes.",
+        "text-two" : "HINIC offers only the purest nicotine, while giving a fair and appropriate price for your business."
     },
     "products": {
         "title" : "",

@@ -13,7 +13,11 @@
     },
     "about": {
         "title" : "À propos de nous",
-        "header": "À propos de nous"
+        "header": "À propos de nous",
+        "heading" : "Découvrez HINIC - le premier fournisseur de nicotine !",
+        "minititle": "Nous avons de l'expérience - Nous nous concentrons sur le développement",
+        "text-one" : "HINIC peut être votre premier fournisseur en ligne de nicotine pure. Notre produit est conçu pour répondre aux besoins croissants des entrepreneurs qui recherchent de la nicotine pure de haute qualité, de qualité USP, qui peut être utilisée dans une large gamme de produits tels que les patchs à la nicotine, les chewing-gums et les liquides préparés et utilisés spécifiquement pour les cigarettes électroniques.",
+        "text-two" : "HINIC n'offre que la nicotine la plus pure, tout en proposant un prix juste et approprié pour votre entreprise."
     },
     "products": {
         "title" : "",
