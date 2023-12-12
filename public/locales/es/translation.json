@@ -1,0 +1,23 @@
+{
+    "head": {
+        "desc" : "nicotina líquida, aromas, aditivos, glicerina, sales de nicotina",
+        "title": "Bienvenido al sitio web de Nicotine Remedies"
+    },
+    "navbar": {
+        "about" : "Quiénes somos",
+        "products": "Productos",
+        "contact" : "Contacto"
+    },
+    "hero" : {
+        "header" : "<0>Soluciones profesionales</0> Nicotina"
+    },
+    "about": {
+        "title" : "Quiénes somos",
+        "header": "Quiénes somos"
+    },
+    "products": {
+        "title" : "",
+        "header" : "",
+        "link" : "Consulte nuestra oferta"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "head": {
+        "desc" : "flüssiges Nikotin, Aromen, Zusatzstoffe, Glycerin, Nikotinsalze",
+        "title": "Willkommen auf der Website von Nicotine Remedies"
+    },
+    "navbar": {
+        "about" : "Über uns",
+        "products": "Produkte",
+        "contact" : "Kontakt"
+    },
+    "hero" : {
+        "header" : "<0>Professionelle Lösungen</0> Nikotin"
+    },
+    "about": {
+        "title" : "Über uns",
+        "header": "Über uns"
+    },
+    "products": {
+        "title" : "",
+        "header" : "",
+        "link" : "Prüfen Sie unser Angebot"
+    }
+}

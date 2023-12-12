@@ -1,0 +1,610 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import MyCustomImageCard from "../../components/MyCustomImageCard.astro";
+import rounds from "../../assets/rounds2.webp";
+// import contact from '../../assets/contact-img.png';
+// import tabacco from '../../assets/tobacco-plants.webp';
+// import labo from '../../assets/labo-bottles.png';
+// import logistic from '../../assets/logistic.png';
+// import logisitc2 from '../../assets/logistic2.png';
+import Icon from "astro-icon";
+import i18next, { t, changeLanguage } from "i18next";
+
+changeLanguage("es");
+---
+
+<Layout title={t('about.title')}>
+  <main class='about-section'>
+    <section>
+      <div class='about-welcome'>
+        <h1 class='about-header'>{t('about.header')}</h1>
+      </div>
+      <div class='about-container'>
+        <div class='about-text'>
+          <h2 class='about-subheader'>Dlaczego HINIC?</h2>
+          <p class='text'>
+            Hinic może być Twoim numerem jeden jako dostawca online czystej
+            nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb
+            przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny
+            klasy USP, która może być wykorzystywana w wielu produktach takich
+            jak plastry nikotynowe, gumy do żucia oraz płyny przygotowane i
+            używane specjalnie do użytku w elektronicznych papierosach.
+          </p>
+          <p class='text'>
+            Teraz, gdy już mamy opanowane do perfekcji ekstrakcje nikotyny
+            jesteśmy dumni z produkcji i możliwości zaoferowania szerokiego
+            wyboru czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do
+            99.9% ,więc idealną do każdego rodzaju produktów. Wykorzystujemy
+            swoje doświadczenie nie tylko do produkcji najwyższej klasy
+            produktów końcowych, ale również skupia swój rozwój na prowadzeniu
+            badań, które są stale obecne w naszych działaniach tak istotnych do
+            wprowadzania nowych produktów na rynek zgodnie zapotrzebowaniem
+            naszych Klientów.
+          </p>
+          <p class='text'>
+            Posiadamy doświadczenie w procesach produkcji, dlatego też nasze
+            produkty osiągają najwyższe standardy, jak również procedury
+            bezpieczeństwa są zawsze przestrzegane. Nasza dociekliwość
+            koncentruje się wokół wydobycia najlepszych składników z liści
+            tytoniu i poddaniu ich szeregowi ekstrakcji oraz oczyszczania tak,
+            aby dostarczyć naszym konsumentom najbardziej naturalny i czysty
+            płyn nikotynowy.
+          </p>
+        </div>
+        <span class='span-line'></span>
+        <div class='benefits-wrapper container'>
+          <!-- <MyCustomImageCard
+          imagePath='/src/assets/rounds2.webp'
+          altText="rounds with different images" /> -->
+
+          <Image class='image' src={rounds} alt='rounds' />
+          <div class='benefit title-one'>
+            <h2 class='benefit-header'>Ogromny wybór</h2>
+            <MyCustomImageCard
+              imagePath='/src/assets/tobacco-plants.webp'
+              altText='tobacco plants'
+            />
+            <!-- <Image class='benefit-image' src={tabacco} alt='tobacco-plants' /> -->
+            <div class='btn-wrapper'>
+              <button aria-label='button toggle' class='button-accord'
+                >Rozwiń</button
+              >
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
+            </div>
+            <div class='benefit-text wrapper-accord'>
+              <div>
+                <p>
+                  Hinic jest zawsze zgodna ze strategią, iż innowacyjne
+                  podejście generuje zgodną z oczekiwaniem Konsumenta jakość
+                  produktu. Teraz, gdy już mamy opanowane do perfekcji
+                  ekstrakcje nikotyny jesteśmy dumni z produkcji i możliwości
+                  zaoferowania szerokiego wyboru czystości nikotyny. Oferujemy
+                  nikotynę w czystości 99.5% do 99.9% ,więc idealną do każdego
+                  rodzaju produktów.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='benefit title-two'>
+            <h2 class='benefit-header'>Jakość produktu</h2>
+            <MyCustomImageCard
+              imagePath='/src/assets/labo-bottles.png'
+              altText='laboratory bottles'
+            />
+            <!-- <Image class='benefit-image' src={labo} alt='laboratory' /> -->
+            <div class='btn-wrapper'>
+              <button aria-label='button toggle' class='button-accord'
+                >Rozwiń</button
+              >
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
+            </div>
+            <div class='benefit-text wrapper-accord'>
+              <div>
+                Hinic oferuje tylko najwyższą jakość produktów nikotynowych.
+                Nasze płyny, ekstraktowane z najwyższej jakości roślin
+                tytoniowych są starannie produkowane w zakładach sprawdzonych
+                przez FDA oraz zgodnie z wytycznymi cGMP (current Good
+                Manufacturing Practices), tak aby zapewnić 100% satysfakcji
+                Klientów zarówno w strefie smaku jak i bezpieczeństwa.
+              </div>
+            </div>
+          </div>
+          <div class='benefit title-three'>
+            <h2 class='benefit-header'>Doskonałość w logistyce</h2>
+            <MyCustomImageCard
+              imagePath='/src/assets/logistic.png'
+              altText='logistic magazine'
+            />
+            <!-- <Image class='benefit-image' src={logistic} alt='magazine' /> -->
+            <div class='btn-wrapper'>
+              <button aria-label='button toggle' class='button-accord'
+                >Rozwiń</button
+              >
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
+            </div>
+            <div class='benefit-text wrapper-accord'>
+              <div>
+                Dostarczamy nasze produkty w każde miejsce na świecie według
+                zapotrzebowania naszych Konsumentów. Dotox jest niezawodnym
+                dostawcą wysokiej jakości nikotyny. Z naszymi partnerami,
+                będącymi kluczowymi dostawcami w branży logistycznej zapewniamy
+                szybki, odpowiedzialny oraz wygodny transport do Waszych drzwi z
+                najniższymi dostępnymi opłatami przesyłek międzynarodowych.
+                Posiadamy również zespół, który pomoże Ci śledzić, sprawdzać i
+                koordynować stan Twojej przesyłki.
+              </div>
+            </div>
+          </div>
+          <div class='benefit title-four'>
+            <h2 class='benefit-header'>Konkurencyjne ceny</h2>
+            <MyCustomImageCard
+              imagePath='/src/assets/logistic2.png'
+              altText='woman and man in magazine'
+            />
+            <!-- <Image class='benefit-image' src={logisitc2} alt='logistics' /> -->
+            <div class='btn-wrapper'>
+              <button aria-label='button toggle' class='button-accord'
+                >Rozwiń</button
+              >
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
+            </div>
+            <div class='benefit-text wrapper-accord'>
+              <div>
+                Hinic oferuje wyłącznie najczystszą nikotynę, równocześnie dając
+                uczciwą i odpowiednią cenę dla Twojego biznesu. Cenimy naszych
+                Klientów oraz zawsze wspieramy ich działalność. Nikt z
+                konkurentów nie proponuje takiej samej jakości produktów jaką my
+                oferujemy w tak dobrych cenach.
+              </div>
+            </div>
+          </div>
+          <div class='benefit title-five'>
+            <h2 class='benefit-header'>Istotność serwisu</h2>
+            <MyCustomImageCard
+              imagePath='/src/assets/contact-img.png'
+              altText='woman talking by phone'
+            />
+            <!-- <Image class='benefit-image' src={contact} alt='contact-woman' /> -->
+            <div class='btn-wrapper'>
+              <button aria-label='button toggle' class='button-accord'>
+                Rozwiń</button
+              >
+              <span
+                ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
+              >
+            </div>
+            <div class='benefit-text wrapper-accord'>
+              <div>
+                Hinic rozumie, iż skuteczna obsługa klienta może stanowić
+                ogromną wartość biznesową. Zawsze jest naszym celem, aby trzymać
+                się zasad, zapewniających wydajność oraz spełnianie wszystkie
+                oczekiwań Konsumentów. Zespól Dotox dąży do tego, żeby nasi
+                Klienci byli częścią każdego naszego działania. Od zamówienia
+                produktu aż do jego dostarczenia monitorujemy cały proces, więc
+                będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem
+                do naszych usług i możliwości.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='advantages-wrapper'>
+        <h2 class='about-subheader'>Zalety</h2>
+        <div class='advantages-container'>
+          <div class='advantages'>
+            <div class='image-wrapper one'>
+              <Icon name='truck' />
+            </div>
+            <h2 class='advantages-header'>
+              Doświadczenie w produkcji i logistyce
+            </h2>
+            <p class='advantages-text'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
+              consequatur veritatis ex eaque quam asperiores facere repellendus.
+              Maiores expedita veniam laborum! Adipisci!
+            </p>
+          </div>
+          <div class='advantages'>
+            <div class='image-wrapper two'>
+              <Icon name='team' />
+            </div>
+            <h2 class='advantages-header'>Wydajność cen i usług</h2>
+            <p class='advantages-text'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
+              consequatur veritatis ex eaque quam asperiores facere repellendus.
+              Maiores expedita veniam laborum! Adipisci!
+            </p>
+          </div>
+          <div class='advantages'>
+            <div class='image-wrapper three'>
+              <Icon name='research' />
+            </div>
+            <h2 class='advantages-header'>Rozwój i badania</h2>
+            <p class='advantages-text'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
+              consequatur veritatis ex eaque quam asperiores facere repellendus.
+              Maiores expedita veniam laborum! Adipisci!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .wrapper-accord {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+  }
+  .wrapper-accord.is-open {
+    grid-template-rows: 1fr;
+  }
+  .wrapper-accord > div {
+    overflow: hidden;
+  }
+  .btn-wrapper {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .button-accord {
+    cursor: pointer;
+    color: var(--bg-white);
+    border: none;
+    background: var(--font-blue);
+    padding: 10px 25px;
+    min-width: 105px;
+  }
+  .arrow {
+    color: var(--font-blue);
+    transform: rotate(-90deg);
+    transition: 0.5s transform ease-out;
+  }
+  .arrow.is-rotate {
+    transform: rotate(0deg);
+  }
+  .about-section {
+    padding-top: 114px;
+    background-color: var(--bg-white);
+    color: var(--bg-black);
+  }
+  .about-welcome {
+    background-image: url('/lab-man2.webp');
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    padding-left: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+  }
+  .about-container {
+    padding: 20px;
+  }
+  .about-header {
+    margin-top: 30px;
+    color: var(--bg-white);
+    text-shadow: 5px -1px 0px rgba(3, 27, 78, 1);
+    align-self: center;
+    font-family: var(--roboto-font);
+    font-size: clamp(4rem, 6vw, 6rem);
+  }
+  .about-subheader {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: var(--font-blue);
+    font-family: var(--roboto-font);
+    font-size: clamp(2.2rem, 3vw, 5rem);
+  }
+  .text {
+    text-indent: 15px;
+    margin-block: 20px;
+    text-align: justify;
+    color: var(--logo-blue);
+    font-family: var(--second-font);
+  }
+  .text::first-letter {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 32px;
+  }
+  .span-line {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    background-color: var(--logo-blue);
+    height: 1px;
+  }
+  .benefits-wrapper {
+    margin-top: 40px;
+  }
+  .benefit {
+    font-family: var(--main-font);
+  }
+  .benefit-header {
+    margin-top: 80px;
+    color: var(--blue);
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
+  .benefit-text {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 24px;
+    color: var(--logo-blue);
+  }
+  .image {
+    display: none;
+  }
+  .advantages-wrapper {
+    background-color: var(--font-blue);
+    background-image: linear-gradient(
+      to bottom,
+      #031b4e,
+      #021946,
+      #02173e,
+      #031536,
+      #05122e
+    );
+    color: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: var(--main-font);
+  }
+  .advantages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .advantages-wrapper .about-subheader {
+    color: var(--bg-white);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: clamp(3.2rem, 3vw, 6rem);
+  }
+  .advantages {
+    margin-block: 30px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .image-wrapper {
+    width: 125px;
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .image-wrapper.three {
+    padding: 15px;
+    width: 135px;
+  }
+  .one::before,
+  .two::before,
+  .three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid var(--bg-white);
+    box-sizing: border-box;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  .one:hover::before,
+  .two:hover::before,
+  .three:hover::before {
+    transform: rotate(45deg);
+    border-radius: 50%;
+    background-color: var(--bg-white);
+  }
+  .one::after,
+  .two::after,
+  .three::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .one:hover::after {
+    background-image: url('/src/assets/truck-svg-black.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .two:hover::after {
+    background-image: url('/src/assets/team-svg-black.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .three:hover::after {
+    background-image: url('/src/assets/research-svg-black.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .advantages-img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .advantages-header {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  .advantages-text {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  @media (min-width: 900px) {
+    .about-section {
+      padding-top: 0px;
+    }
+    .about-welcome {
+      background-size: cover;
+      background-position-y: -300px;
+      justify-content: flex-start;
+      align-items: center;
+      height: 400px;
+    }
+    .about-header {
+      padding-left: 120px;
+      font-family: var(--roboto-font);
+    }
+    .about-subheader {
+      text-align: center;
+      margin-top: 130px;
+      margin-bottom: 100px;
+    }
+    .about-text {
+      margin-top: 40px;
+      padding-inline: 160px;
+    }
+    .text {
+      font-size: 1rem;
+    }
+
+    .benefits-wrapper.container {
+      padding-inline: 40px;
+      margin-top: 130px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        'title-three image title-one'
+        'title-four image title-two'
+        '. title-five .';
+    }
+    .wrapper-accord {
+      display: none;
+    }
+    .btn-wrapper {
+      display: none;
+    }
+    .benefit-text {
+      display: block;
+    }
+    .image {
+      justify-self: center;
+      align-self: center;
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      grid-area: image;
+    }
+    .title-two {
+      grid-area: title-two;
+    }
+    .title-three {
+      grid-area: title-three;
+    }
+    .title-four {
+      grid-area: title-four;
+    }
+    .title-one {
+      grid-area: title-one;
+    }
+    .title-five {
+      grid-area: title-five;
+    }
+    .benefits-wrapper {
+      margin-top: 60px;
+    }
+    .benefit {
+      padding: 15px;
+      padding-top: 0;
+    }
+    /* .benefit-image {
+      display: none;
+    } */
+    .benefit-header {
+      font-size: 1rem;
+      margin-top: 0px;
+    }
+    .benefit-text {
+      font-size: 0.7rem;
+    }
+    .advantages-wrapper {
+      justify-content: space-around;
+      align-items: center;
+    }
+    .advantages-container {
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+    .advantages {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .advantages-header {
+      height: 62px;
+    }
+  }
+</style>
+
+<script>
+  const accordions = document.querySelectorAll('.button-accord');
+
+  accordions.forEach((accordion) => {
+    const benefit = accordion.closest('.benefit');
+    const wrapper = benefit?.querySelector('.wrapper-accord');
+    const arrow = benefit?.querySelector('.arrow');
+
+    if (accordion instanceof HTMLButtonElement) {
+      accordion.addEventListener('click', () => {
+        wrapper?.classList.toggle('is-open');
+        arrow?.classList.toggle('is-rotate');
+        accordion.textContent = wrapper?.classList.contains('is-open')
+          ? 'Schowaj'
+          : 'Rozwiń';
+        accordion.style.backgroundColor = wrapper?.classList.contains('is-open')
+          ? 'var(--bg-white)'
+          : '';
+        accordion.style.color = wrapper?.classList.contains('is-open')
+          ? 'var(--bg-black)'
+          : '';
+        accordion.style.border = wrapper?.classList.contains('is-open')
+          ? '1px solid var(--bg-black)'
+          : '';
+      });
+    }
+  });
+</script>
