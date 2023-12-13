@@ -9,12 +9,11 @@ import CardsSlider from './CardsSlider.astro';
 
 <section class='products-section'>
   <div class='bg-overlay'></div>
-  <h2 class='products-header'>Nasza Oferta</h2>
+  <h2 class='products-header'>{t('products.title')}</h2>
   <div class='products-wrapper'>
     <div class='products-info'>
       <p class='products-text'>
-        Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące
-        zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.
+        {t('products.header')}
       </p>
       <div class='card-container'>
         <Cards />

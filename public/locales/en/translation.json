@@ -20,9 +20,11 @@
         "text-two" : "HINIC offers only the purest nicotine, while giving a fair and appropriate price for your business."
     },
     "products": {
-        "title" : "",
-        "header" : "",
-        "link" : "Check"
+        "title" : "Our Offer",
+        "header" : "We offer professional nicotine products to meet the growing market demand and customers with different requirements.",
+        "nicotine" :"nicotine",
+        "nicotine-salt" : "nicotine-salt",
+        "link" : "Check our offer"
     }
 
 

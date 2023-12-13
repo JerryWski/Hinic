@@ -20,8 +20,10 @@
         "text-two" : "HINIC oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą i odpowiednią cenę dla Twojego biznesu."
     },
     "products": {
-        "title" : "",
-        "header" : "",
+        "title" : "Nasza Oferta",
+        "header" : "Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.",
+        "nicotine" :"Nikotyna",
+        "nicotine-salt" : "Sól nikotynowa",
         "link" : "Sprawdź naszą Ofertę"
        
     }

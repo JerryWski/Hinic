@@ -20,8 +20,8 @@
         "text-two" : "HINIC n'offre que la nicotine la plus pure, tout en proposant un prix juste et approprié pour votre entreprise."
     },
     "products": {
-        "title" : "",
-        "header" : "",
-        "link" : "Vérifier"
+        "title" : "Notre offre",
+        "header" : "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et à des clients ayant des exigences différentes",
+        "link" : "Découvrez notre offre"
     }
 }

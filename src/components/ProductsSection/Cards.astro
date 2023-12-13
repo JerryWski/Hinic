@@ -7,6 +7,8 @@ import aromas from '../../assets/aroma2.png';
 import accessories from '../../assets/accessories.webp';
 import cbd from '../../assets/cbd-oils.png';
 import data from '../../data/productsPreview.json';
+import i18next, { t } from 'i18next';
+
 ---
 
 <div class='cards-content'>
@@ -15,7 +17,7 @@ import data from '../../data/productsPreview.json';
       <div class='card'>
         <div class='content'>
           <div class='gradient'>
-            <h3 class='card-title'>{item.name}</h3>
+            <h3 class='card-title'>{t(item.name)}</h3>
           </div>
           <img class='card-image' src={item.image} alt={item.name} />
         </div>

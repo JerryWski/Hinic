@@ -8,6 +8,7 @@ interface Props {
 
 const {imagePath, altText} = Astro.props as Props;
 const images = import.meta.glob('/src/assets/*.{webp,png}')
+
 ---
 
  <Image class='benefit-image' src={images[imagePath]()} alt={altText} />
