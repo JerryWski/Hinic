@@ -44,8 +44,12 @@
     "products": {
         "title" : "Nasza Oferta",
         "header" : "Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.",
-        
-        "link" : "Sprawdź naszą Ofertę"
+        "link" : "Sprawdź naszą Ofertę",
+
+        "subheader" : "Produkty",
+        "text-one" : "Ponad 300 zadowolonych klientów w całej Polsce",
+        "text-two" : "Innowacyjne podejście generuje zgodną z oczekiwaniem Konsumenta jakość produktu.",
+        "text-three" : "Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące zapotrzebowanie rynku oraz Klientów o różnych wymaganiach."
        
     },
     "order" : {

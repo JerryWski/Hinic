@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import nicotine from "../assets/nicotine2.png";
@@ -21,22 +21,20 @@ changeLanguage("pl");
     <section class='products-section'>
       
       <div class='products-welcome products-welcome-small'>
-        <h1 class='products-header'>Produkty</h1>
+        <h1 class='products-header'>{t('products.subheader')}</h1>
       </div>
 
       <div class='products-container'>
         <div class='bg-overlay'></div>
         <div class="texts-wrapper">
           <p class='products-text'>
-            Ponad 300 zadowolonych klientów w całej Polsce
+            {t('products.text-one')}
           </p>
           <p class='products-text'>
-            Innowacyjne podejście generuje zgodną z oczekiwaniem Konsumenta
-            jakość produktu.
+            {t('products.text-two')}
           </p>
           <p class='products-text'>
-            Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące
-            zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.
+            {t('products.text-three')}
           </p>
         </div>
         <div class='card'>

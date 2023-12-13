@@ -32,7 +32,7 @@
     "prices-text": "Hinic offers only the purest nicotine, while giving a fair and appropriate price for your business. We value our customers and always support their business. None of our competitors offer the same quality of products that we offer at such good prices.",
     "services": "Relevance of the service",
     "services-text": "Hinic understands that effective customer service can be a huge business value. It is always our goal to stick to our principles, ensuring efficiency and meeting all of our Consumers' expectations. The Dotox team strives to ensure that our customers are part of everything we do. From product ordering to delivery, we monitor the entire process, so you will be able to wait for delivery with complete confidence in our services and capabilities.",
-    
+
     "avantages": "Avantages",
     "experience": "Experience in production and logistics",
     "experience-text": "With many years of experience in the production of pure nicotine, our company stands out as an industry leader. Thanks to our experience, we provide efficient and proven logistics, which guarantees the highest quality of our products.",
@@ -44,7 +44,12 @@
   "products": {
     "title": "Our Offer",
     "header": "We offer professional nicotine products to meet the growing market demand and customers with different requirements.",
-    "link": "Check our offer"
+    "link": "Check our offer",
+
+    "subheader": "Products",
+    "text-one": "More than 300 satisfied customers throughout Poland",
+    "text-two": "The innovative approach generates product quality that is in line with consumer expectations.",
+    "text-three": "We offer professional nicotine products to meet the growing market demand and customers with different requirements."
   },
   "order": {
     "header": "Excellence in Collaboration and Logistics",

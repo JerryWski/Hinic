@@ -44,7 +44,12 @@
   "products": {
     "title": "Notre offre",
     "header": "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et à des clients ayant des exigences différentes",
-    "link": "Découvrez notre offre"
+    "link": "Découvrez notre offre",
+
+    "subheader": "Produits",
+    "text-one": "Plus de 300 clients satisfaits dans toute la Pologne",
+    "text-two": "L'approche innovante génère une qualité de produit conforme aux attentes des consommateurs.",
+    "text-three": "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et aux exigences différentes des clients."
   },
   "order": {
     "header": "Excellence en matière de coopération et de logistique",
