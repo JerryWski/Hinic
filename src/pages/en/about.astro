@@ -22,45 +22,23 @@ changeLanguage("en");
       </div>
       <div class='about-container'>
         <div class='about-text'>
-          <h2 class='about-subheader'>Dlaczego HINIC?</h2>
+          <h2 class='about-subheader'>{t('about.why')}</h2>
           <p class='text'>
-            Hinic może być Twoim numerem jeden jako dostawca online czystej
-            nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb
-            przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny
-            klasy USP, która może być wykorzystywana w wielu produktach takich
-            jak plastry nikotynowe, gumy do żucia oraz płyny przygotowane i
-            używane specjalnie do użytku w elektronicznych papierosach.
+            {t('about.text-one')}
           </p>
           <p class='text'>
-            Teraz, gdy już mamy opanowane do perfekcji ekstrakcje nikotyny
-            jesteśmy dumni z produkcji i możliwości zaoferowania szerokiego
-            wyboru czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do
-            99.9% ,więc idealną do każdego rodzaju produktów. Wykorzystujemy
-            swoje doświadczenie nie tylko do produkcji najwyższej klasy
-            produktów końcowych, ale również skupia swój rozwój na prowadzeniu
-            badań, które są stale obecne w naszych działaniach tak istotnych do
-            wprowadzania nowych produktów na rynek zgodnie zapotrzebowaniem
-            naszych Klientów.
+            {t('about.text-subtwo')}
           </p>
           <p class='text'>
-            Posiadamy doświadczenie w procesach produkcji, dlatego też nasze
-            produkty osiągają najwyższe standardy, jak również procedury
-            bezpieczeństwa są zawsze przestrzegane. Nasza dociekliwość
-            koncentruje się wokół wydobycia najlepszych składników z liści
-            tytoniu i poddaniu ich szeregowi ekstrakcji oraz oczyszczania tak,
-            aby dostarczyć naszym konsumentom najbardziej naturalny i czysty
-            płyn nikotynowy.
+            {t('about.text-subthree')}
           </p>
         </div>
         <span class='span-line'></span>
         <div class='benefits-wrapper container'>
-          <!-- <MyCustomImageCard
-          imagePath='/src/assets/rounds2.webp'
-          altText="rounds with different images" /> -->
 
           <Image class='image' src={rounds} alt='rounds' />
           <div class='benefit title-one'>
-            <h2 class='benefit-header'>Ogromny wybór</h2>
+            <h2 class='benefit-header'>{t('about.choice')}</h2>
             <MyCustomImageCard
               imagePath='/src/assets/tobacco-plants.webp'
               altText='tobacco plants'
@@ -68,7 +46,7 @@ changeLanguage("en");
             <!-- <Image class='benefit-image' src={tabacco} alt='tobacco-plants' /> -->
             <div class='btn-wrapper'>
               <button aria-label='button toggle' class='button-accord'
-                >Rozwiń</button
+                >{t('about.expand')}</button
               >
               <span
                 ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
@@ -77,19 +55,13 @@ changeLanguage("en");
             <div class='benefit-text wrapper-accord'>
               <div>
                 <p>
-                  Hinic jest zawsze zgodna ze strategią, iż innowacyjne
-                  podejście generuje zgodną z oczekiwaniem Konsumenta jakość
-                  produktu. Teraz, gdy już mamy opanowane do perfekcji
-                  ekstrakcje nikotyny jesteśmy dumni z produkcji i możliwości
-                  zaoferowania szerokiego wyboru czystości nikotyny. Oferujemy
-                  nikotynę w czystości 99.5% do 99.9% ,więc idealną do każdego
-                  rodzaju produktów.
+                  {t('about.choice-text')}
                 </p>
               </div>
             </div>
           </div>
           <div class='benefit title-two'>
-            <h2 class='benefit-header'>Jakość produktu</h2>
+            <h2 class='benefit-header'>{t('about.quality')}</h2>
             <MyCustomImageCard
               imagePath='/src/assets/labo-bottles.png'
               altText='laboratory bottles'
@@ -97,7 +69,7 @@ changeLanguage("en");
             <!-- <Image class='benefit-image' src={labo} alt='laboratory' /> -->
             <div class='btn-wrapper'>
               <button aria-label='button toggle' class='button-accord'
-                >Rozwiń</button
+                >{t('about.expand')}</button
               >
               <span
                 ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
@@ -105,17 +77,12 @@ changeLanguage("en");
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Hinic oferuje tylko najwyższą jakość produktów nikotynowych.
-                Nasze płyny, ekstraktowane z najwyższej jakości roślin
-                tytoniowych są starannie produkowane w zakładach sprawdzonych
-                przez FDA oraz zgodnie z wytycznymi cGMP (current Good
-                Manufacturing Practices), tak aby zapewnić 100% satysfakcji
-                Klientów zarówno w strefie smaku jak i bezpieczeństwa.
+                {t('about.quality-text')}
               </div>
             </div>
           </div>
           <div class='benefit title-three'>
-            <h2 class='benefit-header'>Doskonałość w logistyce</h2>
+            <h2 class='benefit-header'>{t('about.perfect')}</h2>
             <MyCustomImageCard
               imagePath='/src/assets/logistic.png'
               altText='logistic magazine'
@@ -123,7 +90,7 @@ changeLanguage("en");
             <!-- <Image class='benefit-image' src={logistic} alt='magazine' /> -->
             <div class='btn-wrapper'>
               <button aria-label='button toggle' class='button-accord'
-                >Rozwiń</button
+                >{t('about.expand')}</button
               >
               <span
                 ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
@@ -131,19 +98,12 @@ changeLanguage("en");
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Dostarczamy nasze produkty w każde miejsce na świecie według
-                zapotrzebowania naszych Konsumentów. Dotox jest niezawodnym
-                dostawcą wysokiej jakości nikotyny. Z naszymi partnerami,
-                będącymi kluczowymi dostawcami w branży logistycznej zapewniamy
-                szybki, odpowiedzialny oraz wygodny transport do Waszych drzwi z
-                najniższymi dostępnymi opłatami przesyłek międzynarodowych.
-                Posiadamy również zespół, który pomoże Ci śledzić, sprawdzać i
-                koordynować stan Twojej przesyłki.
+                {t('about.perfect-text')}
               </div>
             </div>
           </div>
           <div class='benefit title-four'>
-            <h2 class='benefit-header'>Konkurencyjne ceny</h2>
+            <h2 class='benefit-header'>{t('about.prices')}</h2>
             <MyCustomImageCard
               imagePath='/src/assets/logistic2.png'
               altText='woman and man in magazine'
@@ -151,7 +111,7 @@ changeLanguage("en");
             <!-- <Image class='benefit-image' src={logisitc2} alt='logistics' /> -->
             <div class='btn-wrapper'>
               <button aria-label='button toggle' class='button-accord'
-                >Rozwiń</button
+                >{t('about.expand')}</button
               >
               <span
                 ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
@@ -159,16 +119,12 @@ changeLanguage("en");
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Hinic oferuje wyłącznie najczystszą nikotynę, równocześnie dając
-                uczciwą i odpowiednią cenę dla Twojego biznesu. Cenimy naszych
-                Klientów oraz zawsze wspieramy ich działalność. Nikt z
-                konkurentów nie proponuje takiej samej jakości produktów jaką my
-                oferujemy w tak dobrych cenach.
+                {t('about.prices-text')}
               </div>
             </div>
           </div>
           <div class='benefit title-five'>
-            <h2 class='benefit-header'>Istotność serwisu</h2>
+            <h2 class='benefit-header'>{t('about.services')}</h2>
             <MyCustomImageCard
               imagePath='/src/assets/contact-img.png'
               altText='woman talking by phone'
@@ -176,7 +132,7 @@ changeLanguage("en");
             <!-- <Image class='benefit-image' src={contact} alt='contact-woman' /> -->
             <div class='btn-wrapper'>
               <button aria-label='button toggle' class='button-accord'>
-                Rozwiń</button
+                {t('about.expand')}</button
               >
               <span
                 ><i id='arrow' class='fa-solid fa-arrow-down arrow'></i></span
@@ -184,14 +140,7 @@ changeLanguage("en");
             </div>
             <div class='benefit-text wrapper-accord'>
               <div>
-                Hinic rozumie, iż skuteczna obsługa klienta może stanowić
-                ogromną wartość biznesową. Zawsze jest naszym celem, aby trzymać
-                się zasad, zapewniających wydajność oraz spełnianie wszystkie
-                oczekiwań Konsumentów. Zespól Dotox dąży do tego, żeby nasi
-                Klienci byli częścią każdego naszego działania. Od zamówienia
-                produktu aż do jego dostarczenia monitorujemy cały proces, więc
-                będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem
-                do naszych usług i możliwości.
+                {t('about.services-text')}
               </div>
             </div>
           </div>
@@ -593,8 +542,8 @@ changeLanguage("en");
         wrapper?.classList.toggle('is-open');
         arrow?.classList.toggle('is-rotate');
         accordion.textContent = wrapper?.classList.contains('is-open')
-          ? 'Schowaj'
-          : 'Rozwiń';
+          ? 't{(about.hide)}'
+          : 't{(about.expand)}';
         accordion.style.backgroundColor = wrapper?.classList.contains('is-open')
           ? 'var(--bg-white)'
           : '';

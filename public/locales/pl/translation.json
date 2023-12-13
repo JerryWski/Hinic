@@ -17,7 +17,22 @@
         "heading" : "Poznaj HINIC - dostawcę nikotyny numer jeden!",
         "minititle": "Mamy Doświadczenie - Stawiamy na rozwój",
         "text-one" : "HINIC może być Twoim numerem jeden jako dostawca online czystej nikotyny. Nasz produkt jest dostosowany do rosnących potrzeb przedsiębiorców potrzebujących wysokiej jakości Premium Nikotyny klasy USP, która może być wykorzystywana w wielu produktach takich jak plastry nikotynowe, gumy do żucia oraz płyny przygotowane i używane specjalnie do użytku w elektronicznych papierosach.",
-        "text-two" : "HINIC oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą i odpowiednią cenę dla Twojego biznesu."
+        "why": "Dlaczego HINIC?",
+        "text-subtwo": "Teraz, gdy już mamy opanowane do perfekcji ekstrakcje nikotyny jesteśmy dumni z produkcji i możliwości zaoferowania szerokiego wyboru czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9% ,więc idealną do każdego rodzaju produktów. Wykorzystujemy swoje doświadczenie nie tylko do produkcji najwyższej klasy produktów końcowych, ale również skupia swój rozwój na prowadzeniu badań, które są stale obecne w naszych działaniach tak istotnych do wprowadzania nowych produktów na rynek zgodnie zapotrzebowaniem naszych Klientów.",
+        "text-subthree": "Posiadamy doświadczenie w procesach produkcji, dlatego też nasze produkty osiągają najwyższe standardy, jak również procedury bezpieczeństwa są zawsze przestrzegane. Nasza dociekliwość koncentruje się wokół wydobycia najlepszych składników z liści tytoniu i poddaniu ich szeregowi ekstrakcji oraz oczyszczania tak, aby dostarczyć naszym konsumentom najbardziej naturalny i czysty płyn nikotynowy.",
+        "text-two" : "HINIC oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą i odpowiednią cenę dla Twojego biznesu.",
+        "expand" : "Rozwiń",
+        "hide" : "Schowaj",
+        "choice" : "Ogromny wybór",
+        "choice-text" : "Hinic jest zawsze zgodna ze strategią, iż innowacyjne podejście generuje zgodną z oczekiwaniem Konsumenta jakość produktu. Teraz, gdy już mamy opanowane do perfekcji ekstrakcje nikotyny jesteśmy dumni z produkcji i możliwości zaoferowania szerokiego wyboru czystości nikotyny. Oferujemy nikotynę w czystości 99.5% do 99.9% ,więc idealną do każdego rodzaju produktów.",
+        "quality" : "Jakość produktu",
+        "quality-text" : "Hinic oferuje tylko najwyższą jakość produktów nikotynowych. Nasze płyny, ekstraktowane z najwyższej jakości roślin tytoniowych są starannie produkowane w zakładach sprawdzonych przez FDA oraz zgodnie z wytycznymi cGMP (current Good Manufacturing Practices), tak aby zapewnić 100% satysfakcji Klientów zarówno w strefie smaku jak i bezpieczeństwa.",
+        "perfect": "Doskonałość w logistyce",
+        "perfect-text": "Dostarczamy nasze produkty w każde miejsce na świecie według zapotrzebowania naszych Konsumentów. Dotox jest niezawodnym dostawcą wysokiej jakości nikotyny. Z naszymi partnerami, będącymi kluczowymi dostawcami w branży logistycznej zapewniamy szybki, odpowiedzialny oraz wygodny transport do Waszych drzwi z najniższymi dostępnymi opłatami przesyłek międzynarodowych. Posiadamy również zespół, który pomoże Ci śledzić, sprawdzać i koordynować stan Twojej przesyłki.",
+        "prices" : "Konkurencyjne ceny",
+        "prices-text" : "Hinic oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą i odpowiednią cenę dla Twojego biznesu. Cenimy naszych Klientów oraz zawsze wspieramy ich działalność. Nikt z konkurentów nie proponuje takiej samej jakości produktów jaką my oferujemy w tak dobrych cenach.",
+        "services" : "Istotność serwisu",
+        "services-text" : "Hinic rozumie, iż skuteczna obsługa klienta może stanowić ogromną wartość biznesową. Zawsze jest naszym celem, aby trzymać się zasad, zapewniających wydajność oraz spełnianie wszystkie oczekiwań Konsumentów. Zespól Dotox dąży do tego, żeby nasi Klienci byli częścią każdego naszego działania. Od zamówienia produktu aż do jego dostarczenia monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem do naszych usług i możliwości."
     },
     "products": {
         "title" : "Nasza Oferta",
@@ -32,6 +47,11 @@
         "text-two" : "Zespól Hinic Poland dąży do tego, żeby nasi Klienci byli częścią każdego naszego działania. Od zamówienia produktu aż do jego dostarczenia monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem do naszych usług i możliwości.",
         "link" : "Zamów nasze produkty"
     },
+    "contact" : {
+        "shortcuts" : "Na skróty",
+        "header" : "Kontakt"
+    },
+
     "nicotine" :"Nikotyna",
     "nicotine-salt" : "Sól nikotynowa",
     "pg-vg": "PG i VG",

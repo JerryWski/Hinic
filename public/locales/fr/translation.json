@@ -16,8 +16,23 @@
         "header": "À propos de nous",
         "heading" : "Découvrez HINIC - le premier fournisseur de nicotine !",
         "minititle": "Nous avons de l'expérience - Nous nous concentrons sur le développement",
+        "why": "Pourquoi HINIC?",
+        "text-subtwo": "Maintenant que nous avons maîtrisé l'extraction de la nicotine à la perfection, nous sommes fiers de produire et d'offrir un large choix de puretés de nicotine. Nous proposons des puretés de nicotine allant de 99,5 % à 99,9 %, idéales pour tout type de produit. Non seulement nous utilisons notre expérience pour produire des produits finis de qualité supérieure, mais nous axons également notre développement sur la recherche, qui est constamment présente dans nos activités et qui est si importante pour mettre de nouveaux produits sur le marché en fonction des besoins de nos clients.",
+        "text-subthree": "Nous avons de l'expérience dans les processus de production, de sorte que nos produits répondent aux normes les plus élevées et que les procédures de sécurité sont toujours respectées. Notre curiosité consiste à extraire les meilleurs ingrédients des feuilles de tabac et à les soumettre à une série d'extractions et de purifications afin de fournir à nos consommateurs le liquide de nicotine le plus naturel et le plus pur.",
         "text-one" : "HINIC peut être votre premier fournisseur en ligne de nicotine pure. Notre produit est conçu pour répondre aux besoins croissants des entrepreneurs qui recherchent de la nicotine pure de haute qualité, de qualité USP, qui peut être utilisée dans une large gamme de produits tels que les patchs à la nicotine, les chewing-gums et les liquides préparés et utilisés spécifiquement pour les cigarettes électroniques.",
-        "text-two" : "HINIC n'offre que la nicotine la plus pure, tout en proposant un prix juste et approprié pour votre entreprise."
+        "text-two" : "HINIC n'offre que la nicotine la plus pure, tout en proposant un prix juste et approprié pour votre entreprise.",
+        "expand" : "Élargir",
+        "hide" : "Cacher",
+        "choice" : "Un choix énorme",
+        "choice-text" : "Hinic est toujours cohérent avec la stratégie selon laquelle une approche innovante génère une qualité de produit conforme aux attentes du consommateur. Maintenant que nous maîtrisons parfaitement l'extraction de la nicotine, nous sommes fiers de produire et d'offrir un large choix de puretés de nicotine. Nous proposons des puretés de nicotine allant de 99,5 % à 99,9 %, idéales pour tous les types de produits.",
+        "quality" : "Qualité des produits",
+        "quality-text" : "Hinic ne propose que des produits à base de nicotine de la plus haute qualité. Nos liquides, extraits de plants de tabac de la plus haute qualité, sont soigneusement fabriqués dans des installations testées par la FDA et conformément aux directives cGMP (current Good Manufacturing Practices) afin de garantir la satisfaction totale du client, tant sur le plan du goût que de la sécurité.",
+        "perfect": "Excellence dans la logistique",
+        "perfect-text": "Nous livrons nos produits partout dans le monde en fonction de la demande de nos consommateurs. Dotox est un fournisseur fiable de nicotine de haute qualité. Nos partenaires étant des fournisseurs clés dans le secteur de la logistique, nous assurons un transport rapide, responsable et pratique jusqu'à votre porte, avec les frais d'expédition internationaux les plus bas qui soient. Nous disposons également d'une équipe pour vous aider à suivre, vérifier et coordonner le statut de votre envoi.",
+        "prices" : "Des prix compétitifs",
+        "prices-text" : "Hinic n'offre que la nicotine la plus pure, tout en proposant un prix juste et approprié pour votre entreprise. Nous apprécions nos clients et nous soutenons toujours leur activité. Aucun de nos concurrents n'offre la même qualité de produits que nous à des prix aussi intéressants.",
+        "services" : "Pertinence du service",
+        "services-text" : "Hinic sait qu'un service clientèle efficace peut représenter une valeur commerciale considérable. Notre objectif est toujours de nous en tenir à nos principes, de garantir l'efficacité et de répondre à toutes les attentes de nos consommateurs. L'équipe Dotox s'efforce de faire en sorte que nos clients fassent partie de tout ce que nous faisons. De la commande du produit à la livraison, nous contrôlons l'ensemble du processus, de sorte que vous puissiez attendre la livraison en toute confiance dans nos services et nos capacités."
     },
     "products": {
         "title" : "Notre offre",
@@ -30,6 +45,11 @@
         "text-two" : "L'équipe de Hinic Poland s'efforce de faire participer ses clients à toutes ses activités. De la commande du produit à la livraison, nous contrôlons l'ensemble du processus, de sorte que vous puissiez attendre la livraison en toute confiance dans nos services et nos capacités.",
         "link" : "Commander nos produits"
     },
+    "contact" : {
+        "shortcuts" : "Raccourcis",
+        "header" : "Contacter"
+    },
+
     "nicotine" :"Nicotine",
     "nicotine-salt" : "Sel de Nicotine",
     "pg-vg": "PG i VG",

@@ -9,7 +9,7 @@ import { localizePath } from 'astro-i18next';
 
   <div class="contact-container">
     <div class='wrapper'>
-      <h2 class='contact-header'>Kontakt</h2>
+      <h2 class='contact-header'>{t('contact.header')}</h2>
       <div class='contact-icons'>
         <a
           href='mailto:office@hinic.eu'
@@ -24,10 +24,10 @@ import { localizePath } from 'astro-i18next';
       </div>
     </div>
     <div class='shortcuts'>
-      <h3 class='shortcuts-heading'>Na skróty:</h3>
+      <h3 class='shortcuts-heading'>{t('contact.shortcuts')}:</h3>
       <a class='shortcuts-links' href={localizePath('/o_nas')}>{t('navbar.about')}</a>
       <a class='shortcuts-links' href={localizePath('/produkty')}>{t('navbar.products')}</a>
-      <a class='shortcuts-links' href={localizePath('/zamowienia')}>{t('navbar.orders')}</a>
+      <a class='shortcuts-links' href={localizePath('/kontakt')}>{t('navbar.contact')}</a>
       </a>
     </div>
     <div class='contact-logo-container'>
