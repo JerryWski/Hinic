@@ -23,5 +23,11 @@
         "title" : "Notre offre",
         "header" : "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et à des clients ayant des exigences différentes",
         "link" : "Découvrez notre offre"
+    },
+    "order" : {
+        "header" : "Excellence en matière de coopération et de logistique",
+        "text-one" : "Nous accordons la priorité au bien-être de nos clients. Nos prix sont ajustés pour satisfaire nos consommateurs. En tant que fournisseur, nous voulons donner à nos clients la possibilité de gagner encore plus qu'avant en leur proposant des prix plus compétitifs. Grâce à notre équipe amicale et professionnelle qui travaille avec vous, Hiliq Poland vous offre une qualité dont vous serez très satisfaits.",
+        "text-two" : "L'équipe de Hinic Poland s'efforce de faire participer ses clients à toutes ses activités. De la commande du produit à la livraison, nous contrôlons l'ensemble du processus, de sorte que vous puissiez attendre la livraison en toute confiance dans nos services et nos capacités.",
+        "link" : "Commander nos produits"
     }
 }

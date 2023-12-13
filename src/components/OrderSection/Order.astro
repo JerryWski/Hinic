@@ -7,25 +7,17 @@ import { localizePath } from 'astro-i18next';
 
 <section class='order-section'>
   <div class='bg-overlay'></div>
-  <h2 class='order-heading'>Doskonałość we Współpracy i Logistyce</h2>
+  <h2 class='order-heading'>{t('order.header')}</h2>
   <div class='order-wrapper'>
     <p class='order-text'>
-      Stawiamy dobro naszych Klientów na pierwszym miejscu. Nasze ceny są
-      dostosowane tak, aby zadowolić naszych Konsumentów. Jako dostawca chcemy
-      dać szansę naszym odbiorcom zarobić jeszcze więcej niż dotychczas dając im
-      bardziej konkurencyjne ceny. Dzięki naszemu przyjaznemu i profesjonalnemu
-      zespołowi, który będzie pracował razem z Tobą, Hiliq Poland oferuje Ci
-      jakość z której będziesz bardzo zadowolony.
+      {t('order.text-one')}
     </p>
     <p class='order-text'>
-      Zespól Hinic Poland dąży do tego, żeby nasi Klienci byli częścią każdego
-      naszego działania. Od zamówienia produktu aż do jego dostarczenia
-      monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z
-      całkowitym zaufaniem do naszych usług i możliwości.
+      {t('order.text-two')}
       <Image class='order-image-cart' src={order} alt='order-cart' />
     </p>
     <div class='bottom-wrapper'>
-      <a href='/zamowienia' class='order-link'> Zamów nasze produkty</a>
+      <a href={localizePath('/kontakt')} class='order-link'>{t('order.link')}</a>
     </div>
   </div>
 
