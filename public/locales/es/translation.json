@@ -59,7 +59,12 @@
   },
   "contact": {
     "shortcuts": "Atajos",
-    "header": "Contacto"
+    "header": "Contacto",
+
+    "subheader": "Póngase en contacto con nosotros",
+    "text-one": "Tiene alguna pregunta o quiere pedir nuestros productos?",
+    "text-two": "Nuestra oficina está abierta de lunes a viernes",
+    "text-three": "De 08:00 a 16:00"
   },
 
   "nicotine": "Nicotina",

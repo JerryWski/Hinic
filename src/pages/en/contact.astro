@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import Icon from "astro-icon";
 import { Image } from "astro:assets";
@@ -13,8 +13,7 @@ changeLanguage("en");
     <section class='order-section'>
       <div class='order-welcome order-welcome-small'>
         <div class='centered-headers'>
-          
-          <h1 class='order-header'>Kontakt z Nami</h1>
+          <h1 class='order-header'>{t('contact.subheader')}</h1>
         </div>
       </div>
       <div class='order-wrapper'>
@@ -22,13 +21,13 @@ changeLanguage("en");
           <Icon class='cart' name='contact-icon' width='80px' />
           <div class='order-details'>
             <h2 class='order-subheader'>
-              Masz pytanie lub chcesz zamówić nasz produkt?
+              {t('contact.text-one')}
             </h2>
             <h3 class='order-contact-subheader'>
-              Nasze biuro jest czynne od pn - pt
+              {t('contact.text-two')}
             </h3>
             <h3 class='order-contact-subheader'>
-              W godzinach od 08:00 do 16:00
+              {t('contact.text-three')}
             </h3>
           </div>
           <div class='contact-container'>
@@ -252,7 +251,7 @@ changeLanguage("en");
             hsla(0, 0%, 100%, 0.2)
           ),
           url('/contact-bg.webp'); */
-          background-image: url('/contact-bg2.webp');
+        background-image: url('/contact-bg2.webp');
         align-items: center;
         background-position: center -200px;
         height: 400px;

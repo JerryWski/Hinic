@@ -59,7 +59,12 @@
   },
   "contact": {
     "shortcuts": "Abkürzungen",
-    "header": "Kontakt"
+    "header": "Kontakt",
+
+    "subheader": "Kontaktieren Sie uns",
+    "text-one": "Haben Sie eine Frage oder möchten Sie unser Produkt bestellen?",
+    "text-two": "Unser Büro ist von Montag bis Freitag geöffnet.",
+    "text-three": "Von 08:00 bis 16:00"
   },
 
   "nicotine": "Nikotin",

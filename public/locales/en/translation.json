@@ -59,7 +59,12 @@
   },
   "contact": {
     "shortcuts": "Shortcuts",
-    "header": "Contact"
+    "header": "Contact",
+
+    "subheader": "Contact us",
+    "text-one": "Have a question or want to order our product?",
+    "text-two": "Our office is open from Mon-Fri",
+    "text-three": "From 08:00 to 16:00"
   },
 
   "nicotine": "Nicotine",
