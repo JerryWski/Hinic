@@ -22,8 +22,7 @@
     "products": {
         "title" : "Nasza Oferta",
         "header" : "Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.",
-        "nicotine" :"Nikotyna",
-        "nicotine-salt" : "Sól nikotynowa",
+        
         "link" : "Sprawdź naszą Ofertę"
        
     },
@@ -33,6 +32,11 @@
         "text-two" : "Zespól Hinic Poland dąży do tego, żeby nasi Klienci byli częścią każdego naszego działania. Od zamówienia produktu aż do jego dostarczenia monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem do naszych usług i możliwości.",
         "link" : "Zamów nasze produkty"
     },
-    "nicotine" :"Nikotyna"
+    "nicotine" :"Nikotyna",
+    "nicotine-salt" : "Sól nikotynowa",
+    "pg-vg": "PG i VG",
+    "aromas": "Aromaty",
+    "accessories" : "Dodatki",
+    "cbd" : "Oleje CBD"
 }
 

@@ -1,6 +1,7 @@
 ---
 import Icon from 'astro-icon';
 import data from '../../data/productsPreview.json';
+import { t } from 'i18next';
 ---
 
 <div class='reviews-container'>
@@ -15,7 +16,7 @@ import data from '../../data/productsPreview.json';
     {
       data.slice(data.length - 1).map((review) => (
         <div class='review'>
-          <p class='review-name'>{review.name}</p>
+          <p class='review-name'>{t(review.name)}</p>
           <img src={review.image} alt={review.name} class='review-avatar' />
         </div>
       ))
@@ -23,7 +24,7 @@ import data from '../../data/productsPreview.json';
     {
       data.map((review) => (
         <div class='review'>
-          <p class='review-name'>{review.name}</p>
+          <p class='review-name'>{t(review.name)}</p>
           <img src={review.image} alt={review.name} class='review-avatar' />
         </div>
       ))
@@ -31,7 +32,7 @@ import data from '../../data/productsPreview.json';
     {
       data.slice(0, 1).map((review) => (
         <div class='review'>
-          <p class='review-name'>{review.name}</p>
+          <p class='review-name'>{t(review.name)}</p>
           <img src={review.image} alt={review.name} class='review-avatar' />
           <p class='review-name text-gradient h3'>{review.name}</p>
         </div>

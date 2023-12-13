@@ -22,8 +22,6 @@
     "products": {
         "title" : "Our Offer",
         "header" : "We offer professional nicotine products to meet the growing market demand and customers with different requirements.",
-        "nicotine" :"nicotine",
-        "nicotine-salt" : "nicotine-salt",
         "link" : "Check our offer"
     },
     "order" : {
@@ -32,7 +30,12 @@
         "text-two" : "The Hinic Poland team strives to make our customers part of everything we do. From product ordering to delivery, we monitor the entire process, so you will be able to wait for delivery with complete confidence in our services and capabilities.",
         "link" : "Order our products"
     },
-    "nicotine" :"Nicotine"
+    "nicotine" :"Nicotine",
+    "nicotine-salt" : "Nicotine Salt",
+    "pg-vg": "PG i VG",
+    "aromas": "Aromas",
+    "accessories" : "Accessories",
+    "cbd" : "CBD Oils"
 
 
 }
