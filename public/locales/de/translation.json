@@ -1,59 +1,66 @@
 {
-    "head": {
-        "desc" : "flüssiges Nikotin, Aromen, Zusatzstoffe, Glycerin, Nikotinsalze",
-        "title": "Willkommen auf der Website von Nicotine Remedies"
-    },
-    "navbar": {
-        "about" : "Über uns",
-        "products": "Produkte",
-        "contact" : "Kontakt"
-    },
-    "hero" : {
-        "header" : "<0>Professionelle Lösungen</0> Nikotin"
-    },
-    "about": {
-        "title" : "Über uns",
-        "header": "Über uns",
-        "heading" : "Lernen Sie HINIC kennen - die Nummer eins unter den Nikotinlieferanten!",
-        "minititle": "Wir haben Erfahrung - Wir konzentrieren uns auf Entwicklung",
-        "why": "Warum HINIC?",
-        "text-subtwo": "Jetzt, da wir die Nikotinextraktion bis zur Perfektion beherrschen, sind wir stolz darauf, eine große Auswahl an Nikotinreinheiten herzustellen und anzubieten. Wir bieten Nikotin in Reinheitsgraden von 99,5 % bis 99,9 % an, also ideal für jede Art von Produkt. Wir nutzen nicht nur unsere Erfahrung, um Endprodukte von höchster Qualität herzustellen, sondern konzentrieren unsere Entwicklung auch auf die Forschung, die in unserer Tätigkeit ständig präsent ist und so wichtig ist, um neue Produkte auf den Markt zu bringen, die den Bedürfnissen unserer Kunden entsprechen.",
-        "text-subthree": "Wir haben Erfahrung mit den Produktionsprozessen, so dass unsere Produkte den höchsten Standards entsprechen und die Sicherheitsverfahren stets eingehalten werden. Unsere Neugier dreht sich darum, die besten Inhaltsstoffe aus den Tabakblättern zu extrahieren und sie einer Reihe von Extraktionen und Reinigungen zu unterziehen, um unseren Verbrauchern das natürlichste und reinste Nikotinliquid zu bieten.",
-        "text-one" : "HINIC kann Ihr erster Online-Lieferant für reines Nikotin sein. Unser Produkt ist auf den wachsenden Bedarf von Unternehmern zugeschnitten, die hochwertiges Premium-Nikotin in USP-Qualität benötigen, das in einer Reihe von Produkten wie Nikotinpflastern, Kaugummi und Flüssigkeiten verwendet werden kann, die speziell für die Verwendung in elektronischen Zigaretten hergestellt und verwendet werden.",
-        "text-two" : "HINIC bietet nur das reinste Nikotin zu einem fairen und angemessenen Preis für Ihr Geschäft.",
-        "expand" : "Erweitern",
-        "hide" : "Ausblenden",
-        "choice" : "Enorme Auswahl",
-        "choice-text" : "Hinic verfolgt stets die Strategie, dass ein innovativer Ansatz zu einer Produktqualität führt, die den Erwartungen der Verbraucher entspricht. Jetzt, da wir die Nikotinextraktion bis zur Perfektion beherrschen, sind wir stolz darauf, eine große Auswahl an Nikotinreinheiten herzustellen und anzubieten. Wir bieten Nikotin in Reinheitsgraden von 99,5 % bis 99,9 % an, also ideal für alle Arten von Produkten.",
-        "quality" : "Qualität des Produkts",
-        "quality-text" : "Hinic bietet nur Nikotinprodukte von höchster Qualität an. Unsere Liquids, die aus den hochwertigsten Tabakpflanzen gewonnen werden, werden sorgfältig in FDA-geprüften Einrichtungen und in Übereinstimmung mit den cGMP-Richtlinien (current Good Manufacturing Practices) hergestellt, um eine 100%ige Kundenzufriedenheit sowohl im Geschmacks- als auch im Sicherheitsbereich zu gewährleisten.",
-        "perfect": "Exzellente Logistik",
-        "perfect-text": "Wir liefern unsere Produkte entsprechend der Nachfrage unserer Kunden in die ganze Welt. Dotox ist ein zuverlässiger Lieferant von hochwertigem Nikotin. Mit unseren Partnern, die Schlüssellieferanten in der Logistikbranche sind, gewährleisten wir einen schnellen, verantwortungsvollen und bequemen Transport zu Ihnen nach Hause mit den niedrigsten internationalen Versandgebühren. Wir haben auch ein Team, das Ihnen hilft, den Status Ihrer Sendung zu verfolgen, zu überprüfen und zu koordinieren.",
-        "prices" : "Konkurrenzfähige Preise",
-        "prices-text" : "Hinic bietet nur das reinste Nikotin, während wir einen fairen und angemessenen Preis für Ihr Geschäft bieten. Wir schätzen unsere Kunden und unterstützen immer ihr Geschäft. Keiner unserer Konkurrenten bietet die gleiche Qualität der Produkte, die wir zu so guten Preisen anbieten.",
-        "services" : "Relevanz der Dienstleistung",
-        "services-text" : "Hinic ist sich darüber im Klaren, dass ein effektiver Kundenservice einen enormen Geschäftswert darstellen kann. Es ist immer unser Ziel, unseren Prinzipien treu zu bleiben, Effizienz zu gewährleisten und alle Erwartungen unserer Kunden zu erfüllen. Das Dotox-Team ist bestrebt sicherzustellen, dass unsere Kunden Teil von allem sind, was wir tun. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können."
-    },
-    "products": {
-        "title" : "Unser Angebot",
-        "header" : "Wir bieten professionelle Nikotinprodukte an, um der wachsenden Marktnachfrage und den unterschiedlichen Anforderungen der Kunden gerecht zu werden.",
-        "link" : "Prüfen Sie unser Angebot"
-    },
-    "order" : {
-        "header" : "Exzellenz in Kooperation und Logistik",
-        "text-one" : "Für uns steht das Wohl unserer Kunden an erster Stelle. Wir passen unsere Preise an, um unsere Verbraucher zufrieden zu stellen. Als Lieferant möchten wir unseren Kunden die Möglichkeit geben, durch wettbewerbsfähige Preise noch mehr zu verdienen als bisher. Mit unserem freundlichen und professionellen Team, das mit Ihnen zusammenarbeitet, bietet Hiliq Polen Ihnen Qualität, mit der Sie sehr zufrieden sein werden.",
-        "text-two" : "Das Team von Hinic Poland ist bestrebt, unsere Kunden in alles, was wir tun, mit einzubeziehen. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
-        "link" : "Bestellung unserer Produkte"
-    },
-    "contact" : {
-        "shortcuts" : "Abkürzungen",
-        "header" : "Kontakt"
-    },
+  "head": {
+    "desc": "flüssiges Nikotin, Aromen, Zusatzstoffe, Glycerin, Nikotinsalze",
+    "title": "Willkommen auf der Website von Nicotine Remedies"
+  },
+  "navbar": {
+    "about": "Über uns",
+    "products": "Produkte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "header": "<0>Professionelle Lösungen</0> Nikotin"
+  },
+  "about": {
+    "title": "Über uns",
+    "header": "Über uns",
+    "heading": "Lernen Sie HINIC kennen - die Nummer eins unter den Nikotinlieferanten!",
+    "minititle": "Wir haben Erfahrung - Wir konzentrieren uns auf Entwicklung",
+    "why": "Warum HINIC?",
+    "text-subtwo": "Jetzt, da wir die Nikotinextraktion bis zur Perfektion beherrschen, sind wir stolz darauf, eine große Auswahl an Nikotinreinheiten herzustellen und anzubieten. Wir bieten Nikotin in Reinheitsgraden von 99,5 % bis 99,9 % an, also ideal für jede Art von Produkt. Wir nutzen nicht nur unsere Erfahrung, um Endprodukte von höchster Qualität herzustellen, sondern konzentrieren unsere Entwicklung auch auf die Forschung, die in unserer Tätigkeit ständig präsent ist und so wichtig ist, um neue Produkte auf den Markt zu bringen, die den Bedürfnissen unserer Kunden entsprechen.",
+    "text-subthree": "Wir haben Erfahrung mit den Produktionsprozessen, so dass unsere Produkte den höchsten Standards entsprechen und die Sicherheitsverfahren stets eingehalten werden. Unsere Neugier dreht sich darum, die besten Inhaltsstoffe aus den Tabakblättern zu extrahieren und sie einer Reihe von Extraktionen und Reinigungen zu unterziehen, um unseren Verbrauchern das natürlichste und reinste Nikotinliquid zu bieten.",
+    "text-one": "HINIC kann Ihr erster Online-Lieferant für reines Nikotin sein. Unser Produkt ist auf den wachsenden Bedarf von Unternehmern zugeschnitten, die hochwertiges Premium-Nikotin in USP-Qualität benötigen, das in einer Reihe von Produkten wie Nikotinpflastern, Kaugummi und Flüssigkeiten verwendet werden kann, die speziell für die Verwendung in elektronischen Zigaretten hergestellt und verwendet werden.",
+    "text-two": "HINIC bietet nur das reinste Nikotin zu einem fairen und angemessenen Preis für Ihr Geschäft.",
+    "expand": "Erweitern",
+    "hide": "Ausblenden",
+    "choice": "Enorme Auswahl",
+    "choice-text": "Hinic verfolgt stets die Strategie, dass ein innovativer Ansatz zu einer Produktqualität führt, die den Erwartungen der Verbraucher entspricht. Jetzt, da wir die Nikotinextraktion bis zur Perfektion beherrschen, sind wir stolz darauf, eine große Auswahl an Nikotinreinheiten herzustellen und anzubieten. Wir bieten Nikotin in Reinheitsgraden von 99,5 % bis 99,9 % an, also ideal für alle Arten von Produkten.",
+    "quality": "Qualität des Produkts",
+    "quality-text": "Hinic bietet nur Nikotinprodukte von höchster Qualität an. Unsere Liquids, die aus den hochwertigsten Tabakpflanzen gewonnen werden, werden sorgfältig in FDA-geprüften Einrichtungen und in Übereinstimmung mit den cGMP-Richtlinien (current Good Manufacturing Practices) hergestellt, um eine 100%ige Kundenzufriedenheit sowohl im Geschmacks- als auch im Sicherheitsbereich zu gewährleisten.",
+    "perfect": "Exzellente Logistik",
+    "perfect-text": "Wir liefern unsere Produkte entsprechend der Nachfrage unserer Kunden in die ganze Welt. Dotox ist ein zuverlässiger Lieferant von hochwertigem Nikotin. Mit unseren Partnern, die Schlüssellieferanten in der Logistikbranche sind, gewährleisten wir einen schnellen, verantwortungsvollen und bequemen Transport zu Ihnen nach Hause mit den niedrigsten internationalen Versandgebühren. Wir haben auch ein Team, das Ihnen hilft, den Status Ihrer Sendung zu verfolgen, zu überprüfen und zu koordinieren.",
+    "prices": "Konkurrenzfähige Preise",
+    "prices-text": "Hinic bietet nur das reinste Nikotin, während wir einen fairen und angemessenen Preis für Ihr Geschäft bieten. Wir schätzen unsere Kunden und unterstützen immer ihr Geschäft. Keiner unserer Konkurrenten bietet die gleiche Qualität der Produkte, die wir zu so guten Preisen anbieten.",
+    "services": "Relevanz der Dienstleistung",
+    "services-text": "Hinic ist sich darüber im Klaren, dass ein effektiver Kundenservice einen enormen Geschäftswert darstellen kann. Es ist immer unser Ziel, unseren Prinzipien treu zu bleiben, Effizienz zu gewährleisten und alle Erwartungen unserer Kunden zu erfüllen. Das Dotox-Team ist bestrebt sicherzustellen, dass unsere Kunden Teil von allem sind, was wir tun. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
+    "avantages": "Vorteile",
+    "experience": "Erfahrung in Produktion und Logistik",
+    "experience-text": "Mit unserer langjährigen Erfahrung in der Herstellung von reinem Nikotin ist unser Unternehmen führend in der Branche. Dank unserer Erfahrung bieten wir eine effiziente und bewährte Logistik, die die höchste Qualität unserer Produkte garantiert.",
+    "performance": "Preis und Serviceeffizienz",
+    "performance-text": "Unser Schwerpunkt liegt auf wettbewerbsfähigen Preisen, ohne dass wir bei der Qualität Kompromisse eingehen. Unsere Dienstleistungen sind auf die individuellen Bedürfnisse unserer Kunden zugeschnitten und verbinden Erschwinglichkeit mit Effizienz.",
+    "research": "Entwicklung und Forschung",
+    "research-text": "Innovation ist das Herzstück unseres Unternehmens. Wir investieren erhebliche Mittel in Forschung und Entwicklung. Unsere Forschungsarbeit konzentriert sich auf die kontinuierliche Verbesserung unserer Produkte, um sicherzustellen, dass unsere Lösungen nicht nur fortschrittlich, sondern auch effektiv sind."
+  },
+  "products": {
+    "title": "Unser Angebot",
+    "header": "Wir bieten professionelle Nikotinprodukte an, um der wachsenden Marktnachfrage und den unterschiedlichen Anforderungen der Kunden gerecht zu werden.",
+    "link": "Prüfen Sie unser Angebot"
+  },
+  "order": {
+    "header": "Exzellenz in Kooperation und Logistik",
+    "text-one": "Für uns steht das Wohl unserer Kunden an erster Stelle. Wir passen unsere Preise an, um unsere Verbraucher zufrieden zu stellen. Als Lieferant möchten wir unseren Kunden die Möglichkeit geben, durch wettbewerbsfähige Preise noch mehr zu verdienen als bisher. Mit unserem freundlichen und professionellen Team, das mit Ihnen zusammenarbeitet, bietet Hiliq Polen Ihnen Qualität, mit der Sie sehr zufrieden sein werden.",
+    "text-two": "Das Team von Hinic Poland ist bestrebt, unsere Kunden in alles, was wir tun, mit einzubeziehen. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
+    "link": "Bestellung unserer Produkte"
+  },
+  "contact": {
+    "shortcuts": "Abkürzungen",
+    "header": "Kontakt"
+  },
 
-    "nicotine" :"Nikotin",
-    "nicotine-salt" : "Nikotin Salz",
-    "pg-vg": "PG i VG",
-    "aromas": "Aromen",
-    "accessories" : "Accessoires",
-    "cbd" : "Kbd-Öle"
+  "nicotine": "Nikotin",
+  "nicotine-salt": "Nikotin Salz",
+  "pg-vg": "PG i VG",
+  "aromas": "Aromen",
+  "accessories": "Accessoires",
+  "cbd": "Kbd-Öle"
 }

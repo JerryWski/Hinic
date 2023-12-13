@@ -31,7 +31,15 @@
     "prices": "Competitive prices",
     "prices-text": "Hinic offers only the purest nicotine, while giving a fair and appropriate price for your business. We value our customers and always support their business. None of our competitors offer the same quality of products that we offer at such good prices.",
     "services": "Relevance of the service",
-    "services-text": "Hinic understands that effective customer service can be a huge business value. It is always our goal to stick to our principles, ensuring efficiency and meeting all of our Consumers' expectations. The Dotox team strives to ensure that our customers are part of everything we do. From product ordering to delivery, we monitor the entire process, so you will be able to wait for delivery with complete confidence in our services and capabilities."
+    "services-text": "Hinic understands that effective customer service can be a huge business value. It is always our goal to stick to our principles, ensuring efficiency and meeting all of our Consumers' expectations. The Dotox team strives to ensure that our customers are part of everything we do. From product ordering to delivery, we monitor the entire process, so you will be able to wait for delivery with complete confidence in our services and capabilities.",
+    
+    "avantages": "Avantages",
+    "experience": "Experience in production and logistics",
+    "experience-text": "With many years of experience in the production of pure nicotine, our company stands out as an industry leader. Thanks to our experience, we provide efficient and proven logistics, which guarantees the highest quality of our products.",
+    "performance": "Price and service efficiency",
+    "performance-text": "Our emphasis is on providing competitive prices without compromising on quality. Our services are tailored to meet the individual needs of our clients, combining affordability with efficiency.",
+    "research": "Development and research",
+    "research-text": "Innovation is at the heart of our business. We invest significant resources in research and development. Our research work focuses on the continuous improvement of our products, ensuring that our solutions are not only advanced but also effective."
   },
   "products": {
     "title": "Our Offer",

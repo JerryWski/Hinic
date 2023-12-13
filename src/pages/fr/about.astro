@@ -9,7 +9,7 @@ import rounds from "../../assets/rounds2.webp";
 // import logistic from '../../assets/logistic.png';
 // import logisitc2 from '../../assets/logistic2.png';
 import Icon from "astro-icon";
-import i18next, { t, changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 
 changeLanguage("fr");
 ---
@@ -63,7 +63,7 @@ changeLanguage("fr");
           <div class='benefit title-two'>
             <h2 class='benefit-header'>{t('about.quality')}</h2>
             <MyCustomImageCard
-              imagePath='/src/assets/labo-bottles.png'
+              imagePath='/src/assets/labo-bottles.webp'
               altText='laboratory bottles'
             />
             <!-- <Image class='benefit-image' src={labo} alt='laboratory' /> -->
@@ -84,7 +84,7 @@ changeLanguage("fr");
           <div class='benefit title-three'>
             <h2 class='benefit-header'>{t('about.perfect')}</h2>
             <MyCustomImageCard
-              imagePath='/src/assets/logistic.png'
+              imagePath='/src/assets/logistic.webp'
               altText='logistic magazine'
             />
             <!-- <Image class='benefit-image' src={logistic} alt='magazine' /> -->
@@ -105,7 +105,7 @@ changeLanguage("fr");
           <div class='benefit title-four'>
             <h2 class='benefit-header'>{t('about.prices')}</h2>
             <MyCustomImageCard
-              imagePath='/src/assets/logistic2.png'
+              imagePath='/src/assets/logistic2.webp'
               altText='woman and man in magazine'
             />
             <!-- <Image class='benefit-image' src={logisitc2} alt='logistics' /> -->
@@ -126,7 +126,7 @@ changeLanguage("fr");
           <div class='benefit title-five'>
             <h2 class='benefit-header'>{t('about.services')}</h2>
             <MyCustomImageCard
-              imagePath='/src/assets/contact-img.png'
+              imagePath='/src/assets/contact-img.webp'
               altText='woman talking by phone'
             />
             <!-- <Image class='benefit-image' src={contact} alt='contact-woman' /> -->
@@ -148,44 +148,35 @@ changeLanguage("fr");
       </div>
 
       <div class='advantages-wrapper'>
-        <h2 class='about-subheader'>Zalety</h2>
+        <h2 class='about-subheader'>{t('about.avantages')}</h2>
         <div class='advantages-container'>
           <div class='advantages'>
             <div class='image-wrapper one'>
               <Icon name='truck' />
             </div>
             <h2 class='advantages-header'>
-              Doświadczenie w produkcji i logistyce
+              {t('about.experience')}
             </h2>
             <p class='advantages-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
-              consequatur veritatis ex eaque quam asperiores facere repellendus.
-              Maiores expedita veniam laborum! Adipisci!
+              {t('about.experience-text')}
             </p>
           </div>
           <div class='advantages'>
             <div class='image-wrapper two'>
               <Icon name='team' />
             </div>
-            <h2 class='advantages-header'>Wydajność cen i usług</h2>
+            <h2 class='advantages-header'>{t('about.performance')}</h2>
             <p class='advantages-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
-              consequatur veritatis ex eaque quam asperiores facere repellendus.
-              Maiores expedita veniam laborum! Adipisci!
+              {t('about.performance-text')}
             </p>
           </div>
           <div class='advantages'>
             <div class='image-wrapper three'>
               <Icon name='research' />
             </div>
-            <h2 class='advantages-header'>Rozwój i badania</h2>
+            <h2 class='advantages-header'>{t('about.research')}</h2>
             <p class='advantages-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, eum tempora corporis in ea, aliquam nostrum atque,
-              consequatur veritatis ex eaque quam asperiores facere repellendus.
-              Maiores expedita veniam laborum! Adipisci!
+              {t('about.research-text')}
             </p>
           </div>
         </div>
@@ -345,17 +336,18 @@ changeLanguage("fr");
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 15px;
   }
   .image-wrapper {
     width: 125px;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     position: relative;
   }
   .image-wrapper.three {
     padding: 15px;
-    width: 135px;
+    width: 125px;
   }
   .one::before,
   .two::before,
@@ -526,6 +518,9 @@ changeLanguage("fr");
     .advantages-header {
       height: 62px;
     }
+    .advantages-text {
+      height: 95px;
+    }
   }
 </style>
 
@@ -541,9 +536,9 @@ changeLanguage("fr");
       accordion.addEventListener('click', () => {
         wrapper?.classList.toggle('is-open');
         arrow?.classList.toggle('is-rotate');
-        accordion.textContent = wrapper?.classList.contains('is-open')
-          ? 't{(about.hide)}'
-          : 't{(about.expand)}';
+        // accordion.textContent = wrapper?.classList.contains('is-open')
+        //   ? 'Schowaj'
+        //   : 'Rozwiń';
         accordion.style.backgroundColor = wrapper?.classList.contains('is-open')
           ? 'var(--bg-white)'
           : '';

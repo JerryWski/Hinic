@@ -32,7 +32,14 @@
         "prices" : "Konkurencyjne ceny",
         "prices-text" : "Hinic oferuje wyłącznie najczystszą nikotynę, równocześnie dając uczciwą i odpowiednią cenę dla Twojego biznesu. Cenimy naszych Klientów oraz zawsze wspieramy ich działalność. Nikt z konkurentów nie proponuje takiej samej jakości produktów jaką my oferujemy w tak dobrych cenach.",
         "services" : "Istotność serwisu",
-        "services-text" : "Hinic rozumie, iż skuteczna obsługa klienta może stanowić ogromną wartość biznesową. Zawsze jest naszym celem, aby trzymać się zasad, zapewniających wydajność oraz spełnianie wszystkie oczekiwań Konsumentów. Zespól Dotox dąży do tego, żeby nasi Klienci byli częścią każdego naszego działania. Od zamówienia produktu aż do jego dostarczenia monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem do naszych usług i możliwości."
+        "services-text" : "Hinic rozumie, iż skuteczna obsługa klienta może stanowić ogromną wartość biznesową. Zawsze jest naszym celem, aby trzymać się zasad, zapewniających wydajność oraz spełnianie wszystkie oczekiwań Konsumentów. Zespól Dotox dąży do tego, żeby nasi Klienci byli częścią każdego naszego działania. Od zamówienia produktu aż do jego dostarczenia monitorujemy cały proces, więc będziesz mógł bez obaw czekać na dostawę z całkowitym zaufaniem do naszych usług i możliwości.",
+        "avantages" : "Zalety",
+        "experience" : "Doświadczenie w produkcji i logistyce",
+        "experience-text" : "Nasza firma, z wieloletnią praktyką w produkcji czystej nikotyny, wyróżnia się jako lider w branży. Dzięki naszemu doświadczeniu, zapewniamy skuteczną i sprawdzoną logistykę, co gwarantuje najwyższą jakość naszych produktów.",
+        "performance" : "Wydajność cen i usług",
+        "performance-text" : "Kładziemy nacisk na zapewnienie konkurencyjnych cen bez kompromisów co do jakości. Nasze usługi są skrojone na miarę, aby zaspokoić indywidualne potrzeby naszych klientów, łącząc przystępność cenową z wydajnością.",
+        "research" : "Rozwój i badania",
+        "research-text" : "Innowacja jest w sercu naszej działalności. Inwestujemy znaczne zasoby w badania i rozwój. Nasze prace badawcze skupiają się na ciągłym udoskonalaniu naszych produktów, gwarantując, że nasze rozwiązania są nie tylko zaawansowane, ale także skuteczne."
     },
     "products": {
         "title" : "Nasza Oferta",
