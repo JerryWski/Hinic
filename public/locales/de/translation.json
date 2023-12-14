@@ -56,9 +56,9 @@
     "warn": "Entflammbar: Von starken Wärmequellen fernhalten.",
     "worker": "Nur für Erwachsene geeignet. Von Kindern, Haustieren und unausgeglichenen Personen fernhalten.",
     "toxic": "Giftig: Nicht trinken und keinen direkten Kontakt mit der Lösung zulassen.",
-    "warning-one": "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
-    "warning-two": "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
-    "warning-three": "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>",
+    "warning-one": "<0>*Nikotin ist schädlich.</0> Nicht verschlucken, nicht auf die Zunge, Augen oder Haut bringen. Von Kindern, Haustieren und unausgeglichenen Personen fernhalten. Nach Hautkontakt sofort einen Arzt aufsuchen.",
+    "warning-two": "<0>Nikotin macht stark süchtig.</0> Dieses Produkt sollte nicht von Personen eingenommen werden, die: an einer Herzerkrankung leiden, hohen Blutdruck haben, Diabetiker sind oder allergisch auf Nikotin, Glycerin oder Propylenglykol reagieren, schwanger sind oder stillen. Brechen Sie die Einnahme ab und konsultieren Sie sofort Ihren Arzt, wenn Sie Symptome von Nikotinmissbrauch wie Übelkeit, Erbrechen, Schwindel, Schwäche oder Herzrasen bemerken.",
+    "warning-three": "<0>DAS PRODUKT ENTHÄLT NIKOTIN, DAS SÜCHTIG MACHT</0>",
 
     "order": {
       "header": "Exzellenz in Kooperation und Logistik",

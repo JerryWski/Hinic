@@ -56,9 +56,9 @@
         "warn" : "Inflammable : Tenir à l'écart des sources de chaleur intense.",
         "worker" : "Usage réservé aux adultes. Tenir à l'écart des enfants, des animaux domestiques et des personnes déséquilibrées.",
         "toxic" : "Toxique : Ne pas boire ou permettre un contact direct avec la solution.",
-        "warning-one" : "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
-        "warning-two" : "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
-        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
+        "warning-one" : "<0>La nicotine est nocive.</0> Ne pas avaler, ne pas mettre sur la langue, les yeux ou la peau. Tenir à l'écart des enfants, des animaux domestiques et des personnes déséquilibrées. Contacter un médecin immédiatement après un contact avec la peau.",
+        "warning-two" : "<0>La nicotine crée une forte dépendance.</0> Ce produit ne doit pas être utilisé par les personnes qui : souffrent d'une maladie cardiaque, d'hypertension artérielle, de diabète ou sont allergiques à la nicotine, à la glycérine ou au propylène glycol ; sont enceintes ou allaitent. Cessez d'utiliser ce produit et consultez immédiatement votre médecin si vous présentez des symptômes d'abus de nicotine tels que nausées, vomissements, vertiges, faiblesse ou accélération du rythme cardiaque.",
+        "warning-three" : "<0>LE PRODUIT CONTIENT DE LA NICOTINE, UNE SUBSTANCE QUI CRÉE UNE DÉPENDANCE</0>"
   },
   "order": {
     "header": "Excellence en matière de coopération et de logistique",

@@ -1,5 +1,6 @@
 ---
 import { t, changeLanguage } from "i18next";
+import { Trans } from "astro-i18next/components";
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import nicotine from "../../assets/nicotine2.png";
@@ -119,24 +120,30 @@ changeLanguage("es");
         <span class='warning-line'></span>
         <div class='warning-footer'>
           <p class='warning-text'>
-            <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać
-            na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt
-            domowych oraz osób niezrównoważonych. Po kontakcie ze skórą
-            niezwłocznie skontaktować się z lekarzem.
+            <Trans i18nKey="products.warning-one">
+              <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać
+              na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt
+              domowych oraz osób niezrównoważonych. Po kontakcie ze skórą
+              niezwłocznie skontaktować się z lekarzem.
+            </Trans>
           </p>
           <p class='warning-text'>
-            <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie
-            powinny stosować osoby: mające choroby serca; wysokie ciśnienie
-            krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol
-            propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać
-            stosowanie i niezwłocznie skonsultować się z lekarzem w razie
-            występowania jakichkolwiek objawów nadużycia nikotyny takich jak
-            nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.
+            <Trans i18nKey="products.warning-two">
+              <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie
+              powinny stosować osoby: mające choroby serca; wysokie ciśnienie
+              krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol
+              propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać
+              stosowanie i niezwłocznie skonsultować się z lekarzem w razie
+              występowania jakichkolwiek objawów nadużycia nikotyny takich jak
+              nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.
+            </Trans>
           </p>
           <p class='warning-text'>
-            <span
-              >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
-            >
+            <Trans i18nKey="products.warning-three">
+              <span
+                >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
+              >
+            </Trans>
           </p>
         </div>
       </div>

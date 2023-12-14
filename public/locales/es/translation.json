@@ -56,9 +56,9 @@
         "warn" : "Inflamable: Mantener alejado de fuentes de calor intenso.",
         "worker" : "Sólo para uso de adultos. Mantener alejado de niños, animales domésticos y personas desequilibradas.",
         "toxic" : "Tóxico: No beber ni permitir el contacto directo con la solución.",
-        "warning-one" : "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
-        "warning-two" : "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
-        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
+        "warning-one" : "<0>*La nicotina es perjudicial.</0> No ingerir, ni poner en contacto con la lengua, los ojos o la piel. Mantener alejado de niños, animales domésticos y personas desequilibradas. En caso de contacto con la piel, consultar inmediatamente a un médico.",
+        "warning-two" : "<0>La nicotina es altamente adictiva.</0> Este producto no debe ser utilizado por personas que: padezcan enfermedades cardíacas; tengan la tensión arterial alta; sean diabéticas o alérgicas a la nicotina, la glicerina o el propilenglicol; estén embarazadas o en período de lactancia. Suspenda su uso y consulte inmediatamente a su médico si experimenta cualquier síntoma de abuso de nicotina, como náuseas, vómitos, mareos, debilidad o taquicardia.",
+        "warning-three" : "<0>EL PRODUCTO CONTIENE NICOTINA, QUE ES UNA SUSTANCIA ADICTIVA</0>"
   },
   "order": {
     "header": "Excelencia en cooperación y logística",

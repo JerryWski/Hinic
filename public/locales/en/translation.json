@@ -56,9 +56,9 @@
     "warn": "Flammable: Keep away from intense heat sources.",
     "worker": "For adult use only. Keep away from children, pets and unbalanced people.",
     "toxic": "Toxic: Do not drink or allow direct contact with the solution.",
-    "warning-one": "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
-    "warning-two": "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
-    "warning-three": "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
+    "warning-one": "<0>*Nicotine can be harmful.</0> Do not swallow, place on tongue, eyes or skin. Keep away from children, pets and unbalanced persons. Contact a doctor immediately after skin contact.",
+    "warning-two": "<0>Nicotine can be addictive.</0> This product should not be used by people who: have heart disease; have high blood pressure; are diabetic or allergic to nicotine, glycerine or propylene glycol; are pregnant or breastfeeding. Discontinue use and consult your doctor immediately if you experience any symptoms of nicotine abuse such as nausea vomiting, dizziness, weakness or rapid heartbeat.",
+    "warning-three": "<0>THE PRODUCT CONTAINS NICOTINE, WHICH IS AN ADDICTIVE SUBSTANCE</0>"
   },
   "order": {
     "header": "Excellence in Collaboration and Logistics",
