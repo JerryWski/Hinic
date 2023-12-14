@@ -49,8 +49,16 @@
         "subheader" : "Produkty",
         "text-one" : "Ponad 300 zadowolonych klientów w całej Polsce",
         "text-two" : "Innowacyjne podejście generuje zgodną z oczekiwaniem Konsumenta jakość produktu.",
-        "text-three" : "Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące zapotrzebowanie rynku oraz Klientów o różnych wymaganiach."
-       
+        "text-three" : "Oferujemy profesjonalne produkty nikotynowe, które zaspokoją rosnące zapotrzebowanie rynku oraz Klientów o różnych wymaganiach.",
+
+        "warning" : "Uwaga!",
+        "fire" : "Wrażliwy: Chronić przed bezpośrednim działaniem promieni słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.",
+        "warn" : "Łatwopalny: trzymać z dala od intensywnych źródeł ciepła.",
+        "worker" : "Tylko do użytku dla osób dorosłych. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych.",
+        "toxic" : "Toksyczne: Nie pij i nie pozwól na bezpośredni kontakt z roztworem.",
+        "warning-one" : "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
+        "warning-two" : "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
+        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
     },
     "order" : {
         "header" : "Doskonałość we Współpracy i Logistyce",
