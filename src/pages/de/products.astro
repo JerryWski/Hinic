@@ -26,7 +26,7 @@ changeLanguage("de");
       </div>
 
       <div class='products-container'>
-        <img class='bg-overlay' loading="lazy" alt="molecules"></img>
+        <img class='bg-overlay' src="/bg-dots.webp" loading="lazy" alt="molecules" />
         <div class="texts-wrapper">
           <p class='products-text'>
             {t('products.text-one')}
@@ -149,16 +149,14 @@ changeLanguage("de");
     padding-top: 114px;
   }
   .bg-overlay {
-    background-image: url('/bg-dots.webp');
+    /* background-image: url('/bg-dots.webp'); */
     height: 100%;
     width: 100%;
     inset: 0;
     z-index: -1;
     opacity: 0.1;
     position: absolute;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
   }
   .products-welcome {
     background-image: url('/products-bg-sm2.webp');
