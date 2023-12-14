@@ -1,12 +1,12 @@
 ---
-import { Image } from "astro:assets";
-import nicotine from '../../assets/nicotine.png'
+import { Image } from 'astro:assets';
+import nicotine from '../../assets/nicotine.png';
 import i18next, { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
 ---
 
 <section class='about-section'>
-  <p class="about-minititle">{t('about.minititle')}</p>
+  <p class='about-minititle'>{t('about.minititle')}</p>
   <h2 class='about-header'>{t('about.heading')}</h2>
   <div class='about-wrapper'>
     <div class='about-info'>
@@ -16,7 +16,8 @@ import { localizePath } from 'astro-i18next';
       <p class='about-text'>
         {t('about.text-two')}
       </p>
-      <a class="about-link" href={localizePath('/o_nas')}>{t('navbar.about')}</a>
+      <a class='about-link' href={localizePath('/o_nas')}>{t('navbar.about')}</a
+      >
     </div>
     <div class='about-image-container'>
       <Image src={nicotine} alt='nicotine-bottle' />
@@ -25,7 +26,14 @@ import { localizePath } from 'astro-i18next';
 </section>
 
 <style>
+  .about-section.show {
+    transform: translateY(0%);
+    opacity: 1;
+  }
   .about-section {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s all;
     padding: 20px;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -45,8 +53,8 @@ import { localizePath } from 'astro-i18next';
     object-fit: cover;
     height: auto;
   }
-  .about-minititle{
-    opacity: .6;
+  .about-minititle {
+    opacity: 0.6;
     color: var(--font-blue);
     text-transform: uppercase;
     font-family: var(--roboto-font);
@@ -84,7 +92,7 @@ import { localizePath } from 'astro-i18next';
     background-color: var(--font-blue);
     font-size: 1.4rem;
     cursor: pointer;
-    transition: .3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
   }
   .about-link:hover {
     background-color: var(--bg-white);
@@ -115,3 +123,18 @@ import { localizePath } from 'astro-i18next';
     }
   }
 </style>
+
+<script>
+  const section = document.querySelector('.about-section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle('show', entry.isIntersecting);
+    });
+    console.log(entries);
+  }, {
+    threshold : .20
+  });
+
+  observer.observe(section!);
+</script>
