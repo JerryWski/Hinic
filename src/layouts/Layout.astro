@@ -2,7 +2,7 @@
 import Contact from '../components/ContactSection/Contact.astro';
 import Header from '../components/Navigation/Header.astro';
 import i18next, { t } from 'i18next';
-import '../utils/customFonts.css'
+import '../utils/customFonts.css';
 import { HeadHrefLangs } from 'astro-i18next/components';
 
 interface Props {
@@ -20,10 +20,10 @@ const { title } = Astro.props;
     <HeadHrefLangs />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <link
+    <!-- <link
       href='https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,900&display=swap'
       rel='stylesheet'
-    />
+    /> -->
     <meta name='generator' content={Astro.generator} />
     <title>{t('head.title')}</title>
   </head>
@@ -32,7 +32,8 @@ const { title } = Astro.props;
     <Header />
     <slot />
     <Contact />
-    <script dns-prefetch src='https://kit.fontawesome.com/4619b49638.js'></script>
+    <script dns-prefetch src='https://kit.fontawesome.com/4619b49638.js'
+    ></script>
     <style is:global>
       *,
       *::after,
@@ -78,8 +79,6 @@ const { title } = Astro.props;
       .sticky-body {
         overflow: hidden;
       }
-      /* montserrat-300 - latin_latin-ext */
-      
     </style>
   </body>
 </html>
