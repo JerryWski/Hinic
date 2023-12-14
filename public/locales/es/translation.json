@@ -51,14 +51,21 @@
     "text-two": "Este planteamiento innovador genera productos de calidad acorde con las expectativas de los consumidores.",
     "text-three": "Ofrecemos productos de nicotina profesionales para satisfacer la creciente demanda del mercado y a clientes con distintos requisitos.",
 
-    "warning" : "Atención!",
-        "fire" : "Sensible: Proteger de la luz solar directa y evitar la exposición excesiva a fuentes de aire.",
-        "warn" : "Inflamable: Mantener alejado de fuentes de calor intenso.",
-        "worker" : "Sólo para uso de adultos. Mantener alejado de niños, animales domésticos y personas desequilibradas.",
-        "toxic" : "Tóxico: No beber ni permitir el contacto directo con la solución.",
-        "warning-one" : "<0>*La nicotina es perjudicial.</0> No ingerir, ni poner en contacto con la lengua, los ojos o la piel. Mantener alejado de niños, animales domésticos y personas desequilibradas. En caso de contacto con la piel, consultar inmediatamente a un médico.",
-        "warning-two" : "<0>La nicotina es altamente adictiva.</0> Este producto no debe ser utilizado por personas que: padezcan enfermedades cardíacas; tengan la tensión arterial alta; sean diabéticas o alérgicas a la nicotina, la glicerina o el propilenglicol; estén embarazadas o en período de lactancia. Suspenda su uso y consulte inmediatamente a su médico si experimenta cualquier síntoma de abuso de nicotina, como náuseas, vómitos, mareos, debilidad o taquicardia.",
-        "warning-three" : "<0>EL PRODUCTO CONTIENE NICOTINA, QUE ES UNA SUSTANCIA ADICTIVA</0>"
+    "warning": "Atención!",
+    "fire": "Sensible: Proteger de la luz solar directa y evitar la exposición excesiva a fuentes de aire.",
+    "warn": "Inflamable: Mantener alejado de fuentes de calor intenso.",
+    "worker": "Sólo para uso de adultos. Mantener alejado de niños, animales domésticos y personas desequilibradas.",
+    "toxic": "Tóxico: No beber ni permitir el contacto directo con la solución.",
+    "warning-one": "<0>*La nicotina es perjudicial.</0> No ingerir, ni poner en contacto con la lengua, los ojos o la piel. Mantener alejado de niños, animales domésticos y personas desequilibradas. En caso de contacto con la piel, consultar inmediatamente a un médico.",
+    "warning-two": "<0>La nicotina es altamente adictiva.</0> Este producto no debe ser utilizado por personas que: padezcan enfermedades cardíacas; tengan la tensión arterial alta; sean diabéticas o alérgicas a la nicotina, la glicerina o el propilenglicol; estén embarazadas o en período de lactancia. Suspenda su uso y consulte inmediatamente a su médico si experimenta cualquier síntoma de abuso de nicotina, como náuseas, vómitos, mareos, debilidad o taquicardia.",
+    "warning-three": "<0>EL PRODUCTO CONTIENE NICOTINA, QUE ES UNA SUSTANCIA ADICTIVA</0>",
+
+    "nicotine-text" : "Nicotina naturalmente obtenida de plantas de tabaco de excelente sabor, mayor longevidad y un período de oxidación más largo.",
+    "nicotinesalt-text" : "Es una forma de nicotina que se encuentra naturalmente en el tabaco, utilizada en líquidos para cigarrillos electrónicos.",
+    "pg-text" : "PG (Propilenglicol) y VG (Glicerina vegetal) son las dos principales sustancias base utilizadas para producir líquidos en cigarrillos electrónicos.",
+    "aroma-text" : "Productos químicos añadidos a los líquidos de cigarrillos electrónicos para darles sabor, etc.",
+    "access-text" : "Ingredientes adicionales, como colorantes, edulcorantes o agentes de enfriamiento, utilizados para ajustar el sabor y las sensaciones al fumar.",
+    "cbd-text" : "El aceite de CBD es un extracto derivado del cáñamo industrial (Cannabis sativa) que contiene cannabidiol (CBD) - uno de los muchos compuestos químicos que se encuentran naturalmente en la planta de cáñamo."
   },
   "order": {
     "header": "Excelencia en cooperación y logística",

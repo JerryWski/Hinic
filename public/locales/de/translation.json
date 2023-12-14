@@ -60,27 +60,34 @@
     "warning-two": "<0>Nikotin macht stark süchtig.</0> Dieses Produkt sollte nicht von Personen eingenommen werden, die: an einer Herzerkrankung leiden, hohen Blutdruck haben, Diabetiker sind oder allergisch auf Nikotin, Glycerin oder Propylenglykol reagieren, schwanger sind oder stillen. Brechen Sie die Einnahme ab und konsultieren Sie sofort Ihren Arzt, wenn Sie Symptome von Nikotinmissbrauch wie Übelkeit, Erbrechen, Schwindel, Schwäche oder Herzrasen bemerken.",
     "warning-three": "<0>DAS PRODUKT ENTHÄLT NIKOTIN, DAS SÜCHTIG MACHT</0>",
 
-    "order": {
-      "header": "Exzellenz in Kooperation und Logistik",
-      "text-one": "Für uns steht das Wohl unserer Kunden an erster Stelle. Wir passen unsere Preise an, um unsere Verbraucher zufrieden zu stellen. Als Lieferant möchten wir unseren Kunden die Möglichkeit geben, durch wettbewerbsfähige Preise noch mehr zu verdienen als bisher. Mit unserem freundlichen und professionellen Team, das mit Ihnen zusammenarbeitet, bietet Hiliq Polen Ihnen Qualität, mit der Sie sehr zufrieden sein werden.",
-      "text-two": "Das Team von Hinic Poland ist bestrebt, unsere Kunden in alles, was wir tun, mit einzubeziehen. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
-      "link": "Bestellung unserer Produkte"
-    },
-    "contact": {
-      "shortcuts": "Abkürzungen",
-      "header": "Kontakt",
+    "nicotine-text": "Natürlicher Tabak aus Pflanzen mit ausgezeichnetem Geschmack, längerer Haltbarkeit und längerer Oxidationszeit.",
+    "nicotinesalt-text": "Dies ist eine Form von Nikotin, die natürlich im Tabak vorkommt und in E-Zigarettenflüssigkeiten verwendet wird.",
+    "pg-text": "PG (Propylenglykol) und VG (pflanzliches Glyzerin) sind die beiden wichtigsten Grundstoffe, die für die Herstellung von E-Liquids in E-Zigaretten verwendet werden",
+    "aroma-text": "Chemikalien, die E-Zigarettenflüssigkeiten zugesetzt werden, um den Geschmack zu verbessern usw.",
+    "access-text": "Zusätzliche Inhaltsstoffe wie Farbstoffe, Süßstoffe oder Kühlmittel, die verwendet werden, um den Geschmack und das Raucherlebnis individuell zu gestalten.",
+    "cbd-text": "CBD-Öl ist ein aus Hanf (Cannabis sativa) gewonnener Extrakt, der Cannabidiol (CBD) enthält - eine der vielen chemischen Verbindungen, die natürlich in der Hanfpflanze vorkommen"
+  },
 
-      "subheader": "Kontaktieren Sie uns",
-      "text-one": "Haben Sie eine Frage oder möchten Sie unser Produkt bestellen?",
-      "text-two": "Unser Büro ist von Montag bis Freitag geöffnet.",
-      "text-three": "Von 08:00 bis 16:00"
-    },
+  "order": {
+    "header": "Exzellenz in Kooperation und Logistik",
+    "text-one": "Für uns steht das Wohl unserer Kunden an erster Stelle. Wir passen unsere Preise an, um unsere Verbraucher zufrieden zu stellen. Als Lieferant möchten wir unseren Kunden die Möglichkeit geben, durch wettbewerbsfähige Preise noch mehr zu verdienen als bisher. Mit unserem freundlichen und professionellen Team, das mit Ihnen zusammenarbeitet, bietet Hiliq Polen Ihnen Qualität, mit der Sie sehr zufrieden sein werden.",
+    "text-two": "Das Team von Hinic Poland ist bestrebt, unsere Kunden in alles, was wir tun, mit einzubeziehen. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
+    "link": "Bestellung unserer Produkte"
+  },
+  "contact": {
+    "shortcuts": "Abkürzungen",
+    "header": "Kontakt",
 
-    "nicotine": "Nikotin",
-    "nicotine-salt": "Nikotin Salz",
-    "pg-vg": "PG i VG",
-    "aromas": "Aromen",
-    "accessories": "Accessoires",
-    "cbd": "Kbd-Öle"
-  }
+    "subheader": "Kontaktieren Sie uns",
+    "text-one": "Haben Sie eine Frage oder möchten Sie unser Produkt bestellen?",
+    "text-two": "Unser Büro ist von Montag bis Freitag geöffnet.",
+    "text-three": "Von 08:00 bis 16:00"
+  },
+
+  "nicotine": "Nikotin",
+  "nicotine-salt": "Nikotin Salz",
+  "pg-vg": "PG i VG",
+  "aromas": "Aromen",
+  "accessories": "Accessoires",
+  "cbd": "Kbd-Öle"
 }

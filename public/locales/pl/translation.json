@@ -59,7 +59,15 @@
 
         "warning-one" : "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
         "warning-two" : "<0>Nikotyna jest silnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
-        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
+        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>",
+
+        "nicotine-text" : "Naturalnie pozyskiwany z roślin tytoń o doskonałym smaku, większejj żywotności i dłuższym okresie utleniania.",
+        "nicotinesalt-text" : "To forma nikotyny, która występuje naturalnie w tytoniu, stosowana w płynach do e-papierosów",
+        "pg-text" : "PG (Propylenoglikol) i VG (Gliceryna roślinna) to dwie główne substancje bazowe używane do produkcji e-płynów w e-papierosach",
+        "aroma-text" : "Substancje chemiczne dodawane do płynów do e-papierosów w celu nadania im smaku itp",
+        "access-text" : "Dodatkowe składniki, takie jak barwniki, substancje słodzące czy chłodzące, używane w celu dostosowania smaku i wrażeń z palenia.",
+        "cbd-text" : "Olej CBD to ekstrakt pochodzący z konopi siewnych (Cannabis sativa), który zawiera kannabidiol (CBD) - jedno z wielu związków chemicznych występujących naturalnie w roślinie konopi"
+
     },
     "order" : {
         "header" : "Doskonałość we Współpracy i Logistyce",

@@ -58,7 +58,14 @@
     "toxic": "Toxic: Do not drink or allow direct contact with the solution.",
     "warning-one": "<0>*Nicotine can be harmful.</0> Do not swallow, place on tongue, eyes or skin. Keep away from children, pets and unbalanced persons. Contact a doctor immediately after skin contact.",
     "warning-two": "<0>Nicotine can be addictive.</0> This product should not be used by people who: have heart disease; have high blood pressure; are diabetic or allergic to nicotine, glycerine or propylene glycol; are pregnant or breastfeeding. Discontinue use and consult your doctor immediately if you experience any symptoms of nicotine abuse such as nausea vomiting, dizziness, weakness or rapid heartbeat.",
-    "warning-three": "<0>THE PRODUCT CONTAINS NICOTINE, WHICH IS AN ADDICTIVE SUBSTANCE</0>"
+    "warning-three": "<0>THE PRODUCT CONTAINS NICOTINE, WHICH IS AN ADDICTIVE SUBSTANCE</0>",
+
+    "nicotine-text": "Naturally sourced tobacco from plants with excellent flavour, greater longevity and a longer oxidation period.",
+    "nicotinesalt-text": "This is a form of nicotine that occurs naturally in tobacco, used in e-cigarette liquids",
+    "pg-text": "PG (Propyleneglycol) and VG (Vegetable Glycerine) are the two main base substances used for the production of e-liquids in e-cigarettes",
+    "aroma-text": "Chemicals added to e-cigarette liquids to impart flavour etc.",
+    "access-text": "Additional ingredients, such as colourings, sweeteners or cooling agents, used to customise the taste and smoking experience.",
+    "cbd-text": "CBD oil is an extract derived from hemp (Cannabis sativa) that contains cannabidiol (CBD) - one of the many chemical compounds found naturally in the hemp plant"
   },
   "order": {
     "header": "Excellence in Collaboration and Logistics",
