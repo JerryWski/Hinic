@@ -27,13 +27,13 @@ import { localizePath } from 'astro-i18next';
 
 <style>
   .about-section.show {
-    transform: translateY(0%);
+    /* transform: translateY(0%); */
     opacity: 1;
   }
   .about-section {
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
     opacity: 0;
-    transition: 0.5s all;
+    transition: .5s all ease-in-out;
     padding: 20px;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -130,10 +130,11 @@ import { localizePath } from 'astro-i18next';
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       entry.target.classList.toggle('show', entry.isIntersecting);
+      if(entry.isIntersecting) observer.unobserve(entry.target)
     });
     console.log(entries);
   }, {
-    threshold : .20
+    threshold : .30,
   });
 
   observer.observe(section!);

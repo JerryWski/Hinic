@@ -3,8 +3,6 @@ import i18next, { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
 import Cards from './Cards.astro';
 import CardsSlider from './CardsSlider.astro';
-
-
 ---
 
 <section class='products-section'>
@@ -26,7 +24,14 @@ import CardsSlider from './CardsSlider.astro';
   </div>
 </section>
 <style>
+  .products-section.show {
+    transform: translateY(0%);
+    opacity: 1;
+  }
   .products-section {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
     padding: 20px 20px 40px 20px;
     padding-top: 80px;
     background-color: #f4f8ff;
@@ -91,7 +96,7 @@ import CardsSlider from './CardsSlider.astro';
     outline: none;
     text-align: center;
     padding: 15px 35px;
-    box-shadow: 3px 6px 5px -5px rgb(42,44,83);
+    box-shadow: 3px 6px 5px -5px rgb(42, 44, 83);
     background-color: var(--font-blue);
     font-size: 1.4rem;
     cursor: pointer;
@@ -112,3 +117,22 @@ import CardsSlider from './CardsSlider.astro';
     }
   }
 </style>
+
+<script>
+  const section = document.querySelector('.products-section');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('show', entry.isIntersecting);
+        if (entry.isIntersecting) observer.unobserve(entry.target);
+      });
+      console.log(entries);
+    },
+    {
+      threshold: 0.3,
+    },
+  );
+
+  observer.observe(section!);
+</script>
