@@ -89,33 +89,30 @@ changeLanguage("de");
       </div>
 
       <div class='warning-container'>
-        <h2 class='warning-header'>Uwaga!</h2>
+        <h2 class='warning-header'>{t('products.warning')}</h2>
         <div class='warning-wrapper'>
           <div class='warning-card'>
             <Image class='warning-img' src={fire} alt='warn-fire' />
             <p class='warning-text'>
-              Wrażliwy: Chronić przed bezpośrednim działaniem promieni
-              słonecznych i unikać nadmiernej ekspozycji na źródła powietrza.
+              {t('products.fire')}
             </p>
           </div>
           <div class='warning-card'>
             <Image class='warning-img' src={wicon} alt='warn-icon' />
             <p class='warning-text'>
-              Łatwopalny: trzymać z dala od intensywnych źródeł ciepła.
+              {t('products.warn')}
             </p>
           </div>
           <div class='warning-card'>
             <Image class='warning-img' src={worker} alt='worker-icon' />
             <p class='warning-text'>
-              Tylko do użytku dla osób dorosłych. Trzymać z dala od dzieci,
-              zwierząt domowych oraz osób niezrównoważonych.
+              {t('products.worker')}
             </p>
           </div>
           <div class='warning-card'>
             <Image class='warning-img' src={toxic} alt='toxic-bottle' />
             <p class='warning-text'>
-              Toksyczne: Nie pij i nie pozwól na bezpośredni kontakt z
-              roztworem.
+              {t('products.toxic')}
             </p>
           </div>
         </div>

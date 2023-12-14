@@ -49,7 +49,16 @@
     "subheader": "Produits",
     "text-one": "Plus de 300 clients satisfaits dans toute la Pologne",
     "text-two": "L'approche innovante génère une qualité de produit conforme aux attentes des consommateurs.",
-    "text-three": "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et aux exigences différentes des clients."
+    "text-three": "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et aux exigences différentes des clients.",
+
+    "warning" : "Attention !",
+        "fire" : "Sensible : Protéger de la lumière directe du soleil et éviter une exposition excessive aux sources d'air.",
+        "warn" : "Inflammable : Tenir à l'écart des sources de chaleur intense.",
+        "worker" : "Usage réservé aux adultes. Tenir à l'écart des enfants, des animaux domestiques et des personnes déséquilibrées.",
+        "toxic" : "Toxique : Ne pas boire ou permettre un contact direct avec la solution.",
+        "warning-one" : "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
+        "warning-two" : "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
+        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
   },
   "order": {
     "header": "Excellence en matière de coopération et de logistique",

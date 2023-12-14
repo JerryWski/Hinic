@@ -49,28 +49,38 @@
     "subheader": "Produkte",
     "text-one": "Mehr als 300 zufriedene Kunden in ganz Polen",
     "text-two": "Der innovative Ansatz führt zu einer Produktqualität, die den Erwartungen der Verbraucher entspricht.",
-    "text-three": "Wir bieten professionelle Nikotinprodukte an, um der wachsenden Marktnachfrage und den unterschiedlichen Anforderungen der Kunden gerecht zu werden."
-  },
-  "order": {
-    "header": "Exzellenz in Kooperation und Logistik",
-    "text-one": "Für uns steht das Wohl unserer Kunden an erster Stelle. Wir passen unsere Preise an, um unsere Verbraucher zufrieden zu stellen. Als Lieferant möchten wir unseren Kunden die Möglichkeit geben, durch wettbewerbsfähige Preise noch mehr zu verdienen als bisher. Mit unserem freundlichen und professionellen Team, das mit Ihnen zusammenarbeitet, bietet Hiliq Polen Ihnen Qualität, mit der Sie sehr zufrieden sein werden.",
-    "text-two": "Das Team von Hinic Poland ist bestrebt, unsere Kunden in alles, was wir tun, mit einzubeziehen. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
-    "link": "Bestellung unserer Produkte"
-  },
-  "contact": {
-    "shortcuts": "Abkürzungen",
-    "header": "Kontakt",
+    "text-three": "Wir bieten professionelle Nikotinprodukte an, um der wachsenden Marktnachfrage und den unterschiedlichen Anforderungen der Kunden gerecht zu werden.",
 
-    "subheader": "Kontaktieren Sie uns",
-    "text-one": "Haben Sie eine Frage oder möchten Sie unser Produkt bestellen?",
-    "text-two": "Unser Büro ist von Montag bis Freitag geöffnet.",
-    "text-three": "Von 08:00 bis 16:00"
-  },
+    "warning": "Achtung!",
+    "fire": "Empfindlich: Vor direktem Sonnenlicht schützen und übermäßige Exposition gegenüber Luftquellen vermeiden.",
+    "warn": "Entflammbar: Von starken Wärmequellen fernhalten.",
+    "worker": "Nur für Erwachsene geeignet. Von Kindern, Haustieren und unausgeglichenen Personen fernhalten.",
+    "toxic": "Giftig: Nicht trinken und keinen direkten Kontakt mit der Lösung zulassen.",
+    "warning-one": "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
+    "warning-two": "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
+    "warning-three": "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>",
 
-  "nicotine": "Nikotin",
-  "nicotine-salt": "Nikotin Salz",
-  "pg-vg": "PG i VG",
-  "aromas": "Aromen",
-  "accessories": "Accessoires",
-  "cbd": "Kbd-Öle"
+    "order": {
+      "header": "Exzellenz in Kooperation und Logistik",
+      "text-one": "Für uns steht das Wohl unserer Kunden an erster Stelle. Wir passen unsere Preise an, um unsere Verbraucher zufrieden zu stellen. Als Lieferant möchten wir unseren Kunden die Möglichkeit geben, durch wettbewerbsfähige Preise noch mehr zu verdienen als bisher. Mit unserem freundlichen und professionellen Team, das mit Ihnen zusammenarbeitet, bietet Hiliq Polen Ihnen Qualität, mit der Sie sehr zufrieden sein werden.",
+      "text-two": "Das Team von Hinic Poland ist bestrebt, unsere Kunden in alles, was wir tun, mit einzubeziehen. Von der Produktbestellung bis zur Lieferung überwachen wir den gesamten Prozess, so dass Sie mit vollem Vertrauen in unsere Dienstleistungen und Fähigkeiten auf die Lieferung warten können.",
+      "link": "Bestellung unserer Produkte"
+    },
+    "contact": {
+      "shortcuts": "Abkürzungen",
+      "header": "Kontakt",
+
+      "subheader": "Kontaktieren Sie uns",
+      "text-one": "Haben Sie eine Frage oder möchten Sie unser Produkt bestellen?",
+      "text-two": "Unser Büro ist von Montag bis Freitag geöffnet.",
+      "text-three": "Von 08:00 bis 16:00"
+    },
+
+    "nicotine": "Nikotin",
+    "nicotine-salt": "Nikotin Salz",
+    "pg-vg": "PG i VG",
+    "aromas": "Aromen",
+    "accessories": "Accessoires",
+    "cbd": "Kbd-Öle"
+  }
 }

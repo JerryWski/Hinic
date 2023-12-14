@@ -49,7 +49,16 @@
     "subheader": "Productos",
     "text-one": "Más de 300 clientes satisfechos en toda Polonia",
     "text-two": "Este planteamiento innovador genera productos de calidad acorde con las expectativas de los consumidores.",
-    "text-three": "Ofrecemos productos de nicotina profesionales para satisfacer la creciente demanda del mercado y a clientes con distintos requisitos."
+    "text-three": "Ofrecemos productos de nicotina profesionales para satisfacer la creciente demanda del mercado y a clientes con distintos requisitos.",
+
+    "warning" : "Atención!",
+        "fire" : "Sensible: Proteger de la luz solar directa y evitar la exposición excesiva a fuentes de aire.",
+        "warn" : "Inflamable: Mantener alejado de fuentes de calor intenso.",
+        "worker" : "Sólo para uso de adultos. Mantener alejado de niños, animales domésticos y personas desequilibradas.",
+        "toxic" : "Tóxico: No beber ni permitir el contacto directo con la solución.",
+        "warning-one" : "<0>*Nikotyna jest szkodliwa.</0> Nie połykać, nie umieszczać na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z lekarzem.",
+        "warning-two" : "<0>Nikotyna jest śilnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
+        "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>"
   },
   "order": {
     "header": "Excelencia en cooperación y logística",
