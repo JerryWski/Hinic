@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+https://hinic.eu/sitemap-index.xml
