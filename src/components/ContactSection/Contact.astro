@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from '../../assets/base-logo-hd.webp'
+import logo from '../../assets/logo-hinic-big.webp'
 import { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
 ---
@@ -43,6 +43,7 @@ import { localizePath } from 'astro-i18next';
     background-color: var(--light-blue);
     color: var(--logo-blue);
     display: flex;
+    gap: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,12 +111,23 @@ import { localizePath } from 'astro-i18next';
   }
 
 @media (min-width:900px) {
+  .contact-section {
+    flex-direction: row;
+    gap: 150px;
+    padding-top: 100px;
+  }
   .contact-container {
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 140px;
+  }
+  .shortcuts {
+    margin-top: 0;
+  }
+  .contact-logo-container, .wrapper {
+    margin: 0;
   }
   .contact-header {
     margin-top: 0;

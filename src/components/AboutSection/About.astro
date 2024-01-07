@@ -132,7 +132,7 @@ import { localizePath } from 'astro-i18next';
       entry.target.classList.toggle('show', entry.isIntersecting);
       if(entry.isIntersecting) observer.unobserve(entry.target)
     });
-    console.log(entries);
+    
   }, {
     threshold : .30,
   });

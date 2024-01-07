@@ -1,7 +1,7 @@
 ---
 import { t } from 'i18next';
 import { Image } from 'astro:assets';
-import logo from '../../assets/base-logo.webp'
+import logo from '../../assets/logo-hinic.webp'
 import { localizePath } from 'astro-i18next';
 import { LanguageSelector } from 'astro-i18next/components';
 import Hamburger from './Hamburger.astro';
@@ -10,14 +10,14 @@ import Hamburger from './Hamburger.astro';
 <header>
   <nav class="'nav-container'">
     <a class='logo-link-desktop' href='/'>
-      <div class='logo-wrapper-desktop'>
-        <img class='logo' src='/base-logo.png' alt='logo-icon' />
+      <div>
+        <Image class='logo' src={logo} alt='logo-icon' />
       </div>
     </a>
 
     <a class='logo-link-mobile' href='/'>
-      <div class='logo-wrapper-mobile'>
-        <Image src={logo} alt='logo-icon' />
+      <div>
+        <Image class="logo" src={logo} alt='logo-icon' />
       </div>
     </a>
     <div class='contact-wrapper'>
@@ -187,8 +187,11 @@ import Hamburger from './Hamburger.astro';
   }
   .logo-link-mobile {
     display: block;
-    max-width: 150px;
-    padding: 10px;
+    max-width: 80px;
+    padding-inline: 5px;
+  }
+  logo {
+    height: auto;
   }
   .logo-link-mobile img {
     width: 100%;
@@ -263,14 +266,11 @@ import Hamburger from './Hamburger.astro';
 
     .logo-link-desktop {
       display: block;
-      max-width: 150px;
+      max-width: 120px;
       padding: 10px;
     }
     .logo-link-mobile {
       display: none;
-    }
-    .logo-wrapper {
-      max-width: 150px;
     }
     .logo {
       width: 100%;
