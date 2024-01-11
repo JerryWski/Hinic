@@ -1,21 +1,21 @@
 ---
-import { t, changeLanguage } from "i18next";
-import { Trans } from "astro-i18next/components";
-import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
+import { t, changeLanguage } from 'i18next';
+import { Trans } from 'astro-i18next/components';
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 // import nicotine from "../assets/nicotine3.webp";
 // import salt from "../assets/salt2.webp";
 // import pgvg from "../assets/pgvg.webp";
 // import aromas from "../assets/aroma.webp";
 // import accessories from "../assets/accessories2.webp";
 // import cbd from "../assets/cbd-oils.webp";
-import fire from "../assets/warn-fire.webp";
-import wicon from "../assets/warn-icon.webp";
-import worker from "../assets/warn-office.webp";
-import toxic from "../assets/warn-toxic.webp";
-import CardWrapper from "../components/ProductsSection/CardWrapper.astro";
+import fire from '../assets/warn-fire.webp';
+import wicon from '../assets/warn-icon.webp';
+import worker from '../assets/warn-office.webp';
+import toxic from '../assets/warn-toxic.webp';
+import CardWrapper from '../components/ProductsSection/CardWrapper.astro';
 
-changeLanguage("pl");
+changeLanguage('pl');
 ---
 
 <Layout title='Nasze produkty nikotynowe'>
@@ -50,81 +50,15 @@ changeLanguage("pl");
             </Trans>
           </p>
           <div class='links-box'>
-            <a download='' href=''
-              >- {t('products.link-one')} -></a
-            >
+            <a download='' href=''>- {t('products.link-one')} -></a>
             <a download='' href=''>- {t('products.link-two')} -></a>
             <a download='' href=''>- {t('products.link-three')} -></a>
           </div>
         </div>
 
         <h2 class='title'>{t('products.heading')}</h2>
-
-        <!-- <div class='card-wrapper'>
-          <div class='card'>
-            <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
-            <div class='card-text-container'>
-              <h2 class='card-title'>{t('nicotine')}</h2>
-              <p class='card-text'>
-                {t('products.nicotine-text')}
-              </p>
-              <p class='card-text-warn'>
-                {t('products.nicotine-warning')}
-              </p>
-            </div>
-          </div>
-
-          <div class='card'>
-            <Image class='card-image' src={salt} alt='nicotine-salt' />
-            <div class='card-text-container'>
-              <h2 class='card-title'>{t('nicotine-salt')}</h2>
-              <p class='card-text'>
-                {t('products.nicotinesalt-text')}
-              </p>
-            </div>
-          </div>
-
-          <div class='card'>
-            <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
-            <div class='card-text-container'>
-              <h2 class='card-title'>{t('pg-vg')}</h2>
-              <p class='card-text'>
-                {t('products.pg-text')}
-              </p>
-            </div>
-          </div>
-
-          <div class='card'>
-            <Image class='card-image' src={aromas} alt='nicotine-bottles' />
-            <div class='card-text-container'>
-              <h2 class='card-title'>{t('aromas')}</h2>
-              <p class='card-text'>
-                {t('products.aroma-text')}
-              </p>
-            </div>
-          </div>
-
-          <div class='card'>
-            <Image class='card-image' src={accessories} alt='nicotine-bottle' />
-            <div class='card-text-container'>
-              <h2 class='card-title'>{t('accessories')}</h2>
-              <p class='card-text'>
-                {t('products.access-text')}
-              </p>
-            </div>
-          </div>
-
-          <div class='card'>
-            <Image class='card-image' src={cbd} alt='cbd-oils' />
-            <div class='card-text-container'>
-              <h2 class='card-title'>{t('cbd')}</h2>
-              <p class='card-text'>
-                {t('products.cbd-text')}
-              </p>
-            </div>
-          </div>
-        </div> -->
-      <CardWrapper />
+        
+        <CardWrapper />
       </div>
 
       <section id='prices-list'>
@@ -242,7 +176,7 @@ changeLanguage("pl");
     margin-top: 30px;
     align-self: center;
     color: var(--font-blue);
-    font-size: clamp(4rem, 4vw, 6rem);
+    font-size: clamp(3rem, 4vw, 6rem);
   }
   .products-subheader {
     font-size: clamp(2.3rem, 3vw, 3.5rem);
@@ -266,15 +200,19 @@ changeLanguage("pl");
   .links-box {
     font-family: var(--main-font);
     display: flex;
-    font-size: clamp(.7rem, 1vw, 1.2rem);
+    margin-top: 20px;
+    text-align: center;
+    font-size: clamp(.8rem, 1.5vw, 1.5rem);
     flex-direction: column;
-    border: 2px solid var(--font-blue);
-    padding: 15px 10px 15px 10px;
+    border: 2px solid var(--blue);
+    padding: 35px 20px 35px 20px;
     border-radius: 14px;
-    gap: 5px;
+    gap: 25px;
+    width: 100%;
+    max-width:600px;
   }
   .links-box a {
-    color: var(--font-blue);
+    color: var(--blue);
     font-weight: 700;
   }
   .links-box a:hover {
@@ -309,66 +247,6 @@ changeLanguage("pl");
     opacity: 0;
     animation-delay: 2s;
   }
-  /* .card-wrapper {
-    display: flex;
-    gap: 120px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--bg-white);
-    align-items: center;
-    color: var(--bg-black);
-    font-family: var(--second-font);
-    transform: scale(1);
-    transition: 0.2s all ease-in;
-    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
-  }
-  .card-text-container {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .card-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: 0.2s all ease-in;
-    object-fit: contain;
-  } */
-  /* .card:hover {
-    outline: 3px solid var(--blue);
-    border-radius: 10px;
-  } */
-  /* .card-image:hover {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  .card-title {
-    font-size: 1.4rem;
-    margin: 25px;
-  }
-  .card-text {
-    text-align: center;
-    max-width: 265px;
-    font-size: clamp(0.8rem, 1vw, 0.9rem);
-  }
-  .card-text-warn {
-    font-size: clamp(0.6rem, 1vw, 0.7rem);
-    font-weight: 700;
-    padding-inline: 5px;
-    font-family: var(--second-font);
-    color: var(--bg-black);
-    margin: auto;
-    text-align: center;
-  } */
   .warning-container {
     background-image: var(--bg-gradient);
     color: var(--bg-white);
@@ -451,6 +329,9 @@ changeLanguage("pl");
       margin-bottom: 0px;
     }
     .warning-header {
+    }
+    .links-box {
+      text-align: left;
     }
   }
   @media (max-width: 1800px) {
