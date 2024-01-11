@@ -3,16 +3,17 @@ import { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import nicotine from "../assets/nicotine3.webp";
-import salt from "../assets/salt2.webp";
-import pgvg from "../assets/pgvg.webp";
-import aromas from "../assets/aroma.webp";
-import accessories from "../assets/accessories2.webp";
-import cbd from "../assets/cbd-oils.webp";
+// import nicotine from "../assets/nicotine3.webp";
+// import salt from "../assets/salt2.webp";
+// import pgvg from "../assets/pgvg.webp";
+// import aromas from "../assets/aroma.webp";
+// import accessories from "../assets/accessories2.webp";
+// import cbd from "../assets/cbd-oils.webp";
 import fire from "../assets/warn-fire.webp";
 import wicon from "../assets/warn-icon.webp";
 import worker from "../assets/warn-office.webp";
 import toxic from "../assets/warn-toxic.webp";
+import CardWrapper from "../components/ProductsSection/CardWrapper.astro";
 
 changeLanguage("pl");
 ---
@@ -41,9 +42,25 @@ changeLanguage("pl");
           <p class='products-text'>
             {t('products.text-three')}
           </p>
+          <p class='products-text'>
+            <Trans i18nKey='products.text-four'>
+              Możesz zapoznać się z naszym <a id='lists' href='#prices-list'
+                >Cennikiem</a
+              > poniżej lub ściągnij go na telefon:
+            </Trans>
+          </p>
+          <div class='links-box'>
+            <a download='' href=''
+              >- {t('products.link-one')} -></a
+            >
+            <a download='' href=''>- {t('products.link-two')} -></a>
+            <a download='' href=''>- {t('products.link-three')} -></a>
+          </div>
         </div>
 
-        <div>
+        <h2 class='title'>{t('products.heading')}</h2>
+
+        <!-- <div class='card-wrapper'>
           <div class='card'>
             <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
             <div class='card-text-container'>
@@ -56,59 +73,64 @@ changeLanguage("pl");
               </p>
             </div>
           </div>
-        </div>
 
-        <div class='card'>
-          <Image class='card-image' src={salt} alt='nicotine-salt' />
-          <div class="card-text-container">
-            <h2 class='card-title'>{t('nicotine-salt')}</h2>
-            <p class='card-text'>
-              {t('products.nicotinesalt-text')}
-            </p>
+          <div class='card'>
+            <Image class='card-image' src={salt} alt='nicotine-salt' />
+            <div class='card-text-container'>
+              <h2 class='card-title'>{t('nicotine-salt')}</h2>
+              <p class='card-text'>
+                {t('products.nicotinesalt-text')}
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class='card'>
-          <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
-          <div class="card-text-container">
-            <h2 class='card-title'>{t('pg-vg')}</h2>
-            <p class='card-text'>
-              {t('products.pg-text')}
-            </p>
+          <div class='card'>
+            <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
+            <div class='card-text-container'>
+              <h2 class='card-title'>{t('pg-vg')}</h2>
+              <p class='card-text'>
+                {t('products.pg-text')}
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class='card'>
-          <Image class='card-image' src={aromas} alt='nicotine-bottles' />
-          <div class="card-text-container">
-            <h2 class='card-title'>{t('aromas')}</h2>
-            <p class='card-text'>
-              {t('products.aroma-text')}
-            </p>
+          <div class='card'>
+            <Image class='card-image' src={aromas} alt='nicotine-bottles' />
+            <div class='card-text-container'>
+              <h2 class='card-title'>{t('aromas')}</h2>
+              <p class='card-text'>
+                {t('products.aroma-text')}
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class='card'>
-          <Image class='card-image' src={accessories} alt='nicotine-bottle' />
-          <div class="card-text-container">
-            <h2 class='card-title'>{t('accessories')}</h2>
-            <p class='card-text'>
-              {t('products.access-text')}
-            </p>
+          <div class='card'>
+            <Image class='card-image' src={accessories} alt='nicotine-bottle' />
+            <div class='card-text-container'>
+              <h2 class='card-title'>{t('accessories')}</h2>
+              <p class='card-text'>
+                {t('products.access-text')}
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class='card'>
-          <Image class='card-image' src={cbd} alt='cbd-oils' />
-          <div class="card-text-container">
-            <h2 class='card-title'>{t('cbd')}</h2>
-            <p class='card-text'>
-              {t('products.cbd-text')}
-            </p>
+          <div class='card'>
+            <Image class='card-image' src={cbd} alt='cbd-oils' />
+            <div class='card-text-container'>
+              <h2 class='card-title'>{t('cbd')}</h2>
+              <p class='card-text'>
+                {t('products.cbd-text')}
+              </p>
+            </div>
           </div>
-        </div>
-
+        </div> -->
+      <CardWrapper />
       </div>
+
+      <section id='prices-list'>
+        <h2>Cennik naszych produktów</h2>
+        <div></div>
+      </section>
 
       <div class='warning-container'>
         <h2 class='warning-header'>{t('products.warning')}</h2>
@@ -173,7 +195,6 @@ changeLanguage("pl");
 </Layout>
 
 <style>
- 
   .products-section {
     padding-top: 114px;
   }
@@ -199,11 +220,19 @@ changeLanguage("pl");
     background-repeat: no-repeat;
     height: 300px;
   }
+  .title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: var(--roboto-font);
+    font-size: clamp(2.2rem, 3vw, 5rem);
+    color: var(--font-blue);
+  }
   .products-container {
     padding: 80px 20px 80px 20px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -220,7 +249,37 @@ changeLanguage("pl");
     font-family: var(--main-font);
     color: var(--bg-white);
   }
-
+  .texts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #lists {
+    font-weight: 700;
+    color: var(--font-blue);
+    text-decoration: underline;
+  }
+  #lists:hover {
+    color: var(--blue);
+  }
+  .links-box {
+    font-family: var(--main-font);
+    display: flex;
+    font-size: clamp(.7rem, 1vw, 1.2rem);
+    flex-direction: column;
+    border: 2px solid var(--font-blue);
+    padding: 15px 10px 15px 10px;
+    border-radius: 14px;
+    gap: 5px;
+  }
+  .links-box a {
+    color: var(--font-blue);
+    font-weight: 700;
+  }
+  .links-box a:hover {
+    color: var(--blue);
+  }
   .products-text {
     font-family: var(--second-font);
     text-align: center;
@@ -246,7 +305,18 @@ changeLanguage("pl");
     opacity: 0;
     animation-delay: 1.5s;
   }
-
+  .products-text:nth-of-type(4) {
+    opacity: 0;
+    animation-delay: 2s;
+  }
+  /* .card-wrapper {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -256,7 +326,7 @@ changeLanguage("pl");
     color: var(--bg-black);
     font-family: var(--second-font);
     transform: scale(1);
-    transition: 0.3s transform ease;
+    transition: 0.2s all ease-in;
     box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
   }
   .card-text-container {
@@ -270,10 +340,16 @@ changeLanguage("pl");
     display: block;
     width: 100%;
     height: 100%;
+    transition: 0.2s all ease-in;
     object-fit: contain;
-  }
-  .card:hover {
-    transform: scale(1.1);
+  } */
+  /* .card:hover {
+    outline: 3px solid var(--blue);
+    border-radius: 10px;
+  } */
+  /* .card-image:hover {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
   .card-title {
     font-size: 1.4rem;
@@ -283,7 +359,6 @@ changeLanguage("pl");
     text-align: center;
     max-width: 265px;
     font-size: clamp(0.8rem, 1vw, 0.9rem);
-    /* height: 130px; */
   }
   .card-text-warn {
     font-size: clamp(0.6rem, 1vw, 0.7rem);
@@ -293,7 +368,7 @@ changeLanguage("pl");
     color: var(--bg-black);
     margin: auto;
     text-align: center;
-  }
+  } */
   .warning-container {
     background-image: var(--bg-gradient);
     color: var(--bg-white);

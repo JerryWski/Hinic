@@ -1,0 +1,140 @@
+---
+import { Image } from "astro:assets";
+import { t, changeLanguage } from "i18next";
+import nicotine from "../../assets/nicotine3.webp";
+import salt from "../../assets/salt2.webp";
+import pgvg from "../../assets/pgvg.webp";
+import aromas from "../../assets/aroma.webp";
+import accessories from "../../assets/accessories2.webp";
+import cbd from "../../assets/cbd-oils.webp";
+---
+
+<div class='card-wrapper'>
+    <div class='card'>
+      <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
+      <div class='card-text-container'>
+        <h2 class='card-title'>{t('nicotine')}</h2>
+        <p class='card-text'>
+          {t('products.nicotine-text')}
+        </p>
+        <p class='card-text-warn'>
+          {t('products.nicotine-warning')}
+        </p>
+      </div>
+    </div>
+
+    <div class='card'>
+      <Image class='card-image' src={salt} alt='nicotine-salt' />
+      <div class='card-text-container'>
+        <h2 class='card-title'>{t('nicotine-salt')}</h2>
+        <p class='card-text'>
+          {t('products.nicotinesalt-text')}
+        </p>
+      </div>
+    </div>
+
+    <div class='card'>
+      <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
+      <div class='card-text-container'>
+        <h2 class='card-title'>{t('pg-vg')}</h2>
+        <p class='card-text'>
+          {t('products.pg-text')}
+        </p>
+      </div>
+    </div>
+
+    <div class='card'>
+      <Image class='card-image' src={aromas} alt='nicotine-bottles' />
+      <div class='card-text-container'>
+        <h2 class='card-title'>{t('aromas')}</h2>
+        <p class='card-text'>
+          {t('products.aroma-text')}
+        </p>
+      </div>
+    </div>
+
+    <div class='card'>
+      <Image class='card-image' src={accessories} alt='nicotine-bottle' />
+      <div class='card-text-container'>
+        <h2 class='card-title'>{t('accessories')}</h2>
+        <p class='card-text'>
+          {t('products.access-text')}
+        </p>
+      </div>
+    </div>
+
+    <div class='card'>
+      <Image class='card-image' src={cbd} alt='cbd-oils' />
+      <div class='card-text-container'>
+        <h2 class='card-title'>{t('cbd')}</h2>
+        <p class='card-text'>
+          {t('products.cbd-text')}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .card-wrapper {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bg-white);
+    align-items: center;
+    color: var(--bg-black);
+    font-family: var(--second-font);
+    transform: scale(1);
+    transition: 0.2s all ease-in;
+    box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+  }
+  .card-text-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s all ease-in;
+    object-fit: contain;
+  }
+  .card:hover {
+    /* transform: scale(1.04); */
+    outline: 3px solid var(--blue);
+    border-radius: 10px;
+  }
+  .card-image:hover {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .card-title {
+    font-size: 1.4rem;
+    margin: 25px;
+  }
+  .card-text {
+    text-align: center;
+    max-width: 265px;
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    /* height: 130px; */
+  }
+  .card-text-warn {
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+    font-weight: 700;
+    padding-inline: 5px;
+    font-family: var(--second-font);
+    color: var(--bg-black);
+    margin: auto;
+    text-align: center;
+  }
+  </style>

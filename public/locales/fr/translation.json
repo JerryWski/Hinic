@@ -50,6 +50,11 @@
     "text-one": "Plus de 300 clients satisfaits dans toute la Pologne",
     "text-two": "L'approche innovante génère une qualité de produit conforme aux attentes des consommateurs.",
     "text-three": "Nous proposons des produits professionnels à base de nicotine pour répondre à la demande croissante du marché et aux exigences différentes des clients.",
+    "text-four": "Vous pouvez lire notre <0>liste de prix</0> ci-dessous ou la télécharger sur votre téléphone:",
+
+    "link-one": "Liste de prix - additifs, cannabinoïdes, isolats",
+    "link-two": "Liste de prix - saveurs",
+    "link-three": "Liste de prix - saveurs (réductions)",
 
     "warning": "Attention !",
     "fire": "Sensible : Protéger de la lumière directe du soleil et éviter une exposition excessive aux sources d'air.",
@@ -60,8 +65,9 @@
     "warning-two": "<0>La nicotine crée une forte dépendance.</0> Ce produit ne doit pas être utilisé par les personnes qui : souffrent d'une maladie cardiaque, d'hypertension artérielle, de diabète ou sont allergiques à la nicotine, à la glycérine ou au propylène glycol ; sont enceintes ou allaitent. Cessez d'utiliser ce produit et consultez immédiatement votre médecin si vous présentez des symptômes d'abus de nicotine tels que nausées, vomissements, vertiges, faiblesse ou accélération du rythme cardiaque.",
     "warning-three": "<0>LE PRODUIT CONTIENT DE LA NICOTINE, UNE SUBSTANCE QUI CRÉE UNE DÉPENDANCE</0>",
 
+    "heading" : "Voyez ce que nous avons à offrir!",
     "nicotine-text": "La nicotine pure (supérieure à 99,5 %) est considérée par de nombreux fabricants comme la meilleure nicotine pure du marché.",
-    "nicotine-warning" : "*Pour passer une commande, veuillez nous contacter par e-mail",
+    "nicotine-warning": "*Pour passer une commande, veuillez nous contacter par e-mail",
     "nicotinesalt-text": "C'est une forme de nicotine qui se trouve naturellement dans le tabac, utilisée dans les liquides pour cigarettes électroniques.",
     "pg-text": "Le PG (Propylène glycol) et le VG (Glycérine végétale) sont les deux principales substances de base utilisées pour la production de liquides pour cigarettes électroniques.",
     "aroma-text": "Produits chimiques ajoutés aux liquides pour cigarettes électroniques pour leur donner une saveur, etc.",
