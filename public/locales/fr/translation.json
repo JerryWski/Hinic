@@ -60,7 +60,8 @@
     "warning-two": "<0>La nicotine crée une forte dépendance.</0> Ce produit ne doit pas être utilisé par les personnes qui : souffrent d'une maladie cardiaque, d'hypertension artérielle, de diabète ou sont allergiques à la nicotine, à la glycérine ou au propylène glycol ; sont enceintes ou allaitent. Cessez d'utiliser ce produit et consultez immédiatement votre médecin si vous présentez des symptômes d'abus de nicotine tels que nausées, vomissements, vertiges, faiblesse ou accélération du rythme cardiaque.",
     "warning-three": "<0>LE PRODUIT CONTIENT DE LA NICOTINE, UNE SUBSTANCE QUI CRÉE UNE DÉPENDANCE</0>",
 
-    "nicotine-text": "Nicotine naturellement extraite des plantes de tabac au goût excellent, à la durabilité accrue et à la période d'oxydation prolongée.",
+    "nicotine-text": "La nicotine pure (supérieure à 99,5 %) est considérée par de nombreux fabricants comme la meilleure nicotine pure du marché.",
+    "nicotine-warning" : "*Pour passer une commande, veuillez nous contacter par e-mail",
     "nicotinesalt-text": "C'est une forme de nicotine qui se trouve naturellement dans le tabac, utilisée dans les liquides pour cigarettes électroniques.",
     "pg-text": "Le PG (Propylène glycol) et le VG (Glycérine végétale) sont les deux principales substances de base utilisées pour la production de liquides pour cigarettes électroniques.",
     "aroma-text": "Produits chimiques ajoutés aux liquides pour cigarettes électroniques pour leur donner une saveur, etc.",
@@ -83,7 +84,7 @@
     "text-three": "De 08h00 à 16h00"
   },
 
-  "nicotine": "Nicotine",
+  "nicotine": "*Nicotine Pure",
   "nicotine-salt": "Sel de Nicotine",
   "pg-vg": "PG i VG",
   "aromas": "Saveurs",

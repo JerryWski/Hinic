@@ -60,7 +60,8 @@
     "warning-two": "<0>La nicotina es altamente adictiva.</0> Este producto no debe ser utilizado por personas que: padezcan enfermedades cardíacas; tengan la tensión arterial alta; sean diabéticas o alérgicas a la nicotina, la glicerina o el propilenglicol; estén embarazadas o en período de lactancia. Suspenda su uso y consulte inmediatamente a su médico si experimenta cualquier síntoma de abuso de nicotina, como náuseas, vómitos, mareos, debilidad o taquicardia.",
     "warning-three": "<0>EL PRODUCTO CONTIENE NICOTINA, QUE ES UNA SUSTANCIA ADICTIVA</0>",
 
-    "nicotine-text" : "Nicotina naturalmente obtenida de plantas de tabaco de excelente sabor, mayor longevidad y un período de oxidación más largo.",
+    "nicotine-text" : "Nicotina pura (superior al 99,5%) Considerada por muchos fabricantes como la mejor nicotina pura del mercado.",
+    "nicotine-warning" : "*Para hacer un pedido, póngase en contacto con nosotros por correo electrónico",
     "nicotinesalt-text" : "Es una forma de nicotina que se encuentra naturalmente en el tabaco, utilizada en líquidos para cigarrillos electrónicos.",
     "pg-text" : "PG (Propilenglicol) y VG (Glicerina vegetal) son las dos principales sustancias base utilizadas para producir líquidos en cigarrillos electrónicos.",
     "aroma-text" : "Productos químicos añadidos a los líquidos de cigarrillos electrónicos para darles sabor, etc.",
@@ -83,7 +84,7 @@
     "text-three": "De 08:00 a 16:00"
   },
 
-  "nicotine": "Nicotina",
+  "nicotine": "*Nicotina Pura",
   "nicotine-salt": "Sal Nicotínica",
   "pg-vg": "PG i VG",
   "aromas": "Aromas",

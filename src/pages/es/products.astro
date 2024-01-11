@@ -3,7 +3,7 @@ import { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import nicotine from "../../assets/nicotine2.webp";
+import nicotine from "../../assets/nicotine3.webp";
 import salt from "../../assets/salt2.webp";
 import pgvg from "../../assets/pgvg.webp";
 import aromas from "../../assets/aroma.webp";
@@ -20,14 +20,18 @@ changeLanguage("es");
 <Layout title='Nasze produkty nikotynowe'>
   <main>
     <section class='products-section'>
-      
       <div class='products-welcome products-welcome-small'>
         <h1 class='products-header'>{t('products.subheader')}</h1>
       </div>
 
       <div class='products-container'>
-        <img class='bg-overlay' src="/bg-dots.webp" loading="lazy" alt="molecules" />
-        <div class="texts-wrapper">
+        <img
+          class='bg-overlay'
+          src='/bg-dots.webp'
+          loading='lazy'
+          alt='molecules'
+        />
+        <div class='texts-wrapper'>
           <p class='products-text'>
             {t('products.text-one')}
           </p>
@@ -38,48 +42,72 @@ changeLanguage("es");
             {t('products.text-three')}
           </p>
         </div>
-        <div class='card'>
-          <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
-          <h2 class='card-title'>{t('nicotine')}</h2>
-          <p class='card-text'>
-            {t('products.nicotine-text')}
-          </p>
+
+        <div>
+          <div class='card'>
+            <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
+            <div class='card-text-container'>
+              <h2 class='card-title'>{t('nicotine')}</h2>
+              <p class='card-text'>
+                {t('products.nicotine-text')}
+              </p>
+              <p class='card-text-warn'>
+                {t('products.nicotine-warning')}
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class='card'>
           <Image class='card-image' src={salt} alt='nicotine-salt' />
-          <h2 class='card-title'>{t('nicotine-salt')}</h2>
-          <p class='card-text'>
-            {t('products.nicotinesalt-text')}
-          </p>
+          <div class="card-text-container">
+            <h2 class='card-title'>{t('nicotine-salt')}</h2>
+            <p class='card-text'>
+              {t('products.nicotinesalt-text')}
+            </p>
+          </div>
         </div>
+
         <div class='card'>
           <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
-          <h2 class='card-title'>{t('pg-vg')}</h2>
-          <p class='card-text'>
-            {t('products.pg-text')}
-          </p>
+          <div class="card-text-container">
+            <h2 class='card-title'>{t('pg-vg')}</h2>
+            <p class='card-text'>
+              {t('products.pg-text')}
+            </p>
+          </div>
         </div>
+
         <div class='card'>
           <Image class='card-image' src={aromas} alt='nicotine-bottles' />
-          <h2 class='card-title'>{t('aromas')}</h2>
-          <p class='card-text'>
-            {t('products.aroma-text')}
-          </p>
+          <div class="card-text-container">
+            <h2 class='card-title'>{t('aromas')}</h2>
+            <p class='card-text'>
+              {t('products.aroma-text')}
+            </p>
+          </div>
         </div>
+
         <div class='card'>
           <Image class='card-image' src={accessories} alt='nicotine-bottle' />
-          <h2 class='card-title'>{t('accessories')}</h2>
-          <p class='card-text'>
-            {t('products.access-text')}
-          </p>
+          <div class="card-text-container">
+            <h2 class='card-title'>{t('accessories')}</h2>
+            <p class='card-text'>
+              {t('products.access-text')}
+            </p>
+          </div>
         </div>
+
         <div class='card'>
           <Image class='card-image' src={cbd} alt='cbd-oils' />
-          <h2 class='card-title'>{t('cbd')}</h2>
-          <p class='card-text'>
-            {t('products.cbd-text')}
-          </p>
+          <div class="card-text-container">
+            <h2 class='card-title'>{t('cbd')}</h2>
+            <p class='card-text'>
+              {t('products.cbd-text')}
+            </p>
+          </div>
         </div>
+
       </div>
 
       <div class='warning-container'>
@@ -113,26 +141,26 @@ changeLanguage("es");
         <span class='warning-line'></span>
         <div class='warning-footer'>
           <p class='warning-text'>
-            <Trans i18nKey="products.warning-one">
+            <Trans i18nKey='products.warning-one'>
               <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać
-              na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt
-              domowych oraz osób niezrównoważonych. Po kontakcie ze skórą
-              niezwłocznie skontaktować się z lekarzem.
+              na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych
+              oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować
+              się z lekarzem.
             </Trans>
           </p>
           <p class='warning-text'>
-            <Trans i18nKey="products.warning-two">
+            <Trans i18nKey='products.warning-two'>
               <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie
-              powinny stosować osoby: mające choroby serca; wysokie ciśnienie
-              krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol
-              propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać
-              stosowanie i niezwłocznie skonsultować się z lekarzem w razie
-              występowania jakichkolwiek objawów nadużycia nikotyny takich jak
-              nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.
+              powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi;
+              cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy;
+              kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i
+              niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek
+              objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy,
+              osłabienie lub szybkie bicie serca.
             </Trans>
           </p>
           <p class='warning-text'>
-            <Trans i18nKey="products.warning-three">
+            <Trans i18nKey='products.warning-three'>
               <span
                 >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
               >
@@ -145,6 +173,7 @@ changeLanguage("es");
 </Layout>
 
 <style>
+ 
   .products-section {
     padding-top: 114px;
   }
@@ -191,7 +220,7 @@ changeLanguage("es");
     font-family: var(--main-font);
     color: var(--bg-white);
   }
- 
+
   .products-text {
     font-family: var(--second-font);
     text-align: center;
@@ -217,6 +246,7 @@ changeLanguage("es");
     opacity: 0;
     animation-delay: 1.5s;
   }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -228,6 +258,13 @@ changeLanguage("es");
     transform: scale(1);
     transition: 0.3s transform ease;
     box-shadow: 3px 2px 19px -5px rgba(0, 0, 0, 1);
+  }
+  .card-text-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .card-image {
     display: block;
@@ -245,7 +282,17 @@ changeLanguage("es");
   .card-text {
     text-align: center;
     max-width: 265px;
-    height: 140px;
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    /* height: 130px; */
+  }
+  .card-text-warn {
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+    font-weight: 700;
+    /* padding-top: 30px; */
+    font-family: var(--second-font);
+    color: var(--bg-black);
+    margin: auto;
+    text-align: center;
   }
   .warning-container {
     background-image: var(--bg-gradient);

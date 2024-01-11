@@ -60,7 +60,8 @@
     "warning-two": "<0>Nikotin macht stark süchtig.</0> Dieses Produkt sollte nicht von Personen eingenommen werden, die: an einer Herzerkrankung leiden, hohen Blutdruck haben, Diabetiker sind oder allergisch auf Nikotin, Glycerin oder Propylenglykol reagieren, schwanger sind oder stillen. Brechen Sie die Einnahme ab und konsultieren Sie sofort Ihren Arzt, wenn Sie Symptome von Nikotinmissbrauch wie Übelkeit, Erbrechen, Schwindel, Schwäche oder Herzrasen bemerken.",
     "warning-three": "<0>DAS PRODUKT ENTHÄLT NIKOTIN, DAS SÜCHTIG MACHT</0>",
 
-    "nicotine-text": "Natürlicher Tabak aus Pflanzen mit ausgezeichnetem Geschmack, längerer Haltbarkeit und längerer Oxidationszeit.",
+    "nicotine-text": "Reines Nikotin (über 99,5 %), das von vielen Herstellern als das beste reine Nikotin auf dem Markt angesehen wird.",
+    "nicotine-warning" : "*Um eine Bestellung aufzugeben, kontaktieren Sie uns bitte per E-Mail",
     "nicotinesalt-text": "Dies ist eine Form von Nikotin, die natürlich im Tabak vorkommt und in E-Zigarettenflüssigkeiten verwendet wird.",
     "pg-text": "PG (Propylenglykol) und VG (pflanzliches Glyzerin) sind die beiden wichtigsten Grundstoffe, die für die Herstellung von E-Liquids in E-Zigaretten verwendet werden",
     "aroma-text": "Chemikalien, die E-Zigarettenflüssigkeiten zugesetzt werden, um den Geschmack zu verbessern usw.",
@@ -84,7 +85,7 @@
     "text-three": "Von 08:00 bis 16:00"
   },
 
-  "nicotine": "Nikotin",
+  "nicotine": "*Reines Nikotin",
   "nicotine-salt": "Nikotin Salz",
   "pg-vg": "PG i VG",
   "aromas": "Aromen",

@@ -61,7 +61,8 @@
         "warning-two" : "<0>Nikotyna jest silnie uzależniająca.</0> Tego produktu nie powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie serca.",
         "warning-three" : "<0>PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</0>",
 
-        "nicotine-text" : "Naturalnie pozyskiwany z roślin tytoń o doskonałym smaku, większejj żywotności i dłuższym okresie utleniania.",
+        "nicotine-text" : "Czysta nikotyna (powyżej 99,5%).Uważana przez wielu producentów za najlepszą czystą nikotynę na rynku.",
+        "nicotine-warning" : "*W celu złożenia zamówienia, prosimy o kontakt mailowy",
         "nicotinesalt-text" : "To forma nikotyny, która występuje naturalnie w tytoniu, stosowana w płynach do e-papierosów",
         "pg-text" : "PG (Propylenoglikol) i VG (Gliceryna roślinna) to dwie główne substancje bazowe używane do produkcji e-płynów w e-papierosach",
         "aroma-text" : "Substancje chemiczne dodawane do płynów do e-papierosów w celu nadania im smaku itp",
@@ -85,7 +86,7 @@
 
     },
 
-    "nicotine" :"Nikotyna",
+    "nicotine" :"*Czysta Nikotyna",
     "nicotine-salt" : "Sól nikotynowa",
     "pg-vg": "PG i VG",
     "aromas": "Aromaty",
