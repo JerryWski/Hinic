@@ -4,6 +4,9 @@ import { Trans } from 'astro-i18next/components';
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import prices from '../assets/additions.webp';
+import prices1 from '../assets/prices-basic-1.webp';
+import prices2 from '../assets/prices-basic-2.webp';
+import prices3 from '../assets/prices-basic-3.webp';
 import fire from '../assets/warn-fire.webp';
 import wicon from '../assets/warn-icon.webp';
 import worker from '../assets/warn-office.webp';
@@ -62,9 +65,19 @@ changeLanguage('pl');
       </div>
 
       <section class='prices-section' id='prices-list'>
-        <h2 class="prices-header">Cenniki</h2>
+        <h2 class='prices-header'>Cenniki</h2>
         <div class='prices-wrapper'>
-          <Image class='img' src={prices} alt='prices-list' />
+          <div>
+            <h3>Dodatki, kannaboidy, izolaty</h3>
+            <Image class='img one' src={prices} alt='prices-list' />
+          </div>
+          <h3>Aromaty</h3>
+          <div class='prices-two'>
+            <Image class='img two' src={prices1} alt='prices-list' />
+            <Image class='img three' src={prices2} alt='prices-list' />
+            <Image class='img four' src={prices3} alt='prices-list' />
+          </div>
+          <div></div>
         </div>
 
         <div class='warning-container'>
@@ -132,27 +145,56 @@ changeLanguage('pl');
   <style>
     .prices-section {
       padding-inline: 10px;
+      background-color: var(--light-blue);
     }
     .prices-header {
       text-align: center;
       font-family: var(--roboto-font);
-      font-size: clamp(2.2rem, 3vw, 5rem);
+      font-size: clamp(3.2rem, 3vw, 5rem);
       color: var(--font-blue);
       max-width: 300px;
       margin-top: 50px;
-      margin-bottom: 20px;
+      padding-top: 50px;
+      margin-bottom: 40px;
       margin-inline: auto;
       border-bottom: 2px solid var(--font-blue);
     }
     .prices-wrapper {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .prices-two {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .prices-two img {
+      margin-top: 0;
     }
     .img {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
       height: auto;
       object-fit: contain;
+    }
+    .img.two,
+    .img.three,
+    .img.four {
+      max-width: 600px;
+    }
+    h3 {
+      font-family: var(--roboto-font);
+      color: var(--bg-grey);
+      text-align: center;
+      font-size: clamp(1rem, 2.5vw, 2rem);
+      margin-bottom: 10px;
     }
     .products-section {
       padding-top: 114px;
@@ -359,6 +401,12 @@ changeLanguage('pl');
       }
       .links-box {
         text-align: left;
+      }
+      .prices-two {
+        gap: 50px;
+      }
+      .prices-two img {
+        margin-inline: 0;
       }
     }
     @media (max-width: 1800px) {
