@@ -3,6 +3,7 @@ import { t, changeLanguage } from 'i18next';
 import { Trans } from 'astro-i18next/components';
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+import Icon from 'astro-icon';
 import prices from '../assets/additions.webp';
 import prices1 from '../assets/prices-basic-1.webp';
 import prices2 from '../assets/prices-basic-2.webp';
@@ -49,13 +50,26 @@ changeLanguage('pl');
           </p>
           <div class='links-box'>
             <a download='/additions.pdf' href='/'
-              >- {t('products.link-one')} -></a
+              >- {t('products.link-one')}
+              <Icon
+                class='icon'
+                name='download'
+                width={30}
+              /></a
             >
             <a download='/prices-basic.pdf' href='/'
-              >- {t('products.link-two')} -></a
+              >- {t('products.link-two')} <Icon
+              class='icon'
+              name='download'
+              width={30}
+            /></a
             >
             <a download='/prices-disc.pdf' href='/'
-              >- {t('products.link-three')} -></a
+              >- {t('products.link-three')} <Icon
+              class='icon'
+              name='download'
+              width={30}
+            /></a
             >
           </div>
         </div>
@@ -271,23 +285,27 @@ changeLanguage('pl');
       font-family: var(--main-font);
       display: flex;
       margin-top: 20px;
-      text-align: center;
-      font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+      font-size: clamp(.7rem, 1.5vw, 1.5rem);
       flex-direction: column;
       border: 2px solid var(--blue);
       padding: 35px 20px 35px 20px;
       border-radius: 14px;
       gap: 25px;
       width: 100%;
-      animation: show 2s 2.1s both;
+      /* animation: show 2s 2.1s both; */
       max-width: 600px;
     }
     .links-box a {
       color: var(--blue);
       font-weight: 700;
+      display: flex;
+      gap: 3px;
     }
     .links-box a:hover {
       opacity: 0.8;
+    }
+    .icon {
+      width: 20px;
     }
     .products-text {
       font-family: var(--second-font);
@@ -409,6 +427,9 @@ changeLanguage('pl');
       }
       .prices-two img {
         margin-inline: 0;
+      }
+      .icon {
+        width: 30px;
       }
     }
     @media (max-width: 1800px) {
