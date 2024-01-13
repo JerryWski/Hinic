@@ -68,10 +68,10 @@ changeLanguage('pl');
         <h2 class='prices-header'>Cenniki</h2>
         <div class='prices-wrapper'>
           <div>
-            <h3>Dodatki, kannaboidy, izolaty</h3>
+            <h3>* Dodatki, kannaboidy, izolaty *</h3>
             <Image class='img one' src={prices} alt='prices-list' />
           </div>
-          <h3>Aromaty</h3>
+          <h3>* Aromaty *</h3>
           <div class='prices-two'>
             <Image class='img two' src={prices1} alt='prices-list' />
             <Image class='img three' src={prices2} alt='prices-list' />
@@ -173,6 +173,7 @@ changeLanguage('pl');
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
+      margin-top: -10px;
     }
     .prices-two img {
       margin-top: 0;
@@ -190,10 +191,11 @@ changeLanguage('pl');
       max-width: 500px;
     }
     h3 {
-      font-family: var(--roboto-font);
+      font-family: var(--second-font);
       color: var(--bg-grey);
       text-align: center;
       font-size: clamp(1rem, 2.5vw, 2rem);
+      margin-top: 30px;
       margin-bottom: 10px;
     }
     .products-section {
