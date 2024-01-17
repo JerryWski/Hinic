@@ -70,8 +70,18 @@ changeLanguage("fr");
       </div>
     </section>
 
-    <section class='prices-section' id='prices-list'>
-      <div>
+    <section class='prices-section'>
+      <div id='prices-list'>
+        <div class="form-header_wrapper">
+          <h3 class='form-header'>
+            W celu zapoznania się z cennikiem naszych produktów, wyślij do Nas
+            wiadomość
+          </h3>
+          <p>
+            Po przesłaniu wiadomości udostępnimy Ci cenniki oraz będzie miał
+            możliwość pobrania ich w formacie .pdf ma swoje urządzenie
+          </p>
+        </div>
         <FormContact client:only />
       </div>
 
@@ -153,8 +163,26 @@ changeLanguage("fr");
 
   <style>
     .prices-section {
-      
       background-color: var(--light-blue);
+    }
+    #prices-list {
+      background-image: var(--bg-gradient);
+      padding: 20px;
+    }
+    .form-header_wrapper {
+      text-align: center;
+      font-family: var(--roboto-font);
+    }
+    .form-header_wrapper p {
+      color: var( --overlay-blue);
+      font-size: .8rem;
+      padding-inline: 40px;
+      margin-top: 30px;
+    }
+    .form-header {
+      color: var(--bg-white);
+      font-family: var(--main-font);
+      margin-top: 60px;
     }
     .prices-header {
       text-align: center;
@@ -390,10 +418,19 @@ changeLanguage("fr");
       background-color: var(--bg-white);
       height: 1px;
     }
+    @media (min-width: 600px) {
+      
+    }
     @media (min-width: 900px) {
       .products-section {
         padding-top: 0;
       }
+      .form-header_wrapper {
+        margin-bottom: 60px;
+      }
+      .form-header_wrapper p {
+      font-size: 1rem;
+    }
       .products-container {
         gap: 100px;
         padding-top: 100px;
