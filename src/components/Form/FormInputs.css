@@ -32,5 +32,7 @@
 }
 
 @media (min-width: 900px) {
-
+.form-input {
+  width: 320px;
+}
 }
