@@ -49,16 +49,13 @@ const FormContact = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
             clearForm();
             setIsMessageSent(true);
             setTimeout(() => {
               setIsMessageSent(false);
             }, 3000);
           },
-          (error) => {
-            console.log(error.text);
-          },
+          (error) => {},
         );
     }
   };
