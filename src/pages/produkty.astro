@@ -4,6 +4,7 @@ import { Trans } from 'astro-i18next/components';
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import Icon from 'astro-icon';
+import FormContact from '../components/Form/FormContact';
 import prices from '../assets/additions.webp';
 import prices1 from '../assets/prices-basic-1.webp';
 import prices2 from '../assets/prices-basic-2.webp';
@@ -51,25 +52,15 @@ changeLanguage('pl');
           <div class='links-box'>
             <a download='/additions.pdf' href='/'
               >- {t('products.link-one')}
-              <Icon
-                class='icon'
-                name='download'
-                width={30}
-              /></a
+              <Icon class='icon' name='download' width={30} /></a
             >
             <a download='/prices-basic.pdf' href='/'
-              >- {t('products.link-two')} <Icon
-              class='icon'
-              name='download'
-              width={30}
-            /></a
+              >- {t('products.link-two')}
+              <Icon class='icon' name='download' width={30} /></a
             >
             <a download='/prices-disc.pdf' href='/'
-              >- {t('products.link-three')} <Icon
-              class='icon'
-              name='download'
-              width={30}
-            /></a
+              >- {t('products.link-three')}
+              <Icon class='icon' name='download' width={30} /></a
             >
           </div>
         </div>
@@ -77,88 +68,92 @@ changeLanguage('pl');
         <h2 class='title'>{t('products.heading')}</h2>
         <CardWrapper />
       </div>
+    </section>
 
-      <section class='prices-section' id='prices-list'>
-        <h2 class='prices-header'>Cenniki</h2>
-        <div class='prices-wrapper'>
-          <div>
-            <h3>* Dodatki, kannaboidy, izolaty *</h3>
-            <Image class='img one' src={prices} alt='prices-list' />
-          </div>
-          <h3>* Aromaty *</h3>
-          <div class='prices-two'>
-            <Image class='img two' src={prices1} alt='prices-list' />
-            <Image class='img three' src={prices2} alt='prices-list' />
-            <Image class='img four' src={prices3} alt='prices-list' />
-          </div>
-          <div></div>
+    <section class='prices-section' id='prices-list'>
+      <div>
+        <FormContact client:only />
+      </div>
+
+      <h2 class='prices-header'>Cenniki</h2>
+      <div class='prices-wrapper'>
+        <div>
+          <h3>* Dodatki, kannaboidy, izolaty *</h3>
+          <Image class='img one' src={prices} alt='prices-list' />
         </div>
+        <h3>* Aromaty *</h3>
+        <div class='prices-two'>
+          <Image class='img two' src={prices1} alt='prices-list' />
+          <Image class='img three' src={prices2} alt='prices-list' />
+          <Image class='img four' src={prices3} alt='prices-list' />
+        </div>
+        <div></div>
+      </div>
 
-        <div class='warning-container'>
-          <h2 class='warning-header'>{t('products.warning')}</h2>
-          <div class='warning-wrapper'>
-            <div class='warning-card'>
-              <Image class='warning-img' src={fire} alt='warn-fire' />
-              <p class='warning-text'>
-                {t('products.fire')}
-              </p>
-            </div>
-            <div class='warning-card'>
-              <Image class='warning-img' src={wicon} alt='warn-icon' />
-              <p class='warning-text'>
-                {t('products.warn')}
-              </p>
-            </div>
-            <div class='warning-card'>
-              <Image class='warning-img' src={worker} alt='worker-icon' />
-              <p class='warning-text'>
-                {t('products.worker')}
-              </p>
-            </div>
-            <div class='warning-card'>
-              <Image class='warning-img' src={toxic} alt='toxic-bottle' />
-              <p class='warning-text'>
-                {t('products.toxic')}
-              </p>
-            </div>
+      <div class='warning-container'>
+        <h2 class='warning-header'>{t('products.warning')}</h2>
+        <div class='warning-wrapper'>
+          <div class='warning-card'>
+            <Image class='warning-img' src={fire} alt='warn-fire' />
+            <p class='warning-text'>
+              {t('products.fire')}
+            </p>
           </div>
-          <span class='warning-line'></span>
-          <div class='warning-footer'>
+          <div class='warning-card'>
+            <Image class='warning-img' src={wicon} alt='warn-icon' />
             <p class='warning-text'>
-              <Trans i18nKey='products.warning-one'>
-                <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać
-                na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt
-                domowych oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie
-                skontaktować się z lekarzem.
-              </Trans>
+              {t('products.warn')}
             </p>
+          </div>
+          <div class='warning-card'>
+            <Image class='warning-img' src={worker} alt='worker-icon' />
             <p class='warning-text'>
-              <Trans i18nKey='products.warning-two'>
-                <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie
-                powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi;
-                cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy;
-                kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie
-                i niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek
-                objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy,
-                osłabienie lub szybkie bicie serca.
-              </Trans>
+              {t('products.worker')}
             </p>
+          </div>
+          <div class='warning-card'>
+            <Image class='warning-img' src={toxic} alt='toxic-bottle' />
             <p class='warning-text'>
-              <Trans i18nKey='products.warning-three'>
-                <span
-                  >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
-                >
-              </Trans>
+              {t('products.toxic')}
             </p>
           </div>
         </div>
-      </section>
+        <span class='warning-line'></span>
+        <div class='warning-footer'>
+          <p class='warning-text'>
+            <Trans i18nKey='products.warning-one'>
+              <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać
+              na języku, oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych
+              oraz osób niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować
+              się z lekarzem.
+            </Trans>
+          </p>
+          <p class='warning-text'>
+            <Trans i18nKey='products.warning-two'>
+              <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie
+              powinny stosować osoby: mające choroby serca; wysokie ciśnienie krwi;
+              cukrzycę lub uczulenie na nikotynę, glicerynę lub glikol propylenowy;
+              kobiety w ciąży lub karmiące piersią. Należy przerwać stosowanie i
+              niezwłocznie skonsultować się z lekarzem w razie występowania jakichkolwiek
+              objawów nadużycia nikotyny takich jak nudności wymioty, zawroty głowy,
+              osłabienie lub szybkie bicie serca.
+            </Trans>
+          </p>
+          <p class='warning-text'>
+            <Trans i18nKey='products.warning-three'>
+              <span
+                >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
+              >
+            </Trans>
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
   <style>
     .prices-section {
-      padding-inline: 10px;
+      
       background-color: var(--light-blue);
     }
     .prices-header {
@@ -285,7 +280,7 @@ changeLanguage('pl');
       font-family: var(--main-font);
       display: flex;
       margin-top: 20px;
-      font-size: clamp(.7rem, 1.5vw, 1.5rem);
+      font-size: clamp(0.7rem, 1.5vw, 1.5rem);
       flex-direction: column;
       border: 2px solid var(--blue);
       padding: 35px 20px 35px 20px;
