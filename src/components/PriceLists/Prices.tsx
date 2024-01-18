@@ -2,6 +2,7 @@ import React from 'react';
 import "./Prices.css"
 import { Icon } from '@iconify/react';
 
+
 const Prices = () => {
   return (
     <div className='container'>
@@ -14,14 +15,14 @@ const Prices = () => {
             download='/additions.pdf'
             href='/additions.pdf'
           >
-            - Ściągnij plik .pdf -
-            <Icon className='icon' icon='download' width={30} />
+            - Download file in .pdf format -
+            <Icon icon="flat-color-icons:download" />
           </a>
         </div>
         <div>
           <img
             className='img one'
-            src='src/assets/additions.webp'
+            src='../../src/assets/additions.webp'
             alt='prices-list'
           />
         </div>
@@ -33,24 +34,24 @@ const Prices = () => {
             download='/prices-basic.pdf'
             href='/prices-basic.pdf'
           >
-            - Ściągnij plik .pdf -
+            - Download file in .pdf format -
             <Icon className='icon' icon='download' width={30} />
           </a>
         </div>
         <div className='prices-two'>
           <img
             className='img two'
-            src='src/assets/prices-basic-1.webp'
+            src='../../src/assets/prices-basic-1.webp'
             alt='prices-list'
           />
           <img
             className='img three'
-            src='src/assets/prices-basic-2.webp'
+            src='../../src/assets/prices-basic-2.webp'
             alt='prices-list'
           />
           <img
             className='img four'
-            src='src/assets/prices-basic-3.webp'
+            src='../../src/assets/prices-basic-3.webp'
             alt='prices-list'
           />
         </div>
@@ -62,14 +63,14 @@ const Prices = () => {
             download='/prices-disc.pdf'
             href='/prices-disc.pdf'
           >
-            - Ściągnij plik .pdf -
+            - Download file in .pdf format -
             <Icon className='icon' icon='download' width={30} />
           </a>
         </div>
         <div>
           <img
             className='img four'
-            src='src/assets/prices-basic-3.webp'
+            src='../../src/assets/prices-basic-3.webp'
             alt='prices-list'
           />
         </div>
