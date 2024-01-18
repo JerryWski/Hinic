@@ -5,15 +5,12 @@ import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Icon from "astro-icon";
 import FormContact from "../../components/Form/FormContact";
-import prices from "../../assets/additions.webp";
-import prices1 from "../../assets/prices-basic-1.webp";
-import prices2 from "../../assets/prices-basic-2.webp";
-import prices3 from "../../assets/prices-basic-3.webp";
 import fire from "../../assets/warn-fire.webp";
 import wicon from "../../assets/warn-icon.webp";
 import worker from "../../assets/warn-office.webp";
 import toxic from "../../assets/warn-toxic.webp";
 import CardWrapper from "../../components/ProductsSection/CardWrapper.astro";
+import PriceLists from "../../components/PriceLists/PriceLists.astro";
 
 changeLanguage("es");
 ---
@@ -49,20 +46,6 @@ changeLanguage("es");
               > poniżej lub ściągnij go na telefon:
             </Trans>
           </p>
-          <div class='links-box'>
-            <a download='/additions.pdf' href='/'
-              >- {t('products.link-one')}
-              <Icon class='icon' name='download' width={30} /></a
-            >
-            <a download='/prices-basic.pdf' href='/'
-              >- {t('products.link-two')}
-              <Icon class='icon' name='download' width={30} /></a
-            >
-            <a download='/prices-disc.pdf' href='/'
-              >- {t('products.link-three')}
-              <Icon class='icon' name='download' width={30} /></a
-            >
-          </div>
         </div>
 
         <h2 class='title'>{t('products.heading')}</h2>
@@ -71,33 +54,20 @@ changeLanguage("es");
     </section>
 
     <section class='prices-section'>
-      <div id='prices-list'>
-        <div class="form-header_wrapper">
-          <h3 class='form-header'>
-            W celu zapoznania się z cennikiem naszych produktów, wyślij do Nas
-            wiadomość
-          </h3>
-          <p>
-            Po przesłaniu wiadomości udostępnimy Ci cenniki oraz będzie miał
-            możliwość pobrania ich w formacie .pdf ma swoje urządzenie
-          </p>
+      <div>
+        <div id='prices-list'>
+          <div class='form-header_wrapper'>
+            <h3 class='form-header'>
+              Wyślij wiadomość i zapoznaj się z ofertą naszych produktów!
+            </h3>
+            <p>
+              Po przesłaniu wiadomości udostępnimy Ci cenniki oraz będzie miał
+              możliwość pobrania ich w formacie .pdf na swoje urządzenie
+            </p>
+          </div>
+          <FormContact client:only />
+          <!-- <PriceLists /> -->
         </div>
-        <FormContact client:only />
-      </div>
-
-      <h2 class='prices-header'>Cenniki</h2>
-      <div class='prices-wrapper'>
-        <div>
-          <h3>* Dodatki, kannaboidy, izolaty *</h3>
-          <Image class='img one' src={prices} alt='prices-list' />
-        </div>
-        <h3>* Aromaty *</h3>
-        <div class='prices-two'>
-          <Image class='img two' src={prices1} alt='prices-list' />
-          <Image class='img three' src={prices2} alt='prices-list' />
-          <Image class='img four' src={prices3} alt='prices-list' />
-        </div>
-        <div></div>
       </div>
 
       <div class='warning-container'>
@@ -166,16 +136,24 @@ changeLanguage("es");
       background-color: var(--light-blue);
     }
     #prices-list {
-      background-image: var(--bg-gradient);
-      padding: 20px;
+      /* background-image: var(--bg-gradient); */
+      background-image: linear-gradient(
+          to top,
+          #031b4e,
+          #021946,
+          #02173e,
+          #031536,
+          #05122e
+        );;
+      padding: 20px 0 0 0;
     }
     .form-header_wrapper {
       text-align: center;
       font-family: var(--roboto-font);
     }
     .form-header_wrapper p {
-      color: var( --overlay-blue);
-      font-size: .8rem;
+      color: var(--overlay-blue);
+      font-size: 0.8rem;
       padding-inline: 40px;
       margin-top: 30px;
     }
@@ -183,58 +161,9 @@ changeLanguage("es");
       color: var(--bg-white);
       font-family: var(--main-font);
       margin-top: 60px;
+      font-size: clamp(1.5rem, 3vw, 3rem);
     }
-    .prices-header {
-      text-align: center;
-      font-family: var(--roboto-font);
-      font-size: clamp(3.2rem, 3vw, 5rem);
-      color: var(--font-blue);
-      max-width: 300px;
-      margin-top: 50px;
-      padding-top: 50px;
-      margin-bottom: 40px;
-      margin-inline: auto;
-      border-bottom: 2px solid var(--font-blue);
-    }
-    .prices-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .prices-two {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin-top: -10px;
-    }
-    .prices-two img {
-      margin-top: 0;
-    }
-    .img {
-      width: 100%;
-      max-width: 1100px;
-      margin: auto;
-      height: auto;
-      object-fit: contain;
-    }
-    .img.two,
-    .img.three,
-    .img.four {
-      max-width: 500px;
-    }
-    h3 {
-      font-family: var(--second-font);
-      color: var(--bg-grey);
-      text-align: center;
-      font-size: clamp(1rem, 2.5vw, 2rem);
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
+
     .products-section {
       padding-top: 114px;
     }
@@ -304,32 +233,7 @@ changeLanguage("es");
     #lists:hover {
       color: var(--blue);
     }
-    .links-box {
-      font-family: var(--main-font);
-      display: flex;
-      margin-top: 20px;
-      font-size: clamp(0.7rem, 1.5vw, 1.5rem);
-      flex-direction: column;
-      border: 2px solid var(--blue);
-      padding: 35px 20px 35px 20px;
-      border-radius: 14px;
-      gap: 25px;
-      width: 100%;
-      animation: show 2s 2.1s both;
-      max-width: 600px;
-    }
-    .links-box a {
-      color: var(--blue);
-      font-weight: 700;
-      display: flex;
-      gap: 3px;
-    }
-    .links-box a:hover {
-      opacity: 0.8;
-    }
-    .icon {
-      width: 20px;
-    }
+
     .products-text {
       font-family: var(--second-font);
       text-align: center;
@@ -366,7 +270,7 @@ changeLanguage("es");
     }
     .warning-header {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 120px;
       margin-bottom: 40px;
       font-size: clamp(2.5rem, 3vw, 3.5rem);
       font-family: var(--roboto-font);
@@ -418,9 +322,7 @@ changeLanguage("es");
       background-color: var(--bg-white);
       height: 1px;
     }
-    @media (min-width: 600px) {
-      
-    }
+
     @media (min-width: 900px) {
       .products-section {
         padding-top: 0;
@@ -429,8 +331,8 @@ changeLanguage("es");
         margin-bottom: 60px;
       }
       .form-header_wrapper p {
-      font-size: 1rem;
-    }
+        font-size: 1rem;
+      }
       .products-container {
         gap: 100px;
         padding-top: 100px;
@@ -450,18 +352,6 @@ changeLanguage("es");
         margin-bottom: 0px;
       }
       .warning-header {
-      }
-      .links-box {
-        text-align: left;
-      }
-      .prices-two {
-        gap: 50px;
-      }
-      .prices-two img {
-        margin-inline: 0;
-      }
-      .icon {
-        width: 30px;
       }
     }
     @media (max-width: 1800px) {

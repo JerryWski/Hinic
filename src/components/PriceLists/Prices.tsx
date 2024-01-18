@@ -5,10 +5,10 @@ import { Icon } from '@iconify/react';
 const Prices = () => {
   return (
     <div className='container'>
-      <h2 className='prices-header'>Cenniki</h2>
+      <h2 className='prices-header'>Pricelists</h2>
       <div className='prices-wrapper'>
         <div className='header-wrapper'>
-          <h3>* Dodatki, kannaboidy, izolaty *</h3>
+          <h3>* Supplements, cannabinoids, isolates *</h3>
           <a
             className='prices-link'
             download='/additions.pdf'
@@ -27,7 +27,7 @@ const Prices = () => {
         </div>
 
         <div className='header-wrapper'>
-          <h3>* Aromaty *</h3>
+          <h3>* Flavours *</h3>
           <a
             className='prices-link'
             download='/prices-basic.pdf'
@@ -56,7 +56,7 @@ const Prices = () => {
         </div>
 
         <div className='header-wrapper'>
-          <h3>* Aromaty(rabaty) *</h3>
+          <h3>* Flavours(discounts) *</h3>
           <a
             className='prices-link'
             download='/prices-disc.pdf'
@@ -69,7 +69,7 @@ const Prices = () => {
         <div>
           <img
             className='img four'
-            src='../../assets/prices-basic-3.webp'
+            src='src/assets/prices-basic-3.webp'
             alt='prices-list'
           />
         </div>
