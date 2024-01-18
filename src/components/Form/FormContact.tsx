@@ -120,7 +120,7 @@ const FormContact = () => {
   return (
     <>
       {isMessageSent ? (
-        <p className='sent-mail'>Wiadomość została wysłana. Odezwę się!</p>
+        <p className='sent-mail'>Wiadomość została wysłana</p>
       ) : (
         <form
           ref={form}
