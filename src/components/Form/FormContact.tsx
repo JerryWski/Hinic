@@ -1,7 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './FormContact.css';
 import FormInputs from './FormInputs';
 import emailjs from '@emailjs/browser';
+import Prices from '../PriceLists/Prices';
 
 interface FormValues {
   username: string;
@@ -36,6 +37,13 @@ const FormContact = () => {
     });
   };
 
+  useEffect(() => {
+    const mailSent = localStorage.getItem('mailSent');
+    if (mailSent === 'true') {
+      setIsMessageSent(true);
+    }
+  }, []);
+
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -51,9 +59,7 @@ const FormContact = () => {
           (result) => {
             clearForm();
             setIsMessageSent(true);
-            setTimeout(() => {
-              setIsMessageSent(false);
-            }, 3000);
+            localStorage.setItem('mailSent', 'true');
           },
           (error) => {},
         );
@@ -120,7 +126,8 @@ const FormContact = () => {
   return (
     <>
       {isMessageSent ? (
-        <p className='sent-mail'>Wiadomość została wysłana</p>
+        // <p className='sent-mail'>Wiadomość została wysłana</p>
+        <Prices />
       ) : (
         <form
           ref={form}

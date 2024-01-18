@@ -55,20 +55,21 @@ changeLanguage('pl');
     </section>
 
     <section class='prices-section'>
-      <div id='prices-list'>
-        <div class='form-header_wrapper'>
-          <h3 class='form-header'>
-            Wyślij wiadomość i zapoznaj się z ofertą naszych produktów!
-          </h3>
-          <p>
-            Po przesłaniu wiadomości udostępnimy Ci cenniki oraz będzie miał
-            możliwość pobrania ich w formacie .pdf na swoje urządzenie
-          </p>
+      <div>
+        <div id='prices-list'>
+          <div class='form-header_wrapper'>
+            <h3 class='form-header'>
+              Wyślij wiadomość i zapoznaj się z ofertą naszych produktów!
+            </h3>
+            <p>
+              Po przesłaniu wiadomości udostępnimy Ci cenniki oraz będzie miał
+              możliwość pobrania ich w formacie .pdf na swoje urządzenie
+            </p>
+          </div>
+          <FormContact client:only />
+          <!-- <PriceLists /> -->
         </div>
-        <FormContact client:only />
       </div>
-
-<PriceLists />      
 
       <div class='warning-container'>
         <h2 class='warning-header'>{t('products.warning')}</h2>
@@ -132,13 +133,12 @@ changeLanguage('pl');
   </main>
 
   <style>
-
     .prices-section {
       background-color: var(--light-blue);
     }
     #prices-list {
       background-image: var(--bg-gradient);
-      padding: 20px;
+      padding: 20px 0 0 0;
     }
     .form-header_wrapper {
       text-align: center;
@@ -156,7 +156,7 @@ changeLanguage('pl');
       margin-top: 60px;
       font-size: clamp(1.5rem, 3vw, 3rem);
     }
-    
+
     .products-section {
       padding-top: 114px;
     }
@@ -226,7 +226,7 @@ changeLanguage('pl');
     #lists:hover {
       color: var(--blue);
     }
-    
+
     .products-text {
       font-family: var(--second-font);
       text-align: center;
@@ -315,7 +315,7 @@ changeLanguage('pl');
       background-color: var(--bg-white);
       height: 1px;
     }
-  
+
     @media (min-width: 900px) {
       .products-section {
         padding-top: 0;

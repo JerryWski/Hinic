@@ -9,59 +9,53 @@ import prices2 from '../../assets/prices-basic-2.webp';
 import prices3 from '../../assets/prices-basic-3.webp';
 ---
 
-<h2 class='prices-header'>Cenniki</h2>
-<div class='prices-wrapper'>
-  <!-- <div class='links-box'>
-    <a download='/additions.pdf' href='/'
-      >- {t('products.link-one')}
-      <Icon class='icon' name='download' width={30} /></a
-    >
-    <a download='/prices-basic.pdf' href='/'
-      >- {t('products.link-two')}
-      <Icon class='icon' name='download' width={30} /></a
-    >
-    <a download='/prices-disc.pdf' href='/'
-      >- {t('products.link-three')}
-      <Icon class='icon' name='download' width={30} /></a
-    >
-  </div> -->
-  <div class='header-wrapper'>
-    <h3>* Dodatki, kannaboidy, izolaty *</h3>
-    <a class='prices-link' download='/additions.pdf' href='/additions.pdf'
-      >- Ściągnij plik .pdf -
-      <Icon class='icon' name='download' width={30} /></a
-    >
-  </div>
-  <div>
-    <Image class='img one' src={prices} alt='prices-list' />
-  </div>
+<div class='container'>
+  <h2 class='prices-header'>Cenniki</h2>
+  <div class='prices-wrapper'>
+    <div class='header-wrapper'>
+      <h3>* Dodatki, kannaboidy, izolaty *</h3>
+      <a class='prices-link' download='/additions.pdf' href='/additions.pdf'
+        >- Ściągnij plik .pdf -
+        <Icon class='icon' name='download' width={30} /></a
+      >
+    </div>
+    <div>
+      <Image class='img one' src={prices} alt='prices-list' />
+    </div>
 
-  <div class='header-wrapper'>
-    <h3>* Aromaty *</h3>
-    <a class='prices-link' download='/prices-basic.pdf' href='/prices-basic.pdf'
-      >- Ściągnij plik .pdf -
-      <Icon class='icon' name='download' width={30} /></a
-    >
-  </div>
-  <div class='prices-two'>
-    <Image class='img two' src={prices1} alt='prices-list' />
-    <Image class='img three' src={prices2} alt='prices-list' />
-    <Image class='img four' src={prices3} alt='prices-list' />
-  </div>
+    <div class='header-wrapper'>
+      <h3>* Aromaty *</h3>
+      <a
+        class='prices-link'
+        download='/prices-basic.pdf'
+        href='/prices-basic.pdf'
+        >- Ściągnij plik .pdf -
+        <Icon class='icon' name='download' width={30} /></a
+      >
+    </div>
+    <div class='prices-two'>
+      <Image class='img two' src={prices1} alt='prices-list' />
+      <Image class='img three' src={prices2} alt='prices-list' />
+      <Image class='img four' src={prices3} alt='prices-list' />
+    </div>
 
-  <div class='header-wrapper'>
-    <h3>* Aromaty(rabaty) *</h3>
-    <a class='prices-link' download='/prices-disc.pdf' href='/prices-disc.pdf'
-      >- Ściągnij plik .pdf -
-      <Icon class='icon' name='download' width={30} /></a
-    >
-  </div>
-  <div>
-    <Image class='img four' src={prices3} alt='prices-list' />
+    <div class='header-wrapper'>
+      <h3>* Aromaty(rabaty) *</h3>
+      <a class='prices-link' download='/prices-disc.pdf' href='/prices-disc.pdf'
+        >- Ściągnij plik .pdf -
+        <Icon class='icon' name='download' width={30} /></a
+      >
+    </div>
+    <div>
+      <Image class='img four' src={prices3} alt='prices-list' />
+    </div>
   </div>
 </div>
 
 <style>
+  .container {
+    background-color: var(--light-blue);
+  }
   .header-wrapper {
     display: flex;
     flex-direction: column;
@@ -121,16 +115,16 @@ import prices3 from '../../assets/prices-basic-3.webp';
     margin-top: 30px;
     margin-bottom: 10px;
   }
-.header-wrapper a {
+  .header-wrapper a {
     padding: 4px;
     color: var(--font-blue);
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-family: var(--roboto-font);
     text-transform: uppercase;
-}
-.header-wrapper a:hover {
-    opacity: .8;
-}
+  }
+  .header-wrapper a:hover {
+    opacity: 0.8;
+  }
   .icon {
     width: 20px;
   }
