@@ -6,7 +6,8 @@
   "navbar": {
     "about": "A propos",
     "products": "Produits",
-    "contact": "Contacter"
+    "contact": "Contacter",
+    "policy" : "Politique de Confidentialité"
   },
   "hero": {
     "header": "<0>Solutions professionnelles</0> pour la Nicotine"
