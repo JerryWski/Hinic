@@ -41,17 +41,17 @@ const Prices = () => {
         <div className='prices-two'>
           <img
             className='img two'
-            src='../../src/assets/prices-basic-1.webp'
+            src='/images/prices-basic-1.webp'
             alt='prices-list'
           />
           <img
             className='img three'
-            src='../../src/assets/prices-basic-2.webp'
+            src='/images/prices-basic-2.webp'
             alt='prices-list'
           />
           <img
             className='img four'
-            src='../../src/assets/prices-basic-3.webp'
+            src='/images/prices-basic-3.webp'
             alt='prices-list'
           />
         </div>
@@ -70,7 +70,7 @@ const Prices = () => {
         <div>
           <img
             className='img four'
-            src='../../src/assets/prices-basic-3.webp'
+            src='/images/prices-basic-3.webp'
             alt='prices-list'
           />
         </div>
