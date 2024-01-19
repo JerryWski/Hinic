@@ -139,7 +139,7 @@ const FormContact = () => {
           <div className='form-box'>
             <div className='inputs-box'>
               <h4>Send a message to our customer service</h4>
-              <svg
+              <svg className='icon'
                 xmlns='http://www.w3.org/2000/svg'
                 width='3em'
                 height='3em'

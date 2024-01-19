@@ -64,7 +64,7 @@ h4 {
   border-radius: 7px;
   padding: 15px;
 }
-svg {
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ svg {
     display: inline;
     color: var(--light-blue);
   }
-  svg {
+  .icon{
     display: none;
   }
 }

@@ -70,8 +70,14 @@
   .header-wrapper a:hover {
     opacity: 0.8;
   }
-  .icon {
+  .iconify {
+    display: flex;
+    margin: auto;
     width: 20px;
+    height: 30px;
+  }
+  .iconify g {
+    fill: var(--logo-blue);
   }
   @media (min-width: 900px) {
     .prices-two {
@@ -80,9 +86,10 @@
     .prices-two img {
       margin-inline: 0;
     }
-    .icon {
+    .iconify {
       display: block;
       color: var(--font-blue);
       width: 40px;
+      height: 30px;
     }
   }

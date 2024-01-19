@@ -3,6 +3,8 @@ import "./Prices.css"
 import { Icon } from '@iconify/react';
 
 
+
+
 const Prices = () => {
   return (
     <div className='container'>
@@ -16,6 +18,7 @@ const Prices = () => {
             href='/additions.pdf'
           >
             - Download file in .pdf format -
+            
             <Icon icon="flat-color-icons:download" />
           </a>
         </div>
@@ -35,7 +38,7 @@ const Prices = () => {
             href='/prices-basic.pdf'
           >
             - Download file in .pdf format -
-            <Icon className='icon' icon='download' width={30} />
+            <Icon icon="flat-color-icons:download" />
           </a>
         </div>
         <div className='prices-two'>
@@ -64,7 +67,7 @@ const Prices = () => {
             href='/prices-disc.pdf'
           >
             - Download file in .pdf format -
-            <Icon className='icon' icon='download' width={30} />
+            <Icon icon="flat-color-icons:download" />
           </a>
         </div>
         <div>
