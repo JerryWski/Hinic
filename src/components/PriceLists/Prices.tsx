@@ -22,7 +22,7 @@ const Prices = () => {
         <div>
           <img
             className='img one'
-            src='/public/images/contact.jpg'
+            src='/images/contact.jpg'
             alt='prices-list'
           />
         </div>
