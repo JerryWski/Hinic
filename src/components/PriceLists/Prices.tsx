@@ -22,7 +22,7 @@ const Prices = () => {
         <div>
           <img
             className='img one'
-            src='/images/contact.jpg'
+            src='/images/additions/webp'
             alt='prices-list'
           />
         </div>
