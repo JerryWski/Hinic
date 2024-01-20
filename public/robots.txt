@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-https://hinic.eu/sitemap-index.xml
+Sitemap: https://hinic.eu/sitemap-index.xml
