@@ -22,16 +22,39 @@ const { title } = Astro.props;
     <HeadHrefLangs />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel='sitemap' href='/sitemap-index.xml' />
     <meta name='generator' content={Astro.generator} />
     <title>{t('head.title')}</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l: any, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode?.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-K8BZPSHF');
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src='https://www.googletagmanager.com/ns.html?id=GTM-K8BZPSHF'
+        height='0'
+        width='0'
+        style='display:none;visibility:hidden'></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     <!-- <Header /> -->
     <Header />
     <slot />
     <Contact />
-    <Footer client:visible/>
+    <Footer client:visible />
     <CookiesContainer client:load />
     <script dns-prefetch src='https://kit.fontawesome.com/4619b49638.js'
     ></script>
@@ -54,7 +77,7 @@ const { title } = Astro.props;
         --bg-grey: hsl(0, 1%, 22%);
         --bg-yellow: rgb(241, 187, 24);
         --logo-blue: #4a487c;
-        --logo-color: #7B17AD;
+        --logo-color: #7b17ad;
         --font-blue: #031b4e;
         --light-blue: #f5f7fa;
         --blue: #3368c6;
