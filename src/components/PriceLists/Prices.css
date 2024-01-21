@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 100px;
     gap: 20px;
   }
   .prices-two {
@@ -49,7 +50,12 @@
   }
   .img.two,
   .img.three,
-  .img.four {
+  .img.four,
+  .img.five,
+  .img.six,
+  .img.seven,
+  .img.eight
+   {
     max-width: 500px;
   }
   h3 {

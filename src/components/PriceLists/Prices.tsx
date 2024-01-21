@@ -2,9 +2,6 @@ import React from 'react';
 import "./Prices.css"
 import { Icon } from '@iconify/react';
 
-
-
-
 const Prices = () => {
   return (
     <div className='container'>
@@ -70,10 +67,25 @@ const Prices = () => {
             <Icon icon="flat-color-icons:download" />
           </a>
         </div>
-        <div>
+        <div className='prices-two'>
           <img
-            className='img four'
-            src='/images/prices-basic-3.webp'
+            className='img five'
+            src='/images/prices-disc-1.webp'
+            alt='prices-list'
+          />
+          <img
+            className='img six'
+            src='/images/prices-disc-2.webp'
+            alt='prices-list'
+          />
+          <img
+            className='img seven'
+            src='/images/prices-disc-3.webp'
+            alt='prices-list'
+          />
+          <img
+            className='img eight'
+            src='/images/prices-disc-4.webp'
             alt='prices-list'
           />
         </div>
