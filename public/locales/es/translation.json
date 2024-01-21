@@ -7,7 +7,7 @@
     "about": "Quiénes somos",
     "products": "Productos",
     "contact": "Contacto",
-    "policy" : "Política de Privacidad"
+    "policy": "Política de Privacidad"
   },
   "hero": {
     "header": "<0>Soluciones profesionales</0> Nicotina"
@@ -53,9 +53,8 @@
     "text-three": "Ofrecemos productos de nicotina profesionales para satisfacer la creciente demanda del mercado y a clientes con distintos requisitos.",
     "text-four": "Puede leer nuestra <0>lista de precios</0> a continuación o descargarla en su teléfono:",
 
-    "link-one": "Lista de precios - aditivos, cannabinoides, aislados",
-    "link-two": "Lista de precios - sabores",
-    "link-three": "Lista de precios - sabores (descuentos)",
+    "form-text": "Envíe un mensaje e infórmese sobre nuestra gama de productos.",
+    "form-subtext": "Una vez que haya enviado su mensaje, pondremos a su disposición las listas de precios y podrá descargarlas en formato .pdf en su dispositivo.",
 
     "warning": "Atención!",
     "fire": "Sensible: Proteger de la luz solar directa y evitar la exposición excesiva a fuentes de aire.",
@@ -66,7 +65,7 @@
     "warning-two": "<0>La nicotina es altamente adictiva.</0> Este producto no debe ser utilizado por personas que: padezcan enfermedades cardíacas; tengan la tensión arterial alta; sean diabéticas o alérgicas a la nicotina, la glicerina o el propilenglicol; estén embarazadas o en período de lactancia. Suspenda su uso y consulte inmediatamente a su médico si experimenta cualquier síntoma de abuso de nicotina, como náuseas, vómitos, mareos, debilidad o taquicardia.",
     "warning-three": "<0>EL PRODUCTO CONTIENE NICOTINA, QUE ES UNA SUSTANCIA ADICTIVA</0>",
 
-    "heading" : "Vea lo que podemos ofrecerle.",
+    "heading": "Vea lo que podemos ofrecerle.",
     "nicotine-text": "Nicotina pura (superior al 99,5%) Considerada por muchos fabricantes como la mejor nicotina pura del mercado.",
     "nicotine-warning": "*Para hacer un pedido, póngase en contacto con nosotros por correo electrónico",
     "nicotinesalt-text": "Es una forma de nicotina que se encuentra naturalmente en el tabaco, utilizada en líquidos para cigarrillos electrónicos.",

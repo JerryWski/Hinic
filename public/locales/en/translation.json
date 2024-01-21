@@ -7,7 +7,7 @@
     "about": "About Us",
     "products": "Products",
     "contact": "Contact",
-    "policy" : "Private Policy"
+    "policy": "Private Policy"
   },
   "hero": {
     "header": "<0>Professional Solutions </0>for Nicotine"
@@ -51,12 +51,10 @@
     "text-one": "More than 300 satisfied customers throughout Poland",
     "text-two": "The innovative approach generates product quality that is in line with consumer expectations.",
     "text-three": "We offer professional nicotine products to meet the growing market demand and customers with different requirements.",
-    "text-four" :"You can read our <0>price list</0> below or download it to your phone:",
+    "text-four": "You can read our <0>price list</0> below or download it to your phone:",
 
-    
-    "link-one" : "Price list - additives, cannabinoids, isolates",
-    "link-two" : "Price list - flavours",
-    "link-three" : "Price list - flavours (discounts)",
+    "form-text": "Send a message and find out more about our product range!",
+    "form-subtext": "Once you have sent your message, we will make the price lists available to you and you will be able to download them in .pdf format to your device.",
 
     "warning": "Warning!",
     "fire": "Sensitive: Protect from direct sunlight and avoid excessive exposure to air sources.",
@@ -67,9 +65,9 @@
     "warning-two": "<0>Nicotine can be addictive.</0> This product should not be used by people who: have heart disease; have high blood pressure; are diabetic or allergic to nicotine, glycerine or propylene glycol; are pregnant or breastfeeding. Discontinue use and consult your doctor immediately if you experience any symptoms of nicotine abuse such as nausea vomiting, dizziness, weakness or rapid heartbeat.",
     "warning-three": "<0>THE PRODUCT CONTAINS NICOTINE, WHICH IS AN ADDICTIVE SUBSTANCE</0>",
 
-    "heading" : "See what we have to offer!",
+    "heading": "See what we have to offer!",
     "nicotine-text": "Pure nicotine (above 99.5%).Considered by many manufacturers to be the best pure nicotine on the market.",
-    "nicotine-warning" : "*To place an order, please contact us by e-mail",
+    "nicotine-warning": "*To place an order, please contact us by e-mail",
     "nicotinesalt-text": "This is a form of nicotine that occurs naturally in tobacco, used in e-cigarette liquids",
     "pg-text": "PG (Propyleneglycol) and VG (Vegetable Glycerine) are the two main base substances used for the production of e-liquids in e-cigarettes",
     "aroma-text": "Chemicals added to e-cigarette liquids to impart flavour etc.",
