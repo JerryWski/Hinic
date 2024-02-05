@@ -85,12 +85,4 @@
   font-weight: 400;
   src: url('/fonts/noto-sans-v35-latin_latin-ext-regular.woff2') format('woff2'); 
 }
-/* @font-face {
-  font-display: swap; 
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/NotoSans-Regular.woff2') format('woff2'),
-  url('/fonts/NotoSans-Regular.woff') format('woff'); 
-} */
 
