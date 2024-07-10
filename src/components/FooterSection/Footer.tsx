@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           created by{' '}
           <a
             className="footer_link"
-            href='https://jerrywski.github.io/Portfolio-Site/'
+            href='https://jerrywski.dev'
           >
             <span className='footer-name'>Jerry_Wski</span> 
           </a>
