@@ -16,7 +16,7 @@
     "@astrojs/sitemap": "^3.0.3",
     "@emailjs/browser": "^3.12.1",
     "@types/react-dom": "^18.2.7",
-    "astro": "^4.0.4",
+    "astro": "^4.16.7",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-icon": "^0.8.2",
     "framer-motion": "^10.16.4",
