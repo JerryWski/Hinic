@@ -1,0 +1,23 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/HeroSection/Hero.astro";
+import About from "../../components/AboutSection/About.astro";
+import Products from "../../components/ProductsSection/Products.astro";
+import Order from "../../components/OrderSection/Order.astro";
+
+changeLanguage("ru");
+---
+
+<Layout title="Witaj na stronie o środkach nikotynowych">
+	<main>
+		<Hero />
+		<About />
+		<Products />
+		<Order />
+	</main>
+</Layout>
+
+<style>
+	
+</style>
