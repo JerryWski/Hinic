@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from '../../assets/logo-hinic-big.webp'
+import logo from '../../assets/logo-hinic-new.webp'
 import { t } from 'i18next';
 import { localizePath } from 'astro-i18next';
 ---
@@ -25,7 +25,7 @@ import { localizePath } from 'astro-i18next';
     </div>
     <div class='shortcuts'>
       <h3 class='shortcuts-heading'>{t('contact.shortcuts')}:</h3>
-      <a class='shortcuts-links' href={localizePath('/o_nas')}>{t('navbar.about')}</a>
+      <!-- <a class='shortcuts-links' href={localizePath('/o_nas')}>{t('navbar.about')}</a> -->
       <a class='shortcuts-links' href={localizePath('/produkty')}>{t('navbar.products')}</a>
       <a class='shortcuts-links' href={localizePath('/kontakt')}>{t('navbar.contact')}</a>
       <a class='shortcuts-links' href={localizePath('/polityka')}>{t('navbar.policy')}</a>
