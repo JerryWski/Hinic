@@ -4,12 +4,12 @@ export default {
     locales: ["en", "fr", "de", "es", "ru"],
     routes: {
       en: {
-        "o_nas": "about",
+        // "o_nas": "about",
         "produkty": "products",
         "kontakt": "contact"
       },
       fr: {
-        "o_nas": "about",
+        // "o_nas": "about",
         "produkty": "products",
         "kontakt": "contact"
       },
@@ -19,12 +19,12 @@ export default {
         "kontakt": "contact"
       },
       es: {
-        "o_nas": "about",
+        // "o_nas": "about",
         "produkty": "products",
         "kontakt": "contact"
       },
       ru: {
-        "o_nas": "about",
+        // "o_nas": "about",
         "produkty": "products",
         "kontakt": "contact"
       }

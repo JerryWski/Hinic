@@ -16,8 +16,9 @@ import hero from '../../assets/hero-img1.webp';
       <div class="hero-image-wrapper">
         <Image
           src={hero}
-          alt='Hero Image'
+          alt='bottle of e-liquid'
           width={800}
+          loading="eager"
           height={600}
           class='hero-image'/>
       </div>
@@ -29,7 +30,7 @@ import hero from '../../assets/hero-img1.webp';
 <style>
 
   .hero-section {
-    height: 550px;
+    
     padding-top: 114px;
   }
   .hero-wrapper {
@@ -50,7 +51,6 @@ import hero from '../../assets/hero-img1.webp';
   .hero-image {
     width: 100%;
     height: auto;
-   
   }
   .header-span {
     text-transform: none;
@@ -72,7 +72,7 @@ import hero from '../../assets/hero-img1.webp';
       padding-top: 0;
     }
     .hero-wrapper {
-      margin-top: 0;
+      margin-top: 40px;
       padding-left: 20px;
     }
     .hero-left {
@@ -82,7 +82,7 @@ import hero from '../../assets/hero-img1.webp';
       font-size: clamp(1.3rem, 3vw, 2.5rem);
     }
     .hero-right {
-      width: 50%;
+      width: 40%;
     }
   }
 </style>

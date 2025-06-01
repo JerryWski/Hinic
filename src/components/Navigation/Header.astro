@@ -11,13 +11,13 @@ import Hamburger from './Hamburger.astro';
   <nav class="'nav-container'">
     <a class='logo-link-desktop' href='/'>
       <div>
-        <Image class='logo' src={logo} alt='logo-icon' />
+        <Image loading="eager" class='logo' src={logo} alt='logo-icon' />
       </div>
     </a>
 
     <a class='logo-link-mobile' href='/'>
       <div>
-        <Image class="logo" src={logo} alt='logo-icon' />
+        <Image loading="eager" class="logo" src={logo} alt='logo-icon' />
       </div>
     </a>
     <div class='contact-wrapper'>
@@ -39,9 +39,9 @@ import Hamburger from './Hamburger.astro';
       aria-label='language switcher'
     />
     <div class='nav-links'>
-      <a class='link' href={localizePath('/o_nas')}>
+      <!-- <a class='link' href={localizePath('/o_nas')}>
         {t('navbar.about')}
-      </a>
+      </a> -->
       <a class='link' href={localizePath('/produkty')}>
         {t('navbar.products')}
       </a>
@@ -52,9 +52,9 @@ import Hamburger from './Hamburger.astro';
     </div>
     <Hamburger />
     <div class='nav-links-mobile'>
-      <a class='link-mobile' href={localizePath('/o_nas')}
+      <!-- <a class='link-mobile' href={localizePath('/o_nas')}
         >{t('navbar.about')}</a
-      >
+      > -->
       <a class='link-mobile' href={localizePath('/produkty')}>
         {t('navbar.products')}</a
       >
