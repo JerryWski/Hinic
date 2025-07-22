@@ -1,55 +1,55 @@
 ---
-import Icon from "astro-icon"
-import { t } from "i18next";
-
+import Icon from 'astro-icon';
+import { t } from 'i18next';
 ---
 
 <div class='advantages-wrapper'>
-        <h2 class='about-subheader'>{t('about.avantages')}</h2>
-        <div class='advantages-container'>
-          <div class='advantages'>
-            <div class='image-wrapper one'>
-              <Icon name='truck' />
-            </div>
-            <h2 class='advantages-header'>
-              {t('about.experience')}
-            </h2>
-            <p class='advantages-text'>
-              {t('about.experience-text')}
-            </p>
-          </div>
-          <div class='advantages'>
-            <div class='image-wrapper two'>
-              <Icon name='team' />
-            </div>
-            <h2 class='advantages-header'>{t('about.performance')}</h2>
-            <p class='advantages-text'>
-              {t('about.performance-text')}
-            </p>
-          </div>
-          <div class='advantages'>
-            <div class='image-wrapper three'>
-              <Icon name='research' />
-            </div>
-            <h2 class='advantages-header'>{t('about.research')}</h2>
-            <p class='advantages-text'>
-              {t('about.research-text')}
-            </p>
-          </div>
-        </div>
+  <div class="about-header-wrapper">
+    <h2 class='about-subheader'>{t('about.avantages')}</h2>
+  </div>
+  <div class='advantages-container'>
+    <div class='advantages'>
+      <div class='image-wrapper one'>
+        <Icon name='truck' />
       </div>
+      <h2 class='advantages-header'>
+        {t('about.experience')}
+      </h2>
+      <p class='advantages-text'>
+        {t('about.experience-text')}
+      </p>
+    </div>
+    <div class='advantages'>
+      <div class='image-wrapper two'>
+        <Icon name='team' />
+      </div>
+      <h2 class='advantages-header'>{t('about.performance')}</h2>
+      <p class='advantages-text'>
+        {t('about.performance-text')}
+      </p>
+    </div>
+    <div class='advantages'>
+      <div class='image-wrapper three'>
+        <Icon name='research' />
+      </div>
+      <h2 class='advantages-header'>{t('about.research')}</h2>
+      <p class='advantages-text'>
+        {t('about.research-text')}
+      </p>
+    </div>
+  </div>
+</div>
 
-      <style>
-        .advantages-wrapper {
+<style>
+  .advantages-wrapper {
     background-color: var(--font-blue);
-    
     color: var(--bg-white);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 120px 20px 120px 20px;
     font-family: var(--main-font);
   }
   .advantages-container {
@@ -59,13 +59,21 @@ import { t } from "i18next";
   }
   .advantages-wrapper .about-subheader {
     color: var(--bg-white);
+    text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: clamp(3.2rem, 3vw, 6rem);
+    margin-bottom: 60px;
+    font-size: clamp(3.2rem, 4vw, 4.5rem);
   }
+ .about-header-wrapper {
+    border-top: 10px solid #dddde6;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 60px;
+ }
   .advantages {
-    margin-block: 30px;
+    margin-block: 50px;
     max-width: 400px;
+    text-wrap: balance;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,4 +176,4 @@ import { t } from "i18next";
       height: 95px;
     }
   }
-      </style>
+</style>
