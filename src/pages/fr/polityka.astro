@@ -1,12 +1,12 @@
 ---
-import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import { t, changeLanguage } from "i18next";
 
 changeLanguage("fr");
 ---
 
 <Layout title='polityka prywatności'>
-  <main>
+  <!-- <main>
     <section class='policy-section'>
       <div class='policy-welcome'>
         <h1 class='policy-header'>Privacy Policy</h1>
@@ -183,7 +183,44 @@ changeLanguage("fr");
         </p>
       </div>
     </section>
-  </main>
+  </main> -->
+  <main>
+  <section class="policy-section">
+    <div class="policy-welcome">
+      <h1 class="policy-header">{t('policy.title')}</h1>
+    </div>
+    <div class="policy-container">
+      <h2 class="policy-subheader">{t('policy.intro')}</h2>
+
+      <h2 class="policy-subheader">{t('policy.section1.title')}</h2>
+      <p class="policy-text">{t('policy.section1.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section2.title')}</h2>
+      <p class="policy-text">{t('policy.section2.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section3.title')}</h2>
+      <p class="policy-text">{t('policy.section3.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section4.title')}</h2>
+      <p class="policy-text">{t('policy.section4.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section5.title')}</h2>
+      <p class="policy-text">{t('policy.section5.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section6.title')}</h2>
+      <p class="policy-text">{t('policy.section6.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section7.title')}</h2>
+      <p class="policy-text">{t('policy.section7.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section8.title')}</h2>
+      <p class="policy-text">{t('policy.section8.content')}</p>
+
+      <h2 class="policy-subheader">{t('policy.section9.title')}</h2>
+      <p class="policy-text">{t('policy.section9.content')}</p>
+    </div>
+  </section>
+</main>
 </Layout>
 
 <style>
