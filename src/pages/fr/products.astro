@@ -28,15 +28,7 @@ changeLanguage("fr");
           alt='molecules'
         />
         <div class='texts-wrapper'>
-          <p class='products-text'>
-            {t('products.text-one')}
-          </p>
-          <p class='products-text'>
-            {t('products.text-two')}
-          </p>
-          <p class='products-text'>
-            {t('products.text-three')}
-          </p>
+          
           <!-- <p class='products-text'>
             <Trans i18nKey='products.text-four'>
               Możesz zapoznać się z naszym <a id='lists' href='#prices-list'
@@ -132,7 +124,7 @@ changeLanguage("fr");
       background-color: var(--light-blue);
     }
     #prices-list {
-      /* background-image: var(--bg-gradient); */
+     
       background-image: linear-gradient(
           to top,
           #031b4e,
@@ -164,7 +156,6 @@ changeLanguage("fr");
       padding-top: 114px;
     }
     .bg-overlay {
-      /* background-image: url('/bg-dots.webp'); */
       height: 100%;
       width: 100%;
       inset: 0;
@@ -174,15 +165,12 @@ changeLanguage("fr");
       object-fit: cover;
     }
     .products-welcome {
-      background-image: url('/products-bg-sm2.webp');
+      background-color: var(--bg-black);
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
       height: 100%;
-      padding-left: 20px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+  
       height: 300px;
     }
     .title {
@@ -194,7 +182,7 @@ changeLanguage("fr");
       color: var(--font-blue);
     }
     .products-container {
-      padding: 80px 20px 80px 20px;
+      padding: 80px 20px 220px 20px;
       display: flex;
       position: relative;
       flex-wrap: wrap;
@@ -206,8 +194,11 @@ changeLanguage("fr");
     .products-header {
       font-family: var(--second-font);
       margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
       align-self: center;
-      color: var(--font-blue);
+      color: var(--bg-white);
       font-size: clamp(3rem, 4vw, 6rem);
     }
     .products-subheader {
@@ -336,12 +327,12 @@ changeLanguage("fr");
       .products-welcome {
         height: 400px;
         align-items: center;
+        padding-left: 20px;
       }
-      .products-welcome-small {
-        background-image: url('/products-bg2.webp');
-      }
+      
       .products-header {
         padding-left: 120px;
+        justify-content: flex-start;
       }
       .products-text {
         margin-top: 30px;
