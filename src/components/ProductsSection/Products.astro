@@ -6,8 +6,10 @@ import CardsSlider from './CardsSlider.astro';
 ---
 
 <section class='products-section'>
-  <div class='bg-overlay'></div>
-  <h2 class='products-header'>{t('products.title')}</h2>
+ 
+  <div class="products-header-wrapper">
+    <h2 class='products-header'>{t('products.title')}</h2>
+  </div>
   <div class='products-wrapper'>
     <div class='products-info'>
       <!-- <p class='products-text'>
@@ -32,9 +34,8 @@ import CardsSlider from './CardsSlider.astro';
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s all ease-in-out;
-    padding: 20px 20px 40px 20px;
-    padding-top: 80px;
-    background-color: #f4f8ff;
+    padding: 240px 20px 240px 20px;
+    background-color:var(--bg-white);
     display: flex;
     z-index: 1;
     flex-direction: column;
@@ -43,25 +44,21 @@ import CardsSlider from './CardsSlider.astro';
     color: var(--font-blue);
     position: relative;
   }
-  .bg-overlay {
-    background-image: url('/bg-squares.webp');
-    height: 100%;
-    width: 100%;
-    inset: 0;
-    z-index: -1;
-    opacity: 0.2;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   .products-wrapper {
     max-width: 1300px;
     display: block;
   }
+  .products-header-wrapper {
+    border-top: 10px solid #dddde6;
+    width: 85%;
+    margin: 0 auto;
+  }
   .products-header {
-    font-size: clamp(2.3rem, 3vw, 3.5rem);
+    font-size: clamp(2.5rem, 3vw, 4.5rem);
     font-family: var(--main-font);
-    margin-bottom: 30px;
+text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
     font-family: var(--roboto-font);
   }
   .products-info {
@@ -78,13 +75,12 @@ import CardsSlider from './CardsSlider.astro';
   }
   .card-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     gap: 40px;
   }
-
   .products-link {
     font-family: var(--roboto-font);
     color: var(--bg-white);
@@ -92,6 +88,7 @@ import CardsSlider from './CardsSlider.astro';
     margin-top: 40px;
     margin-bottom: 20px;
     align-self: center;
+    border-radius: 8px;
     width: fit-content;
     outline: none;
     text-align: center;

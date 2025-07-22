@@ -1,81 +1,81 @@
 ---
-import { Image } from "astro:assets";
-import { t, changeLanguage } from "i18next";
-import nicotine from "../../assets/nicotine3.webp";
-import salt from "../../assets/salt2.webp";
-import pgvg from "../../assets/pgvg.webp";
-import aromas from "../../assets/aroma.webp";
-import accessories from "../../assets/accessories2.webp";
-import cbd from "../../assets/cbd-oils.webp";
+import { Image } from 'astro:assets';
+import { t, changeLanguage } from 'i18next';
+import nicotine from '../../assets/nicotine3.webp';
+import salt from '../../assets/salt2.webp';
+import pgvg from '../../assets/pgvg.webp';
+import aromas from '../../assets/aroma.webp';
+import accessories from '../../assets/accessories2.webp';
+import cbd from '../../assets/cbd-oils.webp';
 ---
 
 <div class='card-wrapper'>
-    <div class='card'>
-      <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
-      <div class='card-text-container'>
-        <h2 class='card-title'>{t('nicotine')}</h2>
-        <p class='card-text'>
-          {t('products.nicotine-text')}
-        </p>
-        <p class='card-text-warn'>
-          {t('products.nicotine-warning')}
-        </p>
-      </div>
-    </div>
-
-    <div class='card'>
-      <Image class='card-image' src={salt} alt='nicotine-salt' />
-      <div class='card-text-container'>
-        <h2 class='card-title'>{t('nicotine-salt')}</h2>
-        <p class='card-text'>
-          {t('products.nicotinesalt-text')}
-        </p>
-      </div>
-    </div>
-
-    <div class='card'>
-      <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
-      <div class='card-text-container'>
-        <h2 class='card-title'>{t('pg-vg')}</h2>
-        <p class='card-text'>
-          {t('products.pg-text')}
-        </p>
-      </div>
-    </div>
-
-    <div class='card'>
-      <Image class='card-image' src={aromas} alt='nicotine-bottles' />
-      <div class='card-text-container'>
-        <h2 class='card-title'>{t('aromas')}</h2>
-        <p class='card-text'>
-          {t('products.aroma-text')}
-        </p>
-      </div>
-    </div>
-
-    <div class='card'>
-      <Image class='card-image' src={accessories} alt='nicotine-bottle' />
-      <div class='card-text-container'>
-        <h2 class='card-title'>{t('accessories')}</h2>
-        <p class='card-text'>
-          {t('products.access-text')}
-        </p>
-      </div>
-    </div>
-
-    <div class='card'>
-      <Image class='card-image' src={cbd} alt='cbd-oils' />
-      <div class='card-text-container'>
-        <h2 class='card-title'>{t('cbd')}</h2>
-        <p class='card-text'>
-          {t('products.cbd-text')}
-        </p>
-      </div>
+  <div class='card'>
+    <Image class='card-image' src={nicotine} alt='nicotine-bottle' />
+    <div class='card-text-container'>
+      <h2 class='card-title'>{t('nicotine')}</h2>
+      <p class='card-text'>
+        {t('products.nicotine-text')}
+      </p>
+      <p class='card-text-warn'>
+        {t('products.nicotine-warning')}
+      </p>
     </div>
   </div>
 
-  <style>
-    .card-wrapper {
+  <div class='card'>
+    <Image class='card-image' src={salt} alt='nicotine-salt' />
+    <div class='card-text-container'>
+      <h2 class='card-title'>{t('nicotine-salt')}</h2>
+      <p class='card-text'>
+        {t('products.nicotinesalt-text')}
+      </p>
+    </div>
+  </div>
+
+  <div class='card'>
+    <Image class='card-image' src={pgvg} alt='nicotine-bottle' />
+    <div class='card-text-container'>
+      <h2 class='card-title'>{t('pg-vg')}</h2>
+      <p class='card-text'>
+        {t('products.pg-text')}
+      </p>
+    </div>
+  </div>
+
+  <div class='card'>
+    <Image class='card-image' src={aromas} alt='nicotine-bottles' />
+    <div class='card-text-container'>
+      <h2 class='card-title'>{t('aromas')}</h2>
+      <p class='card-text'>
+        {t('products.aroma-text')}
+      </p>
+    </div>
+  </div>
+
+  <div class='card'>
+    <Image class='card-image' src={accessories} alt='nicotine-bottle' />
+    <div class='card-text-container'>
+      <h2 class='card-title'>{t('accessories')}</h2>
+      <p class='card-text'>
+        {t('products.access-text')}
+      </p>
+    </div>
+  </div>
+
+  <div class='card'>
+    <Image class='card-image' src={cbd} alt='cbd-oils' />
+    <div class='card-text-container'>
+      <h2 class='card-title'>{t('cbd')}</h2>
+      <p class='card-text'>
+        {t('products.cbd-text')}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card-wrapper {
     display: flex;
     gap: 120px;
     justify-content: center;
@@ -137,4 +137,4 @@ import cbd from "../../assets/cbd-oils.webp";
     margin: auto;
     text-align: center;
   }
-  </style>
+</style>

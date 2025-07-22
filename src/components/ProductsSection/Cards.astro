@@ -58,6 +58,7 @@ import { t } from 'i18next';
   .card-image {
     display: block;
     width: 100%;
+    border-radius: 8px;
     height: 100%;
     object-fit: cover;
     transition: 0.3s all ease;
@@ -78,7 +79,7 @@ import { t } from 'i18next';
   @media (min-width: 900px) {
     .cards-content {
       display: flex;
-      
+      flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
       margin-top: 40px;

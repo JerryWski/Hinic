@@ -42,7 +42,10 @@ import { t } from 'i18next';
   <div class='indicator-container'>
     {
       data.map((review) => (
-        <button class="indicator ${review?.active && 'active'}" aria-label="indicator button" />
+        <button
+          class="indicator ${review?.active && 'active'}"
+          aria-label='indicator button'
+        />
       ))
     }
   </div>
@@ -84,15 +87,16 @@ import { t } from 'i18next';
   .review {
     flex: 1 0 100%;
   }
-.review-name {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: var(--logo-blue);
-  font-weight: 700;
-  font-family: var(--main-font);
-}
+  .review-name {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--logo-blue);
+    font-weight: 700;
+    font-family: var(--main-font);
+  }
   .review-avatar {
     max-width: 100%;
+    border-radius: 8px;
   }
   .review-content {
     max-width: 40%;
@@ -160,72 +164,72 @@ import { t } from 'i18next';
 </style>
 
 <script>
-    const reviewsSlider = document.querySelector('.reviews') as HTMLElement;
-    const reviewBtns = document.querySelectorAll('.review-btn');
-    const reviews = [...document.querySelectorAll('.review')];
-    const indicators = [...document.querySelectorAll('.indicator')];
-    let isMoving: boolean;
-    let currentIndex = 1;
-  
-    function showActiveIndicator() {
-      indicators.forEach((ind) => ind.classList.remove('active'));
-      let activeIndicator;
-      if (currentIndex === 0 || currentIndex === reviews.length - 2) {
-        activeIndicator = indicators.length - 1;
-      } else if (currentIndex === reviews.length - 1 || currentIndex === 1) {
-        activeIndicator = 0;
-      } else {
-        activeIndicator = currentIndex - 1;
-      }
-      indicators[activeIndicator].classList.add('active');
+  const reviewsSlider = document.querySelector('.reviews') as HTMLElement;
+  const reviewBtns = document.querySelectorAll('.review-btn');
+  const reviews = [...document.querySelectorAll('.review')];
+  const indicators = [...document.querySelectorAll('.indicator')];
+  let isMoving: boolean;
+  let currentIndex = 1;
+
+  function showActiveIndicator() {
+    indicators.forEach((ind) => ind.classList.remove('active'));
+    let activeIndicator;
+    if (currentIndex === 0 || currentIndex === reviews.length - 2) {
+      activeIndicator = indicators.length - 1;
+    } else if (currentIndex === reviews.length - 1 || currentIndex === 1) {
+      activeIndicator = 0;
+    } else {
+      activeIndicator = currentIndex - 1;
     }
-  
-    const moveSlider = () => {
-      reviewsSlider!.style.transform = `translateX(-${currentIndex * 100}%)`;
-      showActiveIndicator();
-    };
-  
-    function handleReviewBtnClick(e: Event) {
-      if (isMoving) {
-        return;
-      }
-      isMoving = true;
-      const target = e.currentTarget as HTMLButtonElement;
-      target.id === 'next' ? currentIndex++ : currentIndex--;
-      moveSlider();
+    indicators[activeIndicator].classList.add('active');
+  }
+
+  const moveSlider = () => {
+    reviewsSlider!.style.transform = `translateX(-${currentIndex * 100}%)`;
+    showActiveIndicator();
+  };
+
+  function handleReviewBtnClick(e: Event) {
+    if (isMoving) {
+      return;
     }
-  
-    function handleIndicatorClick(e: Event) {
-      const target = e.target as HTMLElement;
-      if (isMoving || indicators.indexOf(target) + 1 === currentIndex) {
-        return;
-      }
-      isMoving = true;
-      currentIndex = indicators.indexOf(target) + 1;
-      moveSlider();
+    isMoving = true;
+    const target = e.currentTarget as HTMLButtonElement;
+    target.id === 'next' ? currentIndex++ : currentIndex--;
+    moveSlider();
+  }
+
+  function handleIndicatorClick(e: Event) {
+    const target = e.target as HTMLElement;
+    if (isMoving || indicators.indexOf(target) + 1 === currentIndex) {
+      return;
     }
-  
-    // Event Listeners
-    reviewBtns.forEach((btn) => {
-      btn.addEventListener('click', handleReviewBtnClick);
-    });
-  
-    indicators.forEach((ind) => {
-      ind.addEventListener('click', handleIndicatorClick);
-    });
-  
-    reviewsSlider!.addEventListener('transitionend', () => {
-      isMoving = false;
-      if (currentIndex === 0) {
-        currentIndex = reviews.length - 2;
-        reviewsSlider!.style.transitionDuration = '1ms';
-        return moveSlider();
-      }
-      if (currentIndex === reviews.length - 1) {
-        currentIndex = 1;
-        reviewsSlider!.style.transitionDuration = '1ms';
-        return moveSlider();
-      }
-      reviewsSlider!.style.transitionDuration = '300ms';
-    });
-  </script>
+    isMoving = true;
+    currentIndex = indicators.indexOf(target) + 1;
+    moveSlider();
+  }
+
+  // Event Listeners
+  reviewBtns.forEach((btn) => {
+    btn.addEventListener('click', handleReviewBtnClick);
+  });
+
+  indicators.forEach((ind) => {
+    ind.addEventListener('click', handleIndicatorClick);
+  });
+
+  reviewsSlider!.addEventListener('transitionend', () => {
+    isMoving = false;
+    if (currentIndex === 0) {
+      currentIndex = reviews.length - 2;
+      reviewsSlider!.style.transitionDuration = '1ms';
+      return moveSlider();
+    }
+    if (currentIndex === reviews.length - 1) {
+      currentIndex = 1;
+      reviewsSlider!.style.transitionDuration = '1ms';
+      return moveSlider();
+    }
+    reviewsSlider!.style.transitionDuration = '300ms';
+  });
+</script>
