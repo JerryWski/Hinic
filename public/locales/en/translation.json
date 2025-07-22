@@ -7,7 +7,8 @@
     "about": "About Us",
     "products": "Products",
     "contact": "Contact",
-    "policy": "Private Policy"
+    "policy": "Private Policy",
+    "working-hours" : "Working-hours"
   },
   "hero": {
     "header": "<0>Professional Solutions </0>for Nicotine"

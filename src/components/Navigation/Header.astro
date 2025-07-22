@@ -26,10 +26,10 @@ import Hamburger from './Hamburger.astro';
         href='mailto:office@hinic.eu'
         aria-label='Link to email'
       >
-        <i class='fa-solid fa-envelope'></i>
+        <i class='fa-solid fa-envelope '></i>
       </a>
-      <a class='contact-icon' href='tel:+48888433188' aria-label='phone-link'>
-        <i class='fa-solid fa-phone'></i>
+      <a class='contact-icon' href='tel:+48888433188' aria-label='whatsapp-link'>
+        <i class="fa-brands fa-whatsapp "></i>
       </a>
     </div>
     <LanguageSelector
@@ -42,9 +42,21 @@ import Hamburger from './Hamburger.astro';
       <!-- <a class='link' href={localizePath('/o_nas')}>
         {t('navbar.about')}
       </a> -->
-      <a class='link' href={localizePath('/produkty')}>
+      <!-- <a class='link' href={localizePath('/produkty')}>
         {t('navbar.products')}
+      </a> -->
+      <a
+        class='contact-icon'
+        href='mailto:office@hinic.eu'
+        aria-label='Link to email'
+      >
+        <i class='fa-solid fa-envelope'></i>
       </a>
+      <a class='contact-icon' href='tel:+48888433188' aria-label='whatsapp-link'>
+        <i class="fa-brands fa-whatsapp "></i>
+      </a>
+      <p>Godziny pracy: 8-16</p>
+      
       <a class='link' href={localizePath('/kontakt')}>
         {t('navbar.contact')}
       </a>
@@ -55,9 +67,9 @@ import Hamburger from './Hamburger.astro';
       <!-- <a class='link-mobile' href={localizePath('/o_nas')}
         >{t('navbar.about')}</a
       > -->
-      <a class='link-mobile' href={localizePath('/produkty')}>
+      <!-- <a class='link-mobile' href={localizePath('/produkty')}>
         {t('navbar.products')}</a
-      >
+      > -->
       <a class='link-mobile' href={localizePath('/kontakt')}>
         {t('navbar.contact')}</a
       >
@@ -97,10 +109,10 @@ import Hamburger from './Hamburger.astro';
   }
   .nav-links {
     display: none;
+    font-family: var(--main-font);
   }
   .nav-links :last-child {
     font-weight: 500;
-    box-shadow: 3px 2px 9px -5px rgba(0, 0, 0, 1);
     border: none;
   }
   .nav-links-mobile {
@@ -133,13 +145,17 @@ import Hamburger from './Hamburger.astro';
   .contact-wrapper {
     display: flex;
     margin-left: auto;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
   }
   .contact-icon {
     color: var(--font-blue);
     padding: 2.5px;
+    font-size: 20px;
   }
   .fa-solid {
-    margin: 7px;
+    
   }
   .link,
   .link-mobile {
