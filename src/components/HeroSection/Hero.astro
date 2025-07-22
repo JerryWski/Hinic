@@ -7,36 +7,20 @@ import hero from '../../assets/hero-img1.webp';
   <div class='hero-wrapper'>
     <div class='hero-left'>
       <h1 class='hero-header'>
-          HiLiQ EU WareHouse
-
+        Premium Nicotine Pouches and E-liquid Raw Materials Suuplier
       </h1>
-    </div>
-    <div class='hero-right'>
-      
-      <div class="hero-image-wrapper">
-        <Image
-          src={hero}
-          alt='bottle of e-liquid'
-          width={800}
-          loading="eager"
-          height={600}
-          class='hero-image'/>
-      </div>
-
     </div>
   </div>
 </section>
 
 <style>
-
   .hero-section {
-    
+    display: flex;
     padding-top: 114px;
   }
   .hero-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 120px;;
+    padding: 160px 0 120px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -44,6 +28,7 @@ import hero from '../../assets/hero-img1.webp';
   }
   .hero-left {
     width: 100%;
+    position: relative;
   }
   .hero-image-wrapper {
     max-width: 600px;
@@ -61,22 +46,31 @@ import hero from '../../assets/hero-img1.webp';
   .hero-header {
     text-transform: uppercase;
     font-family: var(--roboto-font);
-    font-size: clamp(2.4rem, 3vw, 6rem);
+    font-size: clamp(2.4rem, 4vw, 6rem);
     line-height: normal;
     text-align: center;
     padding-inline: 15px;
+    text-decoration: underline;
+    text-wrap: balance;
     color: var(--bg-black);
   }
+ 
   @media (min-width: 900px) {
     .hero-section {
       padding-top: 0;
     }
     .hero-wrapper {
-      margin-top: 40px;
-      padding-left: 20px;
+      padding-left: 120px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .hero-header {
+      text-align: left;
     }
     .hero-left {
-      width: 50%;
+      width: 70%;
     }
     .header-span {
       font-size: clamp(1.3rem, 3vw, 2.5rem);
