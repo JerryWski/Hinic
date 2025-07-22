@@ -94,11 +94,54 @@
 
     },
 
+    "policy": {
+    "title": "Polityka Prywatności",
+    "intro": "Niniejsza polityka prywatności opisuje, w jaki sposób przetwarzamy informacje o Tobie, w tym dane osobowe i pliki cookies.",
+    "section1": {
+      "title": "1. Informacje ogólne",
+      "content": "1. Niniejsza polityka dotyczy strony internetowej działającej pod adresem: hinic.eu. <br /> 2. Operatorem serwisu oraz administratorem danych osobowych jest: Hiliq Poland Postępu 12b/11, NIP: 5361933750, KRS: 0000721432.  <br />3. Adres kontaktowy poczty elektronicznej operatora: office@hinic.eu.  <br />4. Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych przez Ciebie dobrowolnie w Serwisie. <br />5. Serwis wykorzystuje dane osobowe w następujących celach: <br />a. Prowadzenie newslettera <br />b. Obsługa zapytań przez formularz <br />c. Przygotowanie, pakowanie, wysyłka towarów <br />d. Prezentacja oferty lub informacji <br />6. Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób: <br />a. Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora. <br />b. Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”). "
+    },
+    "section2": {
+      "title": "2. Wybrane metody ochrony danych",
+      "content": " 1. Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Zapewnia to, że dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze. <br />2. Operator okresowo zmienia swoje hasła administracyjne. <br />3. W celu ochrony danych Operator regularnie wykonuje kopie bezpieczeństwa. <br />4. Istotnym elementem ochrony danych jest regularna aktualizacja wszelkiego oprogramowania, wykorzystywanego przez Operatora do przetwarzania danych osobowych, co w szczególności oznacza regularne aktualizacje komponentów programistycznych."
+    },
+    "section3": {
+      "title": "3. Hosting",
+      "content": " 1. Serwis jest hostowany (technicznie utrzymywany) na serwerach operatora: home.pl <br />2. Firma hostingowa w celu zapewnienia niezawodności technicznej prowadzi logi na poziomie serwera. Zapisowi mogą podlegać: <br />a. zasoby określone identyfikatorem URL (adresy żądanych zasobów – stron, plików), <br />b. czas nadejścia zapytania, <br />c. czas wysłania odpowiedzi, <br />d. nazwa stacji klienta – identyfikacja realizowana przez protokół HTTP, <br />e. informacje o błędach, jakie nastąpiły przy realizacji transakcji HTTP, <br />f. adres URL strony poprzednio odwiedzanej przez użytkownika (referer link) – w przypadku, gdy przejście do Serwisu nastąpiło przez odnośnik, <br />g. informacje o przeglądarce użytkownika, <br />h. informacje o adresie IP, <br />i. informacje diagnostyczne związane z procesem samodzielnego zamawiania usług poprzez rejestratorów na stronie, <br />j. informacje związane z obsługą poczty elektronicznej kierowanej do Operatora oraz wysyłanej przez Operatora."
+    },
+    "section4": {
+      "title": "4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych",
+      "content": " 1. W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców: <br />a. upoważnieni pracownicy i współpracownicy, którzy korzystają z danych w celu realizacji celu działania strony <br />2. Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to konieczne do wykonania związanych z nimi czynności określonych osobnymi przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata. <br />3. Przysługuje Ci prawo żądania od Administratora: <br />a. dostępu do danych osobowych Ciebie dotyczących, <br />b. ich sprostowania, <br />c. usunięcia, <br />d. ograniczenia przetwarzania, <br />e. oraz przenoszenia danych. <br />4. Przysługuje Ci prawo do złożenia sprzeciwu w zakresie przetwarzania wskazanego w pkt 3.2 wobec przetwarzania danych osobowych w celu wykonania prawnie uzasadnionych interesów realizowanych przez Administratora, w tym profilowania, przy czym prawo sprzeciwu nie będzie mogło być wykonane w przypadku istnienia ważnych prawnie uzasadnionych podstaw do przetwarzania, nadrzędnych wobec Twoich interesów, praw i wolności, w szczególności ustalenia, dochodzenia lub obrony roszczeń. <br />5. Na działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa. <br />6. Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu. <br />7. W stosunku do Ciebie mogą być podejmowane czynności polegające na zautomatyzowanym podejmowaniu decyzji, w tym profilowanie w celu świadczenia usług w ramach zawartej umowy oraz w celu prowadzenia przez Administratora marketingu bezpośredniego. <br />8. Dane osobowe nie są przekazywane z państw trzecich w rozumieniu przepisów o ochronie danych osobowych. Oznacza to, że nie przesyłamy ich poza teren Unii Europejskiej."
+    },
+    "section5": {
+      "title": "5. Informacje w formularzach",
+      "content": "1. Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane. <br />2. Serwis może zapisać informacje o parametrach połączenia (oznaczenie czasu, adres IP). <br />3. Serwis, w niektórych wypadkach, może zapisać informację ułatwiającą powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz adresu url strony zawierającej formularz. <br />4. Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji konkretnego formularza, np. w celu dokonania procesu obsługi zgłoszenia serwisowego lub kontaktu handlowego, rejestracji usług itp. Każdorazowo kontekst i opis formularza w czytelny sposób informuje, do czego on służy."
+    },
+    "section6": {
+      "title": "6. Logi Administratora",
+      "content": "1. Informacje zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem."
+    },
+    "section7": {
+      "title": "7. Istotne techniki marketingowe",
+      "content": " 1. Operator stosuje analizę statystyczną ruchu na stronie, poprzez Google Analytics (Google Inc. z siedzibą w USA). Operator nie przekazuje do operatora tej usługi danych osobowych, a jedynie zanonimizowane informacje. Usługa bazuje na wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika. W zakresie informacji o preferencjach użytkownika gromadzonych przez sieć reklamową Google użytkownik może przeglądać i edytować informacje wynikające z plików cookies przy pomocy narzędzia: https://www.google.com/ads/preferences/."
+    },
+    "section8": {
+      "title": "8. Informacja o plikach cookies",
+      "content": " 1. Serwis korzysta z plików cookies. <br />2. Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.  <br />3. Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu. <br />4. Pliki cookies wykorzystywane są w następujących celach: <br />a. utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła; <br />b. realizacji celów określonych powyżej w części Istotne techniki marketingowe; <br />5. W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika. <br />6. Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany ustawień w tym zakresie. Przeglądarka internetowa umożliwia usunięcie plików cookies. Możliwe jest także automatyczne blokowanie plików cookies. Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja przeglądarki internetowej. <br />7. Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu. <br />8. Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu i wykorzystywane mogą być również przez współpracujące z operatorem Serwisu podmioty, w szczególności dotyczy to firm: Google (Google Inc. z siedzibą w USA), Facebook (Facebook Inc. z siedzibą w USA), Twitter (Twitter Inc. z siedzibą w USA)."
+    },
+    "section9": {
+      "title": "9. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?",
+      "content": "1. Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić, a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www. <br />2. W celu zarządzania ustawieniami cookies wybierz z listy poniżej przeglądarkę internetową, której używasz i postępuj zgodnie z instrukcjami: <br />o Edge <br />o Internet Explorer <br />o Chrome <br />o Safari <br />o Firefox <br />o Opera <br />Urządzenia mobilne: <br />o Android <br />o Safari (iOS) <br />o Windows Phone"
+    }
+  },
+
     "nicotine" :"*Czysta Nikotyna",
     "nicotine-salt" : "Sól nikotynowa",
     "pg-vg": "PG i VG",
     "aromas": "Aromaty",
     "accessories" : "Dodatki",
     "cbd" : "Oleje CBD"
+
+    
 }
 
