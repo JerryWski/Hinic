@@ -39,12 +39,7 @@ import Hamburger from './Hamburger.astro';
       aria-label='language switcher'
     />
     <div class='nav-links'>
-      <!-- <a class='link' href={localizePath('/o_nas')}>
-        {t('navbar.about')}
-      </a> -->
-      <!-- <a class='link' href={localizePath('/produkty')}>
-        {t('navbar.products')}
-      </a> -->
+      
       <a
         class='contact-icon'
         href='mailto:office@hinic.eu'
@@ -153,9 +148,6 @@ import Hamburger from './Hamburger.astro';
     padding: 2.5px;
     font-size: 20px;
   }
-  .fa-solid {
-    
-  }
   .link,
   .link-mobile {
     font-family: var(--main-font);
@@ -172,22 +164,7 @@ import Hamburger from './Hamburger.astro';
     position: relative;
     transition: 0.1s all ease;
   }
-  .link:after,
-  .link-mobile:after {
-    position: absolute;
-    content: '';
-    width: 0%;
-    background-color: var(--font-blue);
-    height: 3px;
-    left: 0;
-    bottom: -7px;
-    transition: 0.2s all ease;
-  }
-  .link:hover:after,
-  .link:focus {
-    width: 100%;
-    opacity: 0.8;
-  }
+
   .link:hover {
     opacity: 0.8;
   }
