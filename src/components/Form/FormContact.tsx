@@ -135,21 +135,12 @@ const FormContact = () => {
           className='form-container'
           action=''
           method='POST'
+          id='formcontact'
         >
           <div className='form-box'>
             <div className='inputs-box'>
               <h4>Send a message to our customer service</h4>
-              <svg className='icon'
-                xmlns='http://www.w3.org/2000/svg'
-                width='3em'
-                height='3em'
-                viewBox='0 0 20 20'
-              >
-                <g fill='white'>
-                  <path d='M17 4H3a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5v-11A.5.5 0 0 0 17 4M3.5 15V5h13v10z' />
-                  <path d='m17.324 4.88l-7.045 6a.5.5 0 0 1-.65-.001l-6.956-6A.5.5 0 0 1 3 4h14a.5.5 0 0 1 .324.88M15.642 5H4.345l5.612 4.841z' />
-                </g>
-              </svg>
+              
               {inputs.map((input) => (
                 <FormInputs
                   key={input.id}
@@ -159,7 +150,6 @@ const FormContact = () => {
                 />
               ))}
             </div>
-            <div className='texts-box'>
               <textarea
                 className='text-area'
                 name='textareaValue'
@@ -168,6 +158,7 @@ const FormContact = () => {
                 value={values.textareaValue}
                 onChange={handleTextAreaChange}
               ></textarea>
+            <div className='texts-box'>
               <button className='form-button' type='submit'>
                 Send
               </button>

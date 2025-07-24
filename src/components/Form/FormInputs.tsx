@@ -31,7 +31,7 @@ const FormInputs: React.FC<Props> = (props) => {
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
-        focused={focused.toString()}
+        data-focused={focused}
       />
       <span className='form-span'>{errorMessage}</span>
     </div>

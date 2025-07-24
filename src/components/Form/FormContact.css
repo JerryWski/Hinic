@@ -1,18 +1,22 @@
 .texts-box {
-  max-width: 100%;
+  width: 100%;
 }
 .text-area {
   resize: vertical;
   outline: none;
   border-radius: 7px;
   padding: 7px;
-  width: 270px;
+  width: 100%;
   border: none;
   height: 15svh;
   margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.inputs-box {
+  width: 100%;
 }
 h4 {
-  display: none;
+  color: var(--bg-grey);
 }
 .form-box {
   display: flex;
@@ -20,34 +24,34 @@ h4 {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  margin-top: 40px;
+  width: 100%;
 }
-.form-container{
-  /* background-image: var(--bg-gradient); */
-  padding: 20px 10px;
-  margin-top: 25px;
+.form-container {
+  display: flex;
   color: var(--font-blue);
   font-family: var(--main-font);
   width: 100%;
   border: none;
-  /* border: 2px solid var(--base-orange); */
 }
 .form-button {
   margin-top: 5px;
   display: block;
   width: 100%;
-  height: 50px;
+  min-width: 250px;
+  padding: 20px 15px;
   border-radius: 7px;
   border: none;
-  outline: 1px solid var(--bg-white);;
-  background-color: transparent;
+  outline: 1px solid var(--bg-black);
+  background-color: var(--bg-black);
   color: var(--bg-white);
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
-.form-button:hover{
+.form-button:hover {
   background-color: var(--bg-white);
   color: var(--font-blue);
 }
@@ -75,25 +79,22 @@ h4 {
   .text-area {
     max-width: 100%;
   }
-  .form-box {
-    flex-direction: row;
-    
-  }
   .form-button {
-    width: 270px;
+    width: 100%;
   }
   h4 {
-    font-size: .8rem;
+    font-size: 1.2rem;
     display: inline;
-    color: var(--light-blue);
   }
-  .icon{
+  .icon {
     display: none;
   }
 }
 @media (min-width: 900px) {
-  .form-box {
-    gap: 120px;
+  .text-area {
+    max-width: 100%; /* Zmieniono na 100% */
   }
-  
+  .form-button {
+    width: 100%; /* Zmieniono na 100% */
+  }
 }

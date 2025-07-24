@@ -2,6 +2,7 @@
 import { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Icon from "astro-icon";
+import Form from "../components/Form/FormContact";
 import { Image } from "astro:assets";
 import order from "../assets/order-contact.webp";
 
@@ -24,12 +25,13 @@ changeLanguage("pl");
             <h2 class='order-subheader'>
               {t('contact.text-one')}
             </h2>
-            <h3 class='order-contact-subheader'>
+            <Form />
+            <!-- <h3 class='order-contact-subheader'>
               {t('contact.text-two')}
             </h3>
             <h3 class='order-contact-subheader'>
               {t('contact.text-three')}
-            </h3>
+            </h3> -->
           </div>
 
           <div class='contact-container'>
@@ -38,7 +40,6 @@ changeLanguage("pl");
               <p class='country-text'>KRS: 0000721432, NIP: 5361933750</p>
               <p class='country-text'>ul. Postępu 12b/94</p>
               <p class='country-text'>02-676 Warszawa</p>
-              <!-- <Icon class='flag' name='pl-flag' width='25px' /> -->
               <p class='country-text'>Polska</p>
               <div>
                 <a href='tel:+48887545887'
@@ -71,6 +72,8 @@ changeLanguage("pl");
     }
     .cart {
       align-self: center;
+      fill: var(--bg-black);
+      width: 50px;
     }
     .flag {
       padding: 2px;
@@ -109,7 +112,8 @@ changeLanguage("pl");
       flex-direction: column;
       padding: 40px 20px 40px 20px;
       position: relative;
-      justify-items: flex-start;
+
+      align-items: start;
     }
     .order-details {
       margin-top: 0px;
@@ -158,6 +162,7 @@ changeLanguage("pl");
       flex-direction: column;
       justify-content: center;
       gap: 10px;
+      font-size: clamp(1.5rem, 2vw, 2rem);
     }
     .country-wrapper a {
       color: #4a4a62;
@@ -195,15 +200,19 @@ changeLanguage("pl");
       }
       .order-wrapper {
         flex-direction: row;
-        padding: 60px;
+        padding: 120px 60px 120px 60px;
       }
       .order-image-container {
         margin-top: 0;
       }
       .order-details-container {
         flex-direction: row;
-        gap: 150px;
+        gap: 120px;
         flex-wrap:wrap;
+        align-items: center;
+      }
+      .order-details {
+        width: 50%;
       }
       
     }

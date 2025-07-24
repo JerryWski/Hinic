@@ -1,7 +1,7 @@
 .form-inputs {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 100%;
   gap: 10px;
 }
 .form-label {
@@ -33,6 +33,6 @@
 
 @media (min-width: 900px) {
 .form-input, .form-inputs {
-  width: 320px;
+ 
 }
 }
