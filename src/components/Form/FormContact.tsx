@@ -60,8 +60,15 @@ const FormContact = () => {
             clearForm();
             setIsMessageSent(true);
             localStorage.setItem('mailSent', 'true');
+
+            setTimeout(() => {
+              setIsMessageSent(false);
+              localStorage.removeItem('mailSent');
+            }, 3000);
           },
-          (error) => {},
+          (error) => {
+            console.error('Error sending email:', error);
+          },
         );
     }
   };
