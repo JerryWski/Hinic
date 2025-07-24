@@ -17,6 +17,7 @@ interface FormValues {
 const FormContact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isMessageSent, setIsMessageSent] = useState(false);
+   const [isSending, setIsSending] = useState(false);
   const [values, setValues] = useState<FormValues>({
     username: '',
     email: '',
@@ -48,6 +49,7 @@ const FormContact = () => {
     e.preventDefault();
 
     if (form.current) {
+      setIsSending(true); 
       emailjs
         .sendForm(
           'service_2hfw2a8',
@@ -59,6 +61,7 @@ const FormContact = () => {
           (result) => {
             clearForm();
             setIsMessageSent(true);
+            setIsSending(false);
             localStorage.setItem('mailSent', 'true');
 
             setTimeout(() => {
@@ -68,6 +71,7 @@ const FormContact = () => {
           },
           (error) => {
             console.error('Error sending email:', error);
+            setIsSending(false);
           },
         );
     }
@@ -175,8 +179,8 @@ const FormContact = () => {
                 onChange={handleTextAreaChange}
               ></textarea>
             <div className='texts-box'>
-              <button className='form-button' type='submit'>
-                Send
+              <button className='form-button' type='submit' disabled={isSending}>
+                {isSending ? <span className='spinner'></span> : 'Send'}
               </button>
             </div>
           </div>
