@@ -95,6 +95,16 @@ const FormContact = () => {
       label: '',
       required: true,
     },
+    {
+      id: 5,
+      name: 'phone',
+      type: 'number',
+      placeholder: 'Phone',
+      errorMessage: 'Please enter your phone number',
+      label: '',
+      // pattern: '^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$',
+      required: true,
+    }
     // {
     //   id: 4,
     //   name: 'address',
@@ -126,8 +136,7 @@ const FormContact = () => {
   return (
     <>
       {isMessageSent ? (
-        // <p className='sent-mail'>Wiadomość została wysłana</p>
-        <Prices />
+        <p className='sent-mail'>Message Sent</p>
       ) : (
         <form
           ref={form}
