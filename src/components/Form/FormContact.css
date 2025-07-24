@@ -56,17 +56,15 @@ h4 {
   color: var(--font-blue);
 }
 .sent-mail {
-  background-color: var(--overlay-blue);
-  color: var(--font-blue);
-  margin-top: 20px;
-  border: none;
+  background-color: transparent;
+  color: rgb(105, 98, 98);
+  margin-top: 60px;
+  font-size: clamp(1rem, 2vw, 3rem);
   font-family: var(--roboto-font);
-  font-weight: 700;
-  margin-inline: auto;
-  text-align: center;
-  max-width: 300px;
-  border-radius: 7px;
-  padding: 15px;
+  font-weight: 200;
+  font-style: italic;
+ 
+ 
 }
 .icon {
   display: flex;

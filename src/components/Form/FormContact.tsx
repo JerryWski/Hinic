@@ -136,7 +136,7 @@ const FormContact = () => {
   return (
     <>
       {isMessageSent ? (
-        <p className='sent-mail'>Message Sent</p>
+        <p className='sent-mail'>Message Sent!</p>
       ) : (
         <form
           ref={form}
