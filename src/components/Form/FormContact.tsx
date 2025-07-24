@@ -50,7 +50,7 @@ const FormContact = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          'service_99lpnyc',
+          'service_2hfw2a8',
           'template_esmkt58',
           form.current,
           '-s7vlTiTNjFo6Rcnk',
