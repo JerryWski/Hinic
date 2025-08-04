@@ -6,8 +6,19 @@ import hero from '../../assets/hero-img1.webp';
 <section class='hero-section'>
   <div class='hero-wrapper'>
     <div class='hero-left'>
-      <h1 class='hero-header'>
-        Premium Nicotine Pouches and E-liquid Raw Materials Suuplier
+      <!-- Mały nagłówek widoczny na małych ekranach -->
+      <h1 class='small-header'>
+        <div>PREMIUM</div>
+        <div>NICOTINE POUCHES</div>
+        <div>AND E-LIQUID</div>
+        <div>RAW MATERIALS</div>
+        <div>SUPPLIER</div>
+      </h1>
+
+      <!-- Duży nagłówek widoczny na większych ekranach -->
+      <h1 class='big-header'>
+        <span class='header-span'>PREMIUM NICOTINE POUCHES AND E-LIQUID</span>
+        <span class='header-span mt-2'>RAW MATERIALS SUPPLIER</span>
       </h1>
     </div>
   </div>
@@ -43,7 +54,7 @@ import hero from '../../assets/hero-img1.webp';
     font-size: clamp(1.6rem, 3vw, 2rem);
   }
 
-  .hero-header {
+  /* .hero-header {
     text-transform: uppercase;
     font-family: var(--roboto-font);
     font-size: clamp(2.4rem, 4vw, 6rem);
@@ -54,11 +65,52 @@ import hero from '../../assets/hero-img1.webp';
     text-decoration: underline;
     text-wrap: balance;
     color: var(--bg-black);
+  } */
+  .small-header {
+    display: block;
+    font-size: 1.25rem; /* Odpowiednik text-xl */
+    font-weight: bold;
+    line-height: 1.4; /* Odpowiednik leading-snug */
+    text-align: center;
+    margin-bottom: 20px;
   }
- 
+
+  .big-header {
+    display: none; /* Ukrycie na małych ekranach */
+    font-size: 2.5rem; /* Odpowiednik text-4xl */
+    font-weight: bold;
+    letter-spacing: 2px; /* Odpowiednik tracking-wide */
+    line-height: 1.2; /* Odpowiednik leading-tight */
+    text-align: center;
+  }
+
+  .header-span {
+    display: block;
+    font-family: var(--roboto-font);
+    font-size: clamp(1.6rem, 3vw, 2rem);
+  }
+
+  .header-span.mt-2 {
+    margin-top: 10px; /* Odpowiednik mt-2 */
+  }
+  @media (min-width: 640px) {
+    .hero-section{
+      justify-content: center;
+    }
+    .small-header {
+      display: none; /* Ukrycie na większych ekranach */
+    }
+
+    .big-header {
+      display: block;
+      text-align: left;
+      /* Widoczność na większych ekranach */
+    }
+  }
   @media (min-width: 900px) {
     .hero-section {
       padding-top: 0;
+      justify-content: flex-start;
     }
     .hero-wrapper {
       padding-left: 120px;
@@ -67,12 +119,15 @@ import hero from '../../assets/hero-img1.webp';
       display: flex;
       justify-content: flex-start;
     }
-    .hero-header {
+    .big-header {
       text-align: left;
     }
-    .hero-left {
-      width: 70%;
+
+    .header-span {
+      font-size: clamp(1.3rem, 3vw, 2.5rem);
     }
+
+    
     .header-span {
       font-size: clamp(1.3rem, 3vw, 2.5rem);
     }
