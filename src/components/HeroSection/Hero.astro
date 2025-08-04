@@ -7,18 +7,23 @@ import hero from '../../assets/hero-img1.webp';
   <div class='hero-wrapper'>
     <div class='hero-left'>
       <!-- Mały nagłówek widoczny na małych ekranach -->
-      <h1 class="small-header">
-        <div class="animated-text">PREMIUM</div>
-        <div class="animated-text">NICOTINE POUCHES</div>
-        <div class="animated-text">AND E-LIQUID</div>
-        <div class="animated-text">RAW MATERIALS</div>
-        <div class="animated-text">SUPPLIER</div>
+      <h1 class='small-header'>
+        <div class='animated-text'>PREMIUM</div>
+        <div class='animated-text'>NICOTINE POUCHES</div>
+        <div class='animated-text'>AND E-LIQUID</div>
+        <div class='animated-text mt-2'>RAW MATERIALS</div>
+        <div class='animated-text mt-2'>SUPPLIER</div>
       </h1>
 
       <!-- Duży nagłówek widoczny na większych ekranach -->
-      <h1 class="big-header">
-        <span class="header-span animated-text">PREMIUM NICOTINE POUCHES AND E-LIQUID</span>
-        <span class="header-span mt-2 animated-text">RAW MATERIALS SUPPLIER</span>
+      <h1 class='big-header'>
+        <span class='header-span animated-text'
+          >PREMIUM NICOTINE POUCHES AND E-LIQUID</span
+        >
+        <br />
+        <span class='header-span mt-2 animated-text'
+          >RAW MATERIALS SUPPLIER</span
+        >
       </h1>
     </div>
   </div>
@@ -62,20 +67,19 @@ import hero from '../../assets/hero-img1.webp';
   .small-header {
     display: flex;
     flex-direction: column;
-    font-size: 2.3rem; /* Odpowiednik text-xl */
+    font-size: 2.3rem;
     font-weight: bold;
-    line-height: 1.4; /* Odpowiednik leading-snug */
+    line-height: 1.4;
     text-align: left;
     font-family: var(--roboto-font);
     margin-left: 20px;
   }
 
   .big-header {
-    display: none; /* Ukrycie na małych ekranach */
-    font-size:  /* Odpowiednik text-4xl */
+    display: none;
+
     font-weight: bold;
-    letter-spacing: 2px; /* Odpowiednik tracking-wide */
-    line-height: 1.2; /* Odpowiednik leading-tight */
+    letter-spacing: 2px;
     text-align: center;
   }
 
@@ -86,10 +90,21 @@ import hero from '../../assets/hero-img1.webp';
   }
 
   .header-span.mt-2 {
-    margin-top: 10px; /* Odpowiednik mt-2 */
+    margin-top: 10px;
+    font-family: var(--main-font);
+    margin-top: 10px;
+    font-size: clamp(2rem, 2vw, 3.5rem);
   }
+  .mt-2 {
+    color: grey;
+  }
+  .animated-text.mt-2 {
+    color: grey;
+    font-family: var(--main-font);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+  } 
   @media (min-width: 640px) {
-    .hero-wrapper{
+    .hero-wrapper {
       padding-block: 100px;
       margin-left: 20px;
     }
@@ -100,13 +115,12 @@ import hero from '../../assets/hero-img1.webp';
 
   @media (min-width: 640px) {
     .small-header {
-      display: none; /* Ukrycie na większych ekranach */
+      display: none;
     }
 
     .big-header {
       display: block;
       text-align: left;
-      /* Widoczność na większych ekranach */
     }
   }
 
@@ -136,41 +150,41 @@ import hero from '../../assets/hero-img1.webp';
     }
   }
   .animated-text {
-  position: relative;
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-in-out forwards;
-}
-
-.animated-text:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.animated-text:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.animated-text:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.animated-text:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.animated-text:nth-child(5) {
-  animation-delay: 1s;
-}
-
-@keyframes fadeInUp {
-  0% {
+    position: relative;
+    display: inline-block;
     opacity: 0;
     transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  .animated-text:nth-child(1) {
+    animation-delay: 0.2s;
   }
-}
+
+  .animated-text:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  .animated-text:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .animated-text:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+
+  .animated-text:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
