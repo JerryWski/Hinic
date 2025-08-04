@@ -80,6 +80,7 @@ import CardsSlider from './CardsSlider.astro';
     color: var(--bg-white);
     text-transform: uppercase;
     margin-top: 40px;
+    font-weight: 700;
     margin-bottom: 20px;
     align-self: center;
     border-radius: 8px;
@@ -89,7 +90,7 @@ import CardsSlider from './CardsSlider.astro';
     padding: 15px 35px;
     box-shadow: 3px 6px 5px -5px rgb(42, 44, 83);
     background-color: var(--font-blue);
-    font-size: 1.4rem;
+    font-size: clamp(1rem,1.5vw,2rem);
     cursor: pointer;
     transition: 0.3s all ease-in-out;
   }
