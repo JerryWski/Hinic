@@ -31,7 +31,7 @@ import hero from '../../assets/hero-img1.webp';
   }
   .hero-wrapper {
     display: flex;
-    padding: 120px 0 60px;
+    padding: 60px 0 60px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -54,30 +54,19 @@ import hero from '../../assets/hero-img1.webp';
     font-size: clamp(1.6rem, 3vw, 2rem);
   }
 
-  /* .hero-header {
-    text-transform: uppercase;
-    font-family: var(--roboto-font);
-    font-size: clamp(2.4rem, 4vw, 6rem);
-    line-height: normal;
-    text-align: center;
-    letter-spacing: 7px;
-    padding-inline: 15px;
-    text-decoration: underline;
-    text-wrap: balance;
-    color: var(--bg-black);
-  } */
   .small-header {
     display: block;
-    font-size: 1.25rem; /* Odpowiednik text-xl */
+    font-size: 2.3rem; /* Odpowiednik text-xl */
     font-weight: bold;
     line-height: 1.4; /* Odpowiednik leading-snug */
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    font-family: var(--roboto-font);
+    margin-left: 20px;
   }
 
   .big-header {
     display: none; /* Ukrycie na małych ekranach */
-    font-size: 2.5rem; /* Odpowiednik text-4xl */
+    font-size:  /* Odpowiednik text-4xl */
     font-weight: bold;
     letter-spacing: 2px; /* Odpowiednik tracking-wide */
     line-height: 1.2; /* Odpowiednik leading-tight */
@@ -87,14 +76,17 @@ import hero from '../../assets/hero-img1.webp';
   .header-span {
     display: block;
     font-family: var(--roboto-font);
-    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
   }
 
   .header-span.mt-2 {
     margin-top: 10px; /* Odpowiednik mt-2 */
   }
   @media (min-width: 640px) {
-    .hero-section{
+    .hero-wrapper{
+      padding-block: 100px;
+    }
+    .hero-section {
       justify-content: center;
     }
     .small-header {
@@ -124,13 +116,9 @@ import hero from '../../assets/hero-img1.webp';
     }
 
     .header-span {
-      font-size: clamp(1.3rem, 3vw, 2.5rem);
+      font-size: clamp(2rem, 3vw, 5rem);
     }
 
-    
-    .header-span {
-      font-size: clamp(1.3rem, 3vw, 2.5rem);
-    }
     .hero-right {
       width: 40%;
     }
