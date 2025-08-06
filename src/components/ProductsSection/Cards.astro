@@ -1,8 +1,6 @@
 ---
-
 import data from '../../data/productsPreview.json';
 import { t } from 'i18next';
-
 ---
 
 <div class='cards-content'>
@@ -22,7 +20,10 @@ import { t } from 'i18next';
 
 <style>
   .cards-content {
-    display: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
   }
   .content {
     transform: scale(1);
@@ -78,7 +79,7 @@ import { t } from 'i18next';
   }
   @media (min-width: 900px) {
     .cards-content {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
