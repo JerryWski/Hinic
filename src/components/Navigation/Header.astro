@@ -1,7 +1,7 @@
 ---
 import { t } from 'i18next';
 import { Image } from 'astro:assets';
-import logo from '../../assets/logo-hinic-new.webp'
+import logo from '../../assets/logo-hinic-new.webp';
 import { localizePath } from 'astro-i18next';
 import { LanguageSelector } from 'astro-i18next/components';
 import Hamburger from './Hamburger.astro';
@@ -11,13 +11,13 @@ import Hamburger from './Hamburger.astro';
   <nav class="'nav-container'">
     <a class='logo-link-desktop' href='/'>
       <div>
-        <Image loading="eager" class='logo' src={logo} alt='logo-icon' />
+        <Image loading='eager' class='logo' src={logo} alt='logo-icon' />
       </div>
     </a>
 
     <a class='logo-link-mobile' href='/'>
       <div>
-        <Image loading="eager" class="logo" src={logo} alt='logo-icon' />
+        <Image loading='eager' class='logo' src={logo} alt='logo-icon' />
       </div>
     </a>
     <div class='contact-wrapper'>
@@ -26,20 +26,30 @@ import Hamburger from './Hamburger.astro';
         href='mailto:office@hinic.eu'
         aria-label='Link to email'
       >
-        <i class='fa-solid fa-envelope '></i>
+        <i class='fa-solid fa-envelope'></i>
       </a>
-      <a class='contact-icon' href='tel:+48888433188' aria-label='whatsapp-link'>
-        <i class="fa-brands fa-whatsapp "></i>
+      <a
+        class='contact-icon'
+        href='tel:+48888433188'
+        aria-label='whatsapp-link'
+      >
+        <i class='fa-brands fa-whatsapp'></i>
       </a>
     </div>
     <LanguageSelector
       showFlag={true}
-      languageMapping={{ en: 'EN', fr: 'FR', pl: 'PL', de:"DE", es:"ES", ru:"RU" }}
+      languageMapping={{
+        en: 'EN',
+        fr: 'FR',
+        pl: 'PL',
+        de: 'DE',
+        es: 'ES',
+        ru: 'RU',
+      }}
       class='my-select-class'
       aria-label='language switcher'
     />
     <div class='nav-links'>
-      
       <a
         class='contact-icon'
         href='mailto:office@hinic.eu'
@@ -47,8 +57,12 @@ import Hamburger from './Hamburger.astro';
       >
         <i class='fa-solid fa-envelope'></i>
       </a>
-      <a class='contact-icon' href='tel:+48888433188' aria-label='whatsapp-link'>
-        <i class="fa-brands fa-whatsapp "></i>
+      <a
+        class='contact-icon'
+        href='tel:+48888433188'
+        aria-label='whatsapp-link'
+      >
+        <i class='fa-brands fa-whatsapp'></i>
       </a>
       <p>{t('navbar.working-hours')}</p>
       <a class='link' href={localizePath('/kontakt')}>
@@ -81,10 +95,13 @@ import Hamburger from './Hamburger.astro';
     flex-direction: row;
     position: fixed;
     width: 100%;
-    min-height: 114px;
+    min-height: 100px;
     padding: 10px;
     z-index: 1000;
-    background-color: var(--bg-white);
+    -webkit-box-shadow: -1px 3px 13px -7px rgba(139, 140, 165, 1);
+    -moz-box-shadow: -1px 3px 13px -7px rgba(139, 140, 165, 1);
+    box-shadow: -1px 3px 13px -7px rgba(139, 140, 165, 1);
+    background-color: white;
   }
   .nav-container {
     display: flex;
@@ -98,6 +115,7 @@ import Hamburger from './Hamburger.astro';
     padding: 10px;
     z-index: 1000;
     background-color: var(--bg-white);
+
     /* backdrop-filter: blur(18px);
   background-color: rgb(255, 255, 255, .6); */
   }
@@ -111,7 +129,7 @@ import Hamburger from './Hamburger.astro';
   }
   .nav-links-mobile {
     position: fixed;
-    top: 114px;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 50vh;
@@ -282,7 +300,7 @@ import Hamburger from './Hamburger.astro';
       background-color: var(--font-blue);
       color: var(--bg-white);
       border-radius: 20px;
-      transition: .2s all ease;
+      transition: 0.2s all ease;
     }
     .nav-links a:last-child:hover {
       background-color: var(--logo-blue);
