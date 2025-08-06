@@ -2,10 +2,10 @@
 import { t, changeLanguage } from 'i18next';
 import { Trans } from 'astro-i18next/components';
 import { Image } from 'astro:assets';
-import fire from '../../assets/warn-fire.webp';
-import wicon from '../../assets/warn-icon.webp';
-import worker from '../../assets/warn-office.webp';
-import toxic from '../../assets/warn-toxic.webp';
+import fire from '../../assets/warn-fire2.webp';
+import wicon from '../../assets/warn-icon2.webp';
+import worker from '../../assets/warn-office2.webp';
+import toxic from '../../assets/warn-toxic2.webp';
 ---
 
 <div class='warning-container'>
@@ -37,37 +37,47 @@ import toxic from '../../assets/warn-toxic.webp';
     </div>
   </div>
   <span class='warning-line'></span>
-  <div class='warning-footer'>
-    <p class='warning-text'>
-      <Trans i18nKey='products.warning-one'>
-        <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać na języku,
-        oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób
-        niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z
-        lekarzem.
-      </Trans>
-    </p>
-    <p class='warning-text'>
-      <Trans i18nKey='products.warning-two'>
-        <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie powinny
-        stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub
-        uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży
-        lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować
-        się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny
-        takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie
-        serca.
-      </Trans>
-    </p>
-    <p class='warning-text'>
-      <Trans i18nKey='products.warning-three'>
-        <span
-          >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
-        >
-      </Trans>
-    </p>
+  <div class="test-footer">
+    <div class='warning-footer'>
+      <p class='warning-text text-footer'>
+        <Trans i18nKey='products.warning-one'>
+          <span>*Nikotyna jest szkodliwa.</span> Nie połykać, nie umieszczać na języku,
+          oczach lub skórze. Trzymać z dala od dzieci, zwierząt domowych oraz osób
+          niezrównoważonych. Po kontakcie ze skórą niezwłocznie skontaktować się z
+          lekarzem.
+        </Trans>
+      </p>
+      <p class='warning-text text-footer'>
+        <Trans i18nKey='products.warning-two'>
+          <span>Nikotyna jest śilnie uzależniająca.</span> Tego produktu nie powinny
+          stosować osoby: mające choroby serca; wysokie ciśnienie krwi; cukrzycę lub
+          uczulenie na nikotynę, glicerynę lub glikol propylenowy; kobiety w ciąży
+          lub karmiące piersią. Należy przerwać stosowanie i niezwłocznie skonsultować
+          się z lekarzem w razie występowania jakichkolwiek objawów nadużycia nikotyny
+          takich jak nudności wymioty, zawroty głowy, osłabienie lub szybkie bicie
+          serca.
+        </Trans>
+      </p>
+      <p class='warning-text text-footer'>
+        <Trans i18nKey='products.warning-three'>
+          <span
+            >PRODUKT ZAWIERA NIKOTYNĘ, KTÓRA JEST SUBSTANCJA UZALEŻNIAJĄCĄ</span
+          >
+        </Trans>
+      </p>
+    </div>
   </div>
 </div>
 
 <style>
+  .test-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 1450px;
+    margin: auto;
+  }
   .warning-container {
     background-color: var(--bg-black);
     color: var(--bg-white);
@@ -85,37 +95,38 @@ import toxic from '../../assets/warn-toxic.webp';
     display: flex;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     /* justify-items: center; */
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: start;
-    gap: 40px 40px;
+    gap: 40px 50px;
+    margin-top: 70px;
     margin-bottom: 70px;
     font-family: var(--roboto-font);
   }
   .warning-card {
-    width: 250px;
+    max-width: 450px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 10px;
-    margin: 10px;
+
     flex-direction: column;
   }
-  .warning-image {
-    display: block;
-    width: 100%;
-    object-fit: contain;
+  .warning-img {
+    margin-bottom: 10px;
   }
   .warning-text {
     font-family: var(--main-font);
     line-height: normal;
     letter-spacing: 1px;
-    text-align: center;
+    font-size: 1rem;
+    text-align: left;
+    text-wrap: balance;
   }
   .warning-footer {
-    margin-top: 30px;
+    padding-inline: 5px;
     text-wrap: balance;
-    max-width: 1900px;
+    max-width: 1600px;
     margin: 40px auto;
     font-family: var(--second-font);
   }
@@ -128,11 +139,26 @@ import toxic from '../../assets/warn-toxic.webp';
   .warning-line {
     margin: 0 auto;
     display: block;
-    width: 85%;
+    width: 90%;
     background-color: var(--bg-white);
     height: 2px;
   }
+  .text-footer {
+    font-size: 0.8rem;
+    text-wrap: wrap;
+    margin-top: 20px;
+    
+  }
 
   @media (min-width: 900px) {
+    .warning-wrapper {
+      gap: 40px 140px;
+    }
+    .warning-img {
+      margin-bottom: 0px;
+    }
+    .warning-card {
+      max-width: 300px;
+    }
   }
 </style>
